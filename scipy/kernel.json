@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "/opt/conda/bin/python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ],
+  "display_name": "Python 3",
+  "language": "python",
+  "env": {
+    "LD_LIBRARY_PATH": "/usr/local/nvidia/lib64",
+    "PATH": "/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/nvidia/bin"
+  }
+}
