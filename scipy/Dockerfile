@@ -10,7 +10,10 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # bokeh, sqlalchemy, hdf5, vincent, beautifulsoup, protobuf, xlrd, bottleneck,
 # pytables, ipywidgets, ipympl, facets
 
-RUN conda install \
+
+RUN set -ex \
+  && conda install --quiet --yes \
+  'plotly==4.14.3' \
   emcee \
   pymc3 \
   astroML \
@@ -18,6 +21,8 @@ RUN conda install \
   astroplan \
   astroquery \
   gatspy \
+  jupyterlab \
+  'ipywidgets>=7.5' \
   pytorch \
   photutils \
   ccdproc \
@@ -33,10 +38,17 @@ RUN conda install \
   lxml \
   cssselect \
   plotnine \
-  plotly \
   selenium \
   pylogit \
-  choicemodels
+  choicemodels \
+  && conda clean --all -f -y \
+  && jupyter labextension install jupyterlab-plotly@4.14.3 --no-build \
+  && jupyter lab build -y \
+  && jupyter lab clean -y \
+  && rm -rf "/home/${NB_USER}/.cache/yarn" \
+  && rm -rf "/home/${NB_USER}/.node-gyp" \
+  && fix-permissions "${CONDA_DIR}" \
+  && fix-permissions "/home/${NB_USER}"
 
 # Install Python 3 packages
 RUN pip install \
