@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/tensorflow-notebook:d990a62010ae
+ARG BASE_CONTAINER=jupyter/tensorflow-notebook:dfcb043bd887
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
@@ -10,33 +10,35 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # bokeh, sqlalchemy, hdf5, vincent, beautifulsoup, protobuf, xlrd, bottleneck,
 # pytables, ipywidgets, ipympl, facets, tensorflow, keras
 
-RUN conda install \
-  emcee \
-  pymc3 \
-  astroML \
-  astropy \
-  astroplan \
-  astroquery \
-  gatspy \
-  pytorch \
-  photutils \
-  #   ccdproc \
-  lmfit \
-  uncertainties \
-  openpyxl \
-  hickle \
-  spacy \
-  textblob \
-  nltk \
-  gensim \
-  requests \
-  lxml \
-  cssselect \
-  plotnine \
-  plotly \
-  selenium \
-  pylogit \
-  choicemodels
+RUN mamba install --quiet --yes \
+    emcee \
+    pymc3 \
+    astroML \
+    astropy \
+    astroplan \
+    astroquery \
+    gatspy \
+    pytorch \
+    lmfit \
+    uncertainties \
+    openpyxl \
+    hickle \
+    spacy \
+    textblob \
+    nltk \
+    gensim \
+    requests \
+    lxml \
+    cssselect \
+    photutils \
+    plotnine \
+    plotly \
+    selenium \
+    pylogit \
+    choicemodels && \
+    mamba clean --all -f -y && \
+    fix-permissions "${CONDA_DIR}" && \
+    fix-permissions "/home/${NB_USER}"
 
 # Install Python 3 packages
 RUN pip install \

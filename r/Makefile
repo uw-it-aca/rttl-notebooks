@@ -4,7 +4,7 @@ APP_BIN?=app
 default: build
 
 DOCKER_REPO?=gcr.io/uwit-mci-axdd/rttl-r-notebook
-DOCKER_TAG?=d990a62010ae
+DOCKER_TAG?=latest_1-3
 
 build:
 	docker build -t $(DOCKER_REPO):latest -t $(DOCKER_REPO):$(DOCKER_TAG) .
