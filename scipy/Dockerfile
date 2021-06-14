@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/scipy-notebook:d990a62010ae
+ARG BASE_CONTAINER=jupyter/scipy-notebook:hub-1.3.0
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"

@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/r-notebook:d990a62010ae
+ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.3.0
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
