@@ -2,6 +2,7 @@ ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.3.0
 FROM $BASE_CONTAINER
 
 RUN pip install jupyter-rsession-proxy
+RUN conda install -y -c r r-tidyverse
 
 # install rstudio-server
 # Note: 1.4x & 1.3x have problems with proxying and auth flow, see: https://github.com/jupyterhub/jupyter-rsession-proxy/issues/97
