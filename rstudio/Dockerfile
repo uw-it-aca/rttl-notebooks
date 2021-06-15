@@ -5,6 +5,7 @@ RUN pip install jupyter-rsession-proxy
 
 # install rstudio-server
 # Note: 1.4x & 1.3x have problems with proxying and auth flow, see: https://github.com/jupyterhub/jupyter-rsession-proxy/issues/97
+USER root
 RUN apt-get update && \
     apt-get install gdebi-core -y && \
     curl --silent -L --fail http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.6_amd64.deb > /tmp/libssl.deb && \
