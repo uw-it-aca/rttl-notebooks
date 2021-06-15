@@ -4,7 +4,7 @@ APP_BIN?=app
 default: build
 
 DOCKER_REPO?=gcr.io/uwit-mci-axdd/rttl-rstudio-notebook
-DOCKER_TAG?=alpha-1.0
+DOCKER_TAG?=fdf878c
 
 build:
 	docker build -t $(DOCKER_REPO):latest -t $(DOCKER_REPO):$(DOCKER_TAG) .
