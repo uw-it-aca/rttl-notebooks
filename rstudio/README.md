@@ -6,4 +6,4 @@ Running notebook locally
 - Console output will include localhost url with access token. Add '/rstudio' to the end of the path portion
 
 Accessing server shell locally
-- `docker run -it --entrypoint /bin/bash gcr.io/uwit-mci-axdd/rttl-rstudio-notebook:latest_1`
+- `docker run -it --entrypoint /bin/bash gcr.io/uwit-mci-axdd/rttl-rstudio-notebook:latest`
