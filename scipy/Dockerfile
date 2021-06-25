@@ -10,7 +10,6 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # bokeh, sqlalchemy, hdf5, vincent, beautifulsoup, protobuf, xlrd, bottleneck,
 # pytables, ipywidgets, ipympl, facets
 
-
 RUN set -ex \
   && conda install --quiet --yes \
   'plotly==4.14.3' \
@@ -52,6 +51,7 @@ RUN set -ex \
 
 # Install Python 3 packages
 RUN pip install \
+  astroalign \
   requests-html \
   joblib \
   tqdm \
@@ -60,7 +60,6 @@ RUN pip install \
   fuzzywuzzy \
   pqdm \
   qgrid \
-  biogeme \
   nbresuse==0.3.3 \
   nbgitpuller && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
@@ -70,10 +69,14 @@ RUN pip install \
 
 USER root
 
-RUN apt-get update && apt-get install -y vim gcc openssh-client
+RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential
 
 # RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
 # RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
 # COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
 
 USER $NB_UID
+
+# biogeme failed to install without an interactive bash shell
+SHELL ["/bin/bash", "--login", "-c", "-i"]
+RUN pip install biogeme
