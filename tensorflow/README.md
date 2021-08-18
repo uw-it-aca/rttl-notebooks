@@ -1,8 +1,9 @@
-# RTTL Tensorflow notebook
-Docker image for UW RTTL Tensorflow notebook. 
+# UW-IT JupyterHub for Teaching Tensorflow notebook
+Docker image for UW-IT JupyterHub for Teaching Tensorflow notebook. 
 - Detailed information about base Tensorflow notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-tensorflow-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
+- The JupyterLab interface is installed and is set as default
 
 #### Running notebook locally
 - `docker run -p 8888:8888 gcr.io/uwit-mci-axdd/rttl-tensorflow-notebook:latest_1-3`

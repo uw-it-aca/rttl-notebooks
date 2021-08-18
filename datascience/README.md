@@ -1,10 +1,11 @@
-# RTTL datascience notebook
-Docker image for UW RTTL datascience notebook. 
-- Detailed information about base datascience notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook
+# UW-IT JupyterHub for Teaching datascience Notebook server
+Docker image for UW-IT JupyterHub for Teaching datascience Notebook server. 
+- Detailed information about base datascience Notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
+- The JupyterLab interface is installed and is set as default
 
-#### Running notebook locally
+#### Running Notebook locally
 - `docker run -p 8888:8888 gcr.io/uwit-mci-axdd/rttl-datascience-notebook:latest_1-3`
 - Console output will include localhost url with access token. Add '/lab' to the end of the path portion
 
