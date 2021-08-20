@@ -10,7 +10,7 @@ Docker images for base JupyterLab environments used in [UW-IT JupyterHub for Tea
 
 Running notebook locally
 - `docker run -p 8888:8888 gcr.io/uwit-mci-axdd/<image_name>:<image_tag>`
-- Console output will include localhost url with access token. Add '/lab' to the end of the path portion
+- Console output will include localhost url with access token. Add '/lab' to the end of the path portion for the JupyterLab interface, eg: `http://127.0.0.1:8888/lab`
 
 Accessing server shell locally
 - `docker run -it --entrypoint /bin/bash gcr.io/uwit-mci-axdd/<image_name>:<image_tag>`

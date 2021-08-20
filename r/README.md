@@ -7,7 +7,7 @@ Docker image for UW-IT JupyterHub for Teaching R notebook.
 
 #### Running notebook locally
 - `docker run -p 8888:8888 gcr.io/uwit-mci-axdd/rttl-r-notebook:latest_1-3`
-- Console output will include localhost url with access token. Add '/lab' to the end of the path portion
+- Console output will include localhost url with access token. Add '/lab' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
 
 #### Accessing server shell locally
 - `docker run -it --entrypoint /bin/bash gcr.io/uwit-mci-axdd/rttl-r-notebook:latest_1-3`
