@@ -14,8 +14,15 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # caret, tidymodels, rcurl, randomforest#
 # julia, ijulia, hdf5, gadfly, rdatasets
 
-RUN conda install \
-  requests
+RUN mkdir /opt/conda/pkg
+RUN touch /opt/conda/pkg/urls.txt
+
+RUN set -ex \
+  && conda install --quiet --yes \
+  requests \
+  && conda clean --all -f -y \
+  && fix-permissions "${CONDA_DIR}" \
+  && fix-permissions "/home/${NB_USER}"
 
 # Install Python 3 packages
 RUN pip install \
