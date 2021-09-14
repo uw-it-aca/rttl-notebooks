@@ -21,6 +21,9 @@ RUN conda install \
 RUN pip install \
   requests-html \
   nbresuse==0.3.3 \
+  geopandas \
+  folium \
+  ipyleaflet \
   nbgitpuller && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
