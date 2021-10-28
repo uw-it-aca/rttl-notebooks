@@ -61,7 +61,9 @@ RUN pip install \
   pqdm \
   qgrid \
   nbresuse==0.3.3 \
-  nbgitpuller && \
+  nbclassic==0.2.8 \
+  nbgitpuller \
+  scipy==1.7.1 && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
   jupyter nbextension enable --py nbresuse --sys-prefix && \
