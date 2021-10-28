@@ -31,6 +31,7 @@ RUN pip install \
   geopandas \
   folium \
   ipyleaflet \
+  nbclassic==0.2.8 \
   nbgitpuller && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
