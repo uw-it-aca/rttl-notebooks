@@ -16,10 +16,10 @@ Docker image for UW-IT JupyterHub for Teaching datascience Notebook server.
 #### Installed packages
 via `pip list`
 
-| Package | Version |
-| ----------------------------- | ------------------- |
+|Package|Version|
+|-----------------------------|-------------------|
 |alembic|1.6.0|
-|anyio|3.3.1|
+|anyio|2.2.0|
 |appdirs|1.4.4|
 |argon2-cffi|20.1.0|
 |async-generator|1.10|
@@ -86,7 +86,7 @@ via `pip list`
 |jupyter-client|6.1.12|
 |jupyter-core|4.7.1|
 |jupyter-packaging|0.9.2|
-|jupyter-server|1.11.0|
+|jupyter-server|1.6.4|
 |jupyter-telemetry|0.1.0|
 |jupyterhub|1.3.0|
 |jupyterlab|3.0.14|
@@ -107,11 +107,11 @@ via `pip list`
 |mpmath|1.2.1|
 |msgpack|1.0.2|
 |munch|2.5.0|
-|nbclassic|0.2.7|
+|nbclassic|0.2.8|
 |nbclient|0.5.3|
 |nbconvert|6.0.7|
 |nbformat|5.1.3|
-|nbgitpuller|1.0.2|
+|nbgitpuller|0.10.2|
 |nbresuse|0.3.3|
 |nest-asyncio|1.5.1|
 |networkx|2.5|
@@ -148,7 +148,7 @@ via `pip list`
 |pyOpenSSL|20.0.1|
 |pyparsing|2.4.7|
 |pyppeteer|0.2.6|
-|pyproj|3.2.0|
+|pyproj|3.2.1|
 |pyquery|1.4.3|
 |pyrsistent|0.17.3|
 |PySocks|1.7.1|
@@ -161,7 +161,6 @@ via `pip list`
 |pyzmq|22.0.3|
 |requests|2.26.0|
 |requests-html|0.10.0|
-|requests-unixsocket|0.2.0|
 |rpy2|3.4.4|
 |ruamel-yaml-conda|0.15.80|
 |ruamel.yaml|0.16.12|
@@ -200,7 +199,6 @@ via `pip list`
 |w3lib|1.22.0|
 |wcwidth|0.2.5|
 |webencodings|0.5.1|
-|websocket-client|1.2.1|
 |websockets|9.1|
 |wheel|0.36.2|
 |widgetsnbextension|3.5.1|
@@ -216,7 +214,7 @@ via `conda list --no-pip`
 |_openmp_mutex|4.5|
 |_r-mutex|1.0.1|
 |alembic|1.6.0|
-|anyio|3.3.1|
+|anyio|2.2.0|
 |appdirs|1.4.4|
 |argon2-cffi|20.1.0|
 |async_generator|1.10|
@@ -322,9 +320,9 @@ via `conda list --no-pip`
 |json5|0.9.5|
 |jsonschema|3.2.0|
 |jupyter-packaging|0.9.2|
-|jupyter-server|1.11.0|
 |jupyter_client|6.1.12|
 |jupyter_core|4.7.1|
+|jupyter_server|1.6.4|
 |jupyter_telemetry|0.1.0|
 |jupyterhub|1.3.0|
 |jupyterhub-base|1.3.0|
@@ -392,11 +390,11 @@ via `conda list --no-pip`
 |mpmath|1.2.1|
 |msgpack-python|1.0.2|
 |munch|2.5.0|
-|nbclassic|0.2.7|
+|nbclassic|0.2.8|
 |nbclient|0.5.3|
 |nbconvert|6.0.7|
 |nbformat|5.1.3|
-|nbgitpuller|1.0.2|
+|nbgitpuller|0.10.2|
 |nbresuse|0.3.3|
 |ncurses|6.2|
 |nest-asyncio|1.5.1|
@@ -444,7 +442,7 @@ via `conda list --no-pip`
 |pyopenssl|20.0.1|
 |pyparsing|2.4.7|
 |pyppeteer|0.2.6|
-|pyproj|3.2.0|
+|pyproj|3.2.1|
 |pyquery|1.4.3|
 |pyrsistent|0.17.3|
 |pysocks|1.7.1|
@@ -649,7 +647,6 @@ via `conda list --no-pip`
 |reproc-cpp|14.2.1|
 |requests|2.26.0|
 |requests-html|0.10.0|
-|requests-unixsocket|0.2.0|
 |rpy2|3.4.4|
 |ruamel.yaml|0.16.12|
 |ruamel.yaml.clib|0.2.2|
@@ -695,7 +692,6 @@ via `conda list --no-pip`
 |w3lib|1.22.0|
 |wcwidth|0.2.5|
 |webencodings|0.5.1|
-|websocket-client|1.2.1|
 |websockets|9.1|
 |wheel|0.36.2|
 |widgetsnbextension|3.5.1|
