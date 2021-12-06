@@ -1,8 +1,11 @@
 ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.4.2
 FROM $BASE_CONTAINER
 
+# RUN conda config --add channels free 
+# RUN conda config --add channels fonts-anaconda
+ENV RSESSION_PROXY_RSTUDIO_1_4=yes
 RUN pip install jupyter-rsession-proxy nbgitpuller
-RUN conda install -y -c r r-tidyverse
+RUN mamba install -y -c r r-tidyverse
 
 # install rstudio-server
 # Note: 1.4x & 1.3x have problems with proxying and auth flow, see: https://github.com/jupyterhub/jupyter-rsession-proxy/issues/97
@@ -13,18 +16,34 @@ USER root
 #    apt-get install -y /tmp/libssl.deb && \
 #     rm /tmp/libssl.deb && \
 
+# PREV working version of RStudio
+# RUN apt-get update && \
+#    apt-get install gdebi-core -y && \
+#    curl --silent -L --fail https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2021.09.0%2B351-amd64.deb > /tmp/rstudio.deb && \
+#    echo '8ab014f050651d0b3d6d10ff0fcd6ea4873b90581f2ee1d4eaa871280685afae  /tmp/rstudio.deb' | shasum -a 256 -c - && \
+#    apt-get install -y /tmp/rstudio.deb && \
+#    rm /tmp/rstudio.deb && \
+#    apt-get clean
+
+#RUN apt-get update && \
+#    apt-get install gdebi-core -y && \
+#    curl --silent -L --fail  https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2021.09.1-372-amd64.deb > /tmp/rstudio.deb && \
+#    echo 'c58df09468870b89f1796445853dce2dacaa0fc5b7bb1f92b036fa8da1d1f8a3  /tmp/rstudio.deb' | shasum -a 256 -c - && \
+#    apt-get install -y /tmp/rstudio.deb && \
+#    rm /tmp/rstudio.deb && \
+#    apt-get clean
+# sudo gdebi rstudio-server-2021.09.1-372-amd64.deb
+
 RUN apt-get update && \
     apt-get install gdebi-core -y && \
-    curl --silent -L --fail https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2021.09.0%2B351-amd64.deb > /tmp/rstudio.deb && \
-    echo '8ab014f050651d0b3d6d10ff0fcd6ea4873b90581f2ee1d4eaa871280685afae  /tmp/rstudio.deb' | shasum -a 256 -c - && \
-    apt-get install -y /tmp/rstudio.deb && \
-    rm /tmp/rstudio.deb && \
-    apt-get clean
+    curl --silent -L --fail  https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2021.09.1-372-amd64.deb > /tmp/rstudio.deb && \
+    echo 'c58df09468870b89f1796445853dce2dacaa0fc5b7bb1f92b036fa8da1d1f8a3  /tmp/rstudio.deb' | shasum -a 256 -c - && \
+    gdebi -n /tmp/rstudio.deb
 
 # These were needed in 1.4x - keeping in case proxy issues are sorted
 # RUN rm /var/lib/rstudio-server/rstudio.sqlite && \
-#    chmod -R 777 /var/lib/rstudio-server
-# ENV RSESSION_PROXY_RSTUDIO_1_4=yes
+#   chmod -R 777 /var/lib/rstudio-server
+
 
 ENV PATH=$PATH:/usr/lib/rstudio-server/bin
 
