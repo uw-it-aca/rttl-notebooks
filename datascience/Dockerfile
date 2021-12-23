@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/datascience-notebook:hub-1.3.0
+ARG BASE_CONTAINER=jupyter/datascience-notebook:hub-1.4.2
 
 FROM $BASE_CONTAINER
 

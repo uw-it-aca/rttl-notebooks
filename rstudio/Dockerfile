@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.3.0
+ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.4.2
 FROM $BASE_CONTAINER
 
 RUN pip install jupyter-rsession-proxy nbgitpuller

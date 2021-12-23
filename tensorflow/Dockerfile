@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/tensorflow-notebook:dfcb043bd887
+ARG BASE_CONTAINER=jupyter/tensorflow-notebook:hub-1.4.2
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"

@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.3.0
+ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.4.2
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
@@ -8,8 +8,7 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # tidyverse, devtools, shiny, rmarkdown, forecast, rsqlite, nycflights13,
 # caret, tidymodels, rcurl, randomforest
 
-RUN conda install \
-  r-base=4.0.2 \
+RUN mamba install --quiet --yes \
   emcee \
   pymc3 \
   astroML \
