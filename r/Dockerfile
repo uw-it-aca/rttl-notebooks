@@ -60,6 +60,10 @@ RUN pip install \
   jupyter nbextension enable --py nbresuse --sys-prefix && \
   jupyter serverextension enable nbgitpuller --sys-prefix
 
+RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
+RUN R -e "install.packages('IRkernel',repos='http://cran.us.r-project.org')"
+RUN R -e "IRkernel::installspec()"
+
 USER root
 
 RUN apt-get update && apt-get install -y vim gcc openssh-client
