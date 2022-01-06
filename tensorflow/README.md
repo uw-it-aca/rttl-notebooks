@@ -6,11 +6,11 @@ Docker image for UW-IT JupyterHub for Teaching Tensorflow notebook.
 - The JupyterLab interface is installed and is set as default
 
 #### Running notebook locally
-- `docker run -p 8888:8888 gcr.io/uwit-mci-axdd/rttl-tensorflow-notebook:latest_1-3`
+- `docker run -p 8888:8888 gcr.io/uwit-mci-axdd/rttl-tensorflow-notebook:latest_1-4-2`
 - Console output will include localhost url with access token. Add '/lab' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
 
 #### Accessing server shell locally
-- `docker run -it --entrypoint /bin/bash gcr.io/uwit-mci-axdd/rttl-tensorflow-notebook:latest_1-3`
+- `docker run -it --entrypoint /bin/bash gcr.io/uwit-mci-axdd/rttl-tensorflow-notebook:latest_1-4-2`
 
 #### Installed packages
 via `pip list`
