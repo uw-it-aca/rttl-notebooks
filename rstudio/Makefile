@@ -4,10 +4,10 @@ APP_BIN?=app
 default: build
 
 DOCKER_REPO?=gcr.io/uwit-mci-axdd/rttl-rstudio-notebook
-DOCKER_TAG?=fdf878c
+DOCKER_TAG?=latest_1-4-2
 
 build:
-	docker build -t $(DOCKER_REPO):latest -t $(DOCKER_REPO):$(DOCKER_TAG) .
+	docker build -t $(DOCKER_REPO):$(DOCKER_TAG) .
 
 push: build
-	docker push $(DOCKER_REPO):latest
+	docker push $(DOCKER_REPO):$(DOCKER_TAG)
