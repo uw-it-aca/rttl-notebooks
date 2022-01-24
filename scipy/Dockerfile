@@ -63,6 +63,7 @@ RUN pip install \
   nbresuse==0.3.3 \
   nbclassic==0.2.8 \
   nbgitpuller \
+  jupyterlab-link-share \
   scipy==1.7.1 && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
