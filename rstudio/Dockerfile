@@ -26,6 +26,12 @@ ENV RSESSION_PROXY_RSTUDIO_1_4=yes
 
 ENV PATH=$PATH:/usr/lib/rstudio-server/bin
 
+# Workaround for https://issuetracker.google.com/issues/216190252 
+# Run suid-wrapped command during Notebook startup
+RUN curl --silent -L --fail https://github.com/thiagorb/suid-wrapper/releases/latest/download/suid-wrapper > /tmp/suid-wrapper
+RUN chmod +x /tmp/suid-wrapper && mv /tmp/suid-wrapper /usr/bin/suid-wrapper
+RUN suid-wrapper $(which chmod) +t /var/run/rstudio-server -o /tmp/add_sticky_bit --force
+
 USER $NB_USER
 
 RUN pip install nbgitpuller && \
