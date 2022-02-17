@@ -5,11 +5,11 @@ Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth fl
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
 
 #### Running notebook locally
-- `docker run -p 8888:8888 gcr.io/uwit-mci-axdd/rttl-rstudio-notebook:latest_1-4-2`
+- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.1`
 - Console output will include localhost url with access token. Add '/rstudio' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
 
 #### Accessing server shell locally
-- `docker run -it --entrypoint /bin/bash gcr.io/uwit-mci-axdd/rttl-rstudio-notebook:latest_1-4-2`
+- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.1`
 
 #### Installed packages
 via `pip list`
