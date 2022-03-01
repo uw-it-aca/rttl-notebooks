@@ -63,11 +63,19 @@ RUN pip install \
   nbresuse==0.3.3 \
   nbclassic==0.2.8 \
   nbgitpuller \
-  scipy==1.7.1 && \
+  scipy==1.7.1 \
+  git+https://github.com/jupyter/nbgrader.git@5a81fd5 && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
   jupyter nbextension enable --py nbresuse --sys-prefix && \
-  jupyter serverextension enable nbgitpuller --sys-prefix
+  jupyter serverextension enable nbgitpuller --sys-prefix && \
+  jupyter nbextension install --symlink --sys-prefix --py nbgrader && \
+  jupyter nbextension enable --sys-prefix --py nbgrader && \
+  jupyter serverextension enable --sys-prefix --py nbgrader
+
+RUN pip install ngshare_exchange
+
+COPY nbgrader_config.py /etc/jupyter/nbgrader_config.py
 
 USER root
 
