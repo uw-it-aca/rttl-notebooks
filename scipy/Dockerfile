@@ -63,11 +63,15 @@ RUN pip install \
   nbresuse==0.3.3 \
   nbclassic==0.2.8 \
   nbgitpuller \
-  scipy==1.7.1 && \
+  scipy==1.7.1 \
+  nbgrader && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
   jupyter nbextension enable --py nbresuse --sys-prefix && \
-  jupyter serverextension enable nbgitpuller --sys-prefix
+  jupyter serverextension enable nbgitpuller --sys-prefix && \
+  jupyter nbextension install --sys-prefix --py nbgrader --overwrite && \
+  jupyter nbextension enable --sys-prefix --py nbgrader && \
+  jupyter serverextension enable --sys-prefix --py nbgrader
 
 USER root
 
@@ -76,6 +80,12 @@ RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential
 # RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
 # RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
 # COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
+
+# Util to ensure nfs shared directory is writable
+# Run suid-wrapped command during Notebook startup
+RUN curl --silent -L --fail https://github.com/thiagorb/suid-wrapper/releases/latest/download/suid-wrapper > /tmp/suid-wrapper
+RUN chmod +x /tmp/suid-wrapper && mv /tmp/suid-wrapper /usr/bin/suid-wrapper
+RUN suid-wrapper $(which chown) jovyan:users /home/shared -o /tmp/chown_nfs_shared --force
 
 USER $NB_UID
 
