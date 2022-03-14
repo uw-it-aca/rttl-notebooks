@@ -3,17 +3,21 @@ FROM $BASE_CONTAINER
 
 # Base notebook for 1.4.2 uses Ubuntu 20.04 (Focal)
 
-RUN pip install jupyter-rsession-proxy
-RUN conda install -y -c r r-tidyverse gdal
-
 # install rstudio-server
 USER root
+
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends software-properties-common dirmngr  -y && \
+    wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc && \
+    add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/" && \
+    apt install --no-install-recommends r-base -y
+
 
 # Per: http://cran.rstudio.com/bin/linux/ubuntu/
 RUN apt-get update && \
     apt-get install gdebi-core libproj-dev proj-data proj-bin libgeos-dev build-essential -y && \    
-    curl --silent -L --fail https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2021.09.1-372-amd64.deb > /tmp/rstudio.deb && \
-    echo 'c58df09468870b89f1796445853dce2dacaa0fc5b7bb1f92b036fa8da1d1f8a3  /tmp/rstudio.deb' | shasum -a 256 -c - && \
+    curl --silent -L --fail https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.02.0-443-amd64.deb > /tmp/rstudio.deb && \
+    echo '2828ef2f8fc93c0dfa125735709d7121ceb060bdd2d08d1f248d6e2b4bc838c0  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     apt-get install -y /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
     apt-get clean
@@ -34,8 +38,17 @@ RUN suid-wrapper $(which chmod) +t /var/run/rstudio-server -o /tmp/add_sticky_bi
 
 USER $NB_USER
 
-RUN pip install nbgitpuller && \
-  jupyter serverextension enable nbgitpuller --sys-prefix
+RUN pip install \
+    jupyter-rsession-proxy \
+    tensorflow \
+    nbgitpuller && \
+    jupyter serverextension enable nbgitpuller --sys-prefix
+
+RUN conda install -y -c conda-forge \
+    r-base \
+    r-tidyverse \
+    gdal \
+    r-keras
 
 # See: https://github.com/uw-it-aca/rttl-notebooks/pull/15
 RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
