@@ -48,7 +48,11 @@ RUN conda install -y -c conda-forge \
     r-base \
     r-tidyverse \
     gdal \
-    r-keras
+    r-keras \
+    r-gstat \
+    r-spatial \
+    r-spdep \
+    r-spatialreg
 
 # See: https://github.com/uw-it-aca/rttl-notebooks/pull/15
 RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
