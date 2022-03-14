@@ -3,8 +3,8 @@ APP_BIN?=app
 .PHONY: default
 default: build
 
-DOCKER_REPO?=gcr.io/uwit-mci-axdd/rttl-datascience-notebook
-DOCKER_TAG?=latest_1-4-2
+DOCKER_REPO?=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-datascience-notebook
+DOCKER_TAG?=2.3
 
 build:
 	docker $(DOCKER_REPO):$(DOCKER_TAG) .

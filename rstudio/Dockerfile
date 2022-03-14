@@ -4,7 +4,7 @@ FROM $BASE_CONTAINER
 # Base notebook for 1.4.2 uses Ubuntu 20.04 (Focal)
 
 RUN pip install jupyter-rsession-proxy
-RUN conda install -y -c r r-tidyverse gdal
+RUN conda install -y -c r r-tidyverse gdal r-gstat r-spatial r-spdep r-spatialreg
 
 # install rstudio-server
 USER root
