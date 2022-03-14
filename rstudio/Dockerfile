@@ -32,7 +32,8 @@ ENV PATH=$PATH:/usr/lib/rstudio-server/bin
 
 # Workaround for https://issuetracker.google.com/issues/216190252 
 # Run suid-wrapped command during Notebook startup
-RUN curl --silent -L --fail https://github.com/thiagorb/suid-wrapper/releases/latest/download/suid-wrapper > /tmp/suid-wrapper
+RUN curl --silent -L --fail https://github.com/thiagorb/suid-wrapper/releases/download/v0.1.4/suid-wrapper > /tmp/suid-wrapper && \
+    echo '93c583473600558d0d67eb06913efed14a684b2431d0114ab6a553f6f1ead750  /tmp/suid-wrapper' | shasum -a 256 -c -
 RUN chmod +x /tmp/suid-wrapper && mv /tmp/suid-wrapper /usr/bin/suid-wrapper
 RUN suid-wrapper $(which chmod) +t /var/run/rstudio-server -o /tmp/add_sticky_bit --force
 
