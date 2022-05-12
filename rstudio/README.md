@@ -11,7 +11,17 @@ Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth fl
 #### Accessing server shell locally
 - `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.2`
 
-#### Installed packages
+#### About packages
+Only packages pre-installed in this image and listed below will be available by default. Users can install their own package at runtime, but those packages will not persist and will need to be installed again the next time their server is started. If a package you need is not available in this image, there are a few options:
+- You can request the package be added to this image. We need to review and test any additions, so the request should be made before the start of the quarter. You can request additional packages at the time you sign up for a hub, or send the request to help@uw.edu with "JupyterHub for Teaching" in the subject line.
+- If you are comfortable building your own container images, you can create an image and send us the link to the image on a public container registry when signing up for a hub. We strongly recommend basing the image on our supported image for compatibility reasons.
+- You can add a code cell in your .rmd file that installs needed packages and have users run that cell when starting a session. Example syntax: `install.packages('<package_name>')`
+- You can have users configure their server to install packages to their own home directory. Note that this does make it more difficult to be sure that all your users have the same environment.
+  - One time step: (from the terminal) `mkdir -p ~/local/R_libs && echo '.libPaths(c("/opt/conda/lib/R/library","/home/jovyan/local/R_libs"))' >> ~/.Rprofile`
+  - One time step: (from the R console) `libPaths(c("/opt/conda/lib/R/library","/home/jovyan/local/R_libs"))`
+  - Any time they install a new package: (from the R console) `install.packages("<package_name>", lib="~/local/R_libs")`
+
+Default packages:
 via `pip list`
 
 |Package|Version|
