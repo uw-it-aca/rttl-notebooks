@@ -27,6 +27,8 @@ RUN apt-get update && \
 RUN chmod 777 /var/lib/rstudio-server/rstudio-os.sqlite && \
     chmod -R 777 /usr/sbin/rstudio-server
 ENV RSESSION_PROXY_RSTUDIO_1_4=yes
+# Fix for error: "System has not been booted with systemd as init system (PID 1)" related to timedatectl running in containers.
+RUN echo 'TZ="America/Los_Angeles"' >> /opt/conda/lib/R/etc/Renviron
 
 ENV PATH=$PATH:/usr/lib/rstudio-server/bin
 
