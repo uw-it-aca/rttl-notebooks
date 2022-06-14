@@ -5,11 +5,11 @@ Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth fl
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
 
 #### Running notebook locally
-- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.2`
+- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.5`
 - Console output will include localhost url with access token. Add '/rstudio' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
 
 #### Accessing server shell locally
-- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.2`
+- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.5`
 
 #### About packages
 Only packages pre-installed in this image and listed below will be available by default. Users can install their own package at runtime, but those packages will not persist and will need to be installed again the next time their server is started. If a package you need is not available in this image, there are a few options:
@@ -25,7 +25,7 @@ Default packages:
 via `pip list`
 
 |Package|Version|
-|-----------------------------|-------------------|
+|-----------------------------|---------|
 |absl-py|1.0.0|
 |aiohttp|3.8.1|
 |aiosignal|1.2.0|
@@ -42,7 +42,7 @@ via `pip list`
 |bleach|4.1.0|
 |blinker|1.4|
 |brotlipy|0.7.0|
-|cachetools|5.0.0|
+|cachetools|5.1.0|
 |certifi|2021.10.8|
 |certipy|0.1.3|
 |cffi|1.15.0|
@@ -56,15 +56,15 @@ via `pip list`
 |decorator|5.1.0|
 |defusedxml|0.7.1|
 |entrypoints|0.3|
-|flatbuffers|2.0|
+|flatbuffers|1.12|
 |frozenlist|1.3.0|
-|gast|0.5.3|
-|GDAL|3.4.1|
-|google-auth|2.6.0|
+|gast|0.4.0|
+|GDAL|3.3.3|
+|google-auth|2.6.6|
 |google-auth-oauthlib|0.4.6|
 |google-pasta|0.2.0|
 |greenlet|1.1.2|
-|grpcio|1.44.0|
+|grpcio|1.46.1|
 |h5py|3.6.0|
 |idna|3.1|
 |importlib-metadata|4.8.2|
@@ -86,12 +86,12 @@ via `pip list`
 |jupyterlab|3.2.2|
 |jupyterlab-pygments|0.1.2|
 |jupyterlab-server|2.8.2|
-|keras|2.8.0|
+|keras|2.9.0|
 |Keras-Preprocessing|1.1.2|
-|libclang|13.0.0|
+|libclang|14.0.1|
 |Mako|1.1.5|
 |mamba|0.17.0|
-|Markdown|3.3.6|
+|Markdown|3.3.7|
 |MarkupSafe|2.0.1|
 |matplotlib-inline|0.1.3|
 |mistune|0.8.4|
@@ -100,8 +100,9 @@ via `pip list`
 |nbclient|0.5.5|
 |nbconvert|6.2.0|
 |nbformat|5.1.3|
-|nbgitpuller|1.0.2|
+|nbgitpuller|1.1.0|
 |nest-asyncio|1.5.1|
+|nlopt|2.7.1|
 |notebook|6.4.5|
 |numpy|1.22.3|
 |oauthlib|3.1.1|
@@ -115,7 +116,7 @@ via `pip list`
 |pip|21.3.1|
 |prometheus-client|0.12.0|
 |prompt-toolkit|3.0.22|
-|protobuf|3.19.4|
+|protobuf|3.20.1|
 |ptyprocess|0.7.0|
 |pyasn1|0.4.8|
 |pyasn1-modules|0.2.8|
@@ -144,26 +145,26 @@ via `pip list`
 |six|1.16.0|
 |sniffio|1.2.0|
 |SQLAlchemy|1.4.26|
-|tensorboard|2.8.0|
+|tensorboard|2.9.0|
 |tensorboard-data-server|0.6.1|
 |tensorboard-plugin-wit|1.8.1|
-|tensorflow|2.8.0|
-|tensorflow-io-gcs-filesystem|0.24.0|
+|tensorflow|2.9.0|
+|tensorflow-estimator|2.9.0|
+|tensorflow-io-gcs-filesystem|0.25.0|
 |termcolor|1.1.0|
 |terminado|0.12.1|
 |testpath|0.5.0|
-|tf-estimator-nightly|2.8.0.dev2021122109|
 |tornado|6.1|
 |tqdm|4.62.3|
 |traitlets|5.1.1|
-|typing_extensions|4.1.1|
+|typing\_extensions|4.2.0|
 |urllib3|1.26.7|
 |wcwidth|0.2.5|
 |webencodings|0.5.1|
 |websocket-client|0.57.0|
-|Werkzeug|2.0.3|
+|Werkzeug|2.1.2|
 |wheel|0.37.0|
-|wrapt|1.14.0|
+|wrapt|1.14.1|
 |yarl|1.7.2|
 |zipp|3.6.0|
 
@@ -192,14 +193,13 @@ via `conda list --no-pip`
 |binutils\_linux-64|2.36|
 |bleach|4.1.0|
 |blinker|1.4|
-|blosc|1.21.0|
 |boost-cpp|1.74.0|
 |brotlipy|0.7.0|
 |bwidget|1.9.14|
 |bzip2|1.0.8|
 |c-ares|1.18.1|
 |ca-certificates|2021.10.8|
-|cachetools|5.0.0|
+|cachetools|5.1.0|
 |cairo|1.16.0|
 |certifi|2021.10.8|
 |certipy|0.1.3|
@@ -212,13 +212,13 @@ via `conda list --no-pip`
 |conda-package-handling|1.7.3|
 |configurable-http-proxy|4.2.3|
 |cryptography|35.0.0|
-|curl|7.82.0|
+|curl|7.79.1|
 |debugpy|1.5.1|
 |decorator|5.1.0|
 |defusedxml|0.7.1|
 |entrypoints|0.3|
-|expat|2.4.7|
-|flatbuffers|2.0|
+|expat|2.4.8|
+|flatbuffers|1.12|
 |font-ttf-dejavu-sans-mono|2.37|
 |font-ttf-inconsolata|3.000|
 |font-ttf-source-code-pro|2.038|
@@ -230,30 +230,30 @@ via `conda list --no-pip`
 |freexl|1.0.6|
 |fribidi|1.0.10|
 |frozenlist|1.3.0|
-|gast|0.5.3|
+|gast|0.4.0|
 |gcc\_impl\_linux-64|9.4.0|
 |gcc\_linux-64|9.4.0|
-|gdal|3.4.1|
-|geos|3.10.2|
+|gdal|3.3.3|
+|geos|3.10.0|
 |geotiff|1.7.0|
 |gettext|0.19.8.1|
 |gfortran\_impl\_linux-64|9.4.0|
 |gfortran\_linux-64|9.4.0|
 |giflib|5.2.1|
-|google-auth|2.6.0|
+|google-auth|2.6.6|
 |google-auth-oauthlib|0.4.6|
 |google-pasta|0.2.0|
 |graphite2|1.3.13|
 |greenlet|1.1.2|
-|grpcio|1.44.0|
+|grpcio|1.46.1|
 |gsl|2.7|
 |gxx\_impl\_linux-64|9.4.0|
 |gxx\_linux-64|9.4.0|
 |h5py|3.6.0|
-|harfbuzz|3.4.0|
+|harfbuzz|3.1.1|
 |hdf4|4.2.15|
 |hdf5|1.12.1|
-|icu|69.1|
+|icu|68.2|
 |idna|3.1|
 |importlib-metadata|4.8.2|
 |importlib\_resources|5.4.0|
@@ -279,7 +279,7 @@ via `conda list --no-pip`
 |jupyterlab\_pygments|0.1.2|
 |jupyterlab\_server|2.8.2|
 |kealib|1.4.14|
-|keras|2.8.0|
+|keras|2.9.0|
 |keras-preprocessing|1.1.2|
 |kernel-headers\_linux-64|2.6.32|
 |krb5|1.19.2|
@@ -289,8 +289,8 @@ via `conda list --no-pip`
 |libarchive|3.5.2|
 |libblas|3.9.0|
 |libcblas|3.9.0|
-|libclang|13.0.0|
-|libcurl|7.82.0|
+|libclang|14.0.1|
+|libcurl|7.79.1|
 |libdap4|3.20.6|
 |libdeflate|1.8|
 |libedit|3.1.20191231|
@@ -298,21 +298,21 @@ via `conda list --no-pip`
 |libffi|3.4.2|
 |libgcc-devel\_linux-64|9.4.0|
 |libgcc-ng|11.2.0|
-|libgdal|3.4.1|
+|libgdal|3.3.3|
 |libgfortran-ng|11.2.0|
 |libgfortran5|11.2.0|
 |libgit2|1.3.0|
-|libglib|2.70.2|
+|libglib|2.70.0|
 |libgomp|11.2.0|
 |libiconv|1.16|
 |libkml|1.3.0|
 |liblapack|3.9.0|
 |libnetcdf|4.8.1|
-|libnghttp2|1.47.0|
+|libnghttp2|1.43.0|
 |libnsl|2.0.0|
 |libopenblas|0.3.18|
 |libpng|1.6.37|
-|libpq|14.2|
+|libpq|13.5|
 |librttopo|1.1.0|
 |libsanitizer|9.4.0|
 |libsodium|1.0.18|
@@ -333,7 +333,7 @@ via `conda list --no-pip`
 |make|4.3|
 |mako|1.1.5|
 |mamba|0.17.0|
-|markdown|3.3.6|
+|markdown|3.3.7|
 |markupsafe|2.0.1|
 |matplotlib-inline|0.1.3|
 |mistune|0.8.4|
@@ -342,17 +342,16 @@ via `conda list --no-pip`
 |nbclient|0.5.5|
 |nbconvert|6.2.0|
 |nbformat|5.1.3|
-|nbgitpuller|1.0.2|
+|nbgitpuller|1.1.0|
 |ncurses|6.2|
 |nest-asyncio|1.5.1|
+|nlopt|2.7.1|
 |nodejs|12.4.0|
 |notebook|6.4.5|
-|nspr|4.32|
-|nss|3.74|
 |numpy|1.22.3|
 |oauthlib|3.1.1|
 |openjpeg|2.4.0|
-|openssl|1.1.1l|
+|openssl|1.1.1o|
 |opt-einsum|3.3.0|
 |packaging|21.2|
 |pamela|1.0.0|
@@ -366,13 +365,13 @@ via `conda list --no-pip`
 |pickleshare|0.7.5|
 |pip|21.3.1|
 |pixman|0.40.0|
-|poppler|21.11.0|
+|poppler|21.09.0|
 |poppler-data|0.4.11|
-|postgresql|14.2|
-|proj|8.2.1|
+|postgresql|13.5|
+|proj|8.1.1|
 |prometheus\_client|0.12.0|
 |prompt-toolkit|3.0.22|
-|protobuf|3.19.4|
+|protobuf|3.20.1|
 |pthread-stubs|0.4|
 |ptyprocess|0.7.0|
 |pyasn1|0.4.8|
@@ -395,7 +394,7 @@ via `conda list --no-pip`
 |r-askpass|1.1|
 |r-assertthat|0.2.1|
 |r-backports|1.3.0|
-|r-base|4.1.2|
+|r-base|4.1.1|
 |r-base64enc|0.1_3|
 |r-bit|4.0.4|
 |r-bit64|4.0.5|
@@ -457,7 +456,7 @@ via `conda list --no-pip`
 |r-future|1.23.0|
 |r-future.apply|1.8.1|
 |r-gargle|1.2.0|
-|r-gdata|2.18.0|
+|r-gdata|2.18.0.1|
 |r-generics|0.1.1|
 |r-gert|1.4.2|
 |r-ggplot2|3.3.5|
@@ -471,7 +470,7 @@ via `conda list --no-pip`
 |r-googlesheets4|1.0.0|
 |r-gower|0.2.2|
 |r-gpfit|1.0_8|
-|r-gstat|2.0_8|
+|r-gstat|2.0_9|
 |r-gtable|0.3.0|
 |r-gtools|3.9.2|
 |r-hardhat|0.1.6|
@@ -521,6 +520,7 @@ via `conda list --no-pip`
 |r-modelr|0.1.8|
 |r-munsell|0.5.0|
 |r-nlme|3.1_153|
+|r-nloptr|2.0.1|
 |r-nnet|7.3_16|
 |r-numderiv|2016.8_1.1|
 |r-nycflights13|1.0.2|
@@ -552,7 +552,7 @@ via `conda list --no-pip`
 |r-r6|2.5.1|
 |r-randomforest|4.6_14|
 |r-rappdirs|0.3.3|
-|r-raster|3.5_15|
+|r-raster|3.4_13|
 |r-rcmdcheck|1.4.0|
 |r-rcolorbrewer|1.1_2|
 |r-rcpp|1.0.7|
@@ -568,7 +568,7 @@ via `conda list --no-pip`
 |r-repr|1.1.3|
 |r-reprex|2.0.1|
 |r-reshape2|1.4.4|
-|r-reticulate|1.24|
+|r-reticulate|1.25|
 |r-rex|1.2.0|
 |r-rlang|0.4.12|
 |r-rmarkdown|2.11|
@@ -586,23 +586,22 @@ via `conda list --no-pip`
 |r-scales|1.1.1|
 |r-selectr|0.4_2|
 |r-sessioninfo|1.2.1|
-|r-sf|1.0_6|
+|r-sf|1.0_4|
 |r-shiny|1.7.1|
 |r-slider|0.2.2|
 |r-sourcetools|0.1.7|
-|r-sp|1.4_6|
+|r-sp|1.4_7|
 |r-spacetime|1.2_6|
 |r-spatial|7.3_15|
-|r-spatialreg|1.2_1|
+|r-spatialreg|1.2_3|
 |r-spdata|2.0.1|
-|r-spdep|1.2_2|
+|r-spdep|1.2_4|
 |r-squarem|2021.1|
-|r-stringi|1.7.6|
+|r-stringi|1.7.5|
 |r-stringr|1.4.0|
 |r-survival|3.2_13|
 |r-sys|3.4|
 |r-tensorflow|2.8.0|
-|r-terra|1.5_21|
 |r-testthat|3.1.0|
 |r-tfautograph|0.3.2|
 |r-tfruns|1.5.0|
@@ -658,25 +657,25 @@ via `conda list --no-pip`
 |six|1.16.0|
 |sniffio|1.2.0|
 |sqlalchemy|1.4.26|
-|sqlite|3.37.0|
+|sqlite|3.36.0|
 |sysroot\_linux-64|2.12|
-|tensorboard|2.8.0|
+|tensorboard|2.9.0|
 |tensorboard-data-server|0.6.1|
 |tensorboard-plugin-wit|1.8.1|
-|tensorflow|2.8.0|
-|tensorflow-io-gcs-filesystem|0.24.0|
+|tensorflow|2.9.0|
+|tensorflow-estimator|2.9.0|
+|tensorflow-io-gcs-filesystem|0.25.0|
 |termcolor|1.1.0|
 |terminado|0.12.1|
 |testpath|0.5.0|
-|tf-estimator-nightly|2.8.0.dev2021122109|
-|tiledb|2.6.4|
+|tiledb|2.3.4|
 |tk|8.6.11|
 |tktable|2.10|
 |tornado|6.1|
 |tqdm|4.62.3|
 |traitlets|5.1.1|
-|typing-extensions|4.1.1|
-|tzcode|2021e|
+|typing-extensions|4.2.0|
+|tzcode|2022a|
 |tzdata|2021e|
 |udunits2|2.2.28|
 |unixodbc|2.3.9|
@@ -684,9 +683,9 @@ via `conda list --no-pip`
 |wcwidth|0.2.5|
 |webencodings|0.5.1|
 |websocket-client|0.57.0|
-|werkzeug|2.0.3|
+|werkzeug|2.1.2|
 |wheel|0.37.0|
-|wrapt|1.14.0|
+|wrapt|1.14.1|
 |xerces-c|3.2.3|
 |xorg-kbproto|1.0.7|
 |xorg-libice|1.0.10|
@@ -706,4 +705,4 @@ via `conda list --no-pip`
 |zeromq|4.3.4|
 |zipp|3.6.0|
 |zlib|1.2.11|
-|zstd|1.5.2|
+|zstd|1.5.0|
