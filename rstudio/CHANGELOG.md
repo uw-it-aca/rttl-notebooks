@@ -4,6 +4,29 @@ All notable changes to the RStudio Jupyter Notebook image will be documented her
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.5-upwardbound] - 2022-06-22
+
+### NOTE: This is a custom image for Upward Bound Statistics course
+
+### Added
+- [openintro](https://cran.r-project.org/web/packages/openintro/index.html)
+- [fivethirtyeight & fivethirtyeightdata](https://cran.r-project.org/web/packages/fivethirtyeight/vignettes/fivethirtyeight.html)
+- [palmerpenguins](https://cloud.r-project.org/web/packages/palmerpenguins/index.html)
+- [ggridges](https://cran.r-project.org/web/packages/ggridges/index.html)
+- [janitor](https://cran.r-project.org/web/packages/janitor/index.html)
+- [statsr](https://cran.r-project.org/web/packages/statsr/index.html)
+- [broom](https://cran.r-project.org/web/packages/broom/index.html)
+- [dsbox](https://github.com/rstudio-education/dsbox)
+- [unvotes](https://cran.r-project.org/web/packages/unvotes/index.html)
+- [lubridate](https://cran.r-project.org/web/packages/lubridate/index.html)
+- [DT](https://cran.r-project.org/web/packages/DT/index.html)
+- [scales](https://cran.r-project.org/web/packages/scales/index.html)
+- [glue](https://cran.r-project.org/web/packages/glue/index.html)
+- [shiny](https://cran.r-project.org/web/packages/shiny/index.html)
+- [reactable](https://cran.r-project.org/web/packages/reactable/index.html)
+- [mobpack](https://github.com/vjcitn/mobpack) `devtools::install_github("vjcitn/mobpack")`
+- [skimr](https://cran.r-project.org/web/packages/skimr/index.html)
+
 ## [2.3.5] - 2022-05-17
 
 ### Added
