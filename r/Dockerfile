@@ -8,53 +8,58 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # tidyverse, devtools, shiny, rmarkdown, forecast, rsqlite, nycflights13,
 # caret, tidymodels, rcurl, randomforest
 
+RUN conda update conda --yes
+
+# Shared with SciPy, r, Tensorflow images
 RUN mamba install --quiet --yes \
-  emcee \
-  pymc3 \
   astroML \
-  astropy \
   astroplan \
+  astropy \
   astroquery \
-  gatspy \
-  pytorch \
-  photutils \
   ccdproc \
-  lmfit \
-  uncertainties \
-  pandas \
-  xlrd \
-  openpyxl \
+  choicemodels \
+  cssselect \
+  emcee \
+  gatspy \
+  gensim \
   hickle \
-  PyTables \
+  lmfit \
+  lxml \
+  nltk \
+  openpyxl \
+  photutils \
+  plotnine \
+  pylogit \
+  pymc3 \
+  pytorch \
+  selenium \
   spacy \
   textblob \
-  nltk \
-  gensim \
+  uncertainties
+
+RUN mamba install --quiet --yes \
+  bokeh \
+  pandas \
+  PyTables \
   requests \
   seaborn \
-  bokeh \
-  lxml \
-  cssselect \
-  plotnine \
-  selenium \
   statsmodels \
-  pylogit \
-  choicemodels
+  xlrd
 
 # Install Python 3 packages
 RUN pip install \
-  requests-html \
-  joblib \
-  tqdm \
-  scikit-learn \
-  pyldavis \
-  unidecode \
-  fuzzywuzzy \
-  pqdm \
-  qgrid \
   biogeme \
+  fuzzywuzzy \
+  joblib \
+  nbgitpuller \
   nbresuse==0.3.3 \
-  nbgitpuller && \
+  pqdm \
+  pyldavis \
+  qgrid \
+  requests-html \
+  scikit-learn \
+  tqdm \
+  unidecode && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
   jupyter nbextension enable --py nbresuse --sys-prefix && \

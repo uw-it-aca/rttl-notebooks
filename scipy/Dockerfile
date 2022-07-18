@@ -10,37 +10,40 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # bokeh, sqlalchemy, hdf5, vincent, beautifulsoup, protobuf, xlrd, bottleneck,
 # pytables, ipywidgets, ipympl, facets
 
-RUN set -ex \
-  && conda install --quiet --yes \
-  'plotly==4.14.3' \
-  emcee \
-  pymc3 \
+RUN conda update conda --yes
+
+# Shared with SciPy, r, Tensorflow images
+RUN conda install --quiet --yes \
   astroML \
-  astropy \
   astroplan \
+  astropy \
   astroquery \
-  gatspy \
-  jupyterlab \
-  'ipywidgets>=7.5' \
-  pytorch \
-  photutils \
   ccdproc \
-  lmfit \
-  uncertainties \
-  openpyxl \
+  choicemodels \
+  cssselect \
+  emcee \
+  gatspy \
+  gensim \
   hickle \
+  lmfit \
+  lxml \
+  nltk \
+  openpyxl \
+  photutils \
+  plotnine \
+  pylogit \
+  pymc3 \
+  pytorch \
+  selenium \
   spacy \
   textblob \
-  nltk \
-  gensim \
-  requests \
-  lxml \
-  cssselect \
-  plotnine \
-  selenium \
-  pylogit \
-  choicemodels \
-  && conda clean --all -f -y \
+  uncertainties
+
+RUN mamba install --quiet --yes \
+  'plotly==4.14.3' \
+  && conda clean --all -f -y
+
+RUN set -ex \
   && jupyter labextension install jupyterlab-plotly@4.14.3 --no-build \
   && jupyter lab build -y \
   && jupyter lab clean -y \
@@ -52,22 +55,25 @@ RUN set -ex \
 # Install Python 3 packages
 RUN pip install \
   astroalign \
-  requests-html \
-  joblib \
-  tqdm \
-  pyldavis \
-  unidecode \
   fuzzywuzzy \
-  pqdm \
-  qgrid \
-  nbresuse==0.3.3 \
+  jupyter-resource-usage \
   nbclassic==0.2.8 \
   nbgitpuller \
-  scipy==1.7.1 && \
-  jupyter serverextension enable --py nbresuse --sys-prefix && \
+  nbresuse==0.3.3 \
+  pqdm \
+  pyldavis \
+  qgrid \
+  requests-html \
+  scipy==1.7.1 \
+  unidecode
+
+RUN jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
   jupyter nbextension enable --py nbresuse --sys-prefix && \
-  jupyter serverextension enable nbgitpuller --sys-prefix
+  jupyter serverextension enable nbgitpuller --sys-prefix && \
+  jupyter serverextension enable --py jupyter-resource-usage --sys-prefix && \
+  jupyter nbextension install --py jupyter-resource-usage --sys-prefix && \
+  jupyter nbextension enable --py jupyter-resource-usage --sys-prefix
 
 USER root
 
