@@ -64,5 +64,6 @@ RUN R -e "devtools::install_github(c('rstudio-education/dsbox', 'vjcitn/mobpack'
 RUN R -e "install.packages(c('IRkernel', 'fastR2', 'openintro', 'palmerpenguins', 'ggridges', 'janitor','statsr', 'broom', 'unvotes', 'lubridate', 'DT', 'scales', 'glue', 'shiny', 'reactable', 'skimr', 'fivethirtyeight'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
 RUN R -e "IRkernel::installspec()"
+RUN R -e "install.packages('gapminder',repos='http://cran.us.r-project.org')"
 
 ENV RSESSION_PROXY_RSTUDIO_1_4=yes
