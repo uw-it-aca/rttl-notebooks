@@ -16,9 +16,9 @@ RUN apt-get update -qq && \
 # Per: http://cran.rstudio.com/bin/linux/ubuntu/
 RUN apt-get update && \
     apt-get install gdebi-core libproj-dev proj-data proj-bin libgeos-dev build-essential cmake -y && \    
-    curl --silent -L --fail https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.02.0-443-amd64.deb > /tmp/rstudio.deb && \
-    echo '2828ef2f8fc93c0dfa125735709d7121ceb060bdd2d08d1f248d6e2b4bc838c0  /tmp/rstudio.deb' | shasum -a 256 -c - && \
-    apt-get install -y /tmp/rstudio.deb && \
+    curl --silent -L --fail https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.07.1-554-amd64.deb > /tmp/rstudio.deb && \
+    echo 'b6778c0a78d69d836d5c812342a3697a19b83c80c2d6eb7162b38dedc6ad6b56  /tmp/rstudio.deb' | shasum -a 256 -c - && \
+    gdebi -n /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
     apt-get clean
 
