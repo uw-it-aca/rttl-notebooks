@@ -60,7 +60,10 @@ RUN conda install -y -c conda-forge \
 
 # See: https://github.com/uw-it-aca/rttl-notebooks/pull/15
 RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
-RUN R -e "install.packages(c('IRkernel', 'fastR2'),repos='http://cran.us.r-project.org')"
+RUN R -e "devtools::install_github(c('rstudio-education/dsbox'))"
+RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor', 'lubridate', 'mosaic', 'openintro', 'scales', 'skimr'),repos='http://cran.us.r-project.org')"
+RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
+RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
 RUN R -e "IRkernel::installspec()"
 
 ENV RSESSION_PROXY_RSTUDIO_1_4=yes
