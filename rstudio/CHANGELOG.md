@@ -4,6 +4,16 @@ All notable changes to the RStudio Jupyter Notebook image will be documented her
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.1] - 2022-09-20
+
+### Added
+- R packages: mosaic, lubridate, janitor, scales, infer, skimr
+
+## [2.4.0] - 2022-09-15
+
+### Added
+- Updated RStudio Server to v2022.07.1+554, which includes support for Quarto documents.
+
 ## [2.3.5] - 2022-05-17
 
 ### Added

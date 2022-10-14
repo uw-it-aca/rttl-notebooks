@@ -11,7 +11,7 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # pytables, ipywidgets, ipympl, facets
 
 RUN set -ex \
-  && conda install --quiet --yes \
+  && mamba install --quiet --yes \
   'plotly==4.14.3' \
   emcee \
   pymc3 \
@@ -39,8 +39,9 @@ RUN set -ex \
   plotnine \
   selenium \
   pylogit \
-  choicemodels \
-  && conda clean --all -f -y \
+  choicemodels
+
+RUN mamba clean --all -f -y \
   && jupyter labextension install jupyterlab-plotly@4.14.3 --no-build \
   && jupyter lab build -y \
   && jupyter lab clean -y \
@@ -71,7 +72,7 @@ RUN pip install \
 
 USER root
 
-RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential
+RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
 
 # RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
 # RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile

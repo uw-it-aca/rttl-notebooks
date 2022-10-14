@@ -5,11 +5,11 @@ Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth fl
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
 
 #### Running notebook locally
-- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.5`
+- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.4.3`
 - Console output will include localhost url with access token. Add '/rstudio' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
 
 #### Accessing server shell locally
-- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.3.5`
+- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.4.3`
 
 #### About packages
 Only packages pre-installed in this image and listed below will be available by default. Users can install their own package at runtime, but those packages will not persist and will need to be installed again the next time their server is started. If a package you need is not available in this image, there are a few options:
@@ -25,8 +25,8 @@ Default packages:
 via `pip list`
 
 |Package|Version|
-|-----------------------------|---------|
-|absl-py|1.0.0|
+|-----------------------------|-----------|
+|absl-py|1.2.0|
 |aiohttp|3.8.1|
 |aiosignal|1.2.0|
 |alembic|1.7.4|
@@ -42,8 +42,8 @@ via `pip list`
 |bleach|4.1.0|
 |blinker|1.4|
 |brotlipy|0.7.0|
-|cachetools|5.1.0|
-|certifi|2021.10.8|
+|cachetools|5.2.0|
+|certifi|2022.6.15.2|
 |certipy|0.1.3|
 |cffi|1.15.0|
 |chardet|4.0.0|
@@ -56,16 +56,16 @@ via `pip list`
 |decorator|5.1.0|
 |defusedxml|0.7.1|
 |entrypoints|0.3|
-|flatbuffers|1.12|
-|frozenlist|1.3.0|
+|flatbuffers|2.0.7|
+|frozenlist|1.3.1|
 |gast|0.4.0|
 |GDAL|3.3.3|
-|google-auth|2.6.6|
+|google-auth|2.11.0|
 |google-auth-oauthlib|0.4.6|
 |google-pasta|0.2.0|
 |greenlet|1.1.2|
-|grpcio|1.46.1|
-|h5py|3.6.0|
+|grpcio|1.48.1|
+|h5py|3.7.0|
 |idna|3.1|
 |importlib-metadata|4.8.2|
 |importlib-resources|5.4.0|
@@ -78,21 +78,21 @@ via `pip list`
 |jsonschema|4.2.1|
 |jupyter-client|7.0.6|
 |jupyter-core|4.9.1|
-|jupyter-rsession-proxy|2.0.1|
+|jupyter-rsession-proxy|2.1.0|
 |jupyter-server|1.11.2|
-|jupyter-server-proxy|3.2.1|
+|jupyter-server-proxy|3.2.2|
 |jupyter-telemetry|0.1.0|
 |jupyterhub|1.5.0|
 |jupyterlab|3.2.2|
 |jupyterlab-pygments|0.1.2|
 |jupyterlab-server|2.8.2|
-|keras|2.9.0|
+|keras|2.10.0|
 |Keras-Preprocessing|1.1.2|
-|libclang|14.0.1|
+|libclang|14.0.6|
 |Mako|1.1.5|
 |mamba|0.17.0|
-|Markdown|3.3.7|
-|MarkupSafe|2.0.1|
+|Markdown|3.4.1|
+|MarkupSafe|2.1.1|
 |matplotlib-inline|0.1.3|
 |mistune|0.8.4|
 |multidict|6.0.2|
@@ -104,7 +104,7 @@ via `pip list`
 |nest-asyncio|1.5.1|
 |nlopt|2.7.1|
 |notebook|6.4.5|
-|numpy|1.22.3|
+|numpy|1.23.3|
 |oauthlib|3.1.1|
 |opt-einsum|3.3.0|
 |packaging|21.2|
@@ -116,7 +116,7 @@ via `pip list`
 |pip|21.3.1|
 |prometheus-client|0.12.0|
 |prompt-toolkit|3.0.22|
-|protobuf|3.20.1|
+|protobuf|3.19.5|
 |ptyprocess|0.7.0|
 |pyasn1|0.4.8|
 |pyasn1-modules|0.2.8|
@@ -135,7 +135,7 @@ via `pip list`
 |pyzmq|22.3.0|
 |requests|2.26.0|
 |requests-oauthlib|1.3.1|
-|rsa|4.8|
+|rsa|4.9|
 |ruamel.yaml|0.17.17|
 |ruamel.yaml.clib|0.2.2|
 |ruamel-yaml-conda|0.15.80|
@@ -145,27 +145,27 @@ via `pip list`
 |six|1.16.0|
 |sniffio|1.2.0|
 |SQLAlchemy|1.4.26|
-|tensorboard|2.9.0|
+|tensorboard|2.10.0|
 |tensorboard-data-server|0.6.1|
 |tensorboard-plugin-wit|1.8.1|
-|tensorflow|2.9.0|
-|tensorflow-estimator|2.9.0|
-|tensorflow-io-gcs-filesystem|0.25.0|
-|termcolor|1.1.0|
+|tensorflow|2.10.0|
+|tensorflow-estimator|2.10.0|
+|tensorflow-io-gcs-filesystem|0.27.0|
+|termcolor|2.0.1|
 |terminado|0.12.1|
 |testpath|0.5.0|
 |tornado|6.1|
 |tqdm|4.62.3|
 |traitlets|5.1.1|
-|typing\_extensions|4.2.0|
+|typing\_extensions|4.3.0|
 |urllib3|1.26.7|
 |wcwidth|0.2.5|
 |webencodings|0.5.1|
 |websocket-client|0.57.0|
-|Werkzeug|2.1.2|
+|Werkzeug|2.2.2|
 |wheel|0.37.0|
 |wrapt|1.14.1|
-|yarl|1.7.2|
+|yarl|1.8.1|
 |zipp|3.6.0|
 
 via `conda list --no-pip`
@@ -175,7 +175,7 @@ via `conda list --no-pip`
 |\_libgcc\_mutex|0.1|
 |\_openmp\_mutex|4.5|
 |\_r-mutex|1.0.1|
-|absl-py|1.0.0|
+|absl-py|1.2.0|
 |aiohttp|3.8.1|
 |aiosignal|1.2.0|
 |alembic|1.7.4|
@@ -198,10 +198,10 @@ via `conda list --no-pip`
 |bwidget|1.9.14|
 |bzip2|1.0.8|
 |c-ares|1.18.1|
-|ca-certificates|2021.10.8|
-|cachetools|5.1.0|
+|ca-certificates|2022.9.24|
+|cachetools|5.2.0|
 |cairo|1.16.0|
-|certifi|2021.10.8|
+|certifi|2022.9.24|
 |certipy|0.1.3|
 |cffi|1.15.0|
 |cfitsio|4.0.0|
@@ -218,7 +218,7 @@ via `conda list --no-pip`
 |defusedxml|0.7.1|
 |entrypoints|0.3|
 |expat|2.4.8|
-|flatbuffers|1.12|
+|flatbuffers|2.0.7|
 |font-ttf-dejavu-sans-mono|2.37|
 |font-ttf-inconsolata|3.000|
 |font-ttf-source-code-pro|2.038|
@@ -229,7 +229,7 @@ via `conda list --no-pip`
 |freetype|2.10.4|
 |freexl|1.0.6|
 |fribidi|1.0.10|
-|frozenlist|1.3.0|
+|frozenlist|1.3.1|
 |gast|0.4.0|
 |gcc\_impl\_linux-64|9.4.0|
 |gcc\_linux-64|9.4.0|
@@ -240,16 +240,16 @@ via `conda list --no-pip`
 |gfortran\_impl\_linux-64|9.4.0|
 |gfortran\_linux-64|9.4.0|
 |giflib|5.2.1|
-|google-auth|2.6.6|
+|google-auth|2.11.0|
 |google-auth-oauthlib|0.4.6|
 |google-pasta|0.2.0|
 |graphite2|1.3.13|
 |greenlet|1.1.2|
-|grpcio|1.46.1|
+|grpcio|1.48.1|
 |gsl|2.7|
 |gxx\_impl\_linux-64|9.4.0|
 |gxx\_linux-64|9.4.0|
-|h5py|3.6.0|
+|h5py|3.7.0|
 |harfbuzz|3.1.1|
 |hdf4|4.2.15|
 |hdf5|1.12.1|
@@ -267,8 +267,8 @@ via `conda list --no-pip`
 |json-c|0.15|
 |json5|0.9.5|
 |jsonschema|4.2.1|
-|jupyter-rsession-proxy|2.0.1|
-|jupyter-server-proxy|3.2.1|
+|jupyter-rsession-proxy|2.1.0|
+|jupyter-server-proxy|3.2.2|
 |jupyter\_client|7.0.6|
 |jupyter\_core|4.9.1|
 |jupyter\_server|1.11.2|
@@ -279,7 +279,7 @@ via `conda list --no-pip`
 |jupyterlab\_pygments|0.1.2|
 |jupyterlab\_server|2.8.2|
 |kealib|1.4.14|
-|keras|2.9.0|
+|keras|2.10.0|
 |keras-preprocessing|1.1.2|
 |kernel-headers\_linux-64|2.6.32|
 |krb5|1.19.2|
@@ -289,7 +289,7 @@ via `conda list --no-pip`
 |libarchive|3.5.2|
 |libblas|3.9.0|
 |libcblas|3.9.0|
-|libclang|14.0.1|
+|libclang|14.0.6|
 |libcurl|7.79.1|
 |libdap4|3.20.6|
 |libdeflate|1.8|
@@ -333,8 +333,8 @@ via `conda list --no-pip`
 |make|4.3|
 |mako|1.1.5|
 |mamba|0.17.0|
-|markdown|3.3.7|
-|markupsafe|2.0.1|
+|markdown|3.4.1|
+|markupsafe|2.1.1|
 |matplotlib-inline|0.1.3|
 |mistune|0.8.4|
 |multidict|6.0.2|
@@ -348,9 +348,9 @@ via `conda list --no-pip`
 |nlopt|2.7.1|
 |nodejs|12.4.0|
 |notebook|6.4.5|
-|numpy|1.22.3|
+|numpy|1.23.3|
 |oauthlib|3.1.1|
-|openjpeg|2.4.0|
+|openjpeg|2.5.0|
 |openssl|1.1.1o|
 |opt-einsum|3.3.0|
 |packaging|21.2|
@@ -371,7 +371,7 @@ via `conda list --no-pip`
 |proj|8.1.1|
 |prometheus\_client|0.12.0|
 |prompt-toolkit|3.0.22|
-|protobuf|3.20.1|
+|protobuf|3.19.5|
 |pthread-stubs|0.4|
 |ptyprocess|0.7.0|
 |pyasn1|0.4.8|
@@ -465,7 +465,7 @@ via `conda list --no-pip`
 |r-gitcreds|0.1.1|
 |r-globals|0.14.0|
 |r-glue|1.5.0|
-|r-gmodels|2.18.1|
+|r-gmodels|2.18.1.1|
 |r-googledrive|2.0.0|
 |r-googlesheets4|1.0.0|
 |r-gower|0.2.2|
@@ -494,7 +494,7 @@ via `conda list --no-pip`
 |r-iterators|1.0.13|
 |r-jquerylib|0.1.4|
 |r-jsonlite|1.7.2|
-|r-keras|2.8.0|
+|r-keras|2.9.0|
 |r-kernsmooth|2.23_20|
 |r-knitr|1.35|
 |r-labeling|0.4.2|
@@ -520,7 +520,7 @@ via `conda list --no-pip`
 |r-modelr|0.1.8|
 |r-munsell|0.5.0|
 |r-nlme|3.1_153|
-|r-nloptr|2.0.1|
+|r-nloptr|2.0.2|
 |r-nnet|7.3_16|
 |r-numderiv|2016.8_1.1|
 |r-nycflights13|1.0.2|
@@ -591,20 +591,20 @@ via `conda list --no-pip`
 |r-slider|0.2.2|
 |r-sourcetools|0.1.7|
 |r-sp|1.4_7|
-|r-spacetime|1.2_6|
+|r-spacetime|1.2_8|
 |r-spatial|7.3_15|
 |r-spatialreg|1.2_3|
-|r-spdata|2.0.1|
+|r-spdata|2.2.0|
 |r-spdep|1.2_4|
 |r-squarem|2021.1|
 |r-stringi|1.7.5|
 |r-stringr|1.4.0|
 |r-survival|3.2_13|
 |r-sys|3.4|
-|r-tensorflow|2.8.0|
+|r-tensorflow|2.9.0|
 |r-testthat|3.1.0|
 |r-tfautograph|0.3.2|
-|r-tfruns|1.5.0|
+|r-tfruns|1.5.1|
 |r-tibble|3.1.6|
 |r-tidymodels|0.1.4|
 |r-tidyr|1.1.4|
@@ -646,7 +646,7 @@ via `conda list --no-pip`
 |reproc-cpp|14.2.3|
 |requests|2.26.0|
 |requests-oauthlib|1.3.1|
-|rsa|4.8|
+|rsa|4.9|
 |ruamel.yaml|0.17.17|
 |ruamel.yaml.clib|0.2.2|
 |ruamel\_yaml|0.15.80|
@@ -659,13 +659,13 @@ via `conda list --no-pip`
 |sqlalchemy|1.4.26|
 |sqlite|3.36.0|
 |sysroot\_linux-64|2.12|
-|tensorboard|2.9.0|
+|tensorboard|2.10.0|
 |tensorboard-data-server|0.6.1|
 |tensorboard-plugin-wit|1.8.1|
-|tensorflow|2.9.0|
-|tensorflow-estimator|2.9.0|
-|tensorflow-io-gcs-filesystem|0.25.0|
-|termcolor|1.1.0|
+|tensorflow|2.10.0|
+|tensorflow-estimator|2.10.0|
+|tensorflow-io-gcs-filesystem|0.27.0|
+|termcolor|2.0.1|
 |terminado|0.12.1|
 |testpath|0.5.0|
 |tiledb|2.3.4|
@@ -674,7 +674,7 @@ via `conda list --no-pip`
 |tornado|6.1|
 |tqdm|4.62.3|
 |traitlets|5.1.1|
-|typing-extensions|4.2.0|
+|typing-extensions|4.3.0|
 |tzcode|2022a|
 |tzdata|2021e|
 |udunits2|2.2.28|
@@ -683,7 +683,7 @@ via `conda list --no-pip`
 |wcwidth|0.2.5|
 |webencodings|0.5.1|
 |websocket-client|0.57.0|
-|werkzeug|2.1.2|
+|werkzeug|2.2.2|
 |wheel|0.37.0|
 |wrapt|1.14.1|
 |xerces-c|3.2.3|
@@ -701,7 +701,7 @@ via `conda list --no-pip`
 |xorg-xproto|7.0.31|
 |xz|5.2.5|
 |yaml|0.2.5|
-|yarl|1.7.2|
+|yarl|1.8.1|
 |zeromq|4.3.4|
 |zipp|3.6.0|
 |zlib|1.2.11|
