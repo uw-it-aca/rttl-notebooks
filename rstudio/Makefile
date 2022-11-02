@@ -4,7 +4,7 @@ APP_BIN?=app
 default: build
 
 DOCKER_REPO?=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook
-DOCKER_TAG?=2.4.3
+DOCKER_TAG?=2.4.4
 
 build:
 	docker build -t $(DOCKER_REPO):$(DOCKER_TAG) .
