@@ -72,7 +72,7 @@ RUN pip install \
 
 USER root
 
-RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
+RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic gfortran
 
 # RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
 # RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
