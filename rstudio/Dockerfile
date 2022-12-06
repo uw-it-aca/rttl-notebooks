@@ -64,6 +64,7 @@ RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor',
 RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
 RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel'), repos='https://cran.rstudio.com')"
+RUN R -e "install.packages(c('ipumsr', 'HMDHFDplus', 'pacman', 'fixest', 'gapminder', 'modelsummary', 'stargazer', 'ivreg'), repos='https://cran.rstudio.com')"
 RUN R -e "IRkernel::installspec()"
 
 ENV RSESSION_PROXY_RSTUDIO_1_4=yes
