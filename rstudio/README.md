@@ -1,5 +1,5 @@
 # UW-IT JupyterHub for Teaching RStudio notebook
-Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth flow with JupyterHub. Note: latest RStudio version that runs correctly is 1.2.5042
+Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth flow with JupyterHub. Rstudio version is 2022.07.1+554 "Spotted Wakerobin" Release with R version 4.1.1 (2021-08-10)
 - Detailed information about base R notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-r-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
