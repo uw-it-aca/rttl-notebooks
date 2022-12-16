@@ -64,6 +64,11 @@ RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor',
 RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
 RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel'), repos='https://cran.rstudio.com')"
+RUN R -e "install.packages(c('vegan', 'labdsv', 'ecodist', 'vegan3d', 'ade4', 'dendextend', 'heatmaply', 'pvclust', 'indicspecies', 'progenyClust', 'NbClust', 'animation', 'tree', 'party', 'Rtools', 'TITAN2', 'vsurf', 'treeClust', 'partykit', 'IntegratedMRF', 'ggdendro', 'splancs'), repos='https://cran.rstudio.com')"
+RUN R -e "devtools::install_github(c('gavinsimpson/ggvegan'))"
+RUN R -e "devtools::install_github(c('jfq3/ggordiplots'))"
+RUN R -e "devtools::install_github(c('cran/mvpart'))"
+RUN R -e "devtools::install_github(c('cran/MVPARTwrap'))"
 RUN R -e "IRkernel::installspec()"
 
 ENV RSESSION_PROXY_RSTUDIO_1_4=yes
