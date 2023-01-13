@@ -13,8 +13,9 @@ RUN apt-get update -qq && \
     apt install --no-install-recommends r-base -y
 
 # Per: http://cran.rstudio.com/bin/linux/ubuntu/
+# add-apt-repository ppa:ubuntu-toolchain-r/test && 
 RUN apt-get update && \
-    apt-get install gdebi-core libproj-dev proj-data proj-bin libgeos-dev build-essential libfreetype6-dev libfontconfig1-dev libmagick++-dev cmake -y && \    
+    apt-get install gdebi-core libproj-dev proj-data proj-bin libgeos-dev build-essential libfreetype6-dev libfontconfig1-dev libmagick++-dev cmake libstdc++6 -y && \    
     curl --silent -L --fail https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.07.1-554-amd64.deb > /tmp/rstudio.deb && \
     echo 'b6778c0a78d69d836d5c812342a3697a19b83c80c2d6eb7162b38dedc6ad6b56  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     gdebi -n /tmp/rstudio.deb && \
@@ -37,6 +38,7 @@ RUN curl --silent -L --fail https://github.com/thiagorb/suid-wrapper/releases/do
     echo '93c583473600558d0d67eb06913efed14a684b2431d0114ab6a553f6f1ead750  /tmp/suid-wrapper' | shasum -a 256 -c -
 RUN chmod +x /tmp/suid-wrapper && mv /tmp/suid-wrapper /usr/bin/suid-wrapper
 RUN suid-wrapper $(which chmod) +t /var/run/rstudio-server -o /tmp/add_sticky_bit --force
+RUN ln -sf /opt/conda/x86_64-conda-linux-gnu/lib/libstdc++.so.6 /lib/x86_64-linux-gnu/libstdc++.so.6
 
 USER $NB_USER
 
@@ -47,7 +49,7 @@ RUN pip install \
     jupyter serverextension enable nbgitpuller --sys-prefix
 
 RUN conda install -y -c conda-forge \
-    r-base \
+    r-base=4.2.0 \
     gdal \
     r-keras \
     r-gstat \
@@ -63,8 +65,8 @@ RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor',
 RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
 RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel'), repos='https://cran.rstudio.com')"
-RUN R -e "install.packages(c('vegan', 'labdsv', 'ecodist', 'vegan3d', 'ade4', 'dendextend', 'heatmaply', 'pvclust', 'indicspecies', 'progenyClust', 'NbClust', 'animation', 'tree', 'party', 'TITAN2', 'treeClust', 'partykit', 'IntegratedMRF', 'ggdendro', 'splancs'), repos='https://cran.rstudio.com')"
-# RTools is only needed for Windows & vsurf only works with R >= v4.2
+RUN R -e "install.packages(c('vegan', 'labdsv', 'ecodist', 'vegan3d', 'ade4', 'dendextend', 'heatmaply', 'pvclust', 'indicspecies', 'progenyClust', 'NbClust', 'animation', 'tree', 'party', 'TITAN2', 'treeClust', 'partykit', 'IntegratedMRF', 'ggdendro', 'splancs', 'VSURF'), repos='https://cran.rstudio.com')"
+# RTools is only needed for Windows
 RUN R -e "devtools::install_github(c('gavinsimpson/ggvegan'))"
 RUN R -e "devtools::install_github(c('jfq3/ggordiplots'))"
 RUN R -e "devtools::install_github(c('cran/mvpart'))"
@@ -72,3 +74,5 @@ RUN R -e "devtools::install_github(c('cran/MVPARTwrap'))"
 RUN R -e "IRkernel::installspec()"
 
 ENV RSESSION_PROXY_RSTUDIO_1_4=yes
+
+RUN echo 'TZ="America/Los_Angeles"' >> /opt/conda/lib/R/etc/Renviron
