@@ -12,6 +12,7 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 
 RUN set -ex \
   && mamba install --quiet --yes \
+  clawpack \
   'plotly==4.14.3' \
   emcee \
   pymc3 \
@@ -22,6 +23,8 @@ RUN set -ex \
   gatspy \
   jupyterlab \
   'ipywidgets>=7.5' \
+  'matplotlib >= 2.0.0' \
+  'numpy >= 1.12' \
   pytorch \
   photutils \
   ccdproc \
@@ -29,7 +32,10 @@ RUN set -ex \
   uncertainties \
   openpyxl \
   hickle \
+  seaborn \
+  six \
   spacy \
+  sympy \
   textblob \
   nltk \
   gensim \
@@ -54,6 +60,7 @@ RUN mamba clean --all -f -y \
 RUN pip install \
   astroalign \
   requests-html \
+  jupyter_contrib_nbextensions \
   joblib \
   tqdm \
   pyldavis \
@@ -65,6 +72,9 @@ RUN pip install \
   nbclassic==0.2.8 \
   nbgitpuller \
   scipy==1.7.1 && \
+  jupyter nbextension enable --py widgetsnbextension && \
+  jupyter contrib nbextension install --user && \
+  jupyter nbextension enable equation-numbering/main && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
   jupyter nbextension enable --py nbresuse --sys-prefix && \
@@ -72,11 +82,8 @@ RUN pip install \
 
 USER root
 
-RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
-
-# RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
-# RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
-# COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
+RUN apt-get update --fix-missing
+RUN apt-get install -y vim openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic gfortran
 
 USER $NB_UID
 
