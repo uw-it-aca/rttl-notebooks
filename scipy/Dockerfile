@@ -80,6 +80,8 @@ RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential 
 
 USER $NB_UID
 
+RUN pip install git+https://github.com/choldgraf/jupyter-http-server && jupyter labextension install @jupyterlab/server-proxy
+
 # biogeme failed to install without an interactive bash shell
 SHELL ["/bin/bash", "--login", "-c", "-i"]
 RUN pip install biogeme
