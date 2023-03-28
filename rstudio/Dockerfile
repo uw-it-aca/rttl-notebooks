@@ -63,6 +63,7 @@ RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor',
 RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
 RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel', 'visdat'), repos='https://cran.rstudio.com')"
+RUN R -e "install.packages(c('igraph', 'statnet'), repos='https://cran.rstudio.com')"
 
 RUN R -e "IRkernel::installspec()"
 

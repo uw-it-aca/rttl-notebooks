@@ -4,6 +4,14 @@ All notable changes to the RStudio Jupyter Notebook image will be documented her
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.6] - 2023-03-24
+
+### Added
+- R packages: statnet, igraph
+
+### Changed
+- Using suid-wrapper to set sticky bit on RStudio binary is no longer needed (or supported) in image streaming on GKE 1.24+
+
 ## [2.4.1] - 2022-09-20
 
 ### Added
