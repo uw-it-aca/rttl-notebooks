@@ -73,3 +73,4 @@ RUN apt-get install libpng-dev libtiff5-dev libjpeg-dev -y
 USER $NB_USER
 RUN conda install -y -c conda-forge pkg-config
 RUN R -e "install.packages(c('tidyverse'),repos='http://cran.us.r-project.org')"
+RUN R -e "install.packages(c('ipumsr','modelsummary'),repos='http://cran.us.r-project.org')"
