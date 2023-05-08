@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/scipy-notebook:hub-1.4.2
+ARG BASE_CONTAINER=jupyter/scipy-notebook:hub-3.1.1
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
@@ -22,7 +22,6 @@ RUN set -ex \
   gatspy \
   jupyterlab \
   'ipywidgets>=7.5' \
-  pytorch \
   photutils \
   ccdproc \
   lmfit \
@@ -64,7 +63,7 @@ RUN pip install \
   nbresuse==0.3.3 \
   nbclassic==0.2.8 \
   nbgitpuller \
-  scipy==1.7.1 && \
+  scipy && \
   jupyter serverextension enable --py nbresuse --sys-prefix && \
   jupyter nbextension install --py nbresuse --sys-prefix && \
   jupyter nbextension enable --py nbresuse --sys-prefix && \
