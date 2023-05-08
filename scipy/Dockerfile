@@ -11,7 +11,7 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # pytables, ipywidgets, ipympl, facets
 
 RUN set -ex \
-  && conda install --quiet --yes \
+  && mamba install --quiet --yes \
   'plotly==4.14.3' \
   emcee \
   pymc3 \
@@ -41,7 +41,7 @@ RUN set -ex \
   pylogit \
   choicemodels
 
-RUN conda clean --all -f -y \
+RUN mamba clean --all -f -y \
   && jupyter labextension install jupyterlab-plotly@4.14.3 --no-build \
   && jupyter lab build -y \
   && jupyter lab clean -y \
