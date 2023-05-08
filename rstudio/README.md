@@ -5,11 +5,11 @@ Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth fl
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
 
 #### Running notebook locally
-- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.4.2`
+- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.4.3`
 - Console output will include localhost url with access token. Add '/rstudio' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
 
 #### Accessing server shell locally
-- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.4.2`
+- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.4.3`
 
 #### About packages
 Only packages pre-installed in this image and listed below will be available by default. Users can install their own package at runtime, but those packages will not persist and will need to be installed again the next time their server is started. If a package you need is not available in this image, there are a few options:
@@ -198,10 +198,10 @@ via `conda list --no-pip`
 |bwidget|1.9.14|
 |bzip2|1.0.8|
 |c-ares|1.18.1|
-|ca-certificates|2022.6.15.2|
+|ca-certificates|2022.9.24|
 |cachetools|5.2.0|
 |cairo|1.16.0|
-|certifi|2022.6.15.2|
+|certifi|2022.9.24|
 |certipy|0.1.3|
 |cffi|1.15.0|
 |cfitsio|4.0.0|
@@ -350,7 +350,7 @@ via `conda list --no-pip`
 |notebook|6.4.5|
 |numpy|1.23.3|
 |oauthlib|3.1.1|
-|openjpeg|2.4.0|
+|openjpeg|2.5.0|
 |openssl|1.1.1o|
 |opt-einsum|3.3.0|
 |packaging|21.2|
@@ -609,7 +609,7 @@ via `conda list --no-pip`
 |r-tidymodels|0.1.4|
 |r-tidyr|1.1.4|
 |r-tidyselect|1.1.1|
-|r-tidyverse|1.3.2|
+|r-tidyverse|1.3.1|
 |r-timedate|3043.102|
 |r-tinytex|0.35|
 |r-tseries|0.10_48|
