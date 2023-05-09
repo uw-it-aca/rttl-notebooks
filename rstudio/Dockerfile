@@ -64,7 +64,7 @@ RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeight
 RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel', 'visdat'), repos='https://cran.rstudio.com')"
 Run R -e "install.packages(c('kableExtra','ggpubr'),repos='http://cran.us.r-project.org')"
-RUN R -e "install.packages(c('HDInterval'), repos='http://cran.us.r-project.org')"
+RUN R -e "install.packages(c('HDInterval', 'leaflet'), repos='http://cran.us.r-project.org')"
 
 RUN R -e "IRkernel::installspec()"
 
