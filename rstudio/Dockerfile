@@ -33,10 +33,13 @@ ENV PATH=$PATH:/usr/lib/rstudio-server/bin
 
 # Workaround for https://issuetracker.google.com/issues/216190252 
 # Run suid-wrapped command during Notebook startup
-RUN curl --silent -L --fail https://github.com/thiagorb/suid-wrapper/releases/download/v0.1.4/suid-wrapper > /tmp/suid-wrapper && \
-    echo '93c583473600558d0d67eb06913efed14a684b2431d0114ab6a553f6f1ead750  /tmp/suid-wrapper' | shasum -a 256 -c -
-RUN chmod +x /tmp/suid-wrapper && mv /tmp/suid-wrapper /usr/bin/suid-wrapper
-RUN suid-wrapper $(which chmod) +t /var/run/rstudio-server -o /tmp/add_sticky_bit --force
+# DEPRECATED
+# RUN curl --silent -L --fail https://github.com/thiagorb/suid-wrapper/releases/download/v0.1.4/suid-wrapper > /tmp/suid-wrapper && \
+#    echo '93c583473600558d0d67eb06913efed14a684b2431d0114ab6a553f6f1ead750  /tmp/suid-wrapper' | shasum -a 256 -c -
+# RUN chmod +x /tmp/suid-wrapper && mv /tmp/suid-wrapper /usr/bin/suid-wrapper
+# RUN suid-wrapper $(which chmod) +t /var/run/rstudio-server -o /tmp/add_sticky_bit --force
+
+RUN apt-get install libharfbuzz-dev libfribidi-dev -y
 
 USER $NB_USER
 
@@ -59,12 +62,11 @@ RUN conda install -y -c conda-forge \
 # See: https://github.com/uw-it-aca/rttl-notebooks/pull/15
 RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
 RUN R -e "devtools::install_github(c('rstudio-education/dsbox'))"
-RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor', 'lubridate', 'mosaic', 'openintro', 'scales', 'skimr', 'tidyverse'),repos='http://cran.us.r-project.org')"
+RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor', 'lubridate', 'mosaic', 'openintro', 'scales', 'skimr'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
-RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
+RUN R -e "require(devtools); install_version('tidyverse', version='1.3.2',repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel', 'visdat'), repos='https://cran.rstudio.com')"
-Run R -e "install.packages(c('kableExtra','ggpubr'),repos='http://cran.us.r-project.org')"
-RUN R -e "install.packages(c('HDInterval', 'leaflet'), repos='http://cran.us.r-project.org')"
+Run R -e "install.packages(c('patchwork','kableExtra','ggpubr','HDInterval', 'leaflet'),repos='http://cran.us.r-project.org')"
 
 RUN R -e "IRkernel::installspec()"
 
