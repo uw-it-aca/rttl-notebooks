@@ -3,7 +3,7 @@ FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 
-# Base image includes:
+# Base image includes: (https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-tensorflow-notebook)
 # texlive, git, vi, nano, tzdata, unzip
 # dask, pandas, numexpr, matplotlib, scipy, seaborn, scikit-learn,
 # scikit-image, sympy, cython, patsy, statsmodels, cloudpickle, dill, numba,
@@ -12,36 +12,34 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 
 RUN set -ex \
   && mamba install --quiet --yes \
-  'plotly==4.14.3' \
-  emcee \
-  pymc3 \
   astroML \
-  astropy \
   astroplan \
+  astropy \
   astroquery \
-  gatspy \
-  jupyterlab \
-  'ipywidgets>=7.5' \
-  photutils \
   ccdproc \
-  lmfit \
-  uncertainties \
-  openpyxl \
+  choicemodels \
+  cssselect \
+  emcee \
+  gatspy \
+  gensim \
   hickle \
+  jupyter-dash \
+  jupyter-resource-usage \
+  lmfit \
+  lxml \
+  nltk \
+  photutils \
+  'plotly==5.14.1' \
+  plotnine \
+  pylogit \
+  pymc3 \
+  requests \
+  selenium \
   spacy \
   textblob \
-  nltk \
-  gensim \
-  requests \
-  lxml \
-  cssselect \
-  plotnine \
-  selenium \
-  pylogit \
-  choicemodels
+  uncertainties
 
 RUN mamba clean --all -f -y \
-  && jupyter labextension install jupyterlab-plotly@4.14.3 --no-build \
   && jupyter lab build -y \
   && jupyter lab clean -y \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
@@ -52,22 +50,20 @@ RUN mamba clean --all -f -y \
 # Install Python 3 packages
 RUN pip install \
   astroalign \
-  requests-html \
-  joblib \
-  tqdm \
-  pyldavis \
-  unidecode \
+  biogeme \
   fuzzywuzzy \
-  pqdm \
-  qgrid \
-  nbresuse==0.3.3 \
-  nbclassic==0.2.8 \
+  joblib \
+  nbclassic \
   nbgitpuller \
-  scipy && \
-  jupyter serverextension enable --py nbresuse --sys-prefix && \
-  jupyter nbextension install --py nbresuse --sys-prefix && \
-  jupyter nbextension enable --py nbresuse --sys-prefix && \
+  pqdm \
+  pyldavis \
+  qgrid \
+  requests-html \
+  tqdm \
+  unidecode && \
   jupyter serverextension enable nbgitpuller --sys-prefix
+
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 USER root
 
@@ -78,7 +74,3 @@ RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential 
 # COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
 
 USER $NB_UID
-
-# biogeme failed to install without an interactive bash shell
-SHELL ["/bin/bash", "--login", "-c", "-i"]
-RUN pip install biogeme

@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/tensorflow-notebook:hub-1.4.2
+ARG BASE_CONTAINER=jupyter/tensorflow-notebook:hub-3.1.1
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
@@ -11,52 +11,56 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # pytables, ipywidgets, ipympl, facets, tensorflow, keras
 
 RUN mamba install --quiet --yes \
-    emcee \
-    pymc3 \
-    astroML \
-    astropy \
-    astroplan \
-    astroquery \
-    gatspy \
-    pytorch \
-    lmfit \
-    uncertainties \
-    openpyxl \
-    hickle \
-    spacy \
-    textblob \
-    nltk \
-    gensim \
-    requests \
-    lxml \
-    cssselect \
-    photutils \
-    plotnine \
-    plotly \
-    selenium \
-    pylogit \
-    choicemodels && \
-    mamba clean --all -f -y && \
-    fix-permissions "${CONDA_DIR}" && \
-    fix-permissions "/home/${NB_USER}"
+  astroML \
+  astroplan \
+  astropy \
+  astroquery \
+  choicemodels \
+  cssselect \
+  emcee \
+  gatspy \
+  gensim \
+  hickle \
+  jupyter-dash \
+  jupyter-resource-usage \
+  lmfit \
+  lxml \
+  nltk \
+  openpyxl \
+  photutils \
+  plotly \
+  plotnine \
+  pylogit \
+  pymc3 \
+  requests \
+  selenium \
+  spacy \
+  textblob \
+  uncertainties
+
+RUN mamba clean --all -f -y \
+  && jupyter lab build -y \
+  && jupyter lab clean -y \
+  && rm -rf "/home/${NB_USER}/.cache/yarn" \
+  && rm -rf "/home/${NB_USER}/.node-gyp" \
+  && fix-permissions "${CONDA_DIR}" \
+  && fix-permissions "/home/${NB_USER}"
 
 # Install Python 3 packages
 RUN pip install \
-  requests-html \
-  joblib \
-  tqdm \
-  pyldavis \
-  unidecode \
-  fuzzywuzzy \
-  pqdm \
-  qgrid \
   biogeme \
-  nbresuse==0.3.3 \
-  nbgitpuller && \
-  jupyter serverextension enable --py nbresuse --sys-prefix && \
-  jupyter nbextension install --py nbresuse --sys-prefix && \
-  jupyter nbextension enable --py nbresuse --sys-prefix && \
+  fuzzywuzzy \
+  joblib \
+  nbgitpuller \
+  pqdm \
+  pyldavis \
+  qgrid \
+  requests-html \
+  tqdm \
+  unidecode && \
   jupyter serverextension enable nbgitpuller --sys-prefix
+
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 USER root
 

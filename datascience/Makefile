@@ -4,10 +4,10 @@ APP_BIN?=app
 default: build
 
 DOCKER_REPO?=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-datascience-notebook
-DOCKER_TAG?=2.3
+DOCKER_TAG?=2.4.0
 
 build:
-	docker $(DOCKER_REPO):$(DOCKER_TAG) .
+	docker build -t $(DOCKER_REPO):$(DOCKER_TAG) .
 
 push: build
 	docker push $(DOCKER_REPO):$(DOCKER_TAG)
