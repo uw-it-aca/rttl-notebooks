@@ -1,42 +1,31 @@
-ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.4.2
+ARG BASE_CONTAINER=jupyter/r-notebook:hub-3.1.1
 FROM $BASE_CONTAINER
 
-# Base notebook for 1.4.2 uses Ubuntu 20.04 (Focal)
+# Base notebook for 3.1.1 (amd64) uses Ubuntu 22.04 (Focal)
 
 # install rstudio-server
 USER root
 
+# http://cran.rstudio.com/bin/linux/ubuntu/
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends software-properties-common dirmngr  -y && \
     wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc && \
     add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/" && \
     apt install --no-install-recommends r-base -y
 
-# Per: http://cran.rstudio.com/bin/linux/ubuntu/
+# Per: https://posit.co/download/rstudio-server/
 RUN apt-get update && \
     apt-get install gdebi-core libproj-dev proj-data proj-bin libgeos-dev build-essential libfreetype6-dev libfontconfig1-dev cmake -y && \    
-    curl --silent -L --fail https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.07.1-554-amd64.deb > /tmp/rstudio.deb && \
-    echo 'b6778c0a78d69d836d5c812342a3697a19b83c80c2d6eb7162b38dedc6ad6b56  /tmp/rstudio.deb' | shasum -a 256 -c - && \
+    curl --silent -L --fail https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2023.03.0-386-amd64.deb > /tmp/rstudio.deb && \
+    echo '03c53d31c9b066ffeac5a75119ea348cddcd21fa1e2108ba1cdc26a5fd6fcfb3  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     gdebi -n /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
     apt-get clean
 
-
-# Needed in 1.4x
-RUN chmod 777 /var/lib/rstudio-server/rstudio-os.sqlite && \
-    chmod -R 777 /usr/sbin/rstudio-server
-ENV RSESSION_PROXY_RSTUDIO_1_4=yes
 # Fix for error: "System has not been booted with systemd as init system (PID 1)" related to timedatectl running in containers.
 RUN echo 'TZ="America/Los_Angeles"' >> /opt/conda/lib/R/etc/Renviron
 
 ENV PATH=$PATH:/usr/lib/rstudio-server/bin
-
-# Workaround for https://issuetracker.google.com/issues/216190252 
-# Run suid-wrapped command during Notebook startup
-RUN curl --silent -L --fail https://github.com/thiagorb/suid-wrapper/releases/download/v0.1.4/suid-wrapper > /tmp/suid-wrapper && \
-    echo '93c583473600558d0d67eb06913efed14a684b2431d0114ab6a553f6f1ead750  /tmp/suid-wrapper' | shasum -a 256 -c -
-RUN chmod +x /tmp/suid-wrapper && mv /tmp/suid-wrapper /usr/bin/suid-wrapper
-RUN suid-wrapper $(which chmod) +t /var/run/rstudio-server -o /tmp/add_sticky_bit --force
 
 USER $NB_USER
 
@@ -66,5 +55,3 @@ RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswa
 RUN R -e "install.packages(c('igraph', 'statnet'), repos='https://cran.rstudio.com')"
 
 RUN R -e "IRkernel::installspec()"
-
-ENV RSESSION_PROXY_RSTUDIO_1_4=yes

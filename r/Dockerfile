@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/r-notebook:hub-1.4.2
+ARG BASE_CONTAINER=jupyter/r-notebook:hub-3.1.1
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
@@ -9,56 +9,62 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # caret, tidymodels, rcurl, randomforest
 
 RUN mamba install --quiet --yes \
-  emcee \
-  pymc3 \
   astroML \
-  astropy \
   astroplan \
+  astropy \
   astroquery \
-  gatspy \
-  pytorch \
-  photutils \
+  bokeh \
   ccdproc \
-  lmfit \
-  uncertainties \
-  pandas \
-  xlrd \
-  openpyxl \
-  hickle \
-  PyTables \
-  spacy \
-  textblob \
-  nltk \
+  choicemodels \
+  cssselect \
+  emcee \
+  gatspy \
   gensim \
+  hickle \
+  jupyter-resource-usage \
+  lmfit \
+  lxml \
+  nltk \
+  openpyxl \
+  pandas \
+  photutils \
+  plotnine \
+  pylogit \
+  pymc3 \
+  PyTables \
   requests \
   seaborn \
-  bokeh \
-  lxml \
-  cssselect \
-  plotnine \
   selenium \
+  spacy \
   statsmodels \
-  pylogit \
-  choicemodels
+  textblob \
+  uncertainties \
+  xlrd
+
+RUN mamba clean --all -f -y \
+  && jupyter lab build -y \
+  && jupyter lab clean -y \
+  && rm -rf "/home/${NB_USER}/.cache/yarn" \
+  && rm -rf "/home/${NB_USER}/.node-gyp" \
+  && fix-permissions "${CONDA_DIR}" \
+  && fix-permissions "/home/${NB_USER}"
 
 # Install Python 3 packages
 RUN pip install \
-  requests-html \
-  joblib \
-  tqdm \
-  scikit-learn \
-  pyldavis \
-  unidecode \
-  fuzzywuzzy \
-  pqdm \
-  qgrid \
   biogeme \
-  nbresuse==0.3.3 \
-  nbgitpuller && \
-  jupyter serverextension enable --py nbresuse --sys-prefix && \
-  jupyter nbextension install --py nbresuse --sys-prefix && \
-  jupyter nbextension enable --py nbresuse --sys-prefix && \
+  fuzzywuzzy \
+  joblib \
+  nbgitpuller \
+  pqdm \
+  pyldavis \
+  qgrid \
+  requests-html \
+  scikit-learn \
+  tqdm \
+  unidecode && \
   jupyter serverextension enable nbgitpuller --sys-prefix
+
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
 RUN R -e "install.packages('IRkernel',repos='http://cran.us.r-project.org')"
@@ -67,9 +73,5 @@ RUN R -e "IRkernel::installspec()"
 USER root
 
 RUN apt-get update && apt-get install -y vim gcc openssh-client
-
-# RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
-# RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
-# COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
 
 USER $NB_UID

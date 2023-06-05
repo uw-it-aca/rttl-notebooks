@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=jupyter/datascience-notebook:hub-1.4.2
+ARG BASE_CONTAINER=jupyter/datascience-notebook:hub-3.1.1
 
 FROM $BASE_CONTAINER
 
@@ -14,36 +14,30 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # caret, tidymodels, rcurl, randomforest#
 # julia, ijulia, hdf5, gadfly, rdatasets
 
-RUN mkdir /opt/conda/pkg
-RUN touch /opt/conda/pkg/urls.txt
-
-RUN set -ex \
-  && conda install --quiet --yes \
+RUN mamba install --quiet --yes \
   requests \
-  && conda clean --all -f -y \
+  jupyter-resource-usage
+
+RUN mamba clean --all -f -y \
+  && jupyter lab build -y \
+  && jupyter lab clean -y \
+  && rm -rf "/home/${NB_USER}/.cache/yarn" \
+  && rm -rf "/home/${NB_USER}/.node-gyp" \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
 # Install Python 3 packages
 RUN pip install \
-  requests-html \
-  nbresuse==0.3.3 \
-  geopandas \
   folium \
+  geopandas \
   ipyleaflet \
-  nbclassic==0.2.8 \
-  nbgitpuller && \
-  jupyter serverextension enable --py nbresuse --sys-prefix && \
-  jupyter nbextension install --py nbresuse --sys-prefix && \
-  jupyter nbextension enable --py nbresuse --sys-prefix && \
+  nbclassic \
+  nbgitpuller \  
+  requests-html && \
   jupyter serverextension enable nbgitpuller --sys-prefix
 
 USER root
 
 RUN apt-get update && apt-get install -y vim gcc
-
-# RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
-# RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
-# COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
 
 USER $NB_UID
