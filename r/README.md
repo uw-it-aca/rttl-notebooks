@@ -6,943 +6,1131 @@ Docker image for UW-IT JupyterHub for Teaching R notebook.
 - The JupyterLab interface is installed and is set as default
 
 #### Running notebook locally
-- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-r-notebook:2.3`
+- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-r-notebook:2.4.0`
 - Console output will include localhost url with access token. Add '/lab' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
 
 #### Accessing server shell locally
-- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-r-notebook:2.3`
+- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-r-notebook:2.4.0`
 
 #### Installed packages
 via `pip list`
 
 | Package | Version |
 | ----------------------------- | ------------------- |
-| absl-py | 0.12.0 |
-| aiohttp | 3.7.4 |
-| alembic | 1.6.0 |
-| anyio | 2.2.0 |
-| appdirs | 1.4.4 |
-| argon2-cffi | 20.1.0 |
-| arviz | 0.11.2 |
-| asdf | 2.8.0 |
-| asteval | 0.9.23 |
-| astroML | 0.4.1 |
-| astroplan | 0.8 |
-| astropy | 4.2.1 |
-| astropy-healpix | 0.5 |
-| astroquery | 0.4.2 |
-| astroscrappy | 1.0.8 |
-| async-generator | 1.10 |
-| async-timeout | 3.0.1 |
-| attrs | 20.3.0 |
-| Babel | 2.9.1 |
-| backcall | 0.2.0 |
-| backports.functools-lru-cache | 1.6.4 |
-| beautifulsoup4 | 4.9.3 |
-| biogeme | 3.2.6 |
-| black | 21.5b1 |
-| bleach | 3.3.0 |
-| blinker | 1.4 |
-| blis | 0.7.4 |
-| bokeh | 2.3.2 |
-| boto | 2.49.0 |
-| boto3 | 1.17.79 |
-| botocore | 1.20.79 |
-| bounded-pool-executor | 0.0.3 |
-| brotlipy | 0.7.0 |
-| bs4 | 0.0.1 |
-| bz2file | 0.98 |
-| cached-property | 1.5.2 |
-| cachetools | 4.2.2 |
-| catalogue | 2.0.4 |
-| ccdproc | 2.2.0 |
-| certifi | 2020.12.5 |
-| certipy | 0.1.3 |
-| cffi | 1.14.5 |
-| cftime | 1.5.0 |
-| chardet | 4.0.0 |
-| choicemodels | 0.2.2 |
-| click | 8.0.1 |
-| cloudpickle | 1.6.0 |
-| colorama | 0.4.4 |
-| conda | 4.10.0 |
-| conda-package-handling | 1.7.3 |
-| coverage | 5.5 |
-| cryptography | 3.4.7 |
-| cssselect | 1.1.0 |
-| cycler | 0.10.0 |
-| cymem | 2.0.5 |
-| Cython | 0.29.23 |
-| cytoolz | 0.11.0 |
-| dask | 2021.5.0 |
-| decorator | 5.0.7 |
-| defusedxml | 0.7.1 |
-| deprecation | 2.1.0 |
-| descartes | 1.1.0 |
-| dill | 0.3.3 |
-| emcee | 0.0.0 |
-| entrypoints | 0.3 |
-| et-xmlfile | 1.0.1 |
-| fake-useragent | 0.1.11 |
-| fastprogress | 1.0.0 |
-| flatbuffers | 2.0 |
-| fsspec | 2021.5.0 |
-| funcy | 1.16 |
-| future | 0.18.2 |
-| fuzzywuzzy | 0.18.0 |
-| gatspy | 0.3 |
-| gensim | 4.0.1 |
-| google-api-core | 1.26.3 |
-| google-auth | 1.30.0 |
-| google-cloud-core | 1.5.0 |
-| google-cloud-storage | 1.38.0 |
-| google-crc32c | 1.1.2 |
-| google-resumable-media | 1.2.0 |
-| googleapis-common-protos | 1.53.0 |
-| greenlet | 1.0.0 |
-| grpcio | 1.38.0 |
-| gwcs | 0.16.1 |
-| h5py | 3.2.1 |
-| hickle | 3.4.5 |
-| html5lib | 1.1 |
-| hypothesis | 6.13.5 |
-| idna | 2.10 |
-| imagecodecs | 2021.3.31 |
-| imageio | 2.9.0 |
-| importlib-metadata | 4.0.1 |
-| importlib-resources | 5.1.4 |
-| iniconfig | 1.1.1 |
-| ipykernel | 5.5.3 |
-| ipython | 7.23.0 |
-| ipython-genutils | 0.2.0 |
-| ipywidgets | 7.6.3 |
-| jax | 0.2.13 |
-| jaxlib | 0.1.67 |
-| jdcal | 1.4.1 |
-| jedi | 0.18.0 |
-| jeepney | 0.6.0 |
-| Jinja2 | 2.11.3 |
-| jmespath | 0.10.0 |
-| joblib | 1.0.1 |
-| json5 | 0.9.5 |
-| jsonschema | 3.2.0 |
-| jupyter-client | 6.1.12 |
-| jupyter-core | 4.7.1 |
-| jupyter-packaging | 0.9.2 |
-| jupyter-server | 1.6.4 |
-| jupyter-telemetry | 0.1.0 |
-| jupyterhub | 1.3.0 |
-| jupyterlab | 3.0.14 |
-| jupyterlab-pygments | 0.1.2 |
-| jupyterlab-server | 2.5.0 |
-| jupyterlab-widgets | 1.0.0 |
-| keyring | 23.0.1 |
-| kiwisolver | 1.3.1 |
-| lmfit | 1.0.2 |
-| locket | 0.2.0 |
-| lxml | 4.6.3 |
-| Mako | 1.1.4 |
-| mamba | 0.12.2 |
-| MarkupSafe | 1.1.1 |
-| matplotlib | 3.4.2 |
-| matplotlib-inline | 0.1.2 |
-| mistune | 0.8.4 |
-| mizani | 0.7.3 |
-| mock | 4.0.3 |
-| more-itertools | 8.8.0 |
-| mpi4py | 3.0.3 |
-| multidict | 5.1.0 |
-| murmurhash | 1.0.5 |
-| mypy-extensions | 0.4.3 |
-| nbclassic | 0.2.7 |
-| nbclient | 0.5.3 |
-| nbconvert | 6.0.7 |
-| nbformat | 5.1.3 |
-| nbgitpuller | 0.9.0 |
-| nbresuse | 0.3.3 |
-| nest-asyncio | 1.5.1 |
-| netCDF4 | 1.5.6 |
-| networkx | 2.5 |
-| nltk | 3.6.2 |
-| notebook | 6.3.0 |
-| numexpr | 2.7.3 |
-| numpy | 1.20.3 |
-| oauthlib | 3.0.1 |
-| olefile | 0.46 |
-| openpyxl | 3.0.7 |
-| opt-einsum | 3.3.0 |
-| packaging | 20.9 |
-| palettable | 3.3.0 |
-| pamela | 1.0.0 |
-| pandas | 1.2.4 |
-| pandocfilters | 1.4.2 |
-| parse | 1.19.0 |
-| parso | 0.8.2 |
-| partd | 1.2.0 |
-| pathspec | 0.8.1 |
-| pathy | 0.5.2 |
-| patsy | 0.5.1 |
-| pexpect | 4.8.0 |
-| photutils | 1.1.0 |
-| pickleshare | 0.7.5 |
-| Pillow | 8.2.0 |
-| pip | 21.1.1 |
-| plotnine | 0.8.0 |
-| pluggy | 0.13.1 |
-| pooch | 1.3.0 |
-| pqdm | 0.1.0 |
-| preshed | 3.0.5 |
-| prometheus-client | 0.10.1 |
-| prompt-toolkit | 3.0.18 |
-| protobuf | 3.15.8 |
-| psutil | 5.8.0 |
-| ptyprocess | 0.7.0 |
-| py | 1.10.0 |
-| pyasn1 | 0.4.8 |
-| pyasn1-modules | 0.2.7 |
-| pycosat | 0.6.3 |
-| pycparser | 2.20 |
-| pycurl | 7.43.0.6 |
-| pydantic | 1.7.3 |
-| pyee | 8.1.0 |
-| pyerfa | 1.7.3 |
-| Pygments | 2.8.1 |
-| pygpu | 0.7.6 |
-| PyJWT | 2.1.0 |
-| pyLDAvis | 3.3.1 |
-| pylogit | 1.0.1 |
-| pymc3 | 3.10.0 |
-| pyOpenSSL | 20.0.1 |
-| pyparsing | 2.4.7 |
-| pyppeteer | 0.2.5 |
-| pyquery | 1.4.3 |
-| pyrsistent | 0.17.3 |
-| PySocks | 1.7.1 |
-| pytest | 6.2.4 |
-| pytest-arraydiff | 0.3 |
-| pytest-astropy | 0.8.0 |
-| pytest-astropy-header | 0.1.2 |
-| pytest-cov | 2.12.0 |
-| pytest-doctestplus | 0.9.0 |
-| pytest-filter-subpackage | 0.1.1 |
-| pytest-mock | 3.6.1 |
-| pytest-openfiles | 0.5.0 |
-| pytest-remotedata | 0.3.2 |
-| python-dateutil | 2.8.1 |
-| python-editor | 1.0.4 |
-| python-json-logger | 2.0.1 |
-| python-mimeparse | 1.6.0 |
-| pytz | 2021.1 |
-| pyvo | 1.1 |
-| PyWavelets | 1.1.1 |
-| PyYAML | 5.4.1 |
-| pyzmq | 22.0.3 |
-| qgrid | 1.3.1 |
-| regex | 2021.4.4 |
-| reproject | 0.7.1 |
-| requests | 2.25.1 |
-| requests-html | 0.10.0 |
-| rsa | 4.7.2 |
-| ruamel-yaml-conda | 0.15.80 |
-| ruamel.yaml | 0.16.12 |
-| ruamel.yaml.clib | 0.2.2 |
-| s3transfer | 0.4.2 |
-| schwimmbad | 0.3.2 |
-| scikit-image | 0.18.1 |
-| scikit-learn | 0.24.2 |
-| scipy | 1.5.3 |
-| seaborn | 0.11.1 |
-| SecretStorage | 3.3.1 |
-| selenium | 3.141.0 |
-| semantic-version | 2.8.5 |
-| Send2Trash | 1.5.0 |
-| setuptools | 49.6.0.post20210108 |
-| shellingham | 1.4.0 |
-| six | 1.15.0 |
-| sklearn | 0.0 |
-| smart-open | 2.2.1 |
-| sniffio | 1.2.0 |
-| sortedcontainers | 2.4.0 |
-| soupsieve | 2.0.1 |
-| spacy | 3.0.6 |
-| spacy-legacy | 3.0.5 |
-| SQLAlchemy | 1.4.13 |
-| srsly | 2.4.1 |
-| statsmodels | 0.12.2 |
-| tables | 3.6.1 |
-| terminado | 0.9.4 |
-| testpath | 0.4.4 |
-| textblob | 0.15.3 |
-| Theano-PyMC | 1.0.11 |
-| thinc | 8.0.3 |
-| threadpoolctl | 2.1.0 |
-| tifffile | 2021.4.8 |
-| toml | 0.10.2 |
-| tomlkit | 0.7.0 |
-| toolz | 0.11.1 |
-| torch | 1.8.0 |
-| tornado | 6.1 |
-| tqdm | 4.60.0 |
-| traitlets | 5.0.5 |
-| typed-ast | 1.4.3 |
-| typer | 0.3.1 |
-| typing-extensions | 3.7.4.3 |
-| uncertainties | 3.1.5 |
-| Unidecode | 1.2.0 |
-| urllib3 | 1.26.4 |
-| w3lib | 1.22.0 |
-| wasabi | 0.8.2 |
-| wcwidth | 0.2.5 |
-| webencodings | 0.5.1 |
-| websockets | 8.1 |
-| wheel | 0.36.2 |
-| widgetsnbextension | 3.5.1 |
-| xarray | 0.18.2 |
-| xlrd | 2.0.1 |
-| yarl | 1.5.1 |
-| zipp | 3.4.1 |
+|aiofiles|22.1.0|
+|aiosqlite|0.18.0|
+|alembic|1.9.4|
+|anyio|3.6.2|
+|appdirs|1.4.4|
+|argon2-cffi|21.3.0|
+|argon2-cffi-bindings|21.2.0|
+|arrow|1.2.3|
+|arviz|0.11.1|
+|asciitree|0.3.3|
+|asdf|2.15.0|
+|asdf-astropy|0.4.0|
+|asdf-coordinates-schemas|0.2.0|
+|asdf-standard|1.0.3|
+|asdf-transform-schemas|0.3.0|
+|asdf-unit-schemas|0.1.0|
+|asdf-wcs-schemas|0.1.1|
+|asteval|0.9.29|
+|astroML|1.0.2.post1|
+|astroplan|0.8|
+|astropy|5.3|
+|astropy-healpix|0.7|
+|astroquery|0.4.6|
+|astroscrappy|1.1.0|
+|asttokens|2.2.1|
+|async-generator|1.10|
+|attrs|22.2.0|
+|Babel|2.12.1|
+|backcall|0.2.0|
+|backports.functools-lru-cache|1.6.4|
+|beautifulsoup4|4.12.2|
+|biogeme|3.2.11|
+|bleach|6.0.0|
+|blinker|1.6.2|
+|blis|0.7.9|
+|bokeh|3.1.1|
+|boltons|23.0.0|
+|Bottleneck|1.3.7|
+|bounded-pool-executor|0.0.3|
+|brotlipy|0.7.0|
+|bs4|0.0.1|
+|cached-property|1.5.2|
+|catalogue|2.0.8|
+|ccdproc|2.4.1|
+|certifi|2023.5.7|
+|certipy|0.1.3|
+|cffi|1.15.1|
+|cftime|1.6.2|
+|charset-normalizer|3.1.0|
+|choicemodels|0.2.2|
+|click|8.1.3|
+|cloudpickle|2.2.1|
+|colorama|0.4.6|
+|comm|0.1.3|
+|commonmark|0.9.1|
+|conda|23.3.1|
+|conda-package-handling|2.0.2|
+|conda\_package\_streaming|0.7.0|
+|confection|0.0.4|
+|contourpy|1.0.7|
+|coverage|7.2.7|
+|cryptography|40.0.2|
+|cssselect|1.2.0|
+|cycler|0.11.0|
+|cymem|2.0.7|
+|Cython|0.29.35|
+|cythonbiogeme|1.0.1|
+|cytoolz|0.12.0|
+|dask|2023.5.1|
+|dataclasses|0.8|
+|debugpy|1.6.7|
+|decorator|5.1.1|
+|defusedxml|0.7.1|
+|distributed|2023.5.1|
+|emcee|3.1.4|
+|entrypoints|0.4|
+|et-xmlfile|1.1.0|
+|exceptiongroup|1.1.1|
+|executing|1.2.0|
+|fake-useragent|1.1.3|
+|fasteners|0.17.3|
+|fastjsonschema|2.16.3|
+|fastprogress|1.0.3|
+|filelock|3.9.0|
+|flit\_core|3.8.0|
+|fonttools|4.39.4|
+|fqdn|1.5.1|
+|fsspec|2023.5.0|
+|funcy|2.0|
+|future|0.18.3|
+|fuzzywuzzy|0.18.0|
+|gatspy|0.3|
+|gensim|4.3.1|
+|greenlet|2.0.2|
+|gwcs|0.18.3|
+|h11|0.14.0|
+|h5py|3.8.0|
+|hickle|3.4.5|
+|html5lib|1.1|
+|hypothesis|6.76.0|
+|idna|3.4|
+|imagecodecs|2022.9.26|
+|imageio|2.28.1|
+|importlib-metadata|6.4.1|
+|importlib-resources|5.12.0|
+|iniconfig|2.0.0|
+|ipykernel|6.22.0|
+|ipython|8.12.0|
+|ipython-genutils|0.2.0|
+|ipywidgets|8.0.6|
+|isoduration|20.11.0|
+|jaraco.classes|3.2.3|
+|jedi|0.18.2|
+|jeepney|0.8.0|
+|Jinja2|3.1.2|
+|jmespath|1.0.1|
+|joblib|1.2.0|
+|json5|0.9.5|
+|jsonpatch|1.32|
+|jsonpointer|2.0|
+|jsonschema|4.17.3|
+|jupyter\_client|8.2.0|
+|jupyter\_core|5.3.0|
+|jupyter-events|0.6.3|
+|jupyter-resource-usage|0.7.1|
+|jupyter\_server|2.5.0|
+|jupyter\_server\_fileid|0.9.0|
+|jupyter\_server\_terminals|0.4.4|
+|jupyter\_server\_ydoc|0.8.0|
+|jupyter-telemetry|0.1.0|
+|jupyter-ydoc|0.2.3|
+|jupyterhub|3.1.1|
+|jupyterlab|3.6.3|
+|jupyterlab-pygments|0.2.2|
+|jupyterlab\_server|2.22.1|
+|jupyterlab-widgets|3.0.7|
+|keyring|23.13.1|
+|kiwisolver|1.4.4|
+|langcodes|3.3.0|
+|lazy\_loader|0.2|
+|libmambapy|1.4.2|
+|lmfit|1.2.1|
+|locket|1.0.0|
+|lxml|4.9.2|
+|lz4|4.3.2|
+|Mako|1.2.4|
+|mamba|1.4.2|
+|MarkupSafe|2.1.2|
+|matplotlib|3.7.1|
+|matplotlib-inline|0.1.6|
+|mistune|2.0.5|
+|mizani|0.9.2|
+|more-itertools|9.1.0|
+|mpmath|1.2.1|
+|msgpack|1.0.5|
+|munkres|1.1.4|
+|murmurhash|1.0.9|
+|nbclassic|0.5.5|
+|nbclient|0.7.3|
+|nbconvert|7.3.1|
+|nbformat|5.8.0|
+|nbgitpuller|1.1.1|
+|nest-asyncio|1.5.6|
+|netCDF4|1.6.3|
+|networkx|3.1|
+|nltk|3.8.1|
+|notebook|6.5.4|
+|notebook\_shim|0.2.2|
+|numcodecs|0.11.0|
+|numexpr|2.8.4|
+|numpy|1.24.3|
+|oauthlib|3.2.2|
+|openpyxl|3.1.2|
+|outcome|1.2.0|
+|packaging|23.1|
+|pamela|1.0.0|
+|pandas|2.0.2|
+|pandocfilters|1.5.0|
+|parse|1.19.0|
+|parso|0.8.3|
+|partd|1.4.0|
+|pathy|0.10.1|
+|patsy|0.5.3|
+|pexpect|4.8.0|
+|photutils|1.8.0|
+|pickleshare|0.7.5|
+|Pillow|9.2.0|
+|pip|23.1|
+|pkgutil\_resolve\_name|1.3.10|
+|platformdirs|2.6.0|
+|plotnine|0.12.1|
+|pluggy|1.0.0|
+|pooch|1.7.0|
+|pqdm|0.2.0|
+|preshed|3.0.8|
+|prometheus-client|0.16.0|
+|prompt-toolkit|3.0.38|
+|psutil|5.9.4|
+|ptyprocess|0.7.0|
+|pure-eval|0.2.2|
+|pyarrow|10.0.1|
+|pycosat|0.6.4|
+|pycparser|2.21|
+|pycurl|7.45.1|
+|pydantic|1.9.2|
+|pyee|8.2.2|
+|pyerfa|2.0.0.3|
+|Pygments|2.15.0|
+|pygpu|0.7.6|
+|PyJWT|2.6.0|
+|pyLDAvis|3.4.1|
+|pylogit|1.0.1|
+|pymc3|3.9.3|
+|pyOpenSSL|23.1.1|
+|pyparsing|3.0.9|
+|pyppeteer|1.0.2|
+|pyquery|2.0.0|
+|pyrsistent|0.19.3|
+|PySocks|1.7.1|
+|pytest|7.3.1|
+|pytest-arraydiff|0.3|
+|pytest-astropy|0.10.0|
+|pytest-astropy-header|0.2.2|
+|pytest-cov|4.1.0|
+|pytest-doctestplus|0.12.1|
+|pytest-filter-subpackage|0.1.1|
+|pytest-mock|3.10.0|
+|pytest-openfiles|0.5.0|
+|pytest-remotedata|0.4.0|
+|python-dateutil|2.8.2|
+|python-json-logger|2.0.7|
+|pytz|2023.3|
+|pyvo|1.4.1|
+|PyWavelets|1.4.1|
+|PyYAML|6.0|
+|pyzmq|25.0.2|
+|qgrid|1.3.1|
+|regex|2023.6.3|
+|reproject|0.11.0|
+|requests|2.28.2|
+|requests-html|0.10.0|
+|rfc3339-validator|0.1.4|
+|rfc3986-validator|0.1.1|
+|rich|12.4.1|
+|ruamel.yaml|0.17.21|
+|ruamel.yaml.clib|0.2.7|
+|scikit-image|0.20.0|
+|scikit-learn|1.2.2|
+|scipy|1.10.1|
+|seaborn|0.12.2|
+|SecretStorage|3.3.3|
+|selenium|4.9.1|
+|semantic-version|2.10.0|
+|Send2Trash|1.8.0|
+|setuptools|67.6.1|
+|setuptools-scm|7.1.0|
+|shellingham|1.5.1|
+|six|1.16.0|
+|smart-open|5.2.1|
+|sniffio|1.3.0|
+|sortedcontainers|2.4.0|
+|soupsieve|2.3.2.post1|
+|spacy|3.5.3|
+|spacy-legacy|3.0.12|
+|spacy-loggers|1.0.4|
+|SQLAlchemy|1.4.46|
+|srsly|2.4.6|
+|stack-data|0.6.2|
+|statsmodels|0.14.0|
+|sympy|1.11.1|
+|tables|3.7.0|
+|tblib|1.7.0|
+|terminado|0.17.1|
+|textblob|0.15.3|
+|Theano|1.0.5|
+|thinc|8.1.10|
+|threadpoolctl|3.1.0|
+|tifffile|2022.10.10|
+|tinycss2|1.2.1|
+|toml|0.10.2|
+|tomli|2.0.1|
+|tomlkit|0.11.8|
+|toolz|0.12.0|
+|torch|2.0.1+cpu|
+|torchaudio|2.0.2+cpu|
+|torchvision|0.15.2+cpu|
+|tornado|6.2|
+|tqdm|4.65.0|
+|traitlets|5.9.0|
+|trio|0.21.0|
+|trio-websocket|0.10.2|
+|typer|0.7.0|
+|typing-extensions|3.10.0.2|
+|tzdata|2023.3|
+|uncertainties|3.1.7|
+|unicodedata2|15.0.0|
+|Unidecode|1.3.6|
+|uri-template|1.2.0|
+|urllib3|1.26.15|
+|w3lib|2.1.1|
+|wasabi|1.1.2|
+|wcwidth|0.2.6|
+|webcolors|1.13|
+|webencodings|0.5.1|
+|websocket-client|1.5.1|
+|websockets|10.4|
+|wheel|0.40.0|
+|widgetsnbextension|4.0.7|
+|wsproto|1.2.0|
+|xarray|2023.5.0|
+|xlrd|2.0.1|
+|xyzservices|2023.5.0|
+|y-py|0.5.9|
+|ypy-websocket|0.8.2|
+|zarr|2.14.2|
+|zict|3.0.0|
+|zipp|3.15.0|
+|zstandard|0.19.0|
+
 
 via `conda list --no-pip`
 
 | Package | Version |
 | ----------------------------- | ------------------- |
-| _libgcc_mutex | 0.1 |
-| _openmp_mutex | 4.5 |
-| _r-mutex | 1.0.1 |
-| absl-py | 0.12.0 |
-| aiohttp | 3.7.4 |
-| alembic | 1.6.0 |
-| anyio | 2.2.0 |
-| appdirs | 1.4.4 |
-| argon2-cffi | 20.1.0 |
-| arviz | 0.11.2 |
-| asdf | 2.8.0 |
-| asteval | 0.9.23 |
-| astroml | 0.4.1 |
-| astroplan | 0.8 |
-| astropy | 4.2.1 |
-| astropy-healpix | 0.5 |
-| astroquery | 0.4.2 |
-| astroscrappy | 1.0.8 |
-| async-timeout | 3.0.1 |
-| async_generator | 1.10 |
-| attrs | 20.3.0 |
-| babel | 2.9.1 |
-| backcall | 0.2.0 |
-| backports | 1.0 |
-| backports.functools_lru_cache | 1.6.4 |
-| beautifulsoup4 | 4.9.3 |
-| binutils_impl_linux-64 | 2.35.1 |
-| binutils_linux-64 | 2.35 |
-| biogeme | 3.2.6 |
-| black | 21.5b1 |
-| bleach | 3.3.0 |
-| blinker | 1.4 |
-| blosc | 1.21.0 |
-| bokeh | 2.3.2 |
-| boto | 2.49.0 |
-| boto3 | 1.17.79 |
-| botocore | 1.20.79 |
-| bounded-pool-executor | 0.0.3 |
-| brotli | 1.0.9 |
-| brotlipy | 0.7.0 |
-| brunsli | 0.1 |
-| bs4 | 0.0.1 |
-| bwidget | 1.9.14 |
-| bz2file | 0.98 |
-| bzip2 | 1.0.8 |
-| c-ares | 1.17.1 |
-| ca-certificates | 2020.12.5 |
-| cached-property | 1.5.2 |
-| cached_property | 1.5.2 |
-| cachetools | 4.2.2 |
-| cairo | 1.16.0 |
-| catalogue | 2.0.4 |
-| ccdproc | 2.2.0 |
-| certifi | 2020.12.5 |
-| certipy | 0.1.3 |
-| cffi | 1.14.5 |
-| cftime | 1.5.0 |
-| chardet | 4.0.0 |
-| charls | 2.2.0 |
-| choicemodels | 0.2.2 |
-| click | 8.0.1 |
-| cloudpickle | 1.6.0 |
-| colorama | 0.4.4 |
-| conda | 4.10.0 |
-| conda-package-handling | 1.7.3 |
-| configurable-http-proxy | 4.2.3 |
-| coverage | 5.5 |
-| cryptography | 3.4.7 |
-| cssselect | 1.1.0 |
-| curl | 7.76.1 |
-| cycler | 0.10.0 |
-| cymem | 2.0.5 |
-| cython | 0.29.23 |
-| cython-blis | 0.7.4 |
-| cytoolz | 0.11.0 |
-| dask-core | 2021.5.0 |
-| dataclasses | 0.8 |
-| dbus | 1.13.6 |
-| decorator | 5.0.7 |
-| defusedxml | 0.7.1 |
-| deprecation | 2.1.0 |
-| descartes | 1.1.0 |
-| dill | 0.3.3 |
-| emcee | 3.0.2 |
-| entrypoints | 0.3 |
-| et_xmlfile | 1.0.1 |
-| expat | 2.4.1 |
-| fake-useragent | 0.1.11 |
-| fastprogress | 1.0.0 |
-| font-ttf-dejavu-sans-mono | 2.37 |
-| font-ttf-inconsolata | 2.001 |
-| font-ttf-source-code-pro | 2.030 |
-| font-ttf-ubuntu | 0.83 |
-| fontconfig | 2.13.1 |
-| fonts-conda-ecosystem | 1 |
-| fonts-conda-forge | 1 |
-| freetype | 2.10.4 |
-| fribidi | 1.0.10 |
-| fsspec | 2021.5.0 |
-| funcy | 1.16 |
-| future | 0.18.2 |
-| fuzzywuzzy | 0.18.0 |
-| gatspy | 0.3 |
-| gcc_impl_linux-64 | 7.5.0 |
-| gcc_linux-64 | 7.5.0 |
-| gensim | 4.0.1 |
-| gettext | 0.19.8.1 |
-| gfortran_impl_linux-64 | 7.5.0 |
-| gfortran_linux-64 | 7.5.0 |
-| giflib | 5.2.1 |
-| glib | 2.68.1 |
-| glib-tools | 2.68.1 |
-| google-api-core | 1.26.3 |
-| google-auth | 1.30.0 |
-| google-cloud-core | 1.5.0 |
-| google-cloud-storage | 1.38.0 |
-| google-crc32c | 1.1.2 |
-| google-resumable-media | 1.2.0 |
-| googleapis-common-protos | 1.53.0 |
-| graphite2 | 1.3.13 |
-| greenlet | 1.0.0 |
-| grpcio | 1.38.0 |
-| gsl | 2.6 |
-| gwcs | 0.16.1 |
-| gxx_impl_linux-64 | 7.5.0 |
-| gxx_linux-64 | 7.5.0 |
-| h5py | 3.2.1 |
-| harfbuzz | 2.7.2 |
-| hdf4 | 4.2.15 |
-| hdf5 | 1.10.6 |
-| hickle | 3.4.5 |
-| html5lib | 1.1 |
-| hypothesis | 6.13.5 |
-| icu | 67.1 |
-| idna | 2.10 |
-| imagecodecs | 2021.3.31 |
-| imageio | 2.9.0 |
-| importlib-metadata | 4.0.1 |
-| importlib_metadata | 4.0.1 |
-| importlib_resources | 5.1.4 |
-| iniconfig | 1.1.1 |
-| ipykernel | 5.5.3 |
-| ipython | 7.23.0 |
-| ipython_genutils | 0.2.0 |
-| ipywidgets | 7.6.3 |
-| jax | 0.2.13 |
-| jaxlib | 0.1.67 |
-| jdcal | 1.4.1 |
-| jedi | 0.18.0 |
-| jeepney | 0.6.0 |
-| jinja2 | 2.11.3 |
-| jmespath | 0.10.0 |
-| joblib | 1.0.1 |
-| jpeg | 9d |
-| json5 | 0.9.5 |
-| jsonschema | 3.2.0 |
-| jupyter-packaging | 0.9.2 |
-| jupyter_client | 6.1.12 |
-| jupyter_core | 4.7.1 |
-| jupyter_server | 1.6.4 |
-| jupyter_telemetry | 0.1.0 |
-| jupyterhub | 1.3.0 |
-| jupyterhub-base | 1.3.0 |
-| jupyterlab | 3.0.14 |
-| jupyterlab-widgets | 1.0.0 |
-| jupyterlab_pygments | 0.1.2 |
-| jupyterlab_server | 2.5.0 |
-| jxrlib | 1.1 |
-| kernel-headers_linux-64 | 2.6.32 |
-| keyring | 23.0.1 |
-| kiwisolver | 1.3.1 |
-| krb5 | 1.17.2 |
-| lcms2 | 2.12 |
-| ld_impl_linux-64 | 2.35.1 |
-| lerc | 2.2.1 |
-| libaec | 1.0.4 |
-| libarchive | 3.5.1 |
-| libblas | 3.9.0 |
-| libcblas | 3.9.0 |
-| libcrc32c | 1.1.1 |
-| libcurl | 7.76.1 |
-| libdeflate | 1.7 |
-| libedit | 3.1.20191231 |
-| libev | 4.33 |
-| libffi | 3.3 |
-| libgcc-devel_linux-64 | 9.3.0 |
-| libgcc-ng | 9.3.0 |
-| libgfortran-ng | 7.5.0 |
-| libgfortran4 | 7.5.0 |
-| libgit2 | 1.1.0 |
-| libglib | 2.68.1 |
-| libgomp | 9.3.0 |
-| libgpuarray | 0.7.6 |
-| libiconv | 1.16 |
-| liblapack | 3.9.0 |
-| libnetcdf | 4.8.0 |
-| libnghttp2 | 1.43.0 |
-| libpng | 1.6.37 |
-| libprotobuf | 3.15.8 |
-| libsodium | 1.0.18 |
-| libsolv | 0.7.18 |
-| libssh2 | 1.9.0 |
-| libstdcxx-devel_linux-64 | 9.3.0 |
-| libstdcxx-ng | 9.3.0 |
-| libtiff | 4.2.0 |
-| libuuid | 2.32.1 |
-| libuv | 1.41.0 |
-| libwebp-base | 1.2.0 |
-| libxcb | 1.13 |
-| libxml2 | 2.9.10 |
-| libxslt | 1.1.33 |
-| libzip | 1.7.3 |
-| libzopfli | 1.0.3 |
-| llvm-openmp | 11.1.0 |
-| lmfit | 1.0.2 |
-| locket | 0.2.0 |
-| lxml | 4.6.3 |
-| lz4-c | 1.9.3 |
-| lzo | 2.10 |
-| make | 4.3 |
-| mako | 1.1.4 |
-| mamba | 0.12.2 |
-| markupsafe | 1.1.1 |
-| matplotlib-base | 3.4.2 |
-| matplotlib-inline | 0.1.2 |
-| mistune | 0.8.4 |
-| mizani | 0.7.3 |
-| mkl | 2020.4 |
-| mock | 4.0.3 |
-| more-itertools | 8.8.0 |
-| mpi | 1.0 |
-| mpi4py | 3.0.3 |
-| multidict | 5.1.0 |
-| murmurhash | 1.0.5 |
-| mypy_extensions | 0.4.3 |
-| nbclassic | 0.2.7 |
-| nbclient | 0.5.3 |
-| nbconvert | 6.0.7 |
-| nbformat | 5.1.3 |
-| nbgitpuller | 0.9.0 |
-| nbresuse | 0.3.3 |
-| ncurses | 6.2 |
-| nest-asyncio | 1.5.1 |
-| netcdf4 | 1.5.6 |
-| networkx | 2.5 |
-| ninja | 1.10.2 |
-| nltk | 3.6.2 |
-| nodejs | 12.4.0 |
-| notebook | 6.3.0 |
-| numexpr | 2.7.3 |
-| numpy | 1.20.3 |
-| oauthlib | 3.0.1 |
-| olefile | 0.46 |
-| openjpeg | 2.4.0 |
-| openmpi | 4.0.5 |
-| openpyxl | 3.0.7 |
-| openssl | 1.1.1k |
-| opt_einsum | 3.3.0 |
-| packaging | 20.9 |
-| palettable | 3.3.0 |
-| pamela | 1.0.0 |
-| pandas | 1.2.4 |
-| pandoc | 2.12 |
-| pandocfilters | 1.4.2 |
-| pango | 1.42.4 |
-| parse | 1.19.0 |
-| parso | 0.8.2 |
-| partd | 1.2.0 |
-| pathspec | 0.8.1 |
-| pathy | 0.5.2 |
-| patsy | 0.5.1 |
-| pcre | 8.44 |
-| pcre2 | 10.35 |
-| pexpect | 4.8.0 |
-| photutils | 1.1.0 |
-| pickleshare | 0.7.5 |
-| pillow | 8.2.0 |
-| pip | 21.1.1 |
-| pixman | 0.40.0 |
-| plotnine | 0.8.0 |
-| pluggy | 0.13.1 |
-| pooch | 1.3.0 |
-| pqdm | 0.1.0 |
-| preshed | 3.0.5 |
-| prometheus_client | 0.10.1 |
-| prompt-toolkit | 3.0.18 |
-| protobuf | 3.15.8 |
-| psutil | 5.8.0 |
-| pthread-stubs | 0.4 |
-| ptyprocess | 0.7.0 |
-| py | 1.10.0 |
-| pyasn1 | 0.4.8 |
-| pyasn1-modules | 0.2.7 |
-| pycosat | 0.6.3 |
-| pycparser | 2.20 |
-| pycurl | 7.43.0.6 |
-| pydantic | 1.7.3 |
-| pyee | 8.1.0 |
-| pyerfa | 1.7.3 |
-| pygments | 2.8.1 |
-| pygpu | 0.7.6 |
-| pyjwt | 2.1.0 |
-| pyldavis | 3.3.1 |
-| pylogit | 1.0.1 |
-| pymc3 | 3.10.0 |
-| pyopenssl | 20.0.1 |
-| pyparsing | 2.4.7 |
-| pyppeteer | 0.2.5 |
-| pyquery | 1.4.3 |
-| pyrsistent | 0.17.3 |
-| pysocks | 1.7.1 |
-| pytables | 3.6.1 |
-| pytest | 6.2.4 |
-| pytest-arraydiff | 0.3 |
-| pytest-astropy | 0.8.0 |
-| pytest-astropy-header | 0.1.2 |
-| pytest-cov | 2.12.0 |
-| pytest-doctestplus | 0.9.0 |
-| pytest-filter-subpackage | 0.1.1 |
-| pytest-mock | 3.6.1 |
-| pytest-openfiles | 0.5.0 |
-| pytest-remotedata | 0.3.2 |
-| python | 3.8.8 |
-| python-dateutil | 2.8.1 |
-| python-editor | 1.0.4 |
-| python-flatbuffers | 2.0 |
-| python-json-logger | 2.0.1 |
-| python-mimeparse | 1.6.0 |
-| python_abi | 3.8 |
-| pytorch | 1.8.0 |
-| pytz | 2021.1 |
-| pyvo | 1.1 |
-| pywavelets | 1.1.1 |
-| pyyaml | 5.4.1 |
-| pyzmq | 22.0.3 |
-| qgrid | 1.3.1 |
-| r-askpass | 1.1 |
-| r-assertthat | 0.2.1 |
-| r-backports | 1.2.1 |
-| r-base | 4.0.2 |
-| r-base64enc | 0.1_3 |
-| r-bit | 4.0.4 |
-| r-bit64 | 4.0.5 |
-| r-bitops | 1.0_7 |
-| r-blob | 1.2.1 |
-| r-brew | 1.0_6 |
-| r-brio | 1.1.2 |
-| r-broom | 0.7.6 |
-| r-bslib | 0.2.4 |
-| r-cachem | 1.0.4 |
-| r-callr | 3.7.0 |
-| r-caret | 6.0_86 |
-| r-cellranger | 1.1.0 |
-| r-class | 7.3_19 |
-| r-cli | 2.5.0 |
-| r-clipr | 0.7.1 |
-| r-codetools | 0.2_18 |
-| r-colorspace | 2.0_1 |
-| r-commonmark | 1.7 |
-| r-conflicted | 1.0.4 |
-| r-covr | 3.5.1 |
-| r-cpp11 | 0.2.7 |
-| r-crayon | 1.4.1 |
-| r-credentials | 1.3.0 |
-| r-crosstalk | 1.1.1 |
-| r-curl | 4.3.1 |
-| r-data.table | 1.14.0 |
-| r-dbi | 1.1.1 |
-| r-dbplyr | 2.1.1 |
-| r-desc | 1.3.0 |
-| r-devtools | 2.4.0 |
-| r-dials | 0.0.9 |
-| r-dicedesign | 1.9 |
-| r-diffobj | 0.3.3 |
-| r-digest | 0.6.27 |
-| r-dplyr | 1.0.5 |
-| r-dt | 0.18 |
-| r-dtplyr | 1.1.0 |
-| r-e1071 | 1.7_6 |
-| r-ellipsis | 0.3.2 |
-| r-evaluate | 0.14 |
-| r-fansi | 0.4.2 |
-| r-farver | 2.1.0 |
-| r-fastmap | 1.1.0 |
-| r-forcats | 0.5.1 |
-| r-foreach | 1.5.1 |
-| r-forecast | 8.14 |
-| r-fracdiff | 1.5_1 |
-| r-fs | 1.5.0 |
-| r-furrr | 0.2.2 |
-| r-future | 1.21.0 |
-| r-gargle | 1.1.0 |
-| r-generics | 0.1.0 |
-| r-gert | 1.3.0 |
-| r-ggplot2 | 3.3.3 |
-| r-gh | 1.3.0 |
-| r-git2r | 0.28.0 |
-| r-gitcreds | 0.1.1 |
-| r-globals | 0.14.0 |
-| r-glue | 1.4.2 |
-| r-googledrive | 1.0.1 |
-| r-googlesheets4 | 0.3.0 |
-| r-gower | 0.2.2 |
-| r-gpfit | 1.0_8 |
-| r-gtable | 0.3.0 |
-| r-hardhat | 0.1.5 |
-| r-haven | 2.4.1 |
-| r-hexbin | 1.28.1 |
-| r-highr | 0.9 |
-| r-hms | 1.0.0 |
-| r-htmltools | 0.5.1.1 |
-| r-htmlwidgets | 1.5.3 |
-| r-httpuv | 1.6.0 |
-| r-httr | 1.4.2 |
-| r-ids | 1.0.1 |
-| r-infer | 0.5.4 |
-| r-ini | 0.3.1 |
-| r-ipred | 0.9_11 |
-| r-irdisplay | 1.0 |
-| r-irkernel | 1.1.1 |
-| r-isoband | 0.2.4 |
-| r-iterators | 1.0.13 |
-| r-jquerylib | 0.1.4 |
-| r-jsonlite | 1.7.2 |
-| r-kernsmooth | 2.23_18 |
-| r-knitr | 1.31 |
-| r-labeling | 0.4.2 |
-| r-later | 1.2.0 |
-| r-lattice | 0.20_44 |
-| r-lava | 1.6.9 |
-| r-lazyeval | 0.2.2 |
-| r-lhs | 1.1.1 |
-| r-lifecycle | 1.0.0 |
-| r-listenv | 0.8.0 |
-| r-lmtest | 0.9_38 |
-| r-lubridate | 1.7.10 |
-| r-magrittr | 2.0.1 |
-| r-markdown | 1.1 |
-| r-mass | 7.3_54 |
-| r-matrix | 1.3_2 |
-| r-memoise | 2.0.0 |
-| r-mgcv | 1.8_34 |
-| r-mime | 0.10 |
-| r-modeldata | 0.1.0 |
-| r-modelmetrics | 1.2.2.2 |
-| r-modelr | 0.1.8 |
-| r-munsell | 0.5.0 |
-| r-nlme | 3.1_150 |
-| r-nnet | 7.3_16 |
-| r-numderiv | 2016.8_1.1 |
-| r-nycflights13 | 1.0.2 |
-| r-openssl | 1.4.4 |
-| r-parallelly | 1.25.0 |
-| r-parsnip | 0.1.5 |
-| r-pbdzmq | 0.3_5 |
-| r-pillar | 1.6.0 |
-| r-pkgbuild | 1.2.0 |
-| r-pkgconfig | 2.0.3 |
-| r-pkgload | 1.2.1 |
-| r-plogr | 0.2.0 |
-| r-plyr | 1.8.6 |
-| r-praise | 1.0.0 |
-| r-prettyunits | 1.1.1 |
-| r-proc | 1.17.0.1 |
-| r-processx | 3.5.2 |
-| r-prodlim | 2019.11.13 |
-| r-progress | 1.2.2 |
-| r-promises | 1.2.0.1 |
-| r-proxy | 0.4_25 |
-| r-ps | 1.6.0 |
-| r-purrr | 0.3.4 |
-| r-quadprog | 1.5_8 |
-| r-quantmod | 0.4.18 |
-| r-r6 | 2.5.0 |
-| r-randomforest | 4.6_14 |
-| r-rappdirs | 0.3.3 |
-| r-rcmdcheck | 1.3.3 |
-| r-rcolorbrewer | 1.1_2 |
-| r-rcpp | 1.0.6 |
-| r-rcpparmadillo | 0.10.4.0.0 |
-| r-rcurl | 1.98_1.3 |
-| r-readr | 1.4.0 |
-| r-readxl | 1.3.1 |
-| r-recipes | 0.1.16 |
-| r-rematch | 1.0.1 |
-| r-rematch2 | 2.1.2 |
-| r-remotes | 2.3.0 |
-| r-repr | 1.1.3 |
-| r-reprex | 2.0.0 |
-| r-reshape2 | 1.4.4 |
-| r-rex | 1.2.0 |
-| r-rlang | 0.4.11 |
-| r-rmarkdown | 2.7 |
-| r-rodbc | 1.3_16 |
-| r-roxygen2 | 7.1.1 |
-| r-rpart | 4.1_15 |
-| r-rprojroot | 2.0.2 |
-| r-rsample | 0.0.9 |
-| r-rsqlite | 2.2.5 |
-| r-rstudioapi | 0.13 |
-| r-rversions | 2.0.2 |
-| r-rvest | 1.0.0 |
-| r-sass | 0.3.1 |
-| r-scales | 1.1.1 |
-| r-selectr | 0.4_2 |
-| r-sessioninfo | 1.1.1 |
-| r-shiny | 1.6.0 |
-| r-slider | 0.2.1 |
-| r-sourcetools | 0.1.7 |
-| r-squarem | 2021.1 |
-| r-stringi | 1.5.3 |
-| r-stringr | 1.4.0 |
-| r-survival | 3.2_11 |
-| r-sys | 3.4 |
-| r-testthat | 3.0.2 |
-| r-tibble | 3.1.1 |
-| r-tidymodels | 0.1.3 |
-| r-tidyr | 1.1.3 |
-| r-tidyselect | 1.1.1 |
-| r-tidyverse | 1.3.1 |
-| r-timedate | 3043.102 |
-| r-tinytex | 0.31 |
-| r-tseries | 0.10_47 |
-| r-ttr | 0.24.2 |
-| r-tune | 0.1.5 |
-| r-urca | 1.3_0 |
-| r-usethis | 2.0.1 |
-| r-utf8 | 1.2.1 |
-| r-uuid | 0.1_4 |
-| r-vctrs | 0.3.8 |
-| r-viridislite | 0.4.0 |
-| r-waldo | 0.2.5 |
-| r-warp | 0.2.0 |
-| r-whisker | 0.4 |
-| r-withr | 2.4.2 |
-| r-workflows | 0.2.2 |
-| r-workflowsets | 0.0.2 |
-| r-xfun | 0.20 |
-| r-xml2 | 1.3.2 |
-| r-xopen | 1.0.0 |
-| r-xtable | 1.8_4 |
-| r-xts | 0.12.1 |
-| r-yaml | 2.2.1 |
-| r-yardstick | 0.0.8 |
-| r-zeallot | 0.1.0 |
-| r-zip | 2.1.1 |
-| r-zoo | 1.8_9 |
-| readline | 8.1 |
-| regex | 2021.4.4 |
-| reproc | 14.2.1 |
-| reproc-cpp | 14.2.1 |
-| reproject | 0.7.1 |
-| requests | 2.25.1 |
-| requests-html | 0.10.0 |
-| rsa | 4.7.2 |
-| ruamel.yaml | 0.16.12 |
-| ruamel.yaml.clib | 0.2.2 |
-| ruamel_yaml | 0.15.80 |
-| s3transfer | 0.4.2 |
-| schwimmbad | 0.3.2 |
-| scikit-image | 0.18.1 |
-| scikit-learn | 0.24.2 |
-| scipy | 1.5.3 |
-| seaborn | 0.11.1 |
-| seaborn-base | 0.11.1 |
-| secretstorage | 3.3.1 |
-| sed | 4.8 |
-| selenium | 3.141.0 |
-| semantic_version | 2.8.5 |
-| send2trash | 1.5.0 |
-| setuptools | 49.6.0 |
-| shellingham | 1.4.0 |
-| six | 1.15.0 |
-| sklearn | 0.0 |
-| sleef | 3.5.1 |
-| smart_open | 2.2.1 |
-| snappy | 1.1.8 |
-| sniffio | 1.2.0 |
-| sortedcontainers | 2.4.0 |
-| soupsieve | 2.0.1 |
-| spacy | 3.0.6 |
-| spacy-legacy | 3.0.5 |
-| sqlalchemy | 1.4.13 |
-| sqlite | 3.35.5 |
-| srsly | 2.4.1 |
-| statsmodels | 0.12.2 |
-| sysroot_linux-64 | 2.12 |
-| terminado | 0.9.4 |
-| testpath | 0.4.4 |
-| textblob | 0.15.3 |
-| theano-pymc | 1.0.11 |
-| thinc | 8.0.3 |
-| threadpoolctl | 2.1.0 |
-| tifffile | 2021.4.8 |
-| tini | 0.18.0 |
-| tk | 8.6.10 |
-| tktable | 2.10 |
-| toml | 0.10.2 |
-| tomlkit | 0.7.0 |
-| toolz | 0.11.1 |
-| tornado | 6.1 |
-| tqdm | 4.60.0 |
-| traitlets | 5.0.5 |
-| typed-ast | 1.4.3 |
-| typer | 0.3.1 |
-| typing-extensions | 3.7.4.3 |
-| typing_extensions | 3.7.4.3 |
-| uncertainties | 3.1.5 |
-| unidecode | 1.2.0 |
-| unixodbc | 2.3.9 |
-| urllib3 | 1.26.4 |
-| w3lib | 1.22.0 |
-| wasabi | 0.8.2 |
-| wcwidth | 0.2.5 |
-| webencodings | 0.5.1 |
-| websockets | 8.1 |
-| wheel | 0.36.2 |
-| widgetsnbextension | 3.5.1 |
-| xarray | 0.18.2 |
-| xlrd | 2.0.1 |
-| xorg-kbproto | 1.0.7 |
-| xorg-libice | 1.0.10 |
-| xorg-libsm | 1.2.3 |
-| xorg-libx11 | 1.7.0 |
-| xorg-libxau | 1.0.9 |
-| xorg-libxdmcp | 1.1.3 |
-| xorg-libxext | 1.3.4 |
-| xorg-libxrender | 0.9.10 |
-| xorg-libxt | 1.2.1 |
-| xorg-renderproto | 0.11.1 |
-| xorg-xextproto | 7.3.0 |
-| xorg-xproto | 7.0.31 |
-| xz | 5.2.5 |
-| yaml | 0.2.5 |
-| yarl | 1.5.1 |
-| zeromq | 4.3.4 |
-| zfp | 0.5.5 |
-| zipp | 3.4.1 |
-| zlib | 1.2.11 |
-| zstd | 1.4.9 |
+|\_libgcc\_mutex|0.1|
+|\_openmp\_mutex|4.5|
+|\_r-mutex|1.0.1|
+|aiofiles|22.1.0|
+|aiosqlite|0.18.0|
+|alembic|1.9.4|
+|anyio|3.6.2|
+|aom|3.5.0|
+|appdirs|1.4.4|
+|argon2-cffi|21.3.0|
+|argon2-cffi-bindings|21.2.0|
+|arrow|1.2.3|
+|arrow-cpp|10.0.1|
+|arviz|0.11.1|
+|asciitree|0.3.3|
+|asdf|2.15.0|
+|asdf-astropy|0.4.0|
+|asdf-coordinates-schemas|0.2.0|
+|asdf-standard|1.0.3|
+|asdf-transform-schemas|0.3.0|
+|asdf-unit-schemas|0.1.0|
+|asdf-wcs-schemas|0.1.1|
+|asteval|0.9.29|
+|astroml|1.0.2.post1|
+|astroplan|0.8|
+|astropy|5.3|
+|astropy-healpix|0.7|
+|astroquery|0.4.6|
+|astroscrappy|1.1.0|
+|asttokens|2.2.1|
+|async\_generator|1.10|
+|attrs|22.2.0|
+|aws-c-auth|0.6.21|
+|aws-c-cal|0.5.20|
+|aws-c-common|0.8.5|
+|aws-c-compression|0.2.16|
+|aws-c-event-stream|0.2.16|
+|aws-c-http|0.6.29|
+|aws-c-io|0.13.11|
+|aws-c-mqtt|0.7.13|
+|aws-c-s3|0.2.1|
+|aws-c-sdkutils|0.1.7|
+|aws-checksums|0.1.14|
+|aws-crt-cpp|0.18.16|
+|aws-sdk-cpp|1.9.379|
+|babel|2.12.1|
+|backcall|0.2.0|
+|backports|1.0|
+|backports.functools\_lru\_cache|1.6.4|
+|backports.zoneinfo|0.2.1|
+|beautifulsoup4|4.12.2|
+|binutils\_impl\_linux-64|2.39|
+|binutils\_linux-64|2.39|
+|biogeme|3.2.11|
+|bleach|6.0.0|
+|blinker|1.6.2|
+|blosc|1.21.4|
+|bokeh|3.1.1|
+|boltons|23.0.0|
+|bottleneck|1.3.7|
+|bounded-pool-executor|0.0.3|
+|brotli|1.0.9|
+|brotli-bin|1.0.9|
+|brotlipy|0.7.0|
+|brunsli|0.1|
+|bs4|0.0.1|
+|bwidget|1.9.14|
+|bzip2|1.0.8|
+|c-ares|1.18.1|
+|c-blosc2|2.9.2|
+|ca-certificates|2023.5.7|
+|cached-property|1.5.2|
+|cached\_property|1.5.2|
+|cairo|1.16.0|
+|catalogue|2.0.8|
+|ccdproc|2.4.1|
+|certifi|2023.5.7|
+|certipy|0.1.3|
+|cffi|1.15.1|
+|cfitsio|4.2.0|
+|cftime|1.6.2|
+|charls|2.3.4|
+|charset-normalizer|3.1.0|
+|choicemodels|0.2.2|
+|click|8.1.3|
+|cloudpickle|2.2.1|
+|colorama|0.4.6|
+|comm|0.1.3|
+|commonmark|0.9.1|
+|conda|23.3.1|
+|conda-package-handling|2.0.2|
+|conda-package-streaming|0.7.0|
+|confection|0.0.4|
+|configurable-http-proxy|4.5.4|
+|contourpy|1.0.7|
+|coverage|7.2.7|
+|cryptography|40.0.2|
+|cssselect|1.2.0|
+|curl|7.86.0|
+|cycler|0.11.0|
+|cymem|2.0.7|
+|cython|0.29.35|
+|cython-blis|0.7.9|
+|cythonbiogeme|1.0.1|
+|cytoolz|0.12.0|
+|dask|2023.5.1|
+|dask-core|2023.5.1|
+|dataclasses|0.8|
+|dav1d|1.2.1|
+|dbus|1.13.6|
+|debugpy|1.6.7|
+|decorator|5.1.1|
+|defusedxml|0.7.1|
+|distributed|2023.5.1|
+|emcee|3.1.4|
+|entrypoints|0.4|
+|et\_xmlfile|1.1.0|
+|exceptiongroup|1.1.1|
+|executing|1.2.0|
+|expat|2.5.0|
+|fake-useragent|1.1.3|
+|fasteners|0.17.3|
+|fastprogress|1.0.3|
+|filelock|3.9.0|
+|flit-core|3.8.0|
+|fmt|9.1.0|
+|font-ttf-dejavu-sans-mono|2.37|
+|font-ttf-inconsolata|3.000|
+|font-ttf-source-code-pro|2.038|
+|font-ttf-ubuntu|0.83|
+|fontconfig|2.14.2|
+|fonts-conda-ecosystem|1|
+|fonts-conda-forge|1|
+|fonttools|4.39.4|
+|fqdn|1.5.1|
+|freetype|2.12.1|
+|fribidi|1.0.10|
+|fsspec|2023.5.0|
+|funcy|2.0|
+|future|0.18.3|
+|fuzzywuzzy|0.18.0|
+|gatspy|0.3|
+|gcc\_impl\_linux-64|10.4.0|
+|gcc\_linux-64|10.4.0|
+|gensim|4.3.1|
+|gettext|0.21.1|
+|gflags|2.2.2|
+|gfortran\_impl\_linux-64|10.4.0|
+|giflib|5.2.1|
+|glog|0.6.0|
+|graphite2|1.3.13|
+|greenlet|2.0.2|
+|gsl|2.7|
+|gwcs|0.18.3|
+|gxx\_impl\_linux-64|10.4.0|
+|gxx\_linux-64|10.4.0|
+|h11|0.14.0|
+|h5py|3.8.0|
+|harfbuzz|6.0.0|
+|hdf4|4.2.15|
+|hdf5|1.12.2|
+|hickle|3.4.5|
+|html5lib|1.1|
+|hypothesis|6.76.0|
+|icu|70.1|
+|idna|3.4|
+|imagecodecs|2022.9.26|
+|imageio|2.28.1|
+|importlib-metadata|6.4.1|
+|importlib-resources|5.12.0|
+|importlib\_metadata|6.4.1|
+|importlib\_resources|5.12.0|
+|iniconfig|2.0.0|
+|ipykernel|6.22.0|
+|ipython|8.12.0|
+|ipython\_genutils|0.2.0|
+|ipywidgets|8.0.6|
+|isoduration|20.11.0|
+|jaraco.classes|3.2.3|
+|jedi|0.18.2|
+|jeepney|0.8.0|
+|jinja2|3.1.2|
+|jmespath|1.0.1|
+|joblib|1.2.0|
+|jpeg|9e|
+|json5|0.9.5|
+|jsonpatch|1.32|
+|jsonpointer|2.0|
+|jsonschema|4.17.3|
+|jupyter-resource-usage|0.7.1|
+|jupyter\_client|8.2.0|
+|jupyter\_core|5.3.0|
+|jupyter\_events|0.6.3|
+|jupyter\_server|2.5.0|
+|jupyter\_server\_fileid|0.9.0|
+|jupyter\_server\_terminals|0.4.4|
+|jupyter\_server\_ydoc|0.8.0|
+|jupyter\_telemetry|0.1.0|
+|jupyter\_ydoc|0.2.3|
+|jupyterhub|3.1.1|
+|jupyterhub-base|3.1.1|
+|jupyterlab|3.6.3|
+|jupyterlab-widgets|3.0.7|
+|jupyterlab\_pygments|0.2.2|
+|jupyterlab\_server|2.22.1|
+|jxrlib|1.1|
+|kernel-headers\_linux-64|2.6.32|
+|keyring|23.13.1|
+|keyutils|1.6.1|
+|kiwisolver|1.4.4|
+|krb5|1.19.3|
+|langcodes|3.3.0|
+|lazy\_loader|0.2|
+|lcms2|2.14|
+|ld\_impl\_linux-64|2.39|
+|lerc|4.0.0|
+|libabseil|20220623.0|
+|libaec|1.0.6|
+|libarchive|3.6.2|
+|libarrow|10.0.1|
+|libavif|0.11.1|
+|libblas|3.9.0|
+|libbrotlicommon|1.0.9|
+|libbrotlidec|1.0.9|
+|libbrotlienc|1.0.9|
+|libcblas|3.9.0|
+|libcrc32c|1.1.2|
+|libcurl|7.86.0|
+|libdeflate|1.14|
+|libedit|3.1.20191231|
+|libev|4.33|
+|libevent|2.1.10|
+|libexpat|2.5.0|
+|libffi|3.4.2|
+|libgcc-devel\_linux-64|10.4.0|
+|libgcc-ng|12.2.0|
+|libgfortran-ng|12.2.0|
+|libgfortran5|12.2.0|
+|libgit2|1.6.4|
+|libglib|2.74.1|
+|libgomp|12.2.0|
+|libgoogle-cloud|2.5.0|
+|libgpuarray|0.7.6|
+|libgrpc|1.51.1|
+|libiconv|1.17|
+|liblapack|3.9.0|
+|libmamba|1.4.2|
+|libmambapy|1.4.2|
+|libnetcdf|4.9.1|
+|libnghttp2|1.52.0|
+|libnsl|2.0.0|
+|libopenblas|0.3.21|
+|libpng|1.6.39|
+|libprotobuf|3.21.12|
+|libsanitizer|10.4.0|
+|libsodium|1.0.18|
+|libsolv|0.7.23|
+|libsqlite|3.40.0|
+|libssh2|1.10.0|
+|libstdcxx-devel\_linux-64|10.4.0|
+|libstdcxx-ng|12.2.0|
+|libthrift|0.16.0|
+|libtiff|4.4.0|
+|libutf8proc|2.8.0|
+|libuuid|2.38.1|
+|libuv|1.44.2|
+|libwebp-base|1.3.0|
+|libxcb|1.13|
+|libxml2|2.10.3|
+|libxslt|1.1.37|
+|libzip|1.9.2|
+|libzlib|1.2.13|
+|libzopfli|1.0.3|
+|lmfit|1.2.1|
+|locket|1.0.0|
+|lxml|4.9.2|
+|lz4|4.3.2|
+|lz4-c|1.9.4|
+|lzo|2.10|
+|make|4.3|
+|mako|1.2.4|
+|mamba|1.4.2|
+|markupsafe|2.1.2|
+|matplotlib-base|3.7.1|
+|matplotlib-inline|0.1.6|
+|mistune|2.0.5|
+|mizani|0.9.2|
+|more-itertools|9.1.0|
+|mpmath|1.2.1|
+|msgpack-python|1.0.5|
+|munkres|1.1.4|
+|murmurhash|1.0.9|
+|nbclassic|0.5.5|
+|nbclient|0.7.3|
+|nbconvert|7.3.1|
+|nbconvert-core|7.3.1|
+|nbconvert-pandoc|7.3.1|
+|nbformat|5.8.0|
+|nbgitpuller|1.1.1|
+|ncurses|6.3|
+|nest-asyncio|1.5.6|
+|netcdf4|1.6.3|
+|networkx|3.1|
+|nltk|3.8.1|
+|nodejs|16.19.0|
+|nomkl|1.0|
+|notebook|6.5.4|
+|notebook-shim|0.2.2|
+|numcodecs|0.11.0|
+|numexpr|2.8.4|
+|numpy|1.24.3|
+|oauthlib|3.2.2|
+|openjpeg|2.5.0|
+|openpyxl|3.1.2|
+|openssl|3.1.1|
+|orc|1.8.2|
+|outcome|1.2.0|
+|packaging|23.1|
+|pamela|1.0.0|
+|pandas|2.0.2|
+|pandoc|2.19.2|
+|pandocfilters|1.5.0|
+|pango|1.50.14|
+|parquet-cpp|1.5.1|
+|parse|1.19.0|
+|parso|0.8.3|
+|partd|1.4.0|
+|pathy|0.10.1|
+|patsy|0.5.3|
+|pcre2|10.40|
+|pexpect|4.8.0|
+|photutils|1.8.0|
+|pickleshare|0.7.5|
+|pillow|9.2.0|
+|pip|23.1|
+|pixman|0.40.0|
+|pkgutil-resolve-name|1.3.10|
+|platformdirs|2.6.0|
+|plotnine|0.12.1|
+|pluggy|1.0.0|
+|pooch|1.7.0|
+|pqdm|0.2.0|
+|preshed|3.0.8|
+|prometheus\_client|0.16.0|
+|prompt-toolkit|3.0.38|
+|prompt\_toolkit|3.0.38|
+|psutil|5.9.4|
+|pthread-stubs|0.4|
+|ptyprocess|0.7.0|
+|pure\_eval|0.2.2|
+|pyarrow|10.0.1|
+|pybind11-abi|4|
+|pycosat|0.6.4|
+|pycparser|2.21|
+|pycurl|7.45.1|
+|pydantic|1.9.2|
+|pyee|8.2.2|
+|pyerfa|2.0.0.3|
+|pygments|2.15.0|
+|pygpu|0.7.6|
+|pyjwt|2.6.0|
+|pyldavis|3.4.1|
+|pylogit|1.0.1|
+|pymc3|3.9.3|
+|pyopenssl|23.1.1|
+|pyparsing|3.0.9|
+|pyppeteer|1.0.2|
+|pyquery|2.0.0|
+|pyrsistent|0.19.3|
+|pysocks|1.7.1|
+|pytables|3.7.0|
+|pytest|7.3.1|
+|pytest-arraydiff|0.3|
+|pytest-astropy|0.10.0|
+|pytest-astropy-header|0.2.2|
+|pytest-cov|4.1.0|
+|pytest-doctestplus|0.12.1|
+|pytest-filter-subpackage|0.1.1|
+|pytest-mock|3.10.0|
+|pytest-openfiles|0.5.0|
+|pytest-remotedata|0.4.0|
+|python|3.10.10|
+|python-dateutil|2.8.2|
+|python-fastjsonschema|2.16.3|
+|python-json-logger|2.0.7|
+|python-tzdata|2023.3|
+|python\_abi|3.10|
+|pytz|2023.3|
+|pyvo|1.4.1|
+|pywavelets|1.4.1|
+|pyyaml|6.0|
+|pyzmq|25.0.2|
+|qgrid|1.3.1|
+|r-askpass|1.1|
+|r-assertthat|0.2.1|
+|r-backports|1.4.1|
+|r-base|4.2.2|
+|r-base64enc|0.1_3|
+|r-bit|4.0.5|
+|r-bit64|4.0.5|
+|r-bitops|1.0_7|
+|r-blob|1.2.4|
+|r-brew|1.0_8|
+|r-brio|1.1.3|
+|r-broom|1.0.4|
+|r-bslib|0.4.2|
+|r-cachem|1.0.7|
+|r-callr|3.7.3|
+|r-caret|6.0_94|
+|r-cellranger|1.1.0|
+|r-class|7.3_21|
+|r-cli|3.6.1|
+|r-clipr|0.8.0|
+|r-clock|0.6.1|
+|r-codetools|0.2_19|
+|r-colorspace|2.1_0|
+|r-commonmark|1.9.0|
+|r-conflicted|1.2.0|
+|r-cpp11|0.4.3|
+|r-crayon|1.5.2|
+|r-credentials|1.3.2|
+|r-curl|4.3.3|
+|r-data.table|1.14.8|
+|r-dbi|1.1.3|
+|r-dbplyr|2.3.2|
+|r-desc|1.4.2|
+|r-devtools|2.4.5|
+|r-dials|1.2.0|
+|r-dicedesign|1.9|
+|r-diffobj|0.3.5|
+|r-digest|0.6.31|
+|r-downlit|0.4.2|
+|r-dplyr|1.1.1|
+|r-dtplyr|1.3.1|
+|r-e1071|1.7_13|
+|r-ellipsis|0.3.2|
+|r-evaluate|0.20|
+|r-fansi|1.0.4|
+|r-farver|2.1.1|
+|r-fastmap|1.1.1|
+|r-fontawesome|0.5.0|
+|r-forcats|1.0.0|
+|r-foreach|1.5.2|
+|r-forecast|8.21|
+|r-fracdiff|1.5_2|
+|r-fs|1.6.1|
+|r-furrr|0.3.1|
+|r-future|1.32.0|
+|r-future.apply|1.10.0|
+|r-gargle|1.4.0|
+|r-generics|0.1.3|
+|r-gert|1.9.2|
+|r-ggplot2|3.4.2|
+|r-gh|1.4.0|
+|r-gitcreds|0.1.2|
+|r-globals|0.16.2|
+|r-glue|1.6.2|
+|r-googledrive|2.1.0|
+|r-googlesheets4|1.1.0|
+|r-gower|1.0.1|
+|r-gpfit|1.0_8|
+|r-gtable|0.3.3|
+|r-hardhat|1.3.0|
+|r-haven|2.5.2|
+|r-hexbin|1.28.3|
+|r-highr|0.10|
+|r-hms|1.1.3|
+|r-htmltools|0.5.5|
+|r-htmlwidgets|1.6.2|
+|r-httpuv|1.6.9|
+|r-httr|1.4.5|
+|r-httr2|0.2.2|
+|r-ids|1.0.1|
+|r-infer|1.0.4|
+|r-ini|0.3.1|
+|r-ipred|0.9_14|
+|r-irdisplay|1.1|
+|r-irkernel|1.3.2|
+|r-isoband|0.2.7|
+|r-iterators|1.0.14|
+|r-jquerylib|0.1.4|
+|r-jsonlite|1.8.4|
+|r-kernsmooth|2.23_20|
+|r-knitr|1.42|
+|r-labeling|0.4.2|
+|r-later|1.3.0|
+|r-lattice|0.21_8|
+|r-lava|1.7.2.1|
+|r-lhs|1.1.6|
+|r-lifecycle|1.0.3|
+|r-listenv|0.9.0|
+|r-lmtest|0.9_40|
+|r-lubridate|1.9.2|
+|r-magrittr|2.0.3|
+|r-mass|7.3_58.3|
+|r-matrix|1.5_4|
+|r-memoise|2.0.1|
+|r-mgcv|1.8_42|
+|r-mime|0.12|
+|r-miniui|0.1.1.1|
+|r-modeldata|1.1.0|
+|r-modelenv|0.1.1|
+|r-modelmetrics|1.2.2.2|
+|r-modelr|0.1.11|
+|r-munsell|0.5.0|
+|r-nlme|3.1_162|
+|r-nnet|7.3_18|
+|r-numderiv|2016.8_1.1|
+|r-nycflights13|1.0.2|
+|r-openssl|2.0.6|
+|r-parallelly|1.35.0|
+|r-parsnip|1.1.0|
+|r-patchwork|1.1.2|
+|r-pbdzmq|0.3_9|
+|r-pillar|1.9.0|
+|r-pkgbuild|1.4.0|
+|r-pkgconfig|2.0.3|
+|r-pkgdown|2.0.7|
+|r-pkgload|1.3.2|
+|r-plogr|0.2.0|
+|r-plyr|1.8.8|
+|r-praise|1.0.0|
+|r-prettyunits|1.1.1|
+|r-proc|1.18.0|
+|r-processx|3.8.0|
+|r-prodlim|2019.11.13|
+|r-profvis|0.3.7|
+|r-progress|1.2.2|
+|r-progressr|0.13.0|
+|r-promises|1.2.0.1|
+|r-proxy|0.4_27|
+|r-ps|1.7.4|
+|r-purrr|1.0.1|
+|r-quadprog|1.5_8|
+|r-quantmod|0.4.22|
+|r-r6|2.5.1|
+|r-ragg|1.2.4|
+|r-randomforest|4.7_1.1|
+|r-rappdirs|0.3.3|
+|r-rcmdcheck|1.4.0|
+|r-rcolorbrewer|1.1_3|
+|r-rcpp|1.0.10|
+|r-rcpparmadillo|0.12.2.0.0|
+|r-rcurl|1.98_1.9|
+|r-readr|2.1.4|
+|r-readxl|1.4.2|
+|r-recipes|1.0.5|
+|r-rematch|1.0.1|
+|r-rematch2|2.1.2|
+|r-remotes|2.4.2|
+|r-repr|1.1.6|
+|r-reprex|2.0.2|
+|r-reshape2|1.4.4|
+|r-rlang|1.1.0|
+|r-rmarkdown|2.21|
+|r-rodbc|1.3_20|
+|r-roxygen2|7.2.3|
+|r-rpart|4.1.19|
+|r-rprojroot|2.0.3|
+|r-rsample|1.1.1|
+|r-rsqlite|2.3.1|
+|r-rstudioapi|0.14|
+|r-rversions|2.1.2|
+|r-rvest|1.0.3|
+|r-sass|0.4.5|
+|r-scales|1.2.1|
+|r-selectr|0.4_2|
+|r-sessioninfo|1.2.2|
+|r-shiny|1.7.4|
+|r-slider|0.3.0|
+|r-sourcetools|0.1.7_1|
+|r-squarem|2021.1|
+|r-stringi|1.7.12|
+|r-stringr|1.5.0|
+|r-survival|3.5_5|
+|r-sys|3.4.1|
+|r-systemfonts|1.0.4|
+|r-testthat|3.1.7|
+|r-textshaping|0.3.6|
+|r-tibble|3.2.1|
+|r-tidymodels|1.0.0|
+|r-tidyr|1.3.0|
+|r-tidyselect|1.2.0|
+|r-tidyverse|1.3.2|
+|r-timechange|0.2.0|
+|r-timedate|4022.108|
+|r-tinytex|0.44|
+|r-tseries|0.10_53|
+|r-ttr|0.24.3|
+|r-tune|1.1.1|
+|r-tzdb|0.3.0|
+|r-urca|1.3_3|
+|r-urlchecker|1.0.1|
+|r-usethis|2.1.6|
+|r-utf8|1.2.3|
+|r-uuid|1.1_0|
+|r-vctrs|0.6.1|
+|r-viridislite|0.4.1|
+|r-vroom|1.6.1|
+|r-waldo|0.4.0|
+|r-warp|0.2.0|
+|r-whisker|0.4.1|
+|r-withr|2.5.0|
+|r-workflows|1.1.3|
+|r-workflowsets|1.0.1|
+|r-xfun|0.38|
+|r-xml2|1.3.3|
+|r-xopen|1.0.0|
+|r-xtable|1.8_4|
+|r-xts|0.13.1|
+|r-yaml|2.3.7|
+|r-yardstick|1.1.0|
+|r-zip|2.2.2|
+|r-zoo|1.8_12|
+|re2|2022.06.01|
+|readline|8.2|
+|regex|2023.6.3|
+|reproc|14.2.4|
+|reproc-cpp|14.2.4|
+|reproject|0.11.0|
+|requests|2.28.2|
+|requests-html|0.10.0|
+|rfc3339-validator|0.1.4|
+|rfc3986-validator|0.1.1|
+|rich|12.4.1|
+|ruamel.yaml|0.17.21|
+|ruamel.yaml.clib|0.2.7|
+|s2n|1.3.30|
+|scikit-image|0.20.0|
+|scikit-learn|1.2.2|
+|scipy|1.10.1|
+|seaborn|0.12.2|
+|seaborn-base|0.12.2|
+|secretstorage|3.3.3|
+|sed|4.8|
+|selenium|4.9.1|
+|semantic\_version|2.10.0|
+|send2trash|1.8.0|
+|setuptools|67.6.1|
+|setuptools-scm|7.1.0|
+|shellingham|1.5.1|
+|six|1.16.0|
+|smart\_open|5.2.1|
+|snappy|1.1.10|
+|sniffio|1.3.0|
+|sortedcontainers|2.4.0|
+|soupsieve|2.3.2.post1|
+|spacy|3.5.3|
+|spacy-legacy|3.0.12|
+|spacy-loggers|1.0.4|
+|sqlalchemy|1.4.46|
+|srsly|2.4.6|
+|stack\_data|0.6.2|
+|statsmodels|0.14.0|
+|sympy|1.11.1|
+|sysroot\_linux-64|2.12|
+|tblib|1.7.0|
+|terminado|0.17.1|
+|textblob|0.15.3|
+|theano|1.0.5|
+|thinc|8.1.10|
+|threadpoolctl|3.1.0|
+|tifffile|2022.10.10|
+|tinycss2|1.2.1|
+|tk|8.6.12|
+|tktable|2.10|
+|toml|0.10.2|
+|tomli|2.0.1|
+|tomlkit|0.11.8|
+|toolz|0.12.0|
+|torch|2.0.1+cpu|
+|torchaudio|2.0.2+cpu|
+|torchvision|0.15.2+cpu|
+|tornado|6.2|
+|tqdm|4.65.0|
+|traitlets|5.9.0|
+|trio|0.21.0|
+|trio-websocket|0.10.2|
+|typer|0.7.0|
+|typing-extensions|3.10.0.2|
+|typing\_extensions|3.10.0.2|
+|tzdata|2023c|
+|uncertainties|3.1.7|
+|unicodedata2|15.0.0|
+|unidecode|1.3.6|
+|unixodbc|2.3.10|
+|uri-template|1.2.0|
+|urllib3|1.26.15|
+|w3lib|2.1.1|
+|wasabi|1.1.2|
+|wcwidth|0.2.6|
+|webcolors|1.13|
+|webencodings|0.5.1|
+|websocket-client|1.5.1|
+|websockets|10.4|
+|wheel|0.40.0|
+|widgetsnbextension|4.0.7|
+|wsproto|1.2.0|
+|xarray|2023.5.0|
+|xlrd|2.0.1|
+|xorg-kbproto|1.0.7|
+|xorg-libice|1.0.10|
+|xorg-libsm|1.2.3|
+|xorg-libx11|1.8.4|
+|xorg-libxau|1.0.9|
+|xorg-libxdmcp|1.1.3|
+|xorg-libxext|1.3.4|
+|xorg-libxrender|0.9.10|
+|xorg-libxt|1.2.1|
+|xorg-renderproto|0.11.1|
+|xorg-xextproto|7.3.0|
+|xorg-xproto|7.0.31|
+|xyzservices|2023.5.0|
+|xz|5.2.6|
+|y-py|0.5.9|
+|yaml|0.2.5|
+|yaml-cpp|0.7.0|
+|ypy-websocket|0.8.2|
+|zarr|2.14.2|
+|zeromq|4.3.4|
+|zfp|1.0.0|
+|zict|3.0.0|
+|zipp|3.15.0|
+|zlib|1.2.13|
+|zlib-ng|2.0.7|
+|zstandard|0.19.0|
+|zstd|1.5.2|
+
+
+| Name | Version |
+| ----------------------------- | ------------------- |
+|Package|Version|
+|askpass|1.1|
+|assertthat|0.2.1|
+|backports|1.4.1|
+|base|4.2.2|
+|base64enc|0.1-3|
+|bit|4.0.5|
+|bit64|4.0.5|
+|bitops|1.0-7|
+|blob|1.2.4|
+|brew|1.0-8|
+|brio|1.1.3|
+|broom|1.0.4|
+|bslib|0.4.2|
+|cachem|1.0.7|
+|callr|3.7.3|
+|caret|6.0-94|
+|cellranger|1.1.0|
+|class|7.3-21|
+|cli|3.6.1|
+|clipr|0.8.0|
+|clock|0.6.1|
+|codetools|0.2-19|
+|colorspace|2.1-0|
+|commonmark|1.9.0|
+|compiler|4.2.2|
+|conflicted|1.2.0|
+|cpp11|0.4.3|
+|crayon|1.5.2|
+|credentials|1.3.2|
+|curl|4.3.3|
+|⋮|⋮|
+|tinytex|0.44|
+|tools|4.2.2|
+|tseries|0.10-53|
+|TTR|0.24.3|
+|tune|1.1.1|
+|tzdb|0.3.0|
+|urca|1.3-3|
+|urlchecker|1.0.1|
+|usethis|2.1.6|
+|utf8|1.2.3|
+|utils|4.2.2|
+|uuid|1.1-0|
+|vctrs|0.6.2|
+|viridisLite|0.4.1|
+|vroom|1.6.1|
+|waldo|0.4.0|
+|warp|0.2.0|
+|whisker|0.4.1|
+|withr|2.5.0|
+|workflows|1.1.3|
+|workflowsets|1.0.1|
+|xfun|0.38|
+|xml2|1.3.3|
+|xopen|1.0.0|
+|xtable|1.8-4|
+|xts|0.13.1|
+|yaml|2.3.7|
+|yardstick|1.1.0|
+|zip|2.2.2|
+|zoo|1.8-12|
