@@ -8,6 +8,12 @@ LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
 # tidyverse, devtools, shiny, rmarkdown, forecast, rsqlite, nycflights13,
 # caret, tidymodels, rcurl, randomforest
 
+USER root
+
+RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
+
+USER $NB_UID
+
 RUN mamba install --quiet --yes \
   astroML \
   astroplan \
@@ -49,6 +55,7 @@ RUN mamba clean --all -f -y \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
+
 # Install Python 3 packages
 RUN pip install \
   biogeme \
@@ -69,9 +76,3 @@ RUN pip install torch torchvision torchaudio --index-url https://download.pytorc
 RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
 RUN R -e "install.packages('IRkernel',repos='http://cran.us.r-project.org')"
 RUN R -e "IRkernel::installspec()"
-
-USER root
-
-RUN apt-get update && apt-get install -y vim gcc openssh-client
-
-USER $NB_UID

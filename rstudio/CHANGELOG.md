@@ -4,6 +4,13 @@ All notable changes to the RStudio Jupyter Notebook image will be documented her
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.5.0] - 2023-06-05
+
+### Changed
+- Changed upstream base notebook to jupyter/r-notebook:hub-3.1.1, which is based on Ubuntu 22.04 and includes many package updates.
+- Updated RStudio server to rstudio-server-2023.03.0-386-amd64
+- Updated R to version 4.2.3 (2023-03-15)
+
 ## [2.4.6] - 2023-03-24
 
 ### Added
