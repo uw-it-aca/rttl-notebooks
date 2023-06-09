@@ -28,6 +28,7 @@ RUN set -ex \
   lmfit \
   lxml \
   nltk \
+  octave_kernel \
   photutils \
   'plotly==5.14.1' \
   plotnine \
@@ -57,6 +58,7 @@ RUN pip install \
   nbgitpuller \
   pqdm \
   pyldavis \
+  opencv-python \
   qgrid \
   requests-html \
   tqdm \
@@ -68,6 +70,8 @@ RUN pip install torch torchvision torchaudio --index-url https://download.pytorc
 USER root
 
 RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
+RUN apt-get install -y octave octave-control octave-image octave-io octave-optim octave-signal octave-statistics
+RUN apt-get install -y gfortran
 
 # RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
 # RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
