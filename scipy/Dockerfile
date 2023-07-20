@@ -74,3 +74,8 @@ RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential 
 # COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
 
 USER $NB_UID
+
+RUN pip install 'nbgrader==0.8.3' \
+  ngshare_exchange
+
+COPY nbgrader_config.py /etc/jupyter/nbgrader_config.py
