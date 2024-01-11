@@ -1,4 +1,5 @@
-ARG BASE_CONTAINER=jupyter/r-notebook:hub-3.1.1
+# ARG BASE_CONTAINER=jupyter/r-notebook:hub-3.1.1
+ARG BASE_CONTAINER=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter_proj-r-notebook:0.0.1
 FROM $BASE_CONTAINER
 
 # Base notebook for 3.1.1 (amd64) uses Ubuntu 22.04 (Focal)
@@ -32,8 +33,9 @@ USER $NB_USER
 RUN pip install \
     jupyter-rsession-proxy \
     tensorflow \
+    'nbclassic==0.3.7' \
     nbgitpuller && \
-    jupyter serverextension enable nbgitpuller --sys-prefix
+    jupyter server extension enable nbgitpuller --sys-prefix
 
 RUN conda install -y -c conda-forge \
     r-base \

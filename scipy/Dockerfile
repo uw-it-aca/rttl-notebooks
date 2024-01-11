@@ -1,4 +1,5 @@
-ARG BASE_CONTAINER=jupyter/scipy-notebook:hub-3.1.1
+# ARG BASE_CONTAINER=jupyter/scipy-notebook:hub-3.1.1
+ARG BASE_CONTAINER=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter_proj-scipy-notebook:0.0.1
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
@@ -28,6 +29,7 @@ RUN set -ex \
   lmfit \
   lxml \
   nltk \
+  octave_kernel \
   photutils \
   'plotly==5.14.1' \
   plotnine \
@@ -53,21 +55,24 @@ RUN pip install \
   biogeme \
   fuzzywuzzy \
   joblib \
-  nbclassic \
+  'nbclassic==0.3.7' \
   nbgitpuller \
   pqdm \
   pyldavis \
+  opencv-python \
   qgrid \
   requests-html \
   tqdm \
   unidecode && \
-  jupyter serverextension enable nbgitpuller --sys-prefix
+  jupyter server extension enable nbgitpuller --sys-prefix
 
 RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 USER root
 
 RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
+RUN apt-get install -y octave octave-control octave-image octave-io octave-optim octave-signal octave-statistics
+RUN apt-get install -y gfortran
 
 # RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
 # RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
