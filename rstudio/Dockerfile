@@ -33,7 +33,7 @@ USER $NB_USER
 RUN pip install \
     jupyter-rsession-proxy \
     tensorflow \
-    'nbclassic==0.3.7' \
+    nbclassic \
     nbgitpuller && \
     jupyter server extension enable nbgitpuller --sys-prefix
 
@@ -55,5 +55,6 @@ RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeight
 RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel', 'visdat'), repos='https://cran.rstudio.com')"
 RUN R -e "install.packages(c('igraph', 'statnet'), repos='https://cran.rstudio.com')"
+RUN R -e "install.packages(c('gapminder'), repos='https://cran.rstudio.com')"
 
 RUN R -e "IRkernel::installspec()"

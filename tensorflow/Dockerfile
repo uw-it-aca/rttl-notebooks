@@ -52,7 +52,7 @@ RUN pip install \
   biogeme \
   fuzzywuzzy \
   joblib \
-  'nbclassic==0.3.7' \
+  nbclassic \
   nbgitpuller \
   pqdm \
   pyldavis \
