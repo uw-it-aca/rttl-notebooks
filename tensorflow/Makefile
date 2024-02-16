@@ -4,7 +4,7 @@ APP_BIN?=app
 default: build
 
 DOCKER_REPO?=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-tensorflow-notebook
-DOCKER_TAG?=2.4.0
+DOCKER_TAG?=2.4.0-B
 
 build:
 	docker build -t $(DOCKER_REPO):$(DOCKER_TAG) .

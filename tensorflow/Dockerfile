@@ -1,4 +1,5 @@
-ARG BASE_CONTAINER=jupyter/tensorflow-notebook:hub-3.1.1
+# ARG BASE_CONTAINER=jupyter/tensorflow-notebook:hub-3.1.1
+ARG BASE_CONTAINER=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter_proj-tensorflow-notebook:0.0.1
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
@@ -51,6 +52,7 @@ RUN pip install \
   biogeme \
   fuzzywuzzy \
   joblib \
+  nbclassic \
   nbgitpuller \
   pqdm \
   pyldavis \
@@ -58,7 +60,7 @@ RUN pip install \
   requests-html \
   tqdm \
   unidecode && \
-  jupyter serverextension enable nbgitpuller --sys-prefix
+  jupyter server extension enable nbgitpuller --sys-prefix
 
 RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 

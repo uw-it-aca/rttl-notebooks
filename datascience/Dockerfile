@@ -1,4 +1,5 @@
-ARG BASE_CONTAINER=jupyter/datascience-notebook:hub-3.1.1
+# ARG BASE_CONTAINER=jupyter/datascience-notebook:hub-3.1.1
+ARG BASE_CONTAINER=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter_proj-datascience-notebook:0.0.1
 
 FROM $BASE_CONTAINER
 
@@ -34,7 +35,7 @@ RUN pip install \
   nbclassic \
   nbgitpuller \  
   requests-html && \
-  jupyter serverextension enable nbgitpuller --sys-prefix
+  jupyter server extension enable nbgitpuller --sys-prefix
 
 USER root
 

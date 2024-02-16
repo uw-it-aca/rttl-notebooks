@@ -6,13 +6,18 @@ Docker image for UW-IT JupyterHub for Teaching SciPy notebook.
 - The JupyterLab interface is installed and is set as default
 
 #### Running notebook locally
-- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-scipy-notebook:2.4.0`
+- `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-scipy-notebook:2.4.2`
 - Console output will include localhost url with access token. Add '/lab' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
 
 #### Accessing server shell locally
-- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-scipy-notebook:2.4.0`
+- `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-scipy-notebook:2.4.2`
 
 #### Installed packages
+
+System software
+- octave 6.04
+- gfortran 11.3.0
+
 via `pip list`
 
 |Package|Version|
@@ -28,6 +33,7 @@ via `pip list`
 |argon2-cffi-bindings|21.2.0|
 |arrow|1.2.3|
 |arviz|0.11.1|
+|asciitree|0.3.3|
 |asdf|2.15.0|
 |asdf-astropy|0.4.0|
 |asdf-coordinates-schemas|0.2.0|
@@ -39,7 +45,7 @@ via `pip list`
 |astroalign|2.4.2|
 |astroML|1.0.2.post1|
 |astroplan|0.8|
-|astropy|5.2.2|
+|astropy|5.3|
 |astropy-healpix|0.7|
 |astroquery|0.4.6|
 |astroscrappy|1.1.0|
@@ -58,12 +64,11 @@ via `pip list`
 |boltons|23.0.0|
 |Bottleneck|1.3.7|
 |bounded-pool-executor|0.0.3|
-|Brotli|1.0.9|
 |brotlipy|0.7.0|
 |bs4|0.0.1|
 |cached-property|1.5.2|
 |catalogue|2.0.8|
-|ccdproc|2.4.0|
+|ccdproc|2.4.1|
 |certifi|2023.5.7|
 |certipy|0.1.3|
 |cffi|1.15.1|
@@ -80,7 +85,7 @@ via `pip list`
 |conda\_package\_streaming|0.7.0|
 |confection|0.0.4|
 |contourpy|1.0.7|
-|coverage|7.2.5|
+|coverage|7.2.7|
 |cryptography|40.0.2|
 |cssselect|1.2.0|
 |cycler|0.11.0|
@@ -88,7 +93,7 @@ via `pip list`
 |Cython|0.29.34|
 |cythonbiogeme|1.0.1|
 |cytoolz|0.12.0|
-|dash|2.9.3|
+|dash|2.10.2|
 |dask|2023.4.0|
 |dataclasses|0.8|
 |debugpy|1.6.7|
@@ -102,11 +107,11 @@ via `pip list`
 |exceptiongroup|1.1.1|
 |executing|1.2.0|
 |fake-useragent|1.1.3|
+|fasteners|0.17.3|
 |fastjsonschema|2.16.3|
 |fastprogress|1.0.3|
 |filelock|3.9.0|
 |Flask|2.3.2|
-|Flask-Compress|1.13|
 |flit\_core|3.8.0|
 |fonttools|4.39.3|
 |fqdn|1.5.1|
@@ -124,7 +129,7 @@ via `pip list`
 |HeapDict|1.0.1|
 |hickle|3.4.5|
 |html5lib|1.1|
-|hypothesis|6.75.2|
+|hypothesis|6.77.0|
 |idna|3.4|
 |imagecodecs|2023.1.23|
 |imageio|2.27.0|
@@ -133,6 +138,7 @@ via `pip list`
 |iniconfig|2.0.0|
 |ipykernel|6.22.0|
 |ipympl|0.9.3|
+|ipyparallel|8.6.1|
 |ipython|8.12.0|
 |ipython-genutils|0.2.0|
 |ipywidgets|8.0.6|
@@ -179,8 +185,9 @@ via `pip list`
 |MarkupSafe|2.1.2|
 |matplotlib|3.7.1|
 |matplotlib-inline|0.1.6|
+|metakernel|0.29.4|
 |mistune|2.0.5|
-|mizani|0.9.0|
+|mizani|0.9.2|
 |more-itertools|9.1.0|
 |mpmath|1.3.0|
 |msgpack|1.0.5|
@@ -192,15 +199,18 @@ via `pip list`
 |nbformat|5.8.0|
 |nbgitpuller|1.1.1|
 |nest-asyncio|1.5.6|
-|netCDF4|1.6.3|
+|netCDF4|1.6.4|
 |networkx|3.1|
 |nltk|3.8.1|
 |notebook|6.5.4|
 |notebook\_shim|0.2.2|
 |numba|0.56.4|
+|numcodecs|0.11.0|
 |numexpr|2.8.4|
 |numpy|1.24.3|
 |oauthlib|3.2.2|
+|octave\_kernel|0.35.1|
+|opencv-python|4.7.0.72|
 |openpyxl|3.1.1|
 |outcome|1.2.0|
 |packaging|23.1|
@@ -213,7 +223,7 @@ via `pip list`
 |pathy|0.10.1|
 |patsy|0.5.3|
 |pexpect|4.8.0|
-|photutils|1.7.0|
+|photutils|1.8.0|
 |pickleshare|0.7.5|
 |Pillow|9.5.0|
 |pip|23.1|
@@ -223,6 +233,7 @@ via `pip list`
 |plotnine|0.12.1|
 |pluggy|1.0.0|
 |pooch|1.7.0|
+|portalocker|2.7.0|
 |pqdm|0.2.0|
 |preshed|3.0.8|
 |prometheus-client|0.16.0|
@@ -254,14 +265,15 @@ via `pip list`
 |pytest|7.3.1|
 |pytest-arraydiff|0.3|
 |pytest-astropy|0.10.0|
-|pytest-astropy-header|0.1.2|
-|pytest-cov|4.0.0|
-|pytest-doctestplus|0.12.1|
+|pytest-astropy-header|0.2.2|
+|pytest-cov|4.1.0|
+|pytest-doctestplus|0.13.0|
 |pytest-filter-subpackage|0.1.1|
 |pytest-mock|3.10.0|
 |pytest-openfiles|0.5.0|
 |pytest-remotedata|0.4.0|
 |python-dateutil|2.8.2|
+|python-dotenv|1.0.0|
 |python-json-logger|2.0.7|
 |pytz|2023.3|
 |pyvo|1.4.1|
@@ -269,8 +281,8 @@ via `pip list`
 |PyYAML|6.0|
 |pyzmq|25.0.2|
 |qgrid|1.3.1|
-|regex|2023.5.5|
-|reproject|0.10.0|
+|regex|2023.6.3|
+|reproject|0.11.0|
 |requests|2.28.2|
 |requests-html|0.10.0|
 |retrying|1.3.3|
@@ -284,7 +296,7 @@ via `pip list`
 |scipy|1.10.1|
 |seaborn|0.12.2|
 |SecretStorage|3.3.3|
-|selenium|4.9.1|
+|selenium|4.10.0|
 |semantic-version|2.10.0|
 |Send2Trash|1.8.0|
 |sep|1.2.1|
@@ -296,7 +308,7 @@ via `pip list`
 |sniffio|1.3.0|
 |sortedcontainers|2.4.0|
 |soupsieve|2.3.2.post1|
-|spacy|3.5.2|
+|spacy|3.5.3|
 |spacy-legacy|3.0.12|
 |spacy-loggers|1.0.4|
 |SQLAlchemy|1.4.46|
@@ -325,7 +337,7 @@ via `pip list`
 |tqdm|4.65.0|
 |traitlets|5.9.0|
 |trio|0.21.0|
-|trio-websocket|0.10.2|
+|trio-websocket|0.10.3|
 |typer|0.7.0|
 |typing-extensions|3.10.0.2|
 |tzdata|2023.3|
@@ -335,24 +347,26 @@ via `pip list`
 |uri-template|1.2.0|
 |urllib3|1.26.15|
 |w3lib|2.1.1|
-|wasabi|1.1.1|
+|wasabi|1.1.2|
 |wcwidth|0.2.6|
 |webcolors|1.13|
 |webencodings|0.5.1|
 |websocket-client|1.5.1|
 |websockets|10.4|
-|Werkzeug|2.3.4|
+|Werkzeug|2.3.6|
 |wheel|0.40.0|
 |widgetsnbextension|4.0.7|
 |wsproto|1.2.0|
-|xarray|2023.4.2|
+|xarray|2023.5.0|
 |xlrd|2.0.1|
 |xyzservices|2023.2.0|
 |y-py|0.5.9|
 |ypy-websocket|0.8.2|
+|zarr|2.14.2|
 |zict|2.2.0|
 |zipp|3.15.0|
 |zstandard|0.19.0|
+
 
 via `conda list --no-pip`
 
@@ -373,6 +387,7 @@ via `conda list --no-pip`
 |arrow|1.2.3|
 |arrow-cpp|11.0.0|
 |arviz|0.11.1|
+|asciitree|0.3.3|
 |asdf|2.15.0|
 |asdf-astropy|0.4.0|
 |asdf-coordinates-schemas|0.2.0|
@@ -384,7 +399,7 @@ via `conda list --no-pip`
 |astroalign|2.4.2|
 |astroml|1.0.2.post1|
 |astroplan|0.8|
-|astropy|5.2.2|
+|astropy|5.3|
 |astropy-healpix|0.7|
 |astroquery|0.4.6|
 |astroscrappy|1.1.0|
@@ -424,7 +439,6 @@ via `conda list --no-pip`
 |bounded-pool-executor|0.0.3|
 |brotli|1.0.9|
 |brotli-bin|1.0.9|
-|brotli-python|1.0.9|
 |brotlipy|0.7.0|
 |brunsli|0.1|
 |bs4|0.0.1|
@@ -435,7 +449,7 @@ via `conda list --no-pip`
 |cached-property|1.5.2|
 |cached\_property|1.5.2|
 |catalogue|2.0.8|
-|ccdproc|2.4.0|
+|ccdproc|2.4.1|
 |certifi|2023.5.7|
 |certipy|0.1.3|
 |cffi|1.15.1|
@@ -455,7 +469,7 @@ via `conda list --no-pip`
 |confection|0.0.4|
 |configurable-http-proxy|4.5.4|
 |contourpy|1.0.7|
-|coverage|7.2.5|
+|coverage|7.2.7|
 |cryptography|40.0.2|
 |cssselect|1.2.0|
 |curl|8.0.1|
@@ -465,7 +479,7 @@ via `conda list --no-pip`
 |cython-blis|0.7.9|
 |cythonbiogeme|1.0.1|
 |cytoolz|0.12.0|
-|dash|2.9.3|
+|dash|2.10.2|
 |dask|2023.4.0|
 |dask-core|2023.4.0|
 |dataclasses|0.8|
@@ -483,10 +497,10 @@ via `conda list --no-pip`
 |executing|1.2.0|
 |expat|2.5.0|
 |fake-useragent|1.1.3|
+|fasteners|0.17.3|
 |fastprogress|1.0.3|
 |filelock|3.9.0|
 |flask|2.3.2|
-|flask-compress|1.13|
 |flit-core|3.8.0|
 |fmt|9.1.0|
 |fonttools|4.39.3|
@@ -517,7 +531,7 @@ via `conda list --no-pip`
 |heapdict|1.0.1|
 |hickle|3.4.5|
 |html5lib|1.1|
-|hypothesis|6.75.2|
+|hypothesis|6.77.0|
 |icu|72.1|
 |idna|3.4|
 |imagecodecs|2023.1.23|
@@ -529,6 +543,7 @@ via `conda list --no-pip`
 |iniconfig|2.0.0|
 |ipykernel|6.22.0|
 |ipympl|0.9.3|
+|ipyparallel|8.6.1|
 |ipython|8.12.0|
 |ipython\_genutils|0.2.0|
 |ipywidgets|8.0.6|
@@ -594,7 +609,7 @@ via `conda list --no-pip`
 |libgcc-ng|12.2.0|
 |libgfortran-ng|12.2.0|
 |libgfortran5|12.2.0|
-|libglib|2.76.2|
+|libglib|2.76.3|
 |libgomp|12.2.0|
 |libgoogle-cloud|2.8.0|
 |libgpuarray|0.7.6|
@@ -645,8 +660,9 @@ via `conda list --no-pip`
 |markupsafe|2.1.2|
 |matplotlib-base|3.7.1|
 |matplotlib-inline|0.1.6|
+|metakernel|0.29.4|
 |mistune|2.0.5|
-|mizani|0.9.0|
+|mizani|0.9.2|
 |more-itertools|9.1.0|
 |mpc|1.3.1|
 |mpfr|4.2.0|
@@ -663,7 +679,7 @@ via `conda list --no-pip`
 |nbgitpuller|1.1.1|
 |ncurses|6.3|
 |nest-asyncio|1.5.6|
-|netcdf4|1.6.3|
+|netcdf4|1.6.4|
 |networkx|3.1|
 |nltk|3.8.1|
 |nodejs|16.19.0|
@@ -671,13 +687,16 @@ via `conda list --no-pip`
 |notebook|6.5.4|
 |notebook-shim|0.2.2|
 |numba|0.56.4|
+|numcodecs|0.11.0|
 |numexpr|2.8.4|
 |numpy|1.24.3|
 |oauthlib|3.2.2|
+|octave\_kernel|0.35.1|
 |openblas|0.3.21|
+|opencv-python|4.7.0.72|
 |openjpeg|2.5.0|
 |openpyxl|3.1.1|
-|openssl|3.1.0|
+|openssl|3.1.1|
 |orc|1.8.3|
 |outcome|1.2.0|
 |packaging|23.1|
@@ -693,7 +712,7 @@ via `conda list --no-pip`
 |patsy|0.5.3|
 |pcre2|10.40|
 |pexpect|4.8.0|
-|photutils|1.7.0|
+|photutils|1.8.0|
 |pickleshare|0.7.5|
 |pillow|9.5.0|
 |pip|23.1|
@@ -703,6 +722,7 @@ via `conda list --no-pip`
 |plotnine|0.12.1|
 |pluggy|1.0.0|
 |pooch|1.7.0|
+|portalocker|2.7.0|
 |pqdm|0.2.0|
 |preshed|3.0.8|
 |prometheus\_client|0.16.0|
@@ -738,9 +758,9 @@ via `conda list --no-pip`
 |pytest|7.3.1|
 |pytest-arraydiff|0.3|
 |pytest-astropy|0.10.0|
-|pytest-astropy-header|0.1.2|
-|pytest-cov|4.0.0|
-|pytest-doctestplus|0.12.1|
+|pytest-astropy-header|0.2.2|
+|pytest-cov|4.1.0|
+|pytest-doctestplus|0.13.0|
 |pytest-filter-subpackage|0.1.1|
 |pytest-mock|3.10.0|
 |pytest-openfiles|0.5.0|
@@ -759,10 +779,10 @@ via `conda list --no-pip`
 |qgrid|1.3.1|
 |re2|2023.02.02|
 |readline|8.2|
-|regex|2023.5.5|
+|regex|2023.6.3|
 |reproc|14.2.4|
 |reproc-cpp|14.2.4|
-|reproject|0.10.0|
+|reproject|0.11.0|
 |requests|2.28.2|
 |requests-html|0.10.0|
 |retrying|1.3.3|
@@ -778,7 +798,7 @@ via `conda list --no-pip`
 |seaborn|0.12.2|
 |seaborn-base|0.12.2|
 |secretstorage|3.3.3|
-|selenium|4.9.1|
+|selenium|4.10.0|
 |semantic\_version|2.10.0|
 |send2trash|1.8.0|
 |sep|1.2.1|
@@ -791,7 +811,7 @@ via `conda list --no-pip`
 |sniffio|1.3.0|
 |sortedcontainers|2.4.0|
 |soupsieve|2.3.2.post1|
-|spacy|3.5.2|
+|spacy|3.5.3|
 |spacy-legacy|3.0.12|
 |spacy-loggers|1.0.4|
 |sqlalchemy|1.4.46|
@@ -821,7 +841,7 @@ via `conda list --no-pip`
 |tqdm|4.65.0|
 |traitlets|5.9.0|
 |trio|0.21.0|
-|trio-websocket|0.10.2|
+|trio-websocket|0.10.3|
 |typer|0.7.0|
 |typing-extensions|3.10.0.2|
 |typing\_extensions|3.10.0.2|
@@ -833,17 +853,17 @@ via `conda list --no-pip`
 |uri-template|1.2.0|
 |urllib3|1.26.15|
 |w3lib|2.1.1|
-|wasabi|1.1.1|
+|wasabi|1.1.2|
 |wcwidth|0.2.6|
 |webcolors|1.13|
 |webencodings|0.5.1|
 |websocket-client|1.5.1|
 |websockets|10.4|
-|werkzeug|2.3.4|
+|werkzeug|2.3.6|
 |wheel|0.40.0|
 |widgetsnbextension|4.0.7|
 |wsproto|1.2.0|
-|xarray|2023.4.2|
+|xarray|2023.5.0|
 |xlrd|2.0.1|
 |xorg-libxau|1.0.9|
 |xorg-libxdmcp|1.1.3|
@@ -853,6 +873,7 @@ via `conda list --no-pip`
 |yaml|0.2.5|
 |yaml-cpp|0.7.0|
 |ypy-websocket|0.8.2|
+|zarr|2.14.2|
 |zeromq|4.3.4|
 |zfp|1.0.0|
 |zict|2.2.0|
