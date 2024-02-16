@@ -4,6 +4,17 @@ All notable changes to the SciPy Jupyter Notebook image will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.3-B] - 2024-02-10
+
+### Added
+- Added unixodbc system dependency.
+
+## [2.4.2-B] - 2024-01-11
+
+### Fixed
+- An issue with image streaming from Artifact Registry required switching to rebuilt [jupyter-docker-stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) images without any WORKDIR statements (which can cause duplicate layers to be created).
+
+
 ## [2.4.2] - 2023-06-09
 
 ## Changed
