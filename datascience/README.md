@@ -3,7 +3,7 @@ Docker image for UW-IT JupyterHub for Teaching datascience Notebook server.
 - Detailed information about base datascience Notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
-- The JupyterLab interface is installed and is set as default
+- The JupyterLab (v4.0.10) interface is installed and is set as default
 
 #### Running Notebook locally
 - `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-datascience-notebook:2.4.0-B`

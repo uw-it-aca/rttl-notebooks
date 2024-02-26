@@ -1,12 +1,13 @@
 # UW-IT JupyterHub for Teaching RStudio notebook
-Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth flow with JupyterHub. Rstudio version is 2022.07.1+554 "Spotted Wakerobin" Release with R version 4.1.1 (2021-08-10)
+Docker image for RStudio notebook using jupyter-rsession-proxy to handle auth flow with JupyterHub. Rstudio version is 2023.12.1 Build 402 "Ocean Storm" Release with R version 4.3.2 (2023-10-31). This image also has JupyterLab v4.0.10 installed.
 - Detailed information about base R notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-r-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
+- A user guide for the RStudio UI can be found here: https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html
 
 #### Running notebook locally
 - `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.6.1-B`
-- Console output will include localhost url with access token. Add '/rstudio' to the end of the path portion, eg: `http://127.0.0.1:8888/lab`
+- Console output will include localhost url with access token. Add '/rstudio' to the end of the path portion, eg: `http://127.0.0.1:8888/rstudio`
 
 #### Accessing server shell locally
 - `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.6.1-B`
