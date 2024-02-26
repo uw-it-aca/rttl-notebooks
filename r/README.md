@@ -1,9 +1,9 @@
 # UW-IT JupyterHub for Teaching R notebook
-Docker image for UW-IT JupyterHub for Teaching R notebook. 
+Docker image for UW-IT JupyterHub for Teaching R notebook. Installed R version is 4.3.2 (2023-10-31)
 - Detailed information about base R notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-r-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
-- The JupyterLab interface is installed and is set as default
+- The JupyterLab interface (v4.0.10) is installed and is set as default
 
 #### Running notebook locally
 - `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-r-notebook:2.4.0-B`
