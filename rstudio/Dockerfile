@@ -58,4 +58,7 @@ RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswa
 RUN R -e "IRkernel::installspec()"
 USER root
 RUN echo "rsession-ld-library-path=/opt/conda/lib" >> /etc/rstudio/rserver.conf
+RUN apt-get update && apt-get install -y gfortran libglpk-dev libxml2-dev
 USER $NB_USER
+RUN R -e "remotes::install_github('igraph/rigraph@main')"
+RUN R -e "install.packages(c('DataExplorer'),repos='http://cran.us.r-project.org')"
