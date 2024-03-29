@@ -75,3 +75,4 @@ RUN conda install -y -c conda-forge pkg-config
 RUN R -e "install.packages(c('tidyverse'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('ipumsr','modelsummary'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('ggfixest'),repos='http://cran.us.r-project.org')"
+RUN R -e "install.packages(c('knitr'),repos='http://cran.us.r-project.org')"
