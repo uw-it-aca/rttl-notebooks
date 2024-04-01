@@ -57,4 +57,5 @@ RUN R -e "devtools::install_github('vjcitn/mobpack')"
 RUN R -e "IRkernel::installspec()"
 USER root
 RUN echo "rsession-ld-library-path=/opt/conda/lib" >> /etc/rstudio/rserver.conf
+RUN apt-get install lmodern -y
 USER $NB_USER
