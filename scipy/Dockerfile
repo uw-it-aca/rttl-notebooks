@@ -80,3 +80,6 @@ RUN apt-get install -y unixodbc
 # COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
 
 USER $NB_UID
+
+RUN pip install --upgrade pydantic
+RUN pip install langchain-openai jupyter-ai
