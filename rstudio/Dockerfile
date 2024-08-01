@@ -49,11 +49,11 @@ RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor',
 RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
 RUN R -e "install.packages(c('patchwork','kableExtra','ggpubr','HDInterval', 'leaflet'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel', 'visdat', 'igraph', 'statnet', 'gapminder'), repos='https://cran.rstudio.com')"
-RUN R -e "devtools::install_github('grover4/stat311tutorials')"
 RUN R -e "devtools::install_github('rundel/learnrhash')"
 RUN R -e "devtools::install_github('rstudio/gradethis')"
 RUN R -e "devtools::install_github('vjcitn/mobpack')"
 RUN R -e "devtools::install_github('grover4/STAT311labreport')"
+RUN R -e "devtools::install_github('grover4/stat311tutorials')"
 
 RUN R -e "IRkernel::installspec()"
 USER root
