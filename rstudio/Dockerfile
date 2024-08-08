@@ -54,6 +54,7 @@ RUN R -e "devtools::install_github('rstudio/gradethis')"
 RUN R -e "devtools::install_github('vjcitn/mobpack')"
 RUN R -e "devtools::install_github('grover4/STAT311labreport')"
 RUN R -e "devtools::install_github('grover4/stat311tutorials')"
+# RUN R -e "devtools::install_github('hadley/emo', upgrade='always')"
 
 RUN R -e "IRkernel::installspec()"
 USER root
