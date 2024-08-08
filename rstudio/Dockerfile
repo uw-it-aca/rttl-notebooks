@@ -45,10 +45,12 @@ RUN conda install -y -c conda-forge \
 # See: https://github.com/uw-it-aca/rttl-notebooks/pull/15
 RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
 RUN R -e "devtools::install_github(c('rstudio-education/dsbox'))"
-RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor', 'lubridate', 'mosaic', 'openintro', 'scales', 'skimr', 'tidyverse','mosaicData','learnr','palmerpenguins','checkmate','renv','rsconnect','shiny','glue','reactable','skimr','gt','GGally','tidymodels','statsr','corrplot'),repos='http://cran.us.r-project.org')"
+RUN R -e "install.packages(c('IRkernel', 'fastR2', 'fivethirtyeight', 'janitor', 'lubridate', 'mosaic', 'openintro', 'scales', 'skimr', 'tidyverse','mosaicData','learnr','palmerpenguins','checkmate','renv','rsconnect','glue','reactable','skimr','gt','GGally','tidymodels','statsr','corrplot'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')"
 RUN R -e "install.packages(c('patchwork','kableExtra','ggpubr','HDInterval', 'leaflet'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel', 'visdat', 'igraph', 'statnet', 'gapminder'), repos='https://cran.rstudio.com')"
+RUN R -e "devtools::install_version('shiny', version='1.8.0')"
+RUN R -e "devtools::install_version('ggplot2', version='3.4.4')"
 RUN R -e "devtools::install_github('rundel/learnrhash')"
 RUN R -e "devtools::install_github('rstudio/gradethis')"
 RUN R -e "devtools::install_github('vjcitn/mobpack')"
