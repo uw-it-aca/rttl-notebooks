@@ -25,6 +25,8 @@ RUN apt-get update && \
 
 # Fix for error: "System has not been booted with systemd as init system (PID 1)" related to timedatectl running in containers.
 RUN echo 'TZ="America/Los_Angeles"' >> /opt/conda/lib/R/etc/Renviron
+# Fix for PROJ path errors
+RUN printf "PROJ_DATA='/opt/conda/share/proj'\nPROJ_NETWORK='ON'" >> /opt/conda/lib/R/etc/Renviron.site
 
 ENV PATH=$PATH:/usr/lib/rstudio-server/bin
 
