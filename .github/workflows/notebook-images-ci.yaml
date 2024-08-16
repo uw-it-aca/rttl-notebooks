@@ -75,3 +75,4 @@ jobs:
           push: true
           tags: |
             ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-${{ matrix.versions }}-notebook:${{ env.VERSION }}
+            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-${{ matrix.versions }}-notebook:latest
