@@ -58,3 +58,7 @@ RUN R -e "install.packages(c('patchwork'),repos='http://cran.us.r-project.org')"
 RUN R -e "install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel', 'visdat', 'igraph', 'statnet', 'gapminder'), repos='https://cran.rstudio.com')"
 
 RUN R -e "IRkernel::installspec()"
+
+USER root
+RUN apt-get install lmodern -y
+USER $NB_USER
