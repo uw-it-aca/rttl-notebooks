@@ -62,6 +62,7 @@ RUN pip install \
   opencv-python \
   qgrid \
   requests-html \
+  tellurium \
   tqdm \
   unidecode && \
   jupyter server extension enable nbgitpuller --sys-prefix
@@ -73,7 +74,7 @@ USER root
 RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
 RUN apt-get install -y octave octave-control octave-image octave-io octave-optim octave-signal octave-statistics
 RUN apt-get install -y gfortran
-RUN apt-get install -y unixodbc
+RUN apt-get install -y unixodbc zip
 
 # RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
 # RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
