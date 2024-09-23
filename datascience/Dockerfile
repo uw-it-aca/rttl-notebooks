@@ -31,6 +31,7 @@ RUN mamba clean --all -f -y \
 RUN pip install \
   folium \
   geopandas \
+  fiona \
   ipyleaflet \
   nbclassic \
   nbgitpuller \  
