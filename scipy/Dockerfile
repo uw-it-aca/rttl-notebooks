@@ -2,7 +2,16 @@
 ARG BASE_CONTAINER=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter_proj-scipy-notebook:0.0.1
 FROM $BASE_CONTAINER
 
-LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
+LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
+
+USER root
+
+RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
+RUN apt-get install -y octave octave-control octave-image octave-io octave-optim octave-signal octave-statistics
+RUN apt-get install -y gfortran libncurses5
+RUN apt-get install -y unixodbc zip
+
+USER $NB_UID
 
 # Base image includes: (https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-tensorflow-notebook)
 # texlive, git, vi, nano, tzdata, unzip
@@ -57,27 +66,15 @@ RUN pip install \
   joblib \
   nbclassic \
   nbgitpuller \
+  'numpy == 1.26.4' \
   pqdm \
   pyldavis \
   opencv-python \
   qgrid \
   requests-html \
-  tellurium \
+  'tellurium==2.2.8' \
   tqdm \
   unidecode && \
   jupyter server extension enable nbgitpuller --sys-prefix
 
 RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-
-USER root
-
-RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
-RUN apt-get install -y octave octave-control octave-image octave-io octave-optim octave-signal octave-statistics
-RUN apt-get install -y gfortran libncurses5
-RUN apt-get install -y unixodbc zip
-
-# RUN echo 'export LD_LIBRARY_PATH=/usr/local/nvidia/lib64' >> /etc/profile
-# RUN echo 'export PATH=$PATH:/usr/local/nvidia/bin'>> /etc/profile
-# COPY kernel.json /opt/conda/share/jupyter/kernels/python3/kernel.json
-
-USER $NB_UID
