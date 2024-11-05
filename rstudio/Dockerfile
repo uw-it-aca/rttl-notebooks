@@ -41,7 +41,7 @@ RUN pip install \
 
 RUN conda install -y -c conda-forge \
     r-base \
-    gdal \
+    gdal \ 
     r-keras \
     r-gstat \
     r-spatial \
@@ -62,3 +62,5 @@ RUN R -e "IRkernel::installspec()"
 USER root
 RUN apt-get install lmodern -y
 USER $NB_USER
+
+RUN R -e "install.packages(c('coefplot', 'doBy', 'ggfixest', 'ipumsr', 'vtable', 'stargazer', 'modelsummary', 'ivreg'), repos='https://cran.rstudio.com')"
