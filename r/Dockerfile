@@ -1,80 +1,42 @@
-# ARG BASE_CONTAINER=jupyter/r-notebook:hub-3.1.1
-ARG BASE_CONTAINER=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter_proj-r-notebook:0.0.1
+ARG BASE_CONTAINER=quay.io/jupyter/r-notebook:hub-4.1.5
+# Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/r-notebook/Dockerfile
+# Ubuntu 22.04.4 LTS
+
 FROM $BASE_CONTAINER
 
-LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
-
-# Base image includes:
-# texlive, git, vi, nano, tzdata, unzip
-# tidyverse, devtools, shiny, rmarkdown, forecast, rsqlite, nycflights13,
-# caret, tidymodels, rcurl, randomforest
+LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
 
 USER root
 
-RUN apt-get update && apt-get install -y vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic
+# Copy package install lists
+COPY --chown=$NB_UID: apt.txt *-packages.txt install.R /home/jovyan/
 
-USER $NB_UID
+RUN echo "Checking for 'apt.txt'..." \
+        ; if test -f "apt.txt" ; then \
+        apt-get update --fix-missing > /dev/null\
+        && xargs -a apt.txt apt-get install --yes \
+        && apt-get clean > /dev/null \
+        && rm -rf /var/lib/apt/lists/* \
+        ; fi
 
-RUN mamba install --quiet --yes \
-  astroML \
-  astroplan \
-  astropy \
-  astroquery \
-  bokeh \
-  ccdproc \
-  choicemodels \
-  cssselect \
-  emcee \
-  gatspy \
-  gensim \
-  hickle \
-  jupyter-resource-usage \
-  lmfit \
-  lxml \
-  nltk \
-  openpyxl \
-  pandas \
-  photutils \
-  plotnine \
-  pylogit \
-  pymc3 \
-  PyTables \
-  requests \
-  seaborn \
-  selenium \
-  spacy \
-  statsmodels \
-  textblob \
-  uncertainties \
-  xlrd
+USER $NB_USER
 
-RUN mamba clean --all -f -y \
-  && jupyter lab build -y \
+RUN set -ex \
+  && mamba install --quiet --yes --file conda-packages.txt
+
+RUN mamba clean --all -f -y && jupyter lab build -y \
   && jupyter lab clean -y \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
   && rm -rf "/home/${NB_USER}/.node-gyp" \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
-
-# Install Python 3 packages
-RUN pip install \
-  biogeme \
-  fuzzywuzzy \
-  joblib \
-  nbclassic \
-  nbgitpuller \
-  pqdm \
-  pyldavis \
-  qgrid \
-  requests-html \
-  scikit-learn \
-  tqdm \
-  unidecode && \
+# Install Python packages
+RUN pip install -r pip-packages.txt && \
   jupyter server extension enable nbgitpuller --sys-prefix
 
-RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+# Install Python packages from Torch indexes
+RUN pip install -r pip-torch-packages.txt
 
-RUN R -e "devtools::install_github('IRkernel/repr', ref = 'master')"
-RUN R -e "install.packages('IRkernel',repos='http://cran.us.r-project.org')"
-RUN R -e "IRkernel::installspec()"
+## Run an install.R script, if it exists.
+RUN if [ -f install.R ]; then R --quiet -f install.R; fi

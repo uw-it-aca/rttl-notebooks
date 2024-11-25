@@ -1,0 +1,12 @@
+biogeme
+fuzzywuzzy
+joblib
+nbclassic
+nbgitpuller
+pqdm
+pyldavis
+qgrid
+requests-html
+scikit-learn
+tqdm
+unidecode

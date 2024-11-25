@@ -1,0 +1,9 @@
+r-base
+gdal
+r-keras
+r-gstat
+r-spatial
+r-spdep
+r-spatialreg
+r-nloptr
+r-terra

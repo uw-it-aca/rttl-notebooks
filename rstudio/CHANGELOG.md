@@ -4,6 +4,24 @@ All notable changes to the RStudio Jupyter Notebook image will be documented her
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.7.0] - 2024-11-24
+
+### Fixed
+- RStudio help pane links bug (see: https://github.com/jupyterhub/jupyter-rsession-proxy/issues/156)
+
+### Changed
+- Revert to jupyter/docker-stacks base images.
+- Version jump to align all RTTL image versions.
+- Moved package lists to separate files.
+
+### Updated
+- Changed upstream base notebook to quay.io/jupyter/r-notebook:hub-4.1.5. See [build manifest](https://github.com/jupyter/docker-stacks/wiki/x86_64-default-r-notebook-996fae1248fc). 
+- JupyterLab v4.2.0
+- Jupyter Notebook v7.2.0
+- Python v3.11.9
+- R v4.3.3
+- RStudio v2023.12.1 Build 402
+
 ## [2.6.1-B] - 2024-02-12
 
 ### Updated
@@ -76,7 +94,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added R package: fastr2
 
 ### Changed
-- Version major.minor numbering now tracks with rttl-admin tool
+- ~~Version major.minor numbering now tracks with rttl-admin tool~~
 - Moved images to Google Artifact Registry
 
 ### Fixed
