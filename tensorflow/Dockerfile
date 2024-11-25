@@ -1,71 +1,40 @@
-# ARG BASE_CONTAINER=jupyter/tensorflow-notebook:hub-3.1.1
-ARG BASE_CONTAINER=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter_proj-tensorflow-notebook:0.0.1
+ARG BASE_CONTAINER=quay.io/jupyter/tensorflow-notebook:hub-4.1.5
+# Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/tensorflow-notebook/Dockerfile
+# Ubuntu 22.04.4 LTS
+
 FROM $BASE_CONTAINER
 
-LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
+LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
 
-# Base image includes:
-# texlive, git, vi, nano, tzdata, unzip
-# dask, pandas, numexpr, matplotlib, scipy, seaborn, scikit-learn,
-# scikit-image, sympy, cython, patsy, statsmodels, cloudpickle, dill, numba,
-# bokeh, sqlalchemy, hdf5, vincent, beautifulsoup, protobuf, xlrd, bottleneck,
-# pytables, ipywidgets, ipympl, facets, tensorflow, keras
+USER root
 
-RUN mamba install --quiet --yes \
-  astroML \
-  astroplan \
-  astropy \
-  astroquery \
-  choicemodels \
-  cssselect \
-  emcee \
-  gatspy \
-  gensim \
-  hickle \
-  jupyter-dash \
-  jupyter-resource-usage \
-  lmfit \
-  lxml \
-  nltk \
-  openpyxl \
-  photutils \
-  plotly \
-  plotnine \
-  pylogit \
-  pymc3 \
-  requests \
-  selenium \
-  spacy \
-  textblob \
-  uncertainties
+# Copy package install lists
+COPY --chown=$NB_UID: apt.txt *-packages.txt /home/jovyan/
 
-RUN mamba clean --all -f -y \
-  && jupyter lab build -y \
+RUN echo "Checking for 'apt.txt'..." \
+        ; if test -f "apt.txt" ; then \
+        apt-get update --fix-missing > /dev/null\
+        && xargs -a apt.txt apt-get install --yes \
+        && apt-get clean > /dev/null \
+        && rm -rf /var/lib/apt/lists/* \
+        ; fi
+
+USER $NB_UID
+
+# Install Conda packages
+RUN set -ex \
+  && mamba install --quiet --yes --file conda-packages.txt
+
+RUN mamba clean --all -f -y && jupyter lab build -y \
   && jupyter lab clean -y \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
   && rm -rf "/home/${NB_USER}/.node-gyp" \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
-# Install Python 3 packages
-RUN pip install \
-  biogeme \
-  fuzzywuzzy \
-  joblib \
-  nbclassic \
-  nbgitpuller \
-  pqdm \
-  pyldavis \
-  qgrid \
-  requests-html \
-  tqdm \
-  unidecode && \
+# Install Python packages
+RUN pip install -r pip-packages.txt && \
   jupyter server extension enable nbgitpuller --sys-prefix
 
-RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-
-USER root
-
-RUN apt-get update && apt-get install -y openssh-client
-
-USER $NB_UID
+# Install Python packages from Torch indexes
+RUN pip install -r pip-torch-packages.txt

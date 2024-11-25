@@ -1,0 +1,1 @@
+vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic libncurses5 zip
