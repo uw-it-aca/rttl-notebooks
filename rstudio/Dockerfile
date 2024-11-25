@@ -12,7 +12,7 @@ COPY --chown=$NB_UID: apt.txt *-packages.txt install.R /home/jovyan/
 
 # Per: https://posit.co/download/rstudio-server/
 RUN apt-get update && \
-    apt-get install gdebi-core libproj-dev proj-data proj-bin libgeos-dev build-essential libfreetype6-dev libfontconfig1-dev cmake lmodern -y && \    
+    xargs -a apt.txt apt-get install --yes && \    
     curl --silent -L --fail wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2023.12.1-402-amd64.deb > /tmp/rstudio.deb && \
     echo '2ceeebe5d1d77068b36e85f7cf366cd1409f7642a80261b6bbeb3da945ef0888  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     gdebi -n /tmp/rstudio.deb && \

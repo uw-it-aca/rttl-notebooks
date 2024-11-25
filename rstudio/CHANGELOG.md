@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Revert to jupyter/docker-stacks base images.
 - Version jump to align all RTTL image versions.
+- Moved package lists to separate files.
 
 ### Updated
 - Changed upstream base notebook to quay.io/jupyter/r-notebook:hub-4.1.5. See [build manifest](https://github.com/jupyter/docker-stacks/wiki/x86_64-default-r-notebook-996fae1248fc). 
