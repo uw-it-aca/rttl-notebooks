@@ -1,0 +1,7 @@
+folium
+geopandas
+fiona
+ipyleaflet
+nbclassic
+nbgitpuller  
+requests-html

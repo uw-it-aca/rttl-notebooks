@@ -1,45 +1,38 @@
-# ARG BASE_CONTAINER=jupyter/datascience-notebook:hub-3.1.1
-ARG BASE_CONTAINER=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter_proj-datascience-notebook:0.0.1
+ARG BASE_CONTAINER=quay.io/jupyter/datascience-notebook:hub-4.1.5
+# Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/datascience-notebook/Dockerfile
+# Ubuntu 22.04.4 LTS
 
 FROM $BASE_CONTAINER
 
-LABEL maintainer="UW-IT AXDD <aca-it@uw.edu>"
+LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
 
-# Base image includes:
-# texlive, git, vi, nano, tzdata, unzip
-# dask, pandas, numexpr, matplotlib, scipy, seaborn, scikit-learn,
-# scikit-image, sympy, cython, patsy, statsmodels, cloudpickle, dill, numba,
-# bokeh, sqlalchemy, hdf5, vincent, beautifulsoup, protobuf, xlrd, bottleneck,
-# pytables, ipywidgets, ipympl, facets
-# tidyverse, devtools, shiny, rmarkdown, forecast, rsqlite, nycflights13,
-# caret, tidymodels, rcurl, randomforest#
-# julia, ijulia, hdf5, gadfly, rdatasets
+USER root
 
-RUN mamba install --quiet --yes \
-  requests \
-  jupyter-resource-usage
+# Copy package install lists
+COPY --chown=$NB_UID: apt.txt /home/jovyan/
+COPY --chown=$NB_UID: *-packages.txt /home/jovyan/
 
-RUN mamba clean --all -f -y \
-  && jupyter lab build -y \
+RUN echo "Checking for 'apt.txt'..." \
+        ; if test -f "apt.txt" ; then \
+        apt-get update --fix-missing > /dev/null\
+        && xargs -a apt.txt apt-get install --yes \
+        && apt-get clean > /dev/null \
+        && rm -rf /var/lib/apt/lists/* \
+        ; fi
+
+USER $NB_UID
+
+# Install Conda packages
+RUN set -ex \
+  && mamba install --quiet --yes --file conda-packages.txt
+
+RUN mamba clean --all -f -y && jupyter lab build -y \
   && jupyter lab clean -y \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
   && rm -rf "/home/${NB_USER}/.node-gyp" \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
-# Install Python 3 packages
-RUN pip install \
-  folium \
-  geopandas \
-  fiona \
-  ipyleaflet \
-  nbclassic \
-  nbgitpuller \  
-  requests-html && \
+# Install Python packages
+RUN pip install -r pip-packages.txt && \
   jupyter server extension enable nbgitpuller --sys-prefix
-
-USER root
-
-RUN apt-get update && apt-get install -y vim gcc
-
-USER $NB_UID
