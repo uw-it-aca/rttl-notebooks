@@ -9,8 +9,7 @@ LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
 USER root
 
 # Copy package install lists
-COPY --chown=$NB_UID: apt.txt /home/jovyan/
-COPY --chown=$NB_UID: *-packages.txt /home/jovyan/
+COPY --chown=$NB_UID: apt.txt *-packages.txt /home/jovyan/
 
 RUN echo "Checking for 'apt.txt'..." \
         ; if test -f "apt.txt" ; then \
