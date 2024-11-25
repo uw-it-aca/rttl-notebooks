@@ -5,14 +5,15 @@ Docker image for UW-IT JupyterHub for Teaching R notebook. Installed R version i
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Output from both command's output is also shown below for convenience.
 - The JupyterLab interface (v4.0.10) is installed and is set as default
 
-#### Running notebook locally
+### Running notebook locally
 - `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-r-notebook:2.7.0`
 - Console output will include localhost url with access token.
 
-#### Accessing server shell locally
+### Accessing server shell locally
 - `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-r-notebook:2.7.0`
 
-#### Installed packages
+#### Installed Python packages
+
 via `pip list`
 
 | Package | Version |
@@ -1137,6 +1138,7 @@ via `conda list --no-pip`
 |zstandard|0.19.0|
 |zstd|1.5.6|
 
+#### Installed R packages
 
 Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 

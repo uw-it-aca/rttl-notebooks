@@ -6,15 +6,16 @@ Docker image for UW-IT JupyterHub for Teaching datascience Notebook server.
 - All packages are installed into the default Conda environment, which is active on startup.
 - The JupyterLab (v4.2.0) interface is installed and is set as default
 
-#### Running Notebook locally
+### Running Notebook locally
 - `docker run -p 8888:8888 us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-datascience-notebook:2.7.0`
 - Console output will include localhost url with access token.
 
-#### Accessing server shell locally
+### Accessing server shell locally
 - `docker run -it --entrypoint /bin/bash us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-datascience-notebook:2.7.0`
 
 
-#### Installed packages
+#### Installed Python packages
+
 via `pip list`
 
 |Package|Version|
