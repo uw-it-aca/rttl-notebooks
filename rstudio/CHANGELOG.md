@@ -93,7 +93,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added R package: fastr2
 
 ### Changed
-- Version major.minor numbering now tracks with rttl-admin tool
+- ~~Version major.minor numbering now tracks with rttl-admin tool~~
 - Moved images to Google Artifact Registry
 
 ### Fixed

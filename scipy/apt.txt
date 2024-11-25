@@ -1,0 +1,1 @@
+vim gcc openssh-client build-essential texlive-xetex texlive-fonts-recommended texlive-plain-generic octave octave-control octave-image octave-io octave-optim octave-signal octave-statistics gfortran libncurses5 unixodbc zip

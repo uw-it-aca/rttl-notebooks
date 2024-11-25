@@ -1,0 +1,10 @@
+astroalign
+biogeme
+fuzzywuzzy
+nbgitpuller
+opencv-python
+pqdm
+pyldavis
+qgrid
+requests-html
+tellurium

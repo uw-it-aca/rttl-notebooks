@@ -30,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.3] - 2022-02-03
 
 ### Changed
-- Version major.minor numbering now tracks with rttl-admin tool
+- ~~Version major.minor numbering now tracks with rttl-admin tool~~
 - Moved images to Google Artifact Registry
 
 ## [1.4.2] - 2021-12-23
