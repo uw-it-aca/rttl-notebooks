@@ -66,7 +66,7 @@ jobs:
           then
             echo "IMAGE=nfs-server" >> $GITHUB_ENV
           else
-            echo "IMAGE=$CTX-notebook" >> $GITHUB_ENV
+            echo "IMAGE=jupyter-$CTX-notebook" >> $GITHUB_ENV
           fi
       -
         name: Docker login with GCP credentials
@@ -85,5 +85,5 @@ jobs:
           context: "{{defaultContext}}:${{ matrix.versions }}"
           push: true
           tags: |
-            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-${{ env.IMAGE }}:${{ env.VERSION }}
-            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-${{ env.IMAGE }}:latest
+            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
+            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:latest
