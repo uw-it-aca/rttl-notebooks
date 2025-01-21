@@ -1,0 +1,2 @@
+# UW-IT JupyterHub for Teaching NFS server
+Docker image for UW-IT JupyterHub for Teaching NFS server. Note: this is NOT a notebook image, but instead the image for an optional NFS server that is made available to all users of a given Hub. See 'index.html' for notes about usage.
