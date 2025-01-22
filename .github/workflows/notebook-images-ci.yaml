@@ -59,6 +59,7 @@ jobs:
           echo "VERSION=$VER" >> $GITHUB_ENV
       -
         name: Set up image name
+        # Conditionally set the image name to use.
         env:
           CTX: ${{ matrix.versions }}
         run: |
