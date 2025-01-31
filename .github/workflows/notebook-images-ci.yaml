@@ -58,6 +58,18 @@ jobs:
           VER=$(cat ${CTX}/VERSION)
           echo "VERSION=$VER" >> $GITHUB_ENV
       -
+        name: Set up image name
+        # Conditionally set the image name to use.
+        env:
+          CTX: ${{ matrix.versions }}
+        run: |
+          if [$CTX == 'nfs_server']
+          then
+            echo "IMAGE=nfs-server" >> $GITHUB_ENV
+          else
+            echo "IMAGE=jupyter-$CTX-notebook" >> $GITHUB_ENV
+          fi
+      -
         name: Docker login with GCP credentials
         id: gcp-login
         shell: bash
@@ -74,5 +86,5 @@ jobs:
           context: "{{defaultContext}}:${{ matrix.versions }}"
           push: true
           tags: |
-            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-${{ matrix.versions }}-notebook:${{ env.VERSION }}
-            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-${{ matrix.versions }}-notebook:latest
+            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
+            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:latest
