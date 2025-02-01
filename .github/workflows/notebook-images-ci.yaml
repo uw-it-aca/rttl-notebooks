@@ -63,7 +63,7 @@ jobs:
         env:
           CTX: ${{ matrix.versions }}
         run: |
-          if [$CTX == 'nfs_server']
+          if [ $CTX == 'nfs_server' ]
           then
             echo "IMAGE=nfs-server" >> $GITHUB_ENV
           else
