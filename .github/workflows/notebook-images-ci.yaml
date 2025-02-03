@@ -88,3 +88,4 @@ jobs:
           tags: |
             ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
             ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:latest
+
