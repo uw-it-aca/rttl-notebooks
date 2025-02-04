@@ -7,4 +7,3 @@ pqdm
 pyldavis
 qgrid
 requests-html
-tellurium
