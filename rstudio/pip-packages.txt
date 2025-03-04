@@ -1,3 +1,5 @@
 tensorflow
+numpy<2
 nbclassic
 nbgitpuller
+pipdeptree

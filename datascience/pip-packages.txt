@@ -3,5 +3,7 @@ geopandas
 fiona
 ipyleaflet
 nbclassic
-nbgitpuller  
+nbgitpuller
+numpy<2
+pipdeptree
 requests-html

@@ -7,7 +7,7 @@ DOCKER_REPO?=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-scipy-not
 DOCKER_TAG?=2.7-local
 
 build:
-	docker build -t $(DOCKER_REPO):$(DOCKER_TAG) .
+	docker build --no-cache -t $(DOCKER_REPO):$(DOCKER_TAG) .
 
 push: build
 	docker push $(DOCKER_REPO):$(DOCKER_TAG)
