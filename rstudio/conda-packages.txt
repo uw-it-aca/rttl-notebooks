@@ -7,3 +7,4 @@ r-spdep
 r-spatialreg
 r-nloptr
 r-terra
+conda-tree

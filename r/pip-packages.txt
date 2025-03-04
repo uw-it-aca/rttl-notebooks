@@ -1,12 +1,16 @@
-biogeme
+biogeme<3.2.14
+blis==1.2.0
 fuzzywuzzy
 joblib
 nbclassic
 nbgitpuller
+numpy<2
+pipdeptree
 pqdm
 pyldavis
 qgrid
 requests-html
 scikit-learn
+thinc==8.3.4
 tqdm
 unidecode

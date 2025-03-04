@@ -5,6 +5,7 @@ astroquery
 bokeh
 ccdproc
 choicemodels
+conda-tree
 cssselect
 emcee
 gatspy
@@ -14,6 +15,7 @@ jupyter-resource-usage
 lmfit
 lxml
 nltk
+numpy<2
 openpyxl
 pandas
 photutils

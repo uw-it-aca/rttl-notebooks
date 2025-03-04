@@ -3,6 +3,7 @@ astroplan
 astropy
 astroquery
 choicemodels
+conda-tree
 cssselect
 emcee
 gatspy
