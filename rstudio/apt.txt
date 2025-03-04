@@ -1,1 +1,1 @@
-vim zip gdebi-core libproj-dev proj-data proj-bin libgeos-dev build-essential libfreetype6-dev libfontconfig1-dev cmake lmodern
+vim zip gdebi-core libproj-dev proj-data proj-bin libgeos-dev libcairo2-dev build-essential libfreetype6-dev libfontconfig1-dev cmake lmodern
