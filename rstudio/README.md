@@ -6507,6 +6507,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |base|4.3.3|
 |base64enc|0.1-3|
 |beeswarm|0.4.0|
+|BiasedUrn|2.0.12|
 |bit|4.0.5|
 |bit64|4.0.5|
 |bitops|1.0-7|
@@ -6560,6 +6561,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |dtplyr|1.3.1|
 |e1071|1.7-14|
 |ellipsis|0.3.2|
+|epiR|2.0.80|
 |ergm|4.8.1|
 |ergm.count|4.1.2|
 |ergm.multi|0.2.1.1|
@@ -6570,8 +6572,12 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |fastR2|1.2.4|
 |fivethirtyeight|0.6.2|
 |fivethirtyeightdata|0.1.0|
+|flextable|0.9.7|
 |FNN|1.1.4.1|
 |fontawesome|0.5.2|
+|fontBitstreamVera|0.1.1|
+|fontLiberation|0.1.0|
+|fontquiver|0.2.1|
 |forcats|1.0.0|
 |foreach|1.5.2|
 |forecast|8.22.0|
@@ -6582,6 +6588,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |future.apply|1.11.2|
 |gapminder|1.0.0|
 |gargle|1.5.2|
+|gdtools|0.4.1|
 |generics|0.1.3|
 |gert|2.0.1|
 |ggbeeswarm|0.7.2|
@@ -6678,8 +6685,10 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |nnet|7.3-19|
 |numDeriv|2016.8-1.1|
 |nycflights13|1.0.2|
+|officer|0.6.7|
 |openintro|2.5.0|
 |openssl|2.2.0|
+|pander|0.6.6|
 |parallel|4.3.3|
 |parallelly|1.37.1|
 |parsnip|1.2.1|
@@ -6788,7 +6797,7 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |stringr|1.5.1|
 |survival|3.6-4|
 |sys|3.4.2|
-|systemfonts|1.0.5|
+|systemfonts|1.2.1|
 |tabula|3.2.0|
 |tcltk|4.3.3|
 |tensor|1.5|
@@ -6847,6 +6856,3 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |zeallot|0.1.0|
 |zip|2.3.1|
 |zoo|1.8-12|
-
-
-
