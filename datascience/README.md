@@ -124,21 +124,21 @@ entrypoints==0.4
 exceptiongroup==1.2.0
 fiona==1.10.1
 ├── attrs [required: >=19.2.0, installed: 23.2.0]
-├── certifi [required: Any, installed: 2024.12.14]
+├── certifi [required: Any, installed: 2025.1.31]
 ├── click [required: ~=8.0, installed: 8.1.7]
 ├── click-plugins [required: >=1.0, installed: 1.1.1]
 │   └── click [required: >=4.0, installed: 8.1.7]
 └── cligj [required: >=0.5, installed: 0.7.2]
     └── click [required: >=4.0, installed: 8.1.7]
-folium==0.18.0
-├── branca [required: >=0.6.0, installed: 0.8.0]
+folium==0.19.5
+├── branca [required: >=0.6.0, installed: 0.8.1]
 │   └── Jinja2 [required: >=3, installed: 3.1.4]
 │       └── MarkupSafe [required: >=2.0, installed: 2.1.5]
 ├── Jinja2 [required: >=2.9, installed: 3.1.4]
 │   └── MarkupSafe [required: >=2.0, installed: 2.1.5]
 ├── numpy [required: Any, installed: 1.26.4]
 ├── requests [required: Any, installed: 2.31.0]
-│   ├── certifi [required: >=2017.4.17, installed: 2024.12.14]
+│   ├── certifi [required: >=2017.4.17, installed: 2025.1.31]
 │   ├── charset-normalizer [required: >=2,<4, installed: 3.3.2]
 │   ├── idna [required: >=2.5,<4, installed: 3.7]
 │   └── urllib3 [required: >=1.21.1,<3, installed: 1.26.20]
@@ -154,12 +154,12 @@ geopandas==1.0.1
 │   ├── pytz [required: >=2020.1, installed: 2024.1]
 │   └── tzdata [required: >=2022.7, installed: 2024.1]
 ├── pyogrio [required: >=0.7.2, installed: 0.10.0]
-│   ├── certifi [required: Any, installed: 2024.12.14]
+│   ├── certifi [required: Any, installed: 2025.1.31]
 │   ├── numpy [required: Any, installed: 1.26.4]
 │   └── packaging [required: Any, installed: 24.2]
-├── pyproj [required: >=3.3.0, installed: 3.7.0]
-│   └── certifi [required: Any, installed: 2024.12.14]
-└── shapely [required: >=2.0.0, installed: 2.0.6]
+├── pyproj [required: >=3.3.0, installed: 3.7.1]
+│   └── certifi [required: Any, installed: 2025.1.31]
+└── shapely [required: >=2.0.0, installed: 2.0.7]
     └── numpy [required: >=1.14,<3, installed: 1.26.4]
 gmpy2==2.1.5
 h2==4.1.0
@@ -171,7 +171,7 @@ imagecodecs==2024.1.1
 └── numpy [required: Any, installed: 1.26.4]
 importlib_resources==6.4.0
 ipyleaflet==0.19.2
-├── branca [required: >=0.5.0, installed: 0.8.0]
+├── branca [required: >=0.5.0, installed: 0.8.1]
 │   └── Jinja2 [required: >=3, installed: 3.1.4]
 │       └── MarkupSafe [required: >=2.0, installed: 2.1.5]
 ├── ipywidgets [required: >=7.6.0,<9, installed: 8.1.2]
@@ -420,7 +420,7 @@ jupyter-pluto-proxy==0.1.2
     ├── simpervisor [required: >=1.0, installed: 1.0.0]
     ├── tornado [required: >=5.1, installed: 6.4]
     └── traitlets [required: >=4.2.1, installed: 5.14.3]
-jupyter-resource-usage==1.1.0
+jupyter-resource-usage==1.1.1
 ├── jupyter_server [required: >=2.0, installed: 2.14.0]
 │   ├── anyio [required: >=3.1.0, installed: 4.3.0]
 │   │   ├── idna [required: >=2.8, installed: 3.7]
@@ -602,7 +602,7 @@ jupyterhub==4.1.5
 ├── python-dateutil [required: Any, installed: 2.9.0]
 │   └── six [required: >=1.5, installed: 1.16.0]
 ├── requests [required: Any, installed: 2.31.0]
-│   ├── certifi [required: >=2017.4.17, installed: 2024.12.14]
+│   ├── certifi [required: >=2017.4.17, installed: 2025.1.31]
 │   ├── charset-normalizer [required: >=2,<4, installed: 3.3.2]
 │   ├── idna [required: >=2.5,<4, installed: 3.7]
 │   └── urllib3 [required: >=1.21.1,<3, installed: 1.26.20]
@@ -1058,7 +1058,7 @@ jupyterlab_git==0.50.0
 │   │   └── traitlets [required: >=5.1, installed: 5.14.3]
 │   ├── Pygments [required: Any, installed: 2.18.0]
 │   ├── requests [required: Any, installed: 2.31.0]
-│   │   ├── certifi [required: >=2017.4.17, installed: 2024.12.14]
+│   │   ├── certifi [required: >=2017.4.17, installed: 2025.1.31]
 │   │   ├── charset-normalizer [required: >=2,<4, installed: 3.3.2]
 │   │   ├── idna [required: >=2.5,<4, installed: 3.7]
 │   │   └── urllib3 [required: >=1.21.1,<3, installed: 1.26.20]
@@ -1095,7 +1095,7 @@ mamba==1.5.8
 │   ├── conda-package-handling [required: >=2.2.0, installed: 2.2.0]
 │   │   └── conda_package_streaming [required: >=0.9.0, installed: 0.9.0]
 │   │       ├── requests [required: Any, installed: 2.31.0]
-│   │       │   ├── certifi [required: >=2017.4.17, installed: 2024.12.14]
+│   │       │   ├── certifi [required: >=2017.4.17, installed: 2025.1.31]
 │   │       │   ├── charset-normalizer [required: >=2,<4, installed: 3.3.2]
 │   │       │   ├── idna [required: >=2.5,<4, installed: 3.7]
 │   │       │   └── urllib3 [required: >=1.21.1,<3, installed: 1.26.20]
@@ -1110,7 +1110,7 @@ mamba==1.5.8
 │   ├── pluggy [required: >=1.0.0, installed: 1.5.0]
 │   ├── pycosat [required: >=0.6.3, installed: 0.6.6]
 │   ├── requests [required: >=2.28.0,<3, installed: 2.31.0]
-│   │   ├── certifi [required: >=2017.4.17, installed: 2024.12.14]
+│   │   ├── certifi [required: >=2017.4.17, installed: 2025.1.31]
 │   │   ├── charset-normalizer [required: >=2,<4, installed: 3.3.2]
 │   │   ├── idna [required: >=2.5,<4, installed: 3.7]
 │   │   └── urllib3 [required: >=1.21.1,<3, installed: 1.26.20]
@@ -1557,7 +1557,7 @@ nbclassic==1.0.0
 │   └── tornado [required: >=6.1.0, installed: 6.4]
 ├── tornado [required: >=6.1, installed: 6.4]
 └── traitlets [required: >=4.2.1, installed: 5.14.3]
-nbgitpuller==1.2.1
+nbgitpuller==1.2.2
 ├── jupyter_server [required: >=1.10.1, installed: 2.14.0]
 │   ├── anyio [required: >=3.1.0, installed: 4.3.0]
 │   │   ├── idna [required: >=2.8, installed: 3.7]
@@ -1846,9 +1846,9 @@ notebook==7.2.0
 │   │   ├── anyio [required: Any, installed: 4.3.0]
 │   │   │   ├── idna [required: >=2.8, installed: 3.7]
 │   │   │   └── sniffio [required: >=1.1, installed: 1.3.1]
-│   │   ├── certifi [required: Any, installed: 2024.12.14]
+│   │   ├── certifi [required: Any, installed: 2025.1.31]
 │   │   ├── httpcore [required: ==1.*, installed: 1.0.5]
-│   │   │   ├── certifi [required: Any, installed: 2024.12.14]
+│   │   │   ├── certifi [required: Any, installed: 2025.1.31]
 │   │   │   └── h11 [required: >=0.13,<0.15, installed: 0.14.0]
 │   │   ├── idna [required: Any, installed: 3.7]
 │   │   └── sniffio [required: Any, installed: 1.3.1]
@@ -2337,7 +2337,7 @@ notebook==7.2.0
 │   │   │   └── websocket-client [required: >=1.7, installed: 1.8.0]
 │   │   ├── packaging [required: >=21.3, installed: 24.2]
 │   │   └── requests [required: >=2.31, installed: 2.31.0]
-│   │       ├── certifi [required: >=2017.4.17, installed: 2024.12.14]
+│   │       ├── certifi [required: >=2017.4.17, installed: 2025.1.31]
 │   │       ├── charset-normalizer [required: >=2,<4, installed: 3.3.2]
 │   │       ├── idna [required: >=2.5,<4, installed: 3.7]
 │   │       └── urllib3 [required: >=1.21.1,<3, installed: 1.26.20]
@@ -2642,7 +2642,7 @@ notebook==7.2.0
 │   │   └── websocket-client [required: >=1.7, installed: 1.8.0]
 │   ├── packaging [required: >=21.3, installed: 24.2]
 │   └── requests [required: >=2.31, installed: 2.31.0]
-│       ├── certifi [required: >=2017.4.17, installed: 2024.12.14]
+│       ├── certifi [required: >=2017.4.17, installed: 2025.1.31]
 │       ├── charset-normalizer [required: >=2,<4, installed: 3.3.2]
 │       ├── idna [required: >=2.5,<4, installed: 3.7]
 │       └── urllib3 [required: >=1.21.1,<3, installed: 1.26.20]
@@ -2807,11 +2807,11 @@ requests-html==0.10.0
 ├── bs4 [required: Any, installed: 0.0.2]
 │   └── beautifulsoup4 [required: Any, installed: 4.12.3]
 │       └── soupsieve [required: >1.2, installed: 2.5]
-├── fake-useragent [required: Any, installed: 1.5.1]
+├── fake-useragent [required: Any, installed: 2.0.3]
 ├── parse [required: Any, installed: 1.20.2]
 ├── pyppeteer [required: >=0.0.14, installed: 2.0.0]
 │   ├── appdirs [required: >=1.4.3,<2.0.0, installed: 1.4.4]
-│   ├── certifi [required: >=2023, installed: 2024.12.14]
+│   ├── certifi [required: >=2023, installed: 2025.1.31]
 │   ├── importlib_metadata [required: >=1.4, installed: 7.1.0]
 │   │   └── zipp [required: >=0.5, installed: 3.17.0]
 │   ├── pyee [required: >=11.0.0,<12.0.0, installed: 11.1.1]
@@ -2821,13 +2821,13 @@ requests-html==0.10.0
 │   └── websockets [required: >=10.0,<11.0, installed: 10.4]
 ├── pyquery [required: Any, installed: 2.0.1]
 │   ├── cssselect [required: >=1.2.0, installed: 1.2.0]
-│   └── lxml [required: >=2.1, installed: 5.3.0]
+│   └── lxml [required: >=2.1, installed: 5.3.1]
 ├── requests [required: Any, installed: 2.31.0]
-│   ├── certifi [required: >=2017.4.17, installed: 2024.12.14]
+│   ├── certifi [required: >=2017.4.17, installed: 2025.1.31]
 │   ├── charset-normalizer [required: >=2,<4, installed: 3.3.2]
 │   ├── idna [required: >=2.5,<4, installed: 3.7]
 │   └── urllib3 [required: >=1.21.1,<3, installed: 1.26.20]
-└── w3lib [required: Any, installed: 2.2.1]
+└── w3lib [required: Any, installed: 2.3.1]
 rpy2==3.5.11
 ├── cffi [required: >=1.10.0, installed: 1.16.0]
 │   └── pycparser [required: Any, installed: 2.22]
@@ -2890,8 +2890,6 @@ statsmodels==0.14.2
 │   └── six [required: Any, installed: 1.16.0]
 └── scipy [required: >=1.8,!=1.9.2, installed: 1.13.0]
     └── numpy [required: >=1.22.4,<2.3, installed: 1.26.4]
-sympy==1.12
-└── mpmath [required: >=0.19, installed: 1.3.0]
 tables==3.9.2
 ├── numexpr [required: >=2.6.2, installed: 2.9.0]
 │   └── numpy [required: >=1.13.3, installed: 1.26.4]
@@ -2899,6 +2897,35 @@ tables==3.9.2
 ├── packaging [required: Any, installed: 24.2]
 └── py-cpuinfo [required: Any, installed: 9.0.0]
 tomli==2.0.1
+torch==2.6.0
+├── filelock [required: Any, installed: 3.17.0]
+├── fsspec [required: Any, installed: 2024.5.0]
+├── Jinja2 [required: Any, installed: 3.1.4]
+│   └── MarkupSafe [required: >=2.0, installed: 2.1.5]
+├── networkx [required: Any, installed: 3.3]
+├── nvidia-cublas-cu12 [required: ==12.4.5.8, installed: 12.4.5.8]
+├── nvidia-cuda-cupti-cu12 [required: ==12.4.127, installed: 12.4.127]
+├── nvidia-cuda-nvrtc-cu12 [required: ==12.4.127, installed: 12.4.127]
+├── nvidia-cuda-runtime-cu12 [required: ==12.4.127, installed: 12.4.127]
+├── nvidia-cudnn-cu12 [required: ==9.1.0.70, installed: 9.1.0.70]
+│   └── nvidia-cublas-cu12 [required: Any, installed: 12.4.5.8]
+├── nvidia-cufft-cu12 [required: ==11.2.1.3, installed: 11.2.1.3]
+├── nvidia-curand-cu12 [required: ==10.3.5.147, installed: 10.3.5.147]
+├── nvidia-cusolver-cu12 [required: ==11.6.1.9, installed: 11.6.1.9]
+│   ├── nvidia-cublas-cu12 [required: Any, installed: 12.4.5.8]
+│   ├── nvidia-cusparse-cu12 [required: Any, installed: 12.3.1.170]
+│   │   └── nvidia-nvjitlink-cu12 [required: Any, installed: 12.4.127]
+│   └── nvidia-nvjitlink-cu12 [required: Any, installed: 12.4.127]
+├── nvidia-cusparse-cu12 [required: ==12.3.1.170, installed: 12.3.1.170]
+│   └── nvidia-nvjitlink-cu12 [required: Any, installed: 12.4.127]
+├── nvidia-cusparselt-cu12 [required: ==0.6.2, installed: 0.6.2]
+├── nvidia-nccl-cu12 [required: ==2.21.5, installed: 2.21.5]
+├── nvidia-nvjitlink-cu12 [required: ==12.4.127, installed: 12.4.127]
+├── nvidia-nvtx-cu12 [required: ==12.4.127, installed: 12.4.127]
+├── sympy [required: ==1.13.1, installed: 1.13.1]
+│   └── mpmath [required: >=1.1.0,<1.4, installed: 1.3.0]
+├── triton [required: ==3.2.0, installed: 3.2.0]
+└── typing_extensions [required: >=4.10.0, installed: 4.11.0]
 typing-utils==0.1.0
 uri-template==1.3.0
 webcolors==1.13
@@ -2910,13 +2937,19 @@ xlrd==2.0.1
 ### Conda packages
 via `conda-tree -n base deptree --exclude conda-tree --small`
 ```
+pip==24.0
+  ├─ python 3.11.9 [required: >=3.7]
+  ├─ setuptools 69.5.1 [required: any]
+  │  └─ python 3.11.9 [required: >=3.8]
+  └─ wheel 0.43.0 [required: any]
+     └─ python 3.11.9 [required: >=3.8]
 mamba==1.5.8
   ├─ conda 24.5.0 [required: >=24,<25]
   ├─ libmambapy 1.5.8 [required: 1.5.8, py311hf2555c7_0]
   │  ├─ fmt 10.2.1 [required: >=10.2.1,<11.0a0]
   │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ libgcc 14.2.0 [required: 14.2.0, h77fa898_1]
-  │  │  │     ├─ _libgcc_mutex 0.1 [required: 0.1, conda_forge]
+  │  │  │  └─ libgcc 14.2.0 [required: 14.2.0, h767d61c_2]
+  │  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  │     └─ _openmp_mutex 4.5 [required: >=4.5]
   │  │  │        ├─ _libgcc_mutex 0.1 [required: 0.1, conda_forge]
   │  │  │        └─ llvm-openmp 18.1.5 [required: >=9.0.1]
@@ -3057,13 +3090,7 @@ mamba==1.5.8
   │  └─ dependencies of openssl displayed above
   ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
   └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-pip==24.0
-  ├─ python 3.11.9 [required: >=3.7]
-  ├─ setuptools 69.5.1 [required: any]
-  │  └─ python 3.11.9 [required: >=3.8]
-  └─ wheel 0.43.0 [required: any]
-     └─ python 3.11.9 [required: >=3.8]
-jupyter-resource-usage==1.1.0
+jupyter-resource-usage==1.1.1
   ├─ jupyter_server 2.14.0 [required: >=2.0.0,<3]
   │  ├─ anyio 4.3.0 [required: >=3.1.0]
   │  │  ├─ exceptiongroup 1.2.0 [required: >=1.0.2]
@@ -3325,346 +3352,361 @@ jupyter-resource-usage==1.1.0
   │  │  └─ dependencies of libgcc-ng displayed above
   │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
   │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  ├─ python 3.11.9 [required: >=3.8]
+  ├─ python 3.11.9 [required: >=3.9]
   └─ pyzmq 26.0.3 [required: >=19]
      └─ dependencies of pyzmq displayed above
-r-caret==6.0_94
+r-randomforest==4.7_1.1
   ├─ libgcc-ng 14.2.0 [required: >=12]
   │  └─ dependencies of libgcc-ng displayed above
+  ├─ libgfortran-ng 13.2.0 [required: any]
+  │  └─ libgfortran5 13.2.0 [required: 13.2.0, hca663fb_7]
+  │     └─ libgcc-ng 14.2.0 [required: >=13.2.0]
+  │        └─ dependencies of libgcc-ng displayed above
+  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
+  │  └─ dependencies of libgfortran5 displayed above
+  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+     ├─ _openmp_mutex 4.5 [required: >=4.5]
+     │  └─ dependencies of _openmp_mutex displayed above
+     ├─ _r-mutex 1.0.1 [required: 1.*, anacondar_1]
+     ├─ bwidget 1.9.14 [required: any]
+     │  └─ tk 8.6.13 [required: any]
+     │     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │     │  └─ dependencies of libgcc-ng displayed above
+     │     └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │        └─ dependencies of libzlib displayed above
+     ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
+     │  └─ dependencies of bzip2 displayed above
+     ├─ cairo 1.18.0 [required: >=1.18.0,<2.0a0]
+     │  ├─ fontconfig 2.14.2 [required: >=2.14.2,<3.0a0]
+     │  │  ├─ expat 2.6.2 [required: >=2.5.0,<3.0a0]
+     │  │  │  ├─ libexpat 2.6.2 [required: 2.6.2, h59595ed_0]
+     │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
+     │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  │  ├─ libpng 1.6.43 [required: >=1.6.39,<1.7.0a0]
+     │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │  │  │     └─ dependencies of libzlib displayed above
+     │  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │  │     └─ dependencies of libzlib displayed above
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libuuid 2.38.1 [required: >=2.32.1,<3.0a0]
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │     └─ dependencies of libzlib displayed above
+     │  ├─ fonts-conda-ecosystem 1 [required: any]
+     │  │  └─ fonts-conda-forge 1 [required: any]
+     │  │     ├─ font-ttf-dejavu-sans-mono 2.37 [required: any]
+     │  │     ├─ font-ttf-inconsolata 3.000 [required: any]
+     │  │     ├─ font-ttf-source-code-pro 2.038 [required: any]
+     │  │     └─ font-ttf-ubuntu 0.83 [required: any]
+     │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
+     │  │  └─ dependencies of freetype displayed above
+     │  ├─ icu 73.2 [required: >=73.2,<74.0a0]
+     │  │  └─ dependencies of icu displayed above
+     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  ├─ libglib 2.80.2 [required: >=2.78.0,<3.0a0]
+     │  │  ├─ libffi 3.4.2 [required: >=3.4,<4.0a0]
+     │  │  │  └─ dependencies of libffi displayed above
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libiconv 1.17 [required: >=1.17,<2.0a0]
+     │  │  │  └─ dependencies of libiconv displayed above
+     │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │  │  └─ dependencies of libzlib displayed above
+     │  │  └─ pcre2 10.43 [required: >=10.43,<10.44.0a0]
+     │  │     ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
+     │  │     │  └─ dependencies of bzip2 displayed above
+     │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │     │  └─ dependencies of libgcc-ng displayed above
+     │  │     └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │        └─ dependencies of libzlib displayed above
+     │  ├─ libpng 1.6.43 [required: >=1.6.39,<1.7.0a0]
+     │  │  └─ dependencies of libpng displayed above
+     │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ libxcb 1.15 [required: >=1.15,<1.16.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ pthread-stubs 0.4 [required: any]
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=7.5.0]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ xorg-libxau 1.0.11 [required: any]
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  └─ xorg-libxdmcp 1.1.3 [required: any]
+     │  │     └─ libgcc-ng 14.2.0 [required: >=9.3.0]
+     │  │        └─ dependencies of libgcc-ng displayed above
+     │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │  └─ dependencies of libzlib displayed above
+     │  ├─ pixman 0.43.2 [required: >=0.42.2,<1.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ xorg-libice 1.1.1 [required: >=1.1.1,<2.0a0]
+     │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │     └─ dependencies of libgcc-ng displayed above
+     │  ├─ xorg-libsm 1.2.4 [required: >=1.2.4,<2.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libuuid 2.38.1 [required: >=2.38.1,<3.0a0]
+     │  │  │  └─ dependencies of libuuid displayed above
+     │  │  └─ xorg-libice 1.1.1 [required: >=1.1.1,<2.0a0]
+     │  │     └─ dependencies of xorg-libice displayed above
+     │  ├─ xorg-libx11 1.8.9 [required: >=1.8.6,<2.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libxcb 1.15 [required: >=1.15,<1.16.0a0]
+     │  │  │  └─ dependencies of libxcb displayed above
+     │  │  ├─ xorg-kbproto 1.0.7 [required: any]
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=9.3.0]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ xorg-xextproto 7.3.0 [required: >=7.3.0,<8.0a0]
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  └─ xorg-xproto 7.0.31 [required: any]
+     │  │     └─ libgcc-ng 14.2.0 [required: >=9.3.0]
+     │  │        └─ dependencies of libgcc-ng displayed above
+     │  ├─ xorg-libxext 1.3.4 [required: >=1.3.4,<2.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ xorg-libx11 1.8.9 [required: >=1.7.2,<2.0a0]
+     │  │  │  └─ dependencies of xorg-libx11 displayed above
+     │  │  └─ xorg-xextproto 7.3.0 [required: any]
+     │  │     └─ dependencies of xorg-xextproto displayed above
+     │  ├─ xorg-libxrender 0.9.11 [required: >=0.9.11,<0.10.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ xorg-libx11 1.8.9 [required: >=1.8.6,<2.0a0]
+     │  │  │  └─ dependencies of xorg-libx11 displayed above
+     │  │  └─ xorg-renderproto 0.11.1 [required: any]
+     │  │     └─ libgcc-ng 14.2.0 [required: >=9.3.0]
+     │  │        └─ dependencies of libgcc-ng displayed above
+     │  └─ zlib 1.2.13 [required: any]
+     │     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │     │  └─ dependencies of libgcc-ng displayed above
+     │     └─ libzlib 1.2.13 [required: 1.2.13, hd590300_5]
+     │        └─ dependencies of libzlib displayed above
+     ├─ curl 8.7.1 [required: any]
+     │  ├─ krb5 1.21.2 [required: >=1.21.2,<1.22.0a0]
+     │  │  └─ dependencies of krb5 displayed above
+     │  ├─ libcurl 8.7.1 [required: 8.7.1, hca28451_0]
+     │  │  └─ dependencies of libcurl displayed above
+     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  ├─ libssh2 1.11.0 [required: >=1.11.0,<2.0a0]
+     │  │  └─ dependencies of libssh2 displayed above
+     │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │  └─ dependencies of libzlib displayed above
+     │  ├─ openssl 3.4.1 [required: >=3.2.1,<4.0a0]
+     │  │  └─ dependencies of openssl displayed above
+     │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
+     │     └─ dependencies of zstd displayed above
+     ├─ gcc_impl_linux-64 13.2.0 [required: >=10]
+     │  ├─ binutils_impl_linux-64 2.40 [required: >=2.40]
+     │  │  ├─ ld_impl_linux-64 2.40 [required: 2.40, h55db66e_0]
+     │  │  └─ sysroot_linux-64 2.12 [required: any]
+     │  │     └─ kernel-headers_linux-64 2.6.32 [required: 2.6.32, he073ed8_17]
+     │  ├─ libgcc-devel_linux-64 13.2.0 [required: 13.2.0, hceb6213_107]
+     │  ├─ libgcc-ng 14.2.0 [required: >=13.2.0]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  ├─ libgomp 14.2.0 [required: >=13.2.0]
+     │  │  └─ __glibc [required: >=2.17,<3.0.a0]
+     │  ├─ libsanitizer 13.2.0 [required: 13.2.0, h6ddb7a1_7]
+     │  │  └─ libgcc-ng 14.2.0 [required: >=13.2.0]
+     │  │     └─ dependencies of libgcc-ng displayed above
+     │  ├─ libstdcxx-ng 13.2.0 [required: >=13.2.0]
+     │  └─ sysroot_linux-64 2.12 [required: any]
+     │     └─ dependencies of sysroot_linux-64 displayed above
+     ├─ gfortran_impl_linux-64 13.2.0 [required: any]
+     │  ├─ gcc_impl_linux-64 13.2.0 [required: >=13.2.0]
+     │  │  └─ dependencies of gcc_impl_linux-64 displayed above
+     │  ├─ libgcc-ng 14.2.0 [required: >=4.9]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  ├─ libgfortran5 13.2.0 [required: >=13.2.0]
+     │  │  └─ dependencies of libgfortran5 displayed above
+     │  ├─ libstdcxx-ng 13.2.0 [required: >=4.9]
+     │  └─ sysroot_linux-64 2.12 [required: any]
+     │     └─ dependencies of sysroot_linux-64 displayed above
+     ├─ gxx_impl_linux-64 13.2.0 [required: >=10]
+     │  ├─ gcc_impl_linux-64 13.2.0 [required: 13.2.0, h9eb54c0_7]
+     │  │  └─ dependencies of gcc_impl_linux-64 displayed above
+     │  ├─ libstdcxx-devel_linux-64 13.2.0 [required: 13.2.0, hceb6213_107]
+     │  └─ sysroot_linux-64 2.12 [required: any]
+     │     └─ dependencies of sysroot_linux-64 displayed above
+     ├─ icu 73.2 [required: >=73.2,<74.0a0]
+     │  └─ dependencies of icu displayed above
+     ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
+     │  └─ libopenblas 0.3.27 [required: >=0.3.27,<1.0a0]
+     │     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │     │  └─ dependencies of libgcc-ng displayed above
+     │     ├─ libgfortran-ng 13.2.0 [required: any]
+     │     │  └─ dependencies of libgfortran-ng displayed above
+     │     └─ libgfortran5 13.2.0 [required: >=12.3.0]
+     │        └─ dependencies of libgfortran5 displayed above
+     ├─ libcurl 8.7.1 [required: >=8.7.1,<9.0a0]
+     │  └─ dependencies of libcurl displayed above
+     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  └─ dependencies of libgcc-ng displayed above
+     ├─ libgfortran-ng 13.2.0 [required: any]
+     │  └─ dependencies of libgfortran-ng displayed above
+     ├─ libgfortran5 13.2.0 [required: >=10.4.0]
+     │  └─ dependencies of libgfortran5 displayed above
+     ├─ libglib 2.80.2 [required: >=2.80.0,<3.0a0]
+     │  └─ dependencies of libglib displayed above
+     ├─ libiconv 1.17 [required: >=1.17,<2.0a0]
+     │  └─ dependencies of libiconv displayed above
+     ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
+     │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │     └─ dependencies of libgcc-ng displayed above
+     ├─ liblapack 3.9.0 [required: >=3.9.0,<4.0a0]
+     │  └─ libblas 3.9.0 [required: 3.9.0, 22_linux64_openblas]
+     │     └─ dependencies of libblas displayed above
+     ├─ libpng 1.6.43 [required: >=1.6.43,<1.7.0a0]
+     │  └─ dependencies of libpng displayed above
+     ├─ libstdcxx-ng 13.2.0 [required: >=12]
+     ├─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
+     │  ├─ lerc 4.0.0 [required: >=4.0.0,<5.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ libdeflate 1.20 [required: >=1.20,<1.21.0a0]
+     │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │     └─ dependencies of libgcc-ng displayed above
+     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
+     │  │  └─ dependencies of libjpeg-turbo displayed above
+     │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ libwebp-base 1.4.0 [required: >=1.3.2,<2.0a0]
+     │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │     └─ dependencies of libgcc-ng displayed above
+     │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │  └─ dependencies of libzlib displayed above
+     │  ├─ xz 5.2.6 [required: >=5.2.6,<6.0a0]
+     │  │  └─ dependencies of xz displayed above
+     │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
+     │     └─ dependencies of zstd displayed above
+     ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  └─ dependencies of libzlib displayed above
+     ├─ make 4.3 [required: any]
+     │  └─ libgcc-ng 14.2.0 [required: >=7.5.0]
+     │     └─ dependencies of libgcc-ng displayed above
+     ├─ pango 1.52.2 [required: >=1.50.14,<2.0a0]
+     │  ├─ cairo 1.18.0 [required: >=1.18.0,<2.0a0]
+     │  │  └─ dependencies of cairo displayed above
+     │  ├─ fontconfig 2.14.2 [required: >=2.14.2,<3.0a0]
+     │  │  └─ dependencies of fontconfig displayed above
+     │  ├─ fonts-conda-ecosystem 1 [required: any]
+     │  │  └─ dependencies of fonts-conda-ecosystem displayed above
+     │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
+     │  │  └─ dependencies of freetype displayed above
+     │  ├─ fribidi 1.0.10 [required: >=1.0.10,<2.0a0]
+     │  │  └─ libgcc-ng 14.2.0 [required: >=7.5.0]
+     │  │     └─ dependencies of libgcc-ng displayed above
+     │  ├─ harfbuzz 8.5.0 [required: >=8.3.0,<9.0a0]
+     │  │  ├─ cairo 1.18.0 [required: >=1.18.0,<2.0a0]
+     │  │  │  └─ dependencies of cairo displayed above
+     │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
+     │  │  │  └─ dependencies of freetype displayed above
+     │  │  ├─ graphite2 1.3.13 [required: any]
+     │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  │  ├─ icu 73.2 [required: >=73.2,<74.0a0]
+     │  │  │  └─ dependencies of icu displayed above
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libglib 2.80.2 [required: >=2.80.2,<3.0a0]
+     │  │  │  └─ dependencies of libglib displayed above
+     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  ├─ libglib 2.80.2 [required: >=2.80.0,<3.0a0]
+     │  │  └─ dependencies of libglib displayed above
+     │  └─ libpng 1.6.43 [required: >=1.6.43,<1.7.0a0]
+     │     └─ dependencies of libpng displayed above
+     ├─ pcre2 10.43 [required: >=10.43,<10.44.0a0]
+     │  └─ dependencies of pcre2 displayed above
+     ├─ readline 8.2 [required: >=8.2,<9.0a0]
+     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  └─ ncurses 6.5 [required: >=6.3,<7.0a0]
+     │     └─ dependencies of ncurses displayed above
+     ├─ sed 4.8 [required: any]
+     │  └─ libgcc-ng 14.2.0 [required: >=7.5.0]
+     │     └─ dependencies of libgcc-ng displayed above
+     ├─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
+     │  └─ dependencies of tk displayed above
+     ├─ tktable 2.10 [required: any]
+     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  └─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
+     │     └─ dependencies of tk displayed above
+     ├─ xorg-libxt 1.3.0 [required: any]
+     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  ├─ xorg-kbproto 1.0.7 [required: any]
+     │  │  └─ dependencies of xorg-kbproto displayed above
+     │  ├─ xorg-libice 1.1.1 [required: >=1.1.1,<2.0a0]
+     │  │  └─ dependencies of xorg-libice displayed above
+     │  ├─ xorg-libsm 1.2.4 [required: >=1.2.4,<2.0a0]
+     │  │  └─ dependencies of xorg-libsm displayed above
+     │  ├─ xorg-libx11 1.8.9 [required: >=1.8.6,<2.0a0]
+     │  │  └─ dependencies of xorg-libx11 displayed above
+     │  └─ xorg-xproto 7.0.31 [required: any]
+     │     └─ dependencies of xorg-xproto displayed above
+     └─ xz 5.2.6 [required: >=5.2.6,<6.0a0]
+        └─ dependencies of xz displayed above
+rpy2==3.5.11
+  ├─ cffi 1.16.0 [required: >=1.10.0,!=1.13.0]
+  │  └─ dependencies of cffi displayed above
+  ├─ jinja2 3.1.4 [required: any]
+  │  └─ dependencies of jinja2 displayed above
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ pytz 2024.1 [required: any]
+  │  └─ python 3.11.9 [required: >=3.7]
   ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
-  │  │  └─ dependencies of _openmp_mutex displayed above
-  │  ├─ _r-mutex 1.0.1 [required: 1.*, anacondar_1]
-  │  ├─ bwidget 1.9.14 [required: any]
-  │  │  └─ tk 8.6.13 [required: any]
-  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │     │  └─ dependencies of libgcc-ng displayed above
-  │  │     └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │        └─ dependencies of libzlib displayed above
-  │  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
-  │  │  └─ dependencies of bzip2 displayed above
-  │  ├─ cairo 1.18.0 [required: >=1.18.0,<2.0a0]
-  │  │  ├─ fontconfig 2.14.2 [required: >=2.14.2,<3.0a0]
-  │  │  │  ├─ expat 2.6.2 [required: >=2.5.0,<3.0a0]
-  │  │  │  │  ├─ libexpat 2.6.2 [required: 2.6.2, h59595ed_0]
-  │  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
-  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  ├─ libpng 1.6.43 [required: >=1.6.39,<1.7.0a0]
-  │  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  │  │     └─ dependencies of libzlib displayed above
-  │  │  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  │     └─ dependencies of libzlib displayed above
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libuuid 2.38.1 [required: >=2.32.1,<3.0a0]
-  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │     └─ dependencies of libzlib displayed above
-  │  │  ├─ fonts-conda-ecosystem 1 [required: any]
-  │  │  │  └─ fonts-conda-forge 1 [required: any]
-  │  │  │     ├─ font-ttf-dejavu-sans-mono 2.37 [required: any]
-  │  │  │     ├─ font-ttf-inconsolata 3.000 [required: any]
-  │  │  │     ├─ font-ttf-source-code-pro 2.038 [required: any]
-  │  │  │     └─ font-ttf-ubuntu 0.83 [required: any]
-  │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
-  │  │  │  └─ dependencies of freetype displayed above
-  │  │  ├─ icu 73.2 [required: >=73.2,<74.0a0]
-  │  │  │  └─ dependencies of icu displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libglib 2.80.2 [required: >=2.78.0,<3.0a0]
-  │  │  │  ├─ libffi 3.4.2 [required: >=3.4,<4.0a0]
-  │  │  │  │  └─ dependencies of libffi displayed above
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libiconv 1.17 [required: >=1.17,<2.0a0]
-  │  │  │  │  └─ dependencies of libiconv displayed above
-  │  │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  │  └─ dependencies of libzlib displayed above
-  │  │  │  └─ pcre2 10.43 [required: >=10.43,<10.44.0a0]
-  │  │  │     ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
-  │  │  │     │  └─ dependencies of bzip2 displayed above
-  │  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │     │  └─ dependencies of libgcc-ng displayed above
-  │  │  │     └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │        └─ dependencies of libzlib displayed above
-  │  │  ├─ libpng 1.6.43 [required: >=1.6.39,<1.7.0a0]
-  │  │  │  └─ dependencies of libpng displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  ├─ libxcb 1.15 [required: >=1.15,<1.16.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ pthread-stubs 0.4 [required: any]
-  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=7.5.0]
-  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ xorg-libxau 1.0.11 [required: any]
-  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  └─ xorg-libxdmcp 1.1.3 [required: any]
-  │  │  │     └─ libgcc-ng 14.2.0 [required: >=9.3.0]
-  │  │  │        └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  └─ dependencies of libzlib displayed above
-  │  │  ├─ pixman 0.43.2 [required: >=0.42.2,<1.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  ├─ xorg-libice 1.1.1 [required: >=1.1.1,<2.0a0]
-  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ xorg-libsm 1.2.4 [required: >=1.2.4,<2.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libuuid 2.38.1 [required: >=2.38.1,<3.0a0]
-  │  │  │  │  └─ dependencies of libuuid displayed above
-  │  │  │  └─ xorg-libice 1.1.1 [required: >=1.1.1,<2.0a0]
-  │  │  │     └─ dependencies of xorg-libice displayed above
-  │  │  ├─ xorg-libx11 1.8.9 [required: >=1.8.6,<2.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libxcb 1.15 [required: >=1.15,<1.16.0a0]
-  │  │  │  │  └─ dependencies of libxcb displayed above
-  │  │  │  ├─ xorg-kbproto 1.0.7 [required: any]
-  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=9.3.0]
-  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ xorg-xextproto 7.3.0 [required: >=7.3.0,<8.0a0]
-  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  └─ xorg-xproto 7.0.31 [required: any]
-  │  │  │     └─ libgcc-ng 14.2.0 [required: >=9.3.0]
-  │  │  │        └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ xorg-libxext 1.3.4 [required: >=1.3.4,<2.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ xorg-libx11 1.8.9 [required: >=1.7.2,<2.0a0]
-  │  │  │  │  └─ dependencies of xorg-libx11 displayed above
-  │  │  │  └─ xorg-xextproto 7.3.0 [required: any]
-  │  │  │     └─ dependencies of xorg-xextproto displayed above
-  │  │  ├─ xorg-libxrender 0.9.11 [required: >=0.9.11,<0.10.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ xorg-libx11 1.8.9 [required: >=1.8.6,<2.0a0]
-  │  │  │  │  └─ dependencies of xorg-libx11 displayed above
-  │  │  │  └─ xorg-renderproto 0.11.1 [required: any]
-  │  │  │     └─ libgcc-ng 14.2.0 [required: >=9.3.0]
-  │  │  │        └─ dependencies of libgcc-ng displayed above
-  │  │  └─ zlib 1.2.13 [required: any]
-  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │     │  └─ dependencies of libgcc-ng displayed above
-  │  │     └─ libzlib 1.2.13 [required: 1.2.13, hd590300_5]
-  │  │        └─ dependencies of libzlib displayed above
-  │  ├─ curl 8.7.1 [required: any]
-  │  │  ├─ krb5 1.21.2 [required: >=1.21.2,<1.22.0a0]
-  │  │  │  └─ dependencies of krb5 displayed above
-  │  │  ├─ libcurl 8.7.1 [required: 8.7.1, hca28451_0]
-  │  │  │  └─ dependencies of libcurl displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libssh2 1.11.0 [required: >=1.11.0,<2.0a0]
-  │  │  │  └─ dependencies of libssh2 displayed above
-  │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  └─ dependencies of libzlib displayed above
-  │  │  ├─ openssl 3.4.1 [required: >=3.2.1,<4.0a0]
-  │  │  │  └─ dependencies of openssl displayed above
-  │  │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
-  │  │     └─ dependencies of zstd displayed above
-  │  ├─ gcc_impl_linux-64 13.2.0 [required: >=10]
-  │  │  ├─ binutils_impl_linux-64 2.40 [required: >=2.40]
-  │  │  │  ├─ ld_impl_linux-64 2.40 [required: 2.40, h55db66e_0]
-  │  │  │  └─ sysroot_linux-64 2.12 [required: any]
-  │  │  │     └─ kernel-headers_linux-64 2.6.32 [required: 2.6.32, he073ed8_17]
-  │  │  ├─ libgcc-devel_linux-64 13.2.0 [required: 13.2.0, hceb6213_107]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=13.2.0]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libgomp 14.2.0 [required: >=13.2.0]
-  │  │  │  └─ _libgcc_mutex 0.1 [required: 0.1, conda_forge]
-  │  │  ├─ libsanitizer 13.2.0 [required: 13.2.0, h6ddb7a1_7]
-  │  │  │  └─ libgcc-ng 14.2.0 [required: >=13.2.0]
-  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=13.2.0]
-  │  │  └─ sysroot_linux-64 2.12 [required: any]
-  │  │     └─ dependencies of sysroot_linux-64 displayed above
-  │  ├─ gfortran_impl_linux-64 13.2.0 [required: any]
-  │  │  ├─ gcc_impl_linux-64 13.2.0 [required: >=13.2.0]
-  │  │  │  └─ dependencies of gcc_impl_linux-64 displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=4.9]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libgfortran5 13.2.0 [required: >=13.2.0]
-  │  │  │  └─ libgcc-ng 14.2.0 [required: >=13.2.0]
-  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=4.9]
-  │  │  └─ sysroot_linux-64 2.12 [required: any]
-  │  │     └─ dependencies of sysroot_linux-64 displayed above
-  │  ├─ gxx_impl_linux-64 13.2.0 [required: >=10]
-  │  │  ├─ gcc_impl_linux-64 13.2.0 [required: 13.2.0, h9eb54c0_7]
-  │  │  │  └─ dependencies of gcc_impl_linux-64 displayed above
-  │  │  ├─ libstdcxx-devel_linux-64 13.2.0 [required: 13.2.0, hceb6213_107]
-  │  │  └─ sysroot_linux-64 2.12 [required: any]
-  │  │     └─ dependencies of sysroot_linux-64 displayed above
-  │  ├─ icu 73.2 [required: >=73.2,<74.0a0]
-  │  │  └─ dependencies of icu displayed above
+  │  └─ dependencies of r-base displayed above
+  ├─ simplegeneric 0.8.1 [required: any]
+  │  └─ python 3.11.9 [required: any]
+  └─ tzlocal 5.2 [required: any]
+     ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+     └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+r-forecast==8.22.0
+  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
+  │  └─ dependencies of libblas displayed above
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  └─ dependencies of r-base displayed above
+  ├─ r-colorspace 2.1_0 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     └─ dependencies of r-base displayed above
+  ├─ r-fracdiff 1.5_3 [required: any]
   │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ libopenblas 0.3.27 [required: >=0.3.27,<1.0a0]
-  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │     │  └─ dependencies of libgcc-ng displayed above
-  │  │     ├─ libgfortran-ng 13.2.0 [required: any]
-  │  │     │  └─ libgfortran5 13.2.0 [required: 13.2.0, hca663fb_7]
-  │  │     │     └─ dependencies of libgfortran5 displayed above
-  │  │     └─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  │        └─ dependencies of libgfortran5 displayed above
-  │  ├─ libcurl 8.7.1 [required: >=8.7.1,<9.0a0]
-  │  │  └─ dependencies of libcurl displayed above
+  │  │  └─ dependencies of libblas displayed above
   │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  │  └─ dependencies of libgfortran-ng displayed above
-  │  ├─ libgfortran5 13.2.0 [required: >=10.4.0]
-  │  │  └─ dependencies of libgfortran5 displayed above
-  │  ├─ libglib 2.80.2 [required: >=2.80.0,<3.0a0]
-  │  │  └─ dependencies of libglib displayed above
-  │  ├─ libiconv 1.17 [required: >=1.17,<2.0a0]
-  │  │  └─ dependencies of libiconv displayed above
-  │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
-  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │     └─ dependencies of libgcc-ng displayed above
-  │  ├─ liblapack 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ libblas 3.9.0 [required: 3.9.0, 22_linux64_openblas]
-  │  │     └─ dependencies of libblas displayed above
-  │  ├─ libpng 1.6.43 [required: >=1.6.43,<1.7.0a0]
-  │  │  └─ dependencies of libpng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
-  │  │  ├─ lerc 4.0.0 [required: >=4.0.0,<5.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  ├─ libdeflate 1.20 [required: >=1.20,<1.21.0a0]
-  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
-  │  │  │  └─ dependencies of libjpeg-turbo displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  ├─ libwebp-base 1.4.0 [required: >=1.3.2,<2.0a0]
-  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  └─ dependencies of libzlib displayed above
-  │  │  ├─ xz 5.2.6 [required: >=5.2.6,<6.0a0]
-  │  │  │  └─ dependencies of xz displayed above
-  │  │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
-  │  │     └─ dependencies of zstd displayed above
-  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  └─ dependencies of libzlib displayed above
-  │  ├─ make 4.3 [required: any]
-  │  │  └─ libgcc-ng 14.2.0 [required: >=7.5.0]
-  │  │     └─ dependencies of libgcc-ng displayed above
-  │  ├─ pango 1.52.2 [required: >=1.50.14,<2.0a0]
-  │  │  ├─ cairo 1.18.0 [required: >=1.18.0,<2.0a0]
-  │  │  │  └─ dependencies of cairo displayed above
-  │  │  ├─ fontconfig 2.14.2 [required: >=2.14.2,<3.0a0]
-  │  │  │  └─ dependencies of fontconfig displayed above
-  │  │  ├─ fonts-conda-ecosystem 1 [required: any]
-  │  │  │  └─ dependencies of fonts-conda-ecosystem displayed above
-  │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
-  │  │  │  └─ dependencies of freetype displayed above
-  │  │  ├─ fribidi 1.0.10 [required: >=1.0.10,<2.0a0]
-  │  │  │  └─ libgcc-ng 14.2.0 [required: >=7.5.0]
-  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ harfbuzz 8.5.0 [required: >=8.3.0,<9.0a0]
-  │  │  │  ├─ cairo 1.18.0 [required: >=1.18.0,<2.0a0]
-  │  │  │  │  └─ dependencies of cairo displayed above
-  │  │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
-  │  │  │  │  └─ dependencies of freetype displayed above
-  │  │  │  ├─ graphite2 1.3.13 [required: any]
-  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  │  ├─ icu 73.2 [required: >=73.2,<74.0a0]
-  │  │  │  │  └─ dependencies of icu displayed above
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libglib 2.80.2 [required: >=2.80.2,<3.0a0]
-  │  │  │  │  └─ dependencies of libglib displayed above
-  │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libglib 2.80.2 [required: >=2.80.0,<3.0a0]
-  │  │  │  └─ dependencies of libglib displayed above
-  │  │  └─ libpng 1.6.43 [required: >=1.6.43,<1.7.0a0]
-  │  │     └─ dependencies of libpng displayed above
-  │  ├─ pcre2 10.43 [required: >=10.43,<10.44.0a0]
-  │  │  └─ dependencies of pcre2 displayed above
-  │  ├─ readline 8.2 [required: >=8.2,<9.0a0]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  └─ ncurses 6.5 [required: >=6.3,<7.0a0]
-  │  │     └─ dependencies of ncurses displayed above
-  │  ├─ sed 4.8 [required: any]
-  │  │  └─ libgcc-ng 14.2.0 [required: >=7.5.0]
-  │  │     └─ dependencies of libgcc-ng displayed above
-  │  ├─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
-  │  │  └─ dependencies of tk displayed above
-  │  ├─ tktable 2.10 [required: any]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  └─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
-  │  │     └─ dependencies of tk displayed above
-  │  ├─ xorg-libxt 1.3.0 [required: any]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ xorg-kbproto 1.0.7 [required: any]
-  │  │  │  └─ dependencies of xorg-kbproto displayed above
-  │  │  ├─ xorg-libice 1.1.1 [required: >=1.1.1,<2.0a0]
-  │  │  │  └─ dependencies of xorg-libice displayed above
-  │  │  ├─ xorg-libsm 1.2.4 [required: >=1.2.4,<2.0a0]
-  │  │  │  └─ dependencies of xorg-libsm displayed above
-  │  │  ├─ xorg-libx11 1.8.9 [required: >=1.8.6,<2.0a0]
-  │  │  │  └─ dependencies of xorg-libx11 displayed above
-  │  │  └─ xorg-xproto 7.0.31 [required: any]
-  │  │     └─ dependencies of xorg-xproto displayed above
-  │  └─ xz 5.2.6 [required: >=5.2.6,<6.0a0]
-  │     └─ dependencies of xz displayed above
-  ├─ r-e1071 1.7_14 [required: any]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-class 7.3_22 [required: any]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  └─ r-mass 7.3_60 [required: any]
-  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │     │  └─ dependencies of libgcc-ng displayed above
-  │  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │        └─ dependencies of r-base displayed above
-  │  └─ r-proxy 0.4_27 [required: any]
-  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │     │  └─ dependencies of libgcc-ng displayed above
-  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │        └─ dependencies of r-base displayed above
-  ├─ r-foreach 1.5.2 [required: any]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-codetools 0.2_20 [required: any]
-  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  └─ r-iterators 1.0.14 [required: any]
-  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │        └─ dependencies of r-base displayed above
-  ├─ r-ggplot2 3.5.1 [required: any]
+  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     └─ dependencies of r-base displayed above
+  ├─ r-generics 0.1.3 [required: >=0.1.2]
+  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     └─ dependencies of r-base displayed above
+  ├─ r-ggplot2 3.5.1 [required: >=2.2.1]
   │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  └─ dependencies of r-base displayed above
   │  ├─ r-cli 3.6.2 [required: any]
@@ -3709,7 +3751,10 @@ r-caret==6.0_94
   │  ├─ r-lifecycle 1.0.4 [required: >=1.0.1]
   │  │  └─ dependencies of r-lifecycle displayed above
   │  ├─ r-mass 7.3_60 [required: any]
-  │  │  └─ dependencies of r-mass displayed above
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │     └─ dependencies of r-base displayed above
   │  ├─ r-mgcv 1.9_1 [required: any]
   │  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
   │  │  │  └─ dependencies of _openmp_mutex displayed above
@@ -3766,10 +3811,7 @@ r-caret==6.0_94
   │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  │  └─ dependencies of r-base displayed above
   │  │  │  └─ r-colorspace 2.1_0 [required: any]
-  │  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │     │  └─ dependencies of libgcc-ng displayed above
-  │  │  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │        └─ dependencies of r-base displayed above
+  │  │  │     └─ dependencies of r-colorspace displayed above
   │  │  ├─ r-r6 2.5.1 [required: any]
   │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │     └─ dependencies of r-base displayed above
@@ -3848,81 +3890,155 @@ r-caret==6.0_94
   │  └─ r-withr 3.0.0 [required: >=2.5.0]
   │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │        └─ dependencies of r-base displayed above
-  ├─ r-lattice 0.22_6 [required: >=0.20]
-  │  └─ dependencies of r-lattice displayed above
-  ├─ r-modelmetrics 1.2.2.2 [required: >=1.2.2.2]
-  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
-  │  │  └─ dependencies of _openmp_mutex displayed above
+  ├─ r-lmtest 0.9_40 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libgfortran-ng 13.2.0 [required: any]
+  │  │  └─ dependencies of libgfortran-ng displayed above
+  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
+  │  │  └─ dependencies of libgfortran5 displayed above
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  └─ r-zoo 1.8_12 [required: any]
+  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+  │     │  └─ dependencies of libgcc-ng displayed above
+  │     ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     │  └─ dependencies of r-base displayed above
+  │     └─ r-lattice 0.22_6 [required: >=0.20_27]
+  │        └─ dependencies of r-lattice displayed above
+  ├─ r-magrittr 2.0.3 [required: any]
+  │  └─ dependencies of r-magrittr displayed above
+  ├─ r-nnet 7.3_19 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  └─ r-mass 7.3_60 [required: any]
+  │     └─ dependencies of r-mass displayed above
+  ├─ r-rcpp 1.0.12 [required: >=0.11.0]
+  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  └─ dependencies of libgcc-ng displayed above
   │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-data.table 1.15.2 [required: any]
-  │  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
-  │  │  │  └─ dependencies of _openmp_mutex displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  └─ dependencies of libzlib displayed above
-  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  └─ r-rcpp 1.0.12 [required: any]
-  │     ├─ __glibc [required: >=2.17,<3.0.a0]
-  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │     │  └─ dependencies of libgcc-ng displayed above
-  │     ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │        └─ dependencies of r-base displayed above
-  ├─ r-nlme 3.1_164 [required: any]
-  │  └─ dependencies of r-nlme displayed above
-  ├─ r-plyr 1.8.9 [required: any]
+  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     └─ dependencies of r-base displayed above
+  ├─ r-rcpparmadillo 0.12.8.3.0 [required: >=0.2.35]
+  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
+  │  │  └─ dependencies of _openmp_mutex displayed above
+  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
+  │  │  └─ dependencies of libblas displayed above
   │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ liblapack 3.9.0 [required: >=3.9.0,<4.0a0]
+  │  │  └─ dependencies of liblapack displayed above
   │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
   │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  └─ dependencies of r-base displayed above
   │  └─ r-rcpp 1.0.12 [required: >=0.11.0]
   │     └─ dependencies of r-rcpp displayed above
-  ├─ r-proc 1.18.5 [required: any]
+  ├─ r-timedate 4032.109 [required: any]
+  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     └─ dependencies of r-base displayed above
+  ├─ r-tseries 0.10_56 [required: any]
+  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
+  │  │  └─ dependencies of libblas displayed above
   │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ libgfortran-ng 13.2.0 [required: any]
+  │  │  └─ dependencies of libgfortran-ng displayed above
+  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
+  │  │  └─ dependencies of libgfortran5 displayed above
   │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-plyr 1.8.9 [required: any]
-  │  │  └─ dependencies of r-plyr displayed above
-  │  └─ r-rcpp 1.0.12 [required: >=0.11.1]
-  │     └─ dependencies of r-rcpp displayed above
-  ├─ r-recipes 1.0.10 [required: >=0.1.10]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-cli 3.6.2 [required: any]
-  │  │  └─ dependencies of r-cli displayed above
-  │  ├─ r-clock 0.7.0 [required: >=0.6.1]
+  │  ├─ r-quadprog 1.5_8 [required: any]
+  │  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  └─ dependencies of libblas displayed above
   │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  ├─ libgfortran-ng 13.2.0 [required: any]
+  │  │  │  └─ dependencies of libgfortran-ng displayed above
+  │  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
+  │  │  │  └─ dependencies of libgfortran5 displayed above
+  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-quantmod 0.4.26 [required: >=0.4_9]
   │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-cpp11 0.4.7 [required: >=0.4.0]
-  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │     └─ dependencies of r-base displayed above
-  │  │  ├─ r-ellipsis 0.3.2 [required: >=0.3.1]
-  │  │  │  └─ dependencies of r-ellipsis displayed above
-  │  │  ├─ r-rlang 1.1.3 [required: >=0.4.10]
-  │  │  │  └─ dependencies of r-rlang displayed above
-  │  │  ├─ r-tzdb 0.4.0 [required: >=0.2.0]
+  │  │  ├─ r-curl 5.1.0 [required: any]
+  │  │  │  ├─ libcurl 8.7.1 [required: >=8.3.0,<9.0a0]
+  │  │  │  │  └─ dependencies of libcurl displayed above
   │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │     └─ dependencies of r-base displayed above
+  │  │  ├─ r-jsonlite 1.8.8 [required: >=1.1]
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │     └─ dependencies of r-base displayed above
+  │  │  ├─ r-ttr 0.24.4 [required: >=0.2]
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  │  └─ dependencies of r-base displayed above
-  │  │  │  └─ r-cpp11 0.4.7 [required: >=0.4.2]
-  │  │  │     └─ dependencies of r-cpp11 displayed above
-  │  │  └─ r-vctrs 0.6.5 [required: >=0.3.7]
-  │  │     └─ dependencies of r-vctrs displayed above
-  │  ├─ r-dplyr 1.1.4 [required: any]
+  │  │  │  ├─ r-curl 5.1.0 [required: any]
+  │  │  │  │  └─ dependencies of r-curl displayed above
+  │  │  │  ├─ r-xts 0.13.2 [required: >=0.10_0]
+  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  │  │  └─ dependencies of r-base displayed above
+  │  │  │  │  └─ r-zoo 1.8_12 [required: >=1.7_12]
+  │  │  │  │     └─ dependencies of r-zoo displayed above
+  │  │  │  └─ r-zoo 1.8_12 [required: any]
+  │  │  │     └─ dependencies of r-zoo displayed above
+  │  │  ├─ r-xts 0.13.2 [required: >=0.9_0]
+  │  │  │  └─ dependencies of r-xts displayed above
+  │  │  └─ r-zoo 1.8_12 [required: any]
+  │  │     └─ dependencies of r-zoo displayed above
+  │  └─ r-zoo 1.8_12 [required: any]
+  │     └─ dependencies of r-zoo displayed above
+  ├─ r-urca 1.3_3 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libgfortran-ng 13.2.0 [required: any]
+  │  │  └─ dependencies of libgfortran-ng displayed above
+  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
+  │  │  └─ dependencies of libgfortran5 displayed above
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  └─ r-nlme 3.1_164 [required: any]
+  │     └─ dependencies of r-nlme displayed above
+  └─ r-zoo 1.8_12 [required: any]
+     └─ dependencies of r-zoo displayed above
+r-hexbin==1.28.3
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ libgfortran-ng 13.2.0 [required: any]
+  │  └─ dependencies of libgfortran-ng displayed above
+  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
+  │  └─ dependencies of libgfortran5 displayed above
+  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  └─ dependencies of r-base displayed above
+  └─ r-lattice 0.22_6 [required: any]
+     └─ dependencies of r-lattice displayed above
+r-nycflights13==1.0.2
+  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  └─ dependencies of r-base displayed above
+  └─ r-tibble 3.2.1 [required: any]
+     └─ dependencies of r-tibble displayed above
+r-tidymodels==1.2.0
+  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  └─ dependencies of r-base displayed above
+  ├─ r-broom 1.0.6 [required: >=1.0.0]
+  │  ├─ r-backports 1.4.1 [required: any]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-dplyr 1.1.4 [required: >=1.0.0]
   │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
@@ -3931,8 +4047,7 @@ r-caret==6.0_94
   │  │  ├─ r-ellipsis 0.3.2 [required: any]
   │  │  │  └─ dependencies of r-ellipsis displayed above
   │  │  ├─ r-generics 0.1.3 [required: any]
-  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │     └─ dependencies of r-base displayed above
+  │  │  │  └─ dependencies of r-generics displayed above
   │  │  ├─ r-glue 1.7.0 [required: >=1.3.2]
   │  │  │  └─ dependencies of r-glue displayed above
   │  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.0]
@@ -3966,16 +4081,124 @@ r-caret==6.0_94
   │  │     └─ dependencies of r-vctrs displayed above
   │  ├─ r-ellipsis 0.3.2 [required: any]
   │  │  └─ dependencies of r-ellipsis displayed above
-  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
+  │  ├─ r-generics 0.1.3 [required: >=0.0.2]
   │  │  └─ dependencies of r-generics displayed above
+  │  ├─ r-ggplot2 3.5.1 [required: any]
+  │  │  └─ dependencies of r-ggplot2 displayed above
   │  ├─ r-glue 1.7.0 [required: any]
   │  │  └─ dependencies of r-glue displayed above
-  │  ├─ r-gower 1.0.1 [required: any]
+  │  ├─ r-purrr 1.0.2 [required: any]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-cli 3.6.2 [required: >=3.4]
+  │  │  │  └─ dependencies of r-cli displayed above
+  │  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.3]
+  │  │  │  └─ dependencies of r-lifecycle displayed above
+  │  │  ├─ r-magrittr 2.0.3 [required: >=1.5]
+  │  │  │  └─ dependencies of r-magrittr displayed above
+  │  │  ├─ r-rlang 1.1.3 [required: >=0.4.10]
+  │  │  │  └─ dependencies of r-rlang displayed above
+  │  │  └─ r-vctrs 0.6.5 [required: >=0.5]
+  │  │     └─ dependencies of r-vctrs displayed above
+  │  ├─ r-rlang 1.1.3 [required: any]
+  │  │  └─ dependencies of r-rlang displayed above
+  │  ├─ r-stringr 1.5.1 [required: any]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-cli 3.6.2 [required: any]
+  │  │  │  └─ dependencies of r-cli displayed above
+  │  │  ├─ r-glue 1.7.0 [required: >=1.6.1]
+  │  │  │  └─ dependencies of r-glue displayed above
+  │  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.3]
+  │  │  │  └─ dependencies of r-lifecycle displayed above
+  │  │  ├─ r-magrittr 2.0.3 [required: any]
+  │  │  │  └─ dependencies of r-magrittr displayed above
+  │  │  ├─ r-rlang 1.1.3 [required: >=1.0.0]
+  │  │  │  └─ dependencies of r-rlang displayed above
+  │  │  ├─ r-stringi 1.8.4 [required: >=1.5.3]
+  │  │  │  ├─ icu 73.2 [required: >=73.2,<74.0a0]
+  │  │  │  │  └─ dependencies of icu displayed above
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │     └─ dependencies of r-base displayed above
+  │  │  └─ r-vctrs 0.6.5 [required: any]
+  │  │     └─ dependencies of r-vctrs displayed above
+  │  ├─ r-tibble 3.2.1 [required: >=3.0.0]
+  │  │  └─ dependencies of r-tibble displayed above
+  │  └─ r-tidyr 1.3.1 [required: >=1.0.0]
+  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+  │     │  └─ dependencies of libgcc-ng displayed above
+  │     ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │     ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     │  └─ dependencies of r-base displayed above
+  │     ├─ r-cli 3.6.2 [required: >=3.4.1]
+  │     │  └─ dependencies of r-cli displayed above
+  │     ├─ r-dplyr 1.1.4 [required: >=1.0.10]
+  │     │  └─ dependencies of r-dplyr displayed above
+  │     ├─ r-glue 1.7.0 [required: any]
+  │     │  └─ dependencies of r-glue displayed above
+  │     ├─ r-lifecycle 1.0.4 [required: >=1.0.3]
+  │     │  └─ dependencies of r-lifecycle displayed above
+  │     ├─ r-magrittr 2.0.3 [required: any]
+  │     │  └─ dependencies of r-magrittr displayed above
+  │     ├─ r-purrr 1.0.2 [required: >=1.0.1]
+  │     │  └─ dependencies of r-purrr displayed above
+  │     ├─ r-rlang 1.1.3 [required: >=1.0.4]
+  │     │  └─ dependencies of r-rlang displayed above
+  │     ├─ r-stringr 1.5.1 [required: >=1.5.0]
+  │     │  └─ dependencies of r-stringr displayed above
+  │     ├─ r-tibble 3.2.1 [required: >=2.1.1]
+  │     │  └─ dependencies of r-tibble displayed above
+  │     ├─ r-tidyselect 1.2.1 [required: >=1.2.0]
+  │     │  └─ dependencies of r-tidyselect displayed above
+  │     └─ r-vctrs 0.6.5 [required: >=0.5.2]
+  │        └─ dependencies of r-vctrs displayed above
+  ├─ r-cli 3.6.2 [required: >=3.3.0]
+  │  └─ dependencies of r-cli displayed above
+  ├─ r-conflicted 1.2.0 [required: >=1.1.0]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-cli 3.6.2 [required: >=3.4.0]
+  │  │  └─ dependencies of r-cli displayed above
+  │  ├─ r-memoise 2.0.1 [required: any]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-cachem 1.1.0 [required: any]
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  │  └─ dependencies of r-base displayed above
+  │  │  │  ├─ r-fastmap 1.2.0 [required: any]
+  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  │     └─ dependencies of r-base displayed above
+  │  │  │  └─ r-rlang 1.1.3 [required: any]
+  │  │  │     └─ dependencies of r-rlang displayed above
+  │  │  └─ r-rlang 1.1.3 [required: >=0.4.10]
+  │  │     └─ dependencies of r-rlang displayed above
+  │  └─ r-rlang 1.1.3 [required: >=1.0.0]
+  │     └─ dependencies of r-rlang displayed above
+  ├─ r-dials 1.2.1 [required: >=1.0.0]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-cli 3.6.2 [required: any]
+  │  │  └─ dependencies of r-cli displayed above
+  │  ├─ r-dicedesign 1.10 [required: any]
   │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
+  │  ├─ r-dplyr 1.1.4 [required: >=0.8.5]
+  │  │  └─ dependencies of r-dplyr displayed above
+  │  ├─ r-glue 1.7.0 [required: any]
+  │  │  └─ dependencies of r-glue displayed above
+  │  ├─ r-hardhat 1.3.1 [required: >=1.1.0]
   │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  └─ dependencies of r-base displayed above
   │  │  ├─ r-glue 1.7.0 [required: any]
@@ -3986,22 +4209,179 @@ r-caret==6.0_94
   │  │  │  └─ dependencies of r-tibble displayed above
   │  │  └─ r-vctrs 0.6.5 [required: >=0.2.0]
   │  │     └─ dependencies of r-vctrs displayed above
+  │  ├─ r-lifecycle 1.0.4 [required: any]
+  │  │  └─ dependencies of r-lifecycle displayed above
+  │  ├─ r-pillar 1.9.0 [required: any]
+  │  │  └─ dependencies of r-pillar displayed above
+  │  ├─ r-purrr 1.0.2 [required: any]
+  │  │  └─ dependencies of r-purrr displayed above
+  │  ├─ r-rlang 1.1.3 [required: >=1.0.1]
+  │  │  └─ dependencies of r-rlang displayed above
+  │  ├─ r-scales 1.3.0 [required: any]
+  │  │  └─ dependencies of r-scales displayed above
+  │  ├─ r-tibble 3.2.1 [required: any]
+  │  │  └─ dependencies of r-tibble displayed above
+  │  ├─ r-vctrs 0.6.5 [required: >=0.3.8]
+  │  │  └─ dependencies of r-vctrs displayed above
+  │  └─ r-withr 3.0.0 [required: any]
+  │     └─ dependencies of r-withr displayed above
+  ├─ r-dplyr 1.1.4 [required: >=1.0.9]
+  │  └─ dependencies of r-dplyr displayed above
+  ├─ r-ggplot2 3.5.1 [required: >=3.3.6]
+  │  └─ dependencies of r-ggplot2 displayed above
+  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
+  │  └─ dependencies of r-hardhat displayed above
+  ├─ r-infer 1.0.7 [required: >=1.0.2]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-broom 1.0.6 [required: any]
+  │  │  └─ dependencies of r-broom displayed above
+  │  ├─ r-dplyr 1.1.4 [required: >=0.7.0]
+  │  │  └─ dependencies of r-dplyr displayed above
+  │  ├─ r-generics 0.1.3 [required: any]
+  │  │  └─ dependencies of r-generics displayed above
+  │  ├─ r-ggplot2 3.5.1 [required: any]
+  │  │  └─ dependencies of r-ggplot2 displayed above
+  │  ├─ r-glue 1.7.0 [required: >=1.3.0]
+  │  │  └─ dependencies of r-glue displayed above
+  │  ├─ r-magrittr 2.0.3 [required: any]
+  │  │  └─ dependencies of r-magrittr displayed above
+  │  ├─ r-patchwork 1.2.0 [required: any]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-ggplot2 3.5.1 [required: >=3.0.0]
+  │  │  │  └─ dependencies of r-ggplot2 displayed above
+  │  │  └─ r-gtable 0.3.5 [required: any]
+  │  │     └─ dependencies of r-gtable displayed above
+  │  ├─ r-purrr 1.0.2 [required: any]
+  │  │  └─ dependencies of r-purrr displayed above
+  │  ├─ r-rlang 1.1.3 [required: >=0.2.0]
+  │  │  └─ dependencies of r-rlang displayed above
+  │  ├─ r-tibble 3.2.1 [required: any]
+  │  │  └─ dependencies of r-tibble displayed above
+  │  └─ r-tidyr 1.3.1 [required: any]
+  │     └─ dependencies of r-tidyr displayed above
+  ├─ r-modeldata 1.3.0 [required: >=1.0.0]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-dplyr 1.1.4 [required: any]
+  │  │  └─ dependencies of r-dplyr displayed above
+  │  ├─ r-mass 7.3_60 [required: any]
+  │  │  └─ dependencies of r-mass displayed above
+  │  ├─ r-purrr 1.0.2 [required: any]
+  │  │  └─ dependencies of r-purrr displayed above
+  │  ├─ r-rlang 1.1.3 [required: any]
+  │  │  └─ dependencies of r-rlang displayed above
+  │  └─ r-tibble 3.2.1 [required: any]
+  │     └─ dependencies of r-tibble displayed above
+  ├─ r-parsnip 1.2.1 [required: >=1.0.0]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-cli 3.6.2 [required: any]
+  │  │  └─ dependencies of r-cli displayed above
+  │  ├─ r-dplyr 1.1.4 [required: >=1.1.0]
+  │  │  └─ dependencies of r-dplyr displayed above
+  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
+  │  │  └─ dependencies of r-generics displayed above
+  │  ├─ r-ggplot2 3.5.1 [required: any]
+  │  │  └─ dependencies of r-ggplot2 displayed above
+  │  ├─ r-globals 0.16.3 [required: any]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  └─ r-codetools 0.2_20 [required: any]
+  │  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │        └─ dependencies of r-base displayed above
+  │  ├─ r-glue 1.7.0 [required: any]
+  │  │  └─ dependencies of r-glue displayed above
+  │  ├─ r-hardhat 1.3.1 [required: >=1.1.0]
+  │  │  └─ dependencies of r-hardhat displayed above
+  │  ├─ r-lifecycle 1.0.4 [required: any]
+  │  │  └─ dependencies of r-lifecycle displayed above
+  │  ├─ r-magrittr 2.0.3 [required: any]
+  │  │  └─ dependencies of r-magrittr displayed above
+  │  ├─ r-pillar 1.9.0 [required: any]
+  │  │  └─ dependencies of r-pillar displayed above
+  │  ├─ r-prettyunits 1.2.0 [required: any]
+  │  │  ├─ r-assertthat 0.2.1 [required: any]
+  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │     └─ dependencies of r-base displayed above
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  └─ r-magrittr 2.0.3 [required: any]
+  │  │     └─ dependencies of r-magrittr displayed above
+  │  ├─ r-purrr 1.0.2 [required: >=1.0.0]
+  │  │  └─ dependencies of r-purrr displayed above
+  │  ├─ r-rlang 1.1.3 [required: >=0.3.1]
+  │  │  └─ dependencies of r-rlang displayed above
+  │  ├─ r-tibble 3.2.1 [required: >=2.1.1]
+  │  │  └─ dependencies of r-tibble displayed above
+  │  ├─ r-tidyr 1.3.1 [required: >=1.3.0]
+  │  │  └─ dependencies of r-tidyr displayed above
+  │  ├─ r-vctrs 0.6.5 [required: >=0.6.0]
+  │  │  └─ dependencies of r-vctrs displayed above
+  │  └─ r-withr 3.0.0 [required: any]
+  │     └─ dependencies of r-withr displayed above
+  ├─ r-purrr 1.0.2 [required: >=0.3.4]
+  │  └─ dependencies of r-purrr displayed above
+  ├─ r-recipes 1.0.10 [required: >=1.0.1]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-cli 3.6.2 [required: any]
+  │  │  └─ dependencies of r-cli displayed above
+  │  ├─ r-clock 0.7.0 [required: >=0.6.1]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-cpp11 0.4.7 [required: >=0.4.0]
+  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │     └─ dependencies of r-base displayed above
+  │  │  ├─ r-ellipsis 0.3.2 [required: >=0.3.1]
+  │  │  │  └─ dependencies of r-ellipsis displayed above
+  │  │  ├─ r-rlang 1.1.3 [required: >=0.4.10]
+  │  │  │  └─ dependencies of r-rlang displayed above
+  │  │  ├─ r-tzdb 0.4.0 [required: >=0.2.0]
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  │  └─ dependencies of r-base displayed above
+  │  │  │  └─ r-cpp11 0.4.7 [required: >=0.4.2]
+  │  │  │     └─ dependencies of r-cpp11 displayed above
+  │  │  └─ r-vctrs 0.6.5 [required: >=0.3.7]
+  │  │     └─ dependencies of r-vctrs displayed above
+  │  ├─ r-dplyr 1.1.4 [required: any]
+  │  │  └─ dependencies of r-dplyr displayed above
+  │  ├─ r-ellipsis 0.3.2 [required: any]
+  │  │  └─ dependencies of r-ellipsis displayed above
+  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
+  │  │  └─ dependencies of r-generics displayed above
+  │  ├─ r-glue 1.7.0 [required: any]
+  │  │  └─ dependencies of r-glue displayed above
+  │  ├─ r-gower 1.0.1 [required: any]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-hardhat displayed above
   │  ├─ r-ipred 0.9_14 [required: >=0.9_12]
   │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  └─ dependencies of r-base displayed above
   │  │  ├─ r-class 7.3_22 [required: any]
-  │  │  │  └─ dependencies of r-class displayed above
-  │  │  ├─ r-mass 7.3_60 [required: any]
-  │  │  │  └─ dependencies of r-mass displayed above
-  │  │  ├─ r-nnet 7.3_19 [required: any]
   │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  │  └─ dependencies of r-base displayed above
   │  │  │  └─ r-mass 7.3_60 [required: any]
   │  │  │     └─ dependencies of r-mass displayed above
+  │  │  ├─ r-mass 7.3_60 [required: any]
+  │  │  │  └─ dependencies of r-mass displayed above
+  │  │  ├─ r-nnet 7.3_19 [required: any]
+  │  │  │  └─ dependencies of r-nnet displayed above
   │  │  ├─ r-prodlim 2023.08.28 [required: any]
   │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  │  └─ dependencies of libgcc-ng displayed above
@@ -4009,7 +4389,14 @@ r-caret==6.0_94
   │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  │  └─ dependencies of r-base displayed above
   │  │  │  ├─ r-data.table 1.15.2 [required: any]
-  │  │  │  │  └─ dependencies of r-data.table displayed above
+  │  │  │  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
+  │  │  │  │  │  └─ dependencies of _openmp_mutex displayed above
+  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+  │  │  │  │  │  └─ dependencies of libzlib displayed above
+  │  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  │     └─ dependencies of r-base displayed above
   │  │  │  ├─ r-diagram 1.6.5 [required: any]
   │  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  │  │  └─ dependencies of r-base displayed above
@@ -4043,10 +4430,7 @@ r-caret==6.0_94
   │  │  │  │  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  │  │  │  │     └─ dependencies of r-base displayed above
   │  │  │  │  │  │  ├─ r-globals 0.16.3 [required: >=0.16.1]
-  │  │  │  │  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  │  │  │  │  │  └─ dependencies of r-base displayed above
-  │  │  │  │  │  │  │  └─ r-codetools 0.2_20 [required: any]
-  │  │  │  │  │  │  │     └─ dependencies of r-codetools displayed above
+  │  │  │  │  │  │  │  └─ dependencies of r-globals displayed above
   │  │  │  │  │  │  ├─ r-listenv 0.9.1 [required: >=0.8.0]
   │  │  │  │  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  │  │  │  │     └─ dependencies of r-base displayed above
@@ -4108,25 +4492,56 @@ r-caret==6.0_94
   │  ├─ r-matrix 1.6_5 [required: any]
   │  │  └─ dependencies of r-matrix displayed above
   │  ├─ r-purrr 1.0.2 [required: >=0.2.3]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-cli 3.6.2 [required: >=3.4]
-  │  │  │  └─ dependencies of r-cli displayed above
-  │  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.3]
-  │  │  │  └─ dependencies of r-lifecycle displayed above
-  │  │  ├─ r-magrittr 2.0.3 [required: >=1.5]
-  │  │  │  └─ dependencies of r-magrittr displayed above
-  │  │  ├─ r-rlang 1.1.3 [required: >=0.4.10]
-  │  │  │  └─ dependencies of r-rlang displayed above
-  │  │  └─ r-vctrs 0.6.5 [required: >=0.5]
-  │  │     └─ dependencies of r-vctrs displayed above
+  │  │  └─ dependencies of r-purrr displayed above
   │  ├─ r-rlang 1.1.3 [required: >=1.0.3]
   │  │  └─ dependencies of r-rlang displayed above
   │  ├─ r-tibble 3.2.1 [required: any]
   │  │  └─ dependencies of r-tibble displayed above
   │  ├─ r-tidyr 1.3.1 [required: >=1.0.0]
+  │  │  └─ dependencies of r-tidyr displayed above
+  │  ├─ r-tidyselect 1.2.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-tidyselect displayed above
+  │  ├─ r-timedate 4032.109 [required: any]
+  │  │  └─ dependencies of r-timedate displayed above
+  │  ├─ r-vctrs 0.6.5 [required: >=0.5.0]
+  │  │  └─ dependencies of r-vctrs displayed above
+  │  └─ r-withr 3.0.0 [required: any]
+  │     └─ dependencies of r-withr displayed above
+  ├─ r-rlang 1.1.3 [required: >=1.0.3]
+  │  └─ dependencies of r-rlang displayed above
+  ├─ r-rsample 1.2.1 [required: >=1.0.0]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-dplyr 1.1.4 [required: >=1.0.0]
+  │  │  └─ dependencies of r-dplyr displayed above
+  │  ├─ r-furrr 0.3.1 [required: any]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-ellipsis 0.3.2 [required: any]
+  │  │  │  └─ dependencies of r-ellipsis displayed above
+  │  │  ├─ r-future 1.33.2 [required: >=1.19.1]
+  │  │  │  └─ dependencies of r-future displayed above
+  │  │  ├─ r-globals 0.16.3 [required: >=0.13.1]
+  │  │  │  └─ dependencies of r-globals displayed above
+  │  │  ├─ r-lifecycle 1.0.4 [required: >=0.2.0]
+  │  │  │  └─ dependencies of r-lifecycle displayed above
+  │  │  ├─ r-purrr 1.0.2 [required: >=0.3.0]
+  │  │  │  └─ dependencies of r-purrr displayed above
+  │  │  ├─ r-rlang 1.1.3 [required: >=0.3.0]
+  │  │  │  └─ dependencies of r-rlang displayed above
+  │  │  └─ r-vctrs 0.6.5 [required: >=0.3.2]
+  │  │     └─ dependencies of r-vctrs displayed above
+  │  ├─ r-generics 0.1.3 [required: any]
+  │  │  └─ dependencies of r-generics displayed above
+  │  ├─ r-glue 1.7.0 [required: any]
+  │  │  └─ dependencies of r-glue displayed above
+  │  ├─ r-pillar 1.9.0 [required: any]
+  │  │  └─ dependencies of r-pillar displayed above
+  │  ├─ r-purrr 1.0.2 [required: any]
+  │  │  └─ dependencies of r-purrr displayed above
+  │  ├─ r-rlang 1.1.3 [required: >=0.4.10]
+  │  │  └─ dependencies of r-rlang displayed above
+  │  ├─ r-slider 0.3.1 [required: >=0.1.5]
   │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
@@ -4134,70 +4549,212 @@ r-caret==6.0_94
   │  │  │  └─ dependencies of r-base displayed above
   │  │  ├─ r-cli 3.6.2 [required: >=3.4.1]
   │  │  │  └─ dependencies of r-cli displayed above
-  │  │  ├─ r-dplyr 1.1.4 [required: >=1.0.10]
-  │  │  │  └─ dependencies of r-dplyr displayed above
-  │  │  ├─ r-glue 1.7.0 [required: any]
-  │  │  │  └─ dependencies of r-glue displayed above
-  │  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.3]
-  │  │  │  └─ dependencies of r-lifecycle displayed above
-  │  │  ├─ r-magrittr 2.0.3 [required: any]
-  │  │  │  └─ dependencies of r-magrittr displayed above
-  │  │  ├─ r-purrr 1.0.2 [required: >=1.0.1]
-  │  │  │  └─ dependencies of r-purrr displayed above
-  │  │  ├─ r-rlang 1.1.3 [required: >=1.0.4]
+  │  │  ├─ r-rlang 1.1.3 [required: >=1.0.6]
   │  │  │  └─ dependencies of r-rlang displayed above
-  │  │  ├─ r-stringr 1.5.1 [required: >=1.5.0]
-  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  │  └─ dependencies of r-base displayed above
-  │  │  │  ├─ r-cli 3.6.2 [required: any]
-  │  │  │  │  └─ dependencies of r-cli displayed above
-  │  │  │  ├─ r-glue 1.7.0 [required: >=1.6.1]
-  │  │  │  │  └─ dependencies of r-glue displayed above
-  │  │  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.3]
-  │  │  │  │  └─ dependencies of r-lifecycle displayed above
-  │  │  │  ├─ r-magrittr 2.0.3 [required: any]
-  │  │  │  │  └─ dependencies of r-magrittr displayed above
-  │  │  │  ├─ r-rlang 1.1.3 [required: >=1.0.0]
-  │  │  │  │  └─ dependencies of r-rlang displayed above
-  │  │  │  ├─ r-stringi 1.8.4 [required: >=1.5.3]
-  │  │  │  │  ├─ icu 73.2 [required: >=73.2,<74.0a0]
-  │  │  │  │  │  └─ dependencies of icu displayed above
-  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  │     └─ dependencies of r-base displayed above
-  │  │  │  └─ r-vctrs 0.6.5 [required: any]
-  │  │  │     └─ dependencies of r-vctrs displayed above
-  │  │  ├─ r-tibble 3.2.1 [required: >=2.1.1]
-  │  │  │  └─ dependencies of r-tibble displayed above
-  │  │  ├─ r-tidyselect 1.2.1 [required: >=1.2.0]
-  │  │  │  └─ dependencies of r-tidyselect displayed above
-  │  │  └─ r-vctrs 0.6.5 [required: >=0.5.2]
-  │  │     └─ dependencies of r-vctrs displayed above
-  │  ├─ r-tidyselect 1.2.1 [required: >=1.2.0]
+  │  │  ├─ r-vctrs 0.6.5 [required: >=0.5.0]
+  │  │  │  └─ dependencies of r-vctrs displayed above
+  │  │  └─ r-warp 0.2.1 [required: any]
+  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │     │  └─ dependencies of libgcc-ng displayed above
+  │  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │        └─ dependencies of r-base displayed above
+  │  ├─ r-tibble 3.2.1 [required: any]
+  │  │  └─ dependencies of r-tibble displayed above
+  │  ├─ r-tidyr 1.3.1 [required: any]
+  │  │  └─ dependencies of r-tidyr displayed above
+  │  ├─ r-tidyselect 1.2.1 [required: any]
   │  │  └─ dependencies of r-tidyselect displayed above
-  │  ├─ r-timedate 4032.109 [required: any]
-  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-vctrs 0.6.5 [required: >=0.5.0]
-  │  │  └─ dependencies of r-vctrs displayed above
-  │  └─ r-withr 3.0.0 [required: any]
-  │     └─ dependencies of r-withr displayed above
-  ├─ r-reshape2 1.4.4 [required: any]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  └─ r-vctrs 0.6.5 [required: >=0.5.0]
+  │     └─ dependencies of r-vctrs displayed above
+  ├─ r-rstudioapi 0.16.0 [required: >=0.13]
+  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     └─ dependencies of r-base displayed above
+  ├─ r-tibble 3.2.1 [required: >=3.1.7]
+  │  └─ dependencies of r-tibble displayed above
+  ├─ r-tidyr 1.3.1 [required: >=1.2.0]
+  │  └─ dependencies of r-tidyr displayed above
+  ├─ r-tune 1.2.1 [required: >=1.0.0]
   │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-plyr 1.8.9 [required: >=1.8.1]
-  │  │  └─ dependencies of r-plyr displayed above
-  │  ├─ r-rcpp 1.0.12 [required: any]
-  │  │  └─ dependencies of r-rcpp displayed above
-  │  └─ r-stringr 1.5.1 [required: any]
-  │     └─ dependencies of r-stringr displayed above
-  └─ r-withr 3.0.0 [required: >=2.0.0]
-     └─ dependencies of r-withr displayed above
+  │  ├─ r-cli 3.6.2 [required: >=3.3.0]
+  │  │  └─ dependencies of r-cli displayed above
+  │  ├─ r-dials 1.2.1 [required: >=1.0.0]
+  │  │  └─ dependencies of r-dials displayed above
+  │  ├─ r-dofuture 1.0.1 [required: >=1.0.0]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-foreach 1.5.2 [required: >=1.5.0]
+  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  │  └─ dependencies of r-base displayed above
+  │  │  │  ├─ r-codetools 0.2_20 [required: any]
+  │  │  │  │  └─ dependencies of r-codetools displayed above
+  │  │  │  └─ r-iterators 1.0.14 [required: any]
+  │  │  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │        └─ dependencies of r-base displayed above
+  │  │  ├─ r-future 1.33.2 [required: >=1.32.0]
+  │  │  │  └─ dependencies of r-future displayed above
+  │  │  ├─ r-future.apply 1.11.2 [required: any]
+  │  │  │  └─ dependencies of r-future.apply displayed above
+  │  │  ├─ r-globals 0.16.3 [required: any]
+  │  │  │  └─ dependencies of r-globals displayed above
+  │  │  └─ r-iterators 1.0.14 [required: any]
+  │  │     └─ dependencies of r-iterators displayed above
+  │  ├─ r-dplyr 1.1.4 [required: >=1.1.0]
+  │  │  └─ dependencies of r-dplyr displayed above
+  │  ├─ r-foreach 1.5.2 [required: any]
+  │  │  └─ dependencies of r-foreach displayed above
+  │  ├─ r-future 1.33.2 [required: >=1.33.0]
+  │  │  └─ dependencies of r-future displayed above
+  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
+  │  │  └─ dependencies of r-generics displayed above
+  │  ├─ r-ggplot2 3.5.1 [required: any]
+  │  │  └─ dependencies of r-ggplot2 displayed above
+  │  ├─ r-glue 1.7.0 [required: >=1.6.2]
+  │  │  └─ dependencies of r-glue displayed above
+  │  ├─ r-gpfit 1.0_8 [required: any]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-lattice 0.22_6 [required: >=0.18_8]
+  │  │  │  └─ dependencies of r-lattice displayed above
+  │  │  └─ r-lhs 1.1.6 [required: >=0.5]
+  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │     │  └─ dependencies of libgcc-ng displayed above
+  │  │     ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │     ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │     │  └─ dependencies of r-base displayed above
+  │  │     └─ r-rcpp 1.0.12 [required: any]
+  │  │        └─ dependencies of r-rcpp displayed above
+  │  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-hardhat displayed above
+  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.0]
+  │  │  └─ dependencies of r-lifecycle displayed above
+  │  ├─ r-parsnip 1.2.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-parsnip displayed above
+  │  ├─ r-purrr 1.0.2 [required: >=1.0.0]
+  │  │  └─ dependencies of r-purrr displayed above
+  │  ├─ r-recipes 1.0.10 [required: >=1.0.4]
+  │  │  └─ dependencies of r-recipes displayed above
+  │  ├─ r-rlang 1.1.3 [required: >=1.1.0]
+  │  │  └─ dependencies of r-rlang displayed above
+  │  ├─ r-rsample 1.2.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-rsample displayed above
+  │  ├─ r-tibble 3.2.1 [required: >=3.1.0]
+  │  │  └─ dependencies of r-tibble displayed above
+  │  ├─ r-tidyr 1.3.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-tidyr displayed above
+  │  ├─ r-tidyselect 1.2.1 [required: >=1.1.2]
+  │  │  └─ dependencies of r-tidyselect displayed above
+  │  ├─ r-vctrs 0.6.5 [required: >=0.6.1]
+  │  │  └─ dependencies of r-vctrs displayed above
+  │  ├─ r-withr 3.0.0 [required: any]
+  │  │  └─ dependencies of r-withr displayed above
+  │  ├─ r-workflows 1.1.4 [required: >=1.1.4]
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-cli 3.6.2 [required: >=3.3.0]
+  │  │  │  └─ dependencies of r-cli displayed above
+  │  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
+  │  │  │  └─ dependencies of r-generics displayed above
+  │  │  ├─ r-glue 1.7.0 [required: >=1.6.2]
+  │  │  │  └─ dependencies of r-glue displayed above
+  │  │  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
+  │  │  │  └─ dependencies of r-hardhat displayed above
+  │  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.3]
+  │  │  │  └─ dependencies of r-lifecycle displayed above
+  │  │  ├─ r-modelenv 0.1.1 [required: >=0.1.0]
+  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  │  └─ dependencies of r-base displayed above
+  │  │  │  ├─ r-glue 1.7.0 [required: any]
+  │  │  │  │  └─ dependencies of r-glue displayed above
+  │  │  │  ├─ r-rlang 1.1.3 [required: any]
+  │  │  │  │  └─ dependencies of r-rlang displayed above
+  │  │  │  ├─ r-tibble 3.2.1 [required: any]
+  │  │  │  │  └─ dependencies of r-tibble displayed above
+  │  │  │  └─ r-vctrs 0.6.5 [required: any]
+  │  │  │     └─ dependencies of r-vctrs displayed above
+  │  │  ├─ r-parsnip 1.2.1 [required: >=1.0.3]
+  │  │  │  └─ dependencies of r-parsnip displayed above
+  │  │  ├─ r-rlang 1.1.3 [required: >=1.0.3]
+  │  │  │  └─ dependencies of r-rlang displayed above
+  │  │  ├─ r-tidyselect 1.2.1 [required: >=1.2.0]
+  │  │  │  └─ dependencies of r-tidyselect displayed above
+  │  │  └─ r-vctrs 0.6.5 [required: >=0.4.1]
+  │  │     └─ dependencies of r-vctrs displayed above
+  │  └─ r-yardstick 1.3.1 [required: >=1.3.0]
+  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+  │     │  └─ dependencies of libgcc-ng displayed above
+  │     ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │     │  └─ dependencies of r-base displayed above
+  │     ├─ r-dplyr 1.1.4 [required: >=1.0.9]
+  │     │  └─ dependencies of r-dplyr displayed above
+  │     ├─ r-generics 0.1.3 [required: >=0.1.2]
+  │     │  └─ dependencies of r-generics displayed above
+  │     ├─ r-hardhat 1.3.1 [required: >=1.0.0]
+  │     │  └─ dependencies of r-hardhat displayed above
+  │     ├─ r-rlang 1.1.3 [required: >=1.0.2]
+  │     │  └─ dependencies of r-rlang displayed above
+  │     ├─ r-tidyselect 1.2.1 [required: >=1.1.2]
+  │     │  └─ dependencies of r-tidyselect displayed above
+  │     └─ r-vctrs 0.6.5 [required: >=0.4.1]
+  │        └─ dependencies of r-vctrs displayed above
+  ├─ r-workflows 1.1.4 [required: >=1.0.0]
+  │  └─ dependencies of r-workflows displayed above
+  ├─ r-workflowsets 1.1.0 [required: >=1.0.0]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-cli 3.6.2 [required: any]
+  │  │  └─ dependencies of r-cli displayed above
+  │  ├─ r-dplyr 1.1.4 [required: >=1.0.0]
+  │  │  └─ dependencies of r-dplyr displayed above
+  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
+  │  │  └─ dependencies of r-generics displayed above
+  │  ├─ r-ggplot2 3.5.1 [required: any]
+  │  │  └─ dependencies of r-ggplot2 displayed above
+  │  ├─ r-glue 1.7.0 [required: any]
+  │  │  └─ dependencies of r-glue displayed above
+  │  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-hardhat displayed above
+  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.0]
+  │  │  └─ dependencies of r-lifecycle displayed above
+  │  ├─ r-parsnip 1.2.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-parsnip displayed above
+  │  ├─ r-pillar 1.9.0 [required: >=1.7.0]
+  │  │  └─ dependencies of r-pillar displayed above
+  │  ├─ r-prettyunits 1.2.0 [required: any]
+  │  │  └─ dependencies of r-prettyunits displayed above
+  │  ├─ r-purrr 1.0.2 [required: any]
+  │  │  └─ dependencies of r-purrr displayed above
+  │  ├─ r-rlang 1.1.3 [required: >=1.1.0]
+  │  │  └─ dependencies of r-rlang displayed above
+  │  ├─ r-rsample 1.2.1 [required: >=0.0.9]
+  │  │  └─ dependencies of r-rsample displayed above
+  │  ├─ r-tibble 3.2.1 [required: >=3.1.0]
+  │  │  └─ dependencies of r-tibble displayed above
+  │  ├─ r-tidyr 1.3.1 [required: any]
+  │  │  └─ dependencies of r-tidyr displayed above
+  │  ├─ r-tune 1.2.1 [required: >=1.2.0]
+  │  │  └─ dependencies of r-tune displayed above
+  │  ├─ r-vctrs 0.6.5 [required: any]
+  │  │  └─ dependencies of r-vctrs displayed above
+  │  ├─ r-withr 3.0.0 [required: any]
+  │  │  └─ dependencies of r-withr displayed above
+  │  └─ r-workflows 1.1.4 [required: >=1.1.4]
+  │     └─ dependencies of r-workflows displayed above
+  └─ r-yardstick 1.3.1 [required: >=1.0.0]
+     └─ dependencies of r-yardstick displayed above
+r-rodbc==1.3_23
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  └─ dependencies of r-base displayed above
+  └─ unixodbc 2.3.12 [required: >=2.3.12,<2.4.0a0]
+     ├─ libedit 3.1.20191231 [required: >=3.1.20191231,<3.2.0a0]
+     │  └─ dependencies of libedit displayed above
+     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  └─ dependencies of libgcc-ng displayed above
+     ├─ libiconv 1.17 [required: >=1.17,<2.0a0]
+     │  └─ dependencies of libiconv displayed above
+     └─ libstdcxx-ng 13.2.0 [required: >=12]
 r-devtools==2.4.5
   ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  └─ dependencies of r-base displayed above
@@ -4224,23 +4781,7 @@ r-devtools==2.4.5
   ├─ r-lifecycle 1.0.4 [required: >=1.0.1]
   │  └─ dependencies of r-lifecycle displayed above
   ├─ r-memoise 2.0.1 [required: >=2.0.1]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-cachem 1.1.0 [required: any]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-fastmap 1.2.0 [required: any]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │     └─ dependencies of r-base displayed above
-  │  │  └─ r-rlang 1.1.3 [required: any]
-  │  │     └─ dependencies of r-rlang displayed above
-  │  └─ r-rlang 1.1.3 [required: >=0.4.10]
-  │     └─ dependencies of r-rlang displayed above
+  │  └─ dependencies of r-memoise displayed above
   ├─ r-miniui 0.1.1.1 [required: >=0.1.1.1]
   │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  └─ dependencies of r-base displayed above
@@ -4281,10 +4822,7 @@ r-devtools==2.4.5
   │     │  │  └─ r-htmltools 0.5.8.1 [required: any]
   │     │  │     └─ dependencies of r-htmltools displayed above
   │     │  ├─ r-jsonlite 1.8.8 [required: any]
-  │     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │     │  │  │  └─ dependencies of libgcc-ng displayed above
-  │     │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │     │  │     └─ dependencies of r-base displayed above
+  │     │  │  └─ dependencies of r-jsonlite displayed above
   │     │  ├─ r-lifecycle 1.0.4 [required: any]
   │     │  │  └─ dependencies of r-lifecycle displayed above
   │     │  ├─ r-memoise 2.0.1 [required: >=2.0.1]
@@ -4431,13 +4969,7 @@ r-devtools==2.4.5
   │  ├─ r-desc 1.4.3 [required: any]
   │  │  └─ dependencies of r-desc displayed above
   │  ├─ r-prettyunits 1.2.0 [required: any]
-  │  │  ├─ r-assertthat 0.2.1 [required: any]
-  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │     └─ dependencies of r-base displayed above
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  └─ r-magrittr 2.0.3 [required: any]
-  │  │     └─ dependencies of r-magrittr displayed above
+  │  │  └─ dependencies of r-prettyunits displayed above
   │  ├─ r-r6 2.5.1 [required: any]
   │  │  └─ dependencies of r-r6 displayed above
   │  ├─ r-rprojroot 2.0.4 [required: any]
@@ -4493,12 +5025,7 @@ r-devtools==2.4.5
   │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  │  └─ dependencies of r-base displayed above
   │  │  ├─ r-curl 5.1.0 [required: >=0.9.1]
-  │  │  │  ├─ libcurl 8.7.1 [required: >=8.3.0,<9.0a0]
-  │  │  │  │  └─ dependencies of libcurl displayed above
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │     └─ dependencies of r-base displayed above
+  │  │  │  └─ dependencies of r-curl displayed above
   │  │  ├─ r-jsonlite 1.8.8 [required: any]
   │  │  │  └─ dependencies of r-jsonlite displayed above
   │  │  ├─ r-mime 0.12 [required: any]
@@ -4898,8 +5425,7 @@ r-devtools==2.4.5
   │  │  ├─ r-openssl 2.2.0 [required: >=2.0.3]
   │  │  │  └─ dependencies of r-openssl displayed above
   │  │  ├─ r-rstudioapi 0.16.0 [required: >=0.11]
-  │  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │     └─ dependencies of r-base displayed above
+  │  │  │  └─ dependencies of r-rstudioapi displayed above
   │  │  └─ r-zip 2.3.1 [required: >=2.1.0]
   │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │     │  └─ dependencies of libgcc-ng displayed above
@@ -4969,140 +5495,6 @@ r-devtools==2.4.5
   │     └─ dependencies of r-yaml displayed above
   └─ r-withr 3.0.0 [required: >=2.5.0]
      └─ dependencies of r-withr displayed above
-r-forecast==8.22.0
-  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  └─ dependencies of libblas displayed above
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  └─ dependencies of r-base displayed above
-  ├─ r-colorspace 2.1_0 [required: any]
-  │  └─ dependencies of r-colorspace displayed above
-  ├─ r-fracdiff 1.5_3 [required: any]
-  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of libblas displayed above
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │     └─ dependencies of r-base displayed above
-  ├─ r-generics 0.1.3 [required: >=0.1.2]
-  │  └─ dependencies of r-generics displayed above
-  ├─ r-ggplot2 3.5.1 [required: >=2.2.1]
-  │  └─ dependencies of r-ggplot2 displayed above
-  ├─ r-lmtest 0.9_40 [required: any]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  │  └─ dependencies of libgfortran-ng displayed above
-  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  │  └─ dependencies of libgfortran5 displayed above
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  └─ r-zoo 1.8_12 [required: any]
-  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │     │  └─ dependencies of libgcc-ng displayed above
-  │     ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │     │  └─ dependencies of r-base displayed above
-  │     └─ r-lattice 0.22_6 [required: >=0.20_27]
-  │        └─ dependencies of r-lattice displayed above
-  ├─ r-magrittr 2.0.3 [required: any]
-  │  └─ dependencies of r-magrittr displayed above
-  ├─ r-nnet 7.3_19 [required: any]
-  │  └─ dependencies of r-nnet displayed above
-  ├─ r-rcpp 1.0.12 [required: >=0.11.0]
-  │  └─ dependencies of r-rcpp displayed above
-  ├─ r-rcpparmadillo 0.12.8.3.0 [required: >=0.2.35]
-  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
-  │  │  └─ dependencies of _openmp_mutex displayed above
-  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of libblas displayed above
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ liblapack 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of liblapack displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  └─ r-rcpp 1.0.12 [required: >=0.11.0]
-  │     └─ dependencies of r-rcpp displayed above
-  ├─ r-timedate 4032.109 [required: any]
-  │  └─ dependencies of r-timedate displayed above
-  ├─ r-tseries 0.10_56 [required: any]
-  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of libblas displayed above
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  │  └─ dependencies of libgfortran-ng displayed above
-  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  │  └─ dependencies of libgfortran5 displayed above
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-quadprog 1.5_8 [required: any]
-  │  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  │  └─ dependencies of libblas displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  │  │  └─ dependencies of libgfortran-ng displayed above
-  │  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  │  │  └─ dependencies of libgfortran5 displayed above
-  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-quantmod 0.4.26 [required: >=0.4_9]
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-curl 5.1.0 [required: any]
-  │  │  │  └─ dependencies of r-curl displayed above
-  │  │  ├─ r-jsonlite 1.8.8 [required: >=1.1]
-  │  │  │  └─ dependencies of r-jsonlite displayed above
-  │  │  ├─ r-ttr 0.24.4 [required: >=0.2]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  │  └─ dependencies of r-base displayed above
-  │  │  │  ├─ r-curl 5.1.0 [required: any]
-  │  │  │  │  └─ dependencies of r-curl displayed above
-  │  │  │  ├─ r-xts 0.13.2 [required: >=0.10_0]
-  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  │  │  └─ dependencies of r-base displayed above
-  │  │  │  │  └─ r-zoo 1.8_12 [required: >=1.7_12]
-  │  │  │  │     └─ dependencies of r-zoo displayed above
-  │  │  │  └─ r-zoo 1.8_12 [required: any]
-  │  │  │     └─ dependencies of r-zoo displayed above
-  │  │  ├─ r-xts 0.13.2 [required: >=0.9_0]
-  │  │  │  └─ dependencies of r-xts displayed above
-  │  │  └─ r-zoo 1.8_12 [required: any]
-  │  │     └─ dependencies of r-zoo displayed above
-  │  └─ r-zoo 1.8_12 [required: any]
-  │     └─ dependencies of r-zoo displayed above
-  ├─ r-urca 1.3_3 [required: any]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  │  └─ dependencies of libgfortran-ng displayed above
-  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  │  └─ dependencies of libgfortran5 displayed above
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  └─ r-nlme 3.1_164 [required: any]
-  │     └─ dependencies of r-nlme displayed above
-  └─ r-zoo 1.8_12 [required: any]
-     └─ dependencies of r-zoo displayed above
-r-hexbin==1.28.3
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  └─ dependencies of libgfortran-ng displayed above
-  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  └─ dependencies of libgfortran5 displayed above
-  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  └─ dependencies of r-base displayed above
-  └─ r-lattice 0.22_6 [required: any]
-     └─ dependencies of r-lattice displayed above
 r-irkernel==1.3.2
   ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  └─ dependencies of r-base displayed above
@@ -5143,472 +5535,6 @@ r-irkernel==1.3.2
      │  └─ dependencies of libgcc-ng displayed above
      └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
         └─ dependencies of r-base displayed above
-r-nycflights13==1.0.2
-  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  └─ dependencies of r-base displayed above
-  └─ r-tibble 3.2.1 [required: any]
-     └─ dependencies of r-tibble displayed above
-r-randomforest==4.7_1.1
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  └─ dependencies of libgfortran-ng displayed above
-  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  └─ dependencies of libgfortran5 displayed above
-  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-     └─ dependencies of r-base displayed above
-r-rcurl==1.98_1.14
-  ├─ libcurl 8.7.1 [required: >=8.5.0,<9.0a0]
-  │  └─ dependencies of libcurl displayed above
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  └─ dependencies of r-base displayed above
-  └─ r-bitops 1.0_7 [required: any]
-     ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  └─ dependencies of libgcc-ng displayed above
-     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-        └─ dependencies of r-base displayed above
-r-rodbc==1.3_23
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  └─ dependencies of r-base displayed above
-  └─ unixodbc 2.3.12 [required: >=2.3.12,<2.4.0a0]
-     ├─ libedit 3.1.20191231 [required: >=3.1.20191231,<3.2.0a0]
-     │  └─ dependencies of libedit displayed above
-     ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  └─ dependencies of libgcc-ng displayed above
-     ├─ libiconv 1.17 [required: >=1.17,<2.0a0]
-     │  └─ dependencies of libiconv displayed above
-     └─ libstdcxx-ng 13.2.0 [required: >=12]
-r-rsqlite==2.3.4
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  └─ dependencies of r-base displayed above
-  ├─ r-bit64 4.0.5 [required: any]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  └─ r-bit 4.0.5 [required: >=4.0.0]
-  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │     │  └─ dependencies of libgcc-ng displayed above
-  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │        └─ dependencies of r-base displayed above
-  ├─ r-blob 1.2.4 [required: >=1.2.0]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-rlang 1.1.3 [required: any]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  └─ r-vctrs 0.6.5 [required: >=0.2.1]
-  │     └─ dependencies of r-vctrs displayed above
-  ├─ r-cpp11 0.4.7 [required: any]
-  │  └─ dependencies of r-cpp11 displayed above
-  ├─ r-dbi 1.2.2 [required: >=1.1.0]
-  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │     └─ dependencies of r-base displayed above
-  ├─ r-memoise 2.0.1 [required: any]
-  │  └─ dependencies of r-memoise displayed above
-  ├─ r-pkgconfig 2.0.3 [required: any]
-  │  └─ dependencies of r-pkgconfig displayed above
-  └─ r-plogr 0.2.0 [required: >=0.2.0]
-     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-        └─ dependencies of r-base displayed above
-r-tidymodels==1.2.0
-  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  └─ dependencies of r-base displayed above
-  ├─ r-broom 1.0.6 [required: >=1.0.0]
-  │  ├─ r-backports 1.4.1 [required: any]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-dplyr 1.1.4 [required: >=1.0.0]
-  │  │  └─ dependencies of r-dplyr displayed above
-  │  ├─ r-ellipsis 0.3.2 [required: any]
-  │  │  └─ dependencies of r-ellipsis displayed above
-  │  ├─ r-generics 0.1.3 [required: >=0.0.2]
-  │  │  └─ dependencies of r-generics displayed above
-  │  ├─ r-ggplot2 3.5.1 [required: any]
-  │  │  └─ dependencies of r-ggplot2 displayed above
-  │  ├─ r-glue 1.7.0 [required: any]
-  │  │  └─ dependencies of r-glue displayed above
-  │  ├─ r-purrr 1.0.2 [required: any]
-  │  │  └─ dependencies of r-purrr displayed above
-  │  ├─ r-rlang 1.1.3 [required: any]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  ├─ r-stringr 1.5.1 [required: any]
-  │  │  └─ dependencies of r-stringr displayed above
-  │  ├─ r-tibble 3.2.1 [required: >=3.0.0]
-  │  │  └─ dependencies of r-tibble displayed above
-  │  └─ r-tidyr 1.3.1 [required: >=1.0.0]
-  │     └─ dependencies of r-tidyr displayed above
-  ├─ r-cli 3.6.2 [required: >=3.3.0]
-  │  └─ dependencies of r-cli displayed above
-  ├─ r-conflicted 1.2.0 [required: >=1.1.0]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-cli 3.6.2 [required: >=3.4.0]
-  │  │  └─ dependencies of r-cli displayed above
-  │  ├─ r-memoise 2.0.1 [required: any]
-  │  │  └─ dependencies of r-memoise displayed above
-  │  └─ r-rlang 1.1.3 [required: >=1.0.0]
-  │     └─ dependencies of r-rlang displayed above
-  ├─ r-dials 1.2.1 [required: >=1.0.0]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-cli 3.6.2 [required: any]
-  │  │  └─ dependencies of r-cli displayed above
-  │  ├─ r-dicedesign 1.10 [required: any]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-dplyr 1.1.4 [required: >=0.8.5]
-  │  │  └─ dependencies of r-dplyr displayed above
-  │  ├─ r-glue 1.7.0 [required: any]
-  │  │  └─ dependencies of r-glue displayed above
-  │  ├─ r-hardhat 1.3.1 [required: >=1.1.0]
-  │  │  └─ dependencies of r-hardhat displayed above
-  │  ├─ r-lifecycle 1.0.4 [required: any]
-  │  │  └─ dependencies of r-lifecycle displayed above
-  │  ├─ r-pillar 1.9.0 [required: any]
-  │  │  └─ dependencies of r-pillar displayed above
-  │  ├─ r-purrr 1.0.2 [required: any]
-  │  │  └─ dependencies of r-purrr displayed above
-  │  ├─ r-rlang 1.1.3 [required: >=1.0.1]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  ├─ r-scales 1.3.0 [required: any]
-  │  │  └─ dependencies of r-scales displayed above
-  │  ├─ r-tibble 3.2.1 [required: any]
-  │  │  └─ dependencies of r-tibble displayed above
-  │  ├─ r-vctrs 0.6.5 [required: >=0.3.8]
-  │  │  └─ dependencies of r-vctrs displayed above
-  │  └─ r-withr 3.0.0 [required: any]
-  │     └─ dependencies of r-withr displayed above
-  ├─ r-dplyr 1.1.4 [required: >=1.0.9]
-  │  └─ dependencies of r-dplyr displayed above
-  ├─ r-ggplot2 3.5.1 [required: >=3.3.6]
-  │  └─ dependencies of r-ggplot2 displayed above
-  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
-  │  └─ dependencies of r-hardhat displayed above
-  ├─ r-infer 1.0.7 [required: >=1.0.2]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-broom 1.0.6 [required: any]
-  │  │  └─ dependencies of r-broom displayed above
-  │  ├─ r-dplyr 1.1.4 [required: >=0.7.0]
-  │  │  └─ dependencies of r-dplyr displayed above
-  │  ├─ r-generics 0.1.3 [required: any]
-  │  │  └─ dependencies of r-generics displayed above
-  │  ├─ r-ggplot2 3.5.1 [required: any]
-  │  │  └─ dependencies of r-ggplot2 displayed above
-  │  ├─ r-glue 1.7.0 [required: >=1.3.0]
-  │  │  └─ dependencies of r-glue displayed above
-  │  ├─ r-magrittr 2.0.3 [required: any]
-  │  │  └─ dependencies of r-magrittr displayed above
-  │  ├─ r-patchwork 1.2.0 [required: any]
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-ggplot2 3.5.1 [required: >=3.0.0]
-  │  │  │  └─ dependencies of r-ggplot2 displayed above
-  │  │  └─ r-gtable 0.3.5 [required: any]
-  │  │     └─ dependencies of r-gtable displayed above
-  │  ├─ r-purrr 1.0.2 [required: any]
-  │  │  └─ dependencies of r-purrr displayed above
-  │  ├─ r-rlang 1.1.3 [required: >=0.2.0]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  ├─ r-tibble 3.2.1 [required: any]
-  │  │  └─ dependencies of r-tibble displayed above
-  │  └─ r-tidyr 1.3.1 [required: any]
-  │     └─ dependencies of r-tidyr displayed above
-  ├─ r-modeldata 1.3.0 [required: >=1.0.0]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-dplyr 1.1.4 [required: any]
-  │  │  └─ dependencies of r-dplyr displayed above
-  │  ├─ r-mass 7.3_60 [required: any]
-  │  │  └─ dependencies of r-mass displayed above
-  │  ├─ r-purrr 1.0.2 [required: any]
-  │  │  └─ dependencies of r-purrr displayed above
-  │  ├─ r-rlang 1.1.3 [required: any]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  └─ r-tibble 3.2.1 [required: any]
-  │     └─ dependencies of r-tibble displayed above
-  ├─ r-parsnip 1.2.1 [required: >=1.0.0]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-cli 3.6.2 [required: any]
-  │  │  └─ dependencies of r-cli displayed above
-  │  ├─ r-dplyr 1.1.4 [required: >=1.1.0]
-  │  │  └─ dependencies of r-dplyr displayed above
-  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
-  │  │  └─ dependencies of r-generics displayed above
-  │  ├─ r-ggplot2 3.5.1 [required: any]
-  │  │  └─ dependencies of r-ggplot2 displayed above
-  │  ├─ r-globals 0.16.3 [required: any]
-  │  │  └─ dependencies of r-globals displayed above
-  │  ├─ r-glue 1.7.0 [required: any]
-  │  │  └─ dependencies of r-glue displayed above
-  │  ├─ r-hardhat 1.3.1 [required: >=1.1.0]
-  │  │  └─ dependencies of r-hardhat displayed above
-  │  ├─ r-lifecycle 1.0.4 [required: any]
-  │  │  └─ dependencies of r-lifecycle displayed above
-  │  ├─ r-magrittr 2.0.3 [required: any]
-  │  │  └─ dependencies of r-magrittr displayed above
-  │  ├─ r-pillar 1.9.0 [required: any]
-  │  │  └─ dependencies of r-pillar displayed above
-  │  ├─ r-prettyunits 1.2.0 [required: any]
-  │  │  └─ dependencies of r-prettyunits displayed above
-  │  ├─ r-purrr 1.0.2 [required: >=1.0.0]
-  │  │  └─ dependencies of r-purrr displayed above
-  │  ├─ r-rlang 1.1.3 [required: >=0.3.1]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  ├─ r-tibble 3.2.1 [required: >=2.1.1]
-  │  │  └─ dependencies of r-tibble displayed above
-  │  ├─ r-tidyr 1.3.1 [required: >=1.3.0]
-  │  │  └─ dependencies of r-tidyr displayed above
-  │  ├─ r-vctrs 0.6.5 [required: >=0.6.0]
-  │  │  └─ dependencies of r-vctrs displayed above
-  │  └─ r-withr 3.0.0 [required: any]
-  │     └─ dependencies of r-withr displayed above
-  ├─ r-purrr 1.0.2 [required: >=0.3.4]
-  │  └─ dependencies of r-purrr displayed above
-  ├─ r-recipes 1.0.10 [required: >=1.0.1]
-  │  └─ dependencies of r-recipes displayed above
-  ├─ r-rlang 1.1.3 [required: >=1.0.3]
-  │  └─ dependencies of r-rlang displayed above
-  ├─ r-rsample 1.2.1 [required: >=1.0.0]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-dplyr 1.1.4 [required: >=1.0.0]
-  │  │  └─ dependencies of r-dplyr displayed above
-  │  ├─ r-furrr 0.3.1 [required: any]
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-ellipsis 0.3.2 [required: any]
-  │  │  │  └─ dependencies of r-ellipsis displayed above
-  │  │  ├─ r-future 1.33.2 [required: >=1.19.1]
-  │  │  │  └─ dependencies of r-future displayed above
-  │  │  ├─ r-globals 0.16.3 [required: >=0.13.1]
-  │  │  │  └─ dependencies of r-globals displayed above
-  │  │  ├─ r-lifecycle 1.0.4 [required: >=0.2.0]
-  │  │  │  └─ dependencies of r-lifecycle displayed above
-  │  │  ├─ r-purrr 1.0.2 [required: >=0.3.0]
-  │  │  │  └─ dependencies of r-purrr displayed above
-  │  │  ├─ r-rlang 1.1.3 [required: >=0.3.0]
-  │  │  │  └─ dependencies of r-rlang displayed above
-  │  │  └─ r-vctrs 0.6.5 [required: >=0.3.2]
-  │  │     └─ dependencies of r-vctrs displayed above
-  │  ├─ r-generics 0.1.3 [required: any]
-  │  │  └─ dependencies of r-generics displayed above
-  │  ├─ r-glue 1.7.0 [required: any]
-  │  │  └─ dependencies of r-glue displayed above
-  │  ├─ r-pillar 1.9.0 [required: any]
-  │  │  └─ dependencies of r-pillar displayed above
-  │  ├─ r-purrr 1.0.2 [required: any]
-  │  │  └─ dependencies of r-purrr displayed above
-  │  ├─ r-rlang 1.1.3 [required: >=0.4.10]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  ├─ r-slider 0.3.1 [required: >=0.1.5]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-cli 3.6.2 [required: >=3.4.1]
-  │  │  │  └─ dependencies of r-cli displayed above
-  │  │  ├─ r-rlang 1.1.3 [required: >=1.0.6]
-  │  │  │  └─ dependencies of r-rlang displayed above
-  │  │  ├─ r-vctrs 0.6.5 [required: >=0.5.0]
-  │  │  │  └─ dependencies of r-vctrs displayed above
-  │  │  └─ r-warp 0.2.1 [required: any]
-  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │     │  └─ dependencies of libgcc-ng displayed above
-  │  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │        └─ dependencies of r-base displayed above
-  │  ├─ r-tibble 3.2.1 [required: any]
-  │  │  └─ dependencies of r-tibble displayed above
-  │  ├─ r-tidyr 1.3.1 [required: any]
-  │  │  └─ dependencies of r-tidyr displayed above
-  │  ├─ r-tidyselect 1.2.1 [required: any]
-  │  │  └─ dependencies of r-tidyselect displayed above
-  │  └─ r-vctrs 0.6.5 [required: >=0.5.0]
-  │     └─ dependencies of r-vctrs displayed above
-  ├─ r-rstudioapi 0.16.0 [required: >=0.13]
-  │  └─ dependencies of r-rstudioapi displayed above
-  ├─ r-tibble 3.2.1 [required: >=3.1.7]
-  │  └─ dependencies of r-tibble displayed above
-  ├─ r-tidyr 1.3.1 [required: >=1.2.0]
-  │  └─ dependencies of r-tidyr displayed above
-  ├─ r-tune 1.2.1 [required: >=1.0.0]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-cli 3.6.2 [required: >=3.3.0]
-  │  │  └─ dependencies of r-cli displayed above
-  │  ├─ r-dials 1.2.1 [required: >=1.0.0]
-  │  │  └─ dependencies of r-dials displayed above
-  │  ├─ r-dofuture 1.0.1 [required: >=1.0.0]
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-foreach 1.5.2 [required: >=1.5.0]
-  │  │  │  └─ dependencies of r-foreach displayed above
-  │  │  ├─ r-future 1.33.2 [required: >=1.32.0]
-  │  │  │  └─ dependencies of r-future displayed above
-  │  │  ├─ r-future.apply 1.11.2 [required: any]
-  │  │  │  └─ dependencies of r-future.apply displayed above
-  │  │  ├─ r-globals 0.16.3 [required: any]
-  │  │  │  └─ dependencies of r-globals displayed above
-  │  │  └─ r-iterators 1.0.14 [required: any]
-  │  │     └─ dependencies of r-iterators displayed above
-  │  ├─ r-dplyr 1.1.4 [required: >=1.1.0]
-  │  │  └─ dependencies of r-dplyr displayed above
-  │  ├─ r-foreach 1.5.2 [required: any]
-  │  │  └─ dependencies of r-foreach displayed above
-  │  ├─ r-future 1.33.2 [required: >=1.33.0]
-  │  │  └─ dependencies of r-future displayed above
-  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
-  │  │  └─ dependencies of r-generics displayed above
-  │  ├─ r-ggplot2 3.5.1 [required: any]
-  │  │  └─ dependencies of r-ggplot2 displayed above
-  │  ├─ r-glue 1.7.0 [required: >=1.6.2]
-  │  │  └─ dependencies of r-glue displayed above
-  │  ├─ r-gpfit 1.0_8 [required: any]
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-lattice 0.22_6 [required: >=0.18_8]
-  │  │  │  └─ dependencies of r-lattice displayed above
-  │  │  └─ r-lhs 1.1.6 [required: >=0.5]
-  │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │     │  └─ dependencies of libgcc-ng displayed above
-  │  │     ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │     ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │     │  └─ dependencies of r-base displayed above
-  │  │     └─ r-rcpp 1.0.12 [required: any]
-  │  │        └─ dependencies of r-rcpp displayed above
-  │  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
-  │  │  └─ dependencies of r-hardhat displayed above
-  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.0]
-  │  │  └─ dependencies of r-lifecycle displayed above
-  │  ├─ r-parsnip 1.2.1 [required: >=1.2.0]
-  │  │  └─ dependencies of r-parsnip displayed above
-  │  ├─ r-purrr 1.0.2 [required: >=1.0.0]
-  │  │  └─ dependencies of r-purrr displayed above
-  │  ├─ r-recipes 1.0.10 [required: >=1.0.4]
-  │  │  └─ dependencies of r-recipes displayed above
-  │  ├─ r-rlang 1.1.3 [required: >=1.1.0]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  ├─ r-rsample 1.2.1 [required: >=1.2.0]
-  │  │  └─ dependencies of r-rsample displayed above
-  │  ├─ r-tibble 3.2.1 [required: >=3.1.0]
-  │  │  └─ dependencies of r-tibble displayed above
-  │  ├─ r-tidyr 1.3.1 [required: >=1.2.0]
-  │  │  └─ dependencies of r-tidyr displayed above
-  │  ├─ r-tidyselect 1.2.1 [required: >=1.1.2]
-  │  │  └─ dependencies of r-tidyselect displayed above
-  │  ├─ r-vctrs 0.6.5 [required: >=0.6.1]
-  │  │  └─ dependencies of r-vctrs displayed above
-  │  ├─ r-withr 3.0.0 [required: any]
-  │  │  └─ dependencies of r-withr displayed above
-  │  ├─ r-workflows 1.1.4 [required: >=1.1.4]
-  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-cli 3.6.2 [required: >=3.3.0]
-  │  │  │  └─ dependencies of r-cli displayed above
-  │  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
-  │  │  │  └─ dependencies of r-generics displayed above
-  │  │  ├─ r-glue 1.7.0 [required: >=1.6.2]
-  │  │  │  └─ dependencies of r-glue displayed above
-  │  │  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
-  │  │  │  └─ dependencies of r-hardhat displayed above
-  │  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.3]
-  │  │  │  └─ dependencies of r-lifecycle displayed above
-  │  │  ├─ r-modelenv 0.1.1 [required: >=0.1.0]
-  │  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  │  │  └─ dependencies of r-base displayed above
-  │  │  │  ├─ r-glue 1.7.0 [required: any]
-  │  │  │  │  └─ dependencies of r-glue displayed above
-  │  │  │  ├─ r-rlang 1.1.3 [required: any]
-  │  │  │  │  └─ dependencies of r-rlang displayed above
-  │  │  │  ├─ r-tibble 3.2.1 [required: any]
-  │  │  │  │  └─ dependencies of r-tibble displayed above
-  │  │  │  └─ r-vctrs 0.6.5 [required: any]
-  │  │  │     └─ dependencies of r-vctrs displayed above
-  │  │  ├─ r-parsnip 1.2.1 [required: >=1.0.3]
-  │  │  │  └─ dependencies of r-parsnip displayed above
-  │  │  ├─ r-rlang 1.1.3 [required: >=1.0.3]
-  │  │  │  └─ dependencies of r-rlang displayed above
-  │  │  ├─ r-tidyselect 1.2.1 [required: >=1.2.0]
-  │  │  │  └─ dependencies of r-tidyselect displayed above
-  │  │  └─ r-vctrs 0.6.5 [required: >=0.4.1]
-  │  │     └─ dependencies of r-vctrs displayed above
-  │  └─ r-yardstick 1.3.1 [required: >=1.3.0]
-  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-  │     │  └─ dependencies of libgcc-ng displayed above
-  │     ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │     │  └─ dependencies of r-base displayed above
-  │     ├─ r-dplyr 1.1.4 [required: >=1.0.9]
-  │     │  └─ dependencies of r-dplyr displayed above
-  │     ├─ r-generics 0.1.3 [required: >=0.1.2]
-  │     │  └─ dependencies of r-generics displayed above
-  │     ├─ r-hardhat 1.3.1 [required: >=1.0.0]
-  │     │  └─ dependencies of r-hardhat displayed above
-  │     ├─ r-rlang 1.1.3 [required: >=1.0.2]
-  │     │  └─ dependencies of r-rlang displayed above
-  │     ├─ r-tidyselect 1.2.1 [required: >=1.1.2]
-  │     │  └─ dependencies of r-tidyselect displayed above
-  │     └─ r-vctrs 0.6.5 [required: >=0.4.1]
-  │        └─ dependencies of r-vctrs displayed above
-  ├─ r-workflows 1.1.4 [required: >=1.0.0]
-  │  └─ dependencies of r-workflows displayed above
-  ├─ r-workflowsets 1.1.0 [required: >=1.0.0]
-  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-cli 3.6.2 [required: any]
-  │  │  └─ dependencies of r-cli displayed above
-  │  ├─ r-dplyr 1.1.4 [required: >=1.0.0]
-  │  │  └─ dependencies of r-dplyr displayed above
-  │  ├─ r-generics 0.1.3 [required: >=0.1.2]
-  │  │  └─ dependencies of r-generics displayed above
-  │  ├─ r-ggplot2 3.5.1 [required: any]
-  │  │  └─ dependencies of r-ggplot2 displayed above
-  │  ├─ r-glue 1.7.0 [required: any]
-  │  │  └─ dependencies of r-glue displayed above
-  │  ├─ r-hardhat 1.3.1 [required: >=1.2.0]
-  │  │  └─ dependencies of r-hardhat displayed above
-  │  ├─ r-lifecycle 1.0.4 [required: >=1.0.0]
-  │  │  └─ dependencies of r-lifecycle displayed above
-  │  ├─ r-parsnip 1.2.1 [required: >=1.2.0]
-  │  │  └─ dependencies of r-parsnip displayed above
-  │  ├─ r-pillar 1.9.0 [required: >=1.7.0]
-  │  │  └─ dependencies of r-pillar displayed above
-  │  ├─ r-prettyunits 1.2.0 [required: any]
-  │  │  └─ dependencies of r-prettyunits displayed above
-  │  ├─ r-purrr 1.0.2 [required: any]
-  │  │  └─ dependencies of r-purrr displayed above
-  │  ├─ r-rlang 1.1.3 [required: >=1.1.0]
-  │  │  └─ dependencies of r-rlang displayed above
-  │  ├─ r-rsample 1.2.1 [required: >=0.0.9]
-  │  │  └─ dependencies of r-rsample displayed above
-  │  ├─ r-tibble 3.2.1 [required: >=3.1.0]
-  │  │  └─ dependencies of r-tibble displayed above
-  │  ├─ r-tidyr 1.3.1 [required: any]
-  │  │  └─ dependencies of r-tidyr displayed above
-  │  ├─ r-tune 1.2.1 [required: >=1.2.0]
-  │  │  └─ dependencies of r-tune displayed above
-  │  ├─ r-vctrs 0.6.5 [required: any]
-  │  │  └─ dependencies of r-vctrs displayed above
-  │  ├─ r-withr 3.0.0 [required: any]
-  │  │  └─ dependencies of r-withr displayed above
-  │  └─ r-workflows 1.1.4 [required: >=1.1.4]
-  │     └─ dependencies of r-workflows displayed above
-  └─ r-yardstick 1.3.1 [required: >=1.0.0]
-     └─ dependencies of r-yardstick displayed above
 r-tidyverse==2.0.0
   ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  └─ dependencies of r-base displayed above
@@ -5622,11 +5548,17 @@ r-tidyverse==2.0.0
   │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │  └─ dependencies of r-base displayed above
   │  ├─ r-blob 1.2.4 [required: >=1.2.0]
-  │  │  └─ dependencies of r-blob displayed above
+  │  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-rlang 1.1.3 [required: any]
+  │  │  │  └─ dependencies of r-rlang displayed above
+  │  │  └─ r-vctrs 0.6.5 [required: >=0.2.1]
+  │  │     └─ dependencies of r-vctrs displayed above
   │  ├─ r-cli 3.6.2 [required: >=3.6.1]
   │  │  └─ dependencies of r-cli displayed above
   │  ├─ r-dbi 1.2.2 [required: >=1.1.3]
-  │  │  └─ dependencies of r-dbi displayed above
+  │  │  └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │     └─ dependencies of r-base displayed above
   │  ├─ r-dplyr 1.1.4 [required: >=1.1.2]
   │  │  └─ dependencies of r-dplyr displayed above
   │  ├─ r-glue 1.7.0 [required: >=1.6.2]
@@ -5847,7 +5779,15 @@ r-tidyverse==2.0.0
   │  │     ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  │     │  └─ dependencies of r-base displayed above
   │  │     ├─ r-bit64 4.0.5 [required: any]
-  │  │     │  └─ dependencies of r-bit64 displayed above
+  │  │     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │     │  │  └─ dependencies of libgcc-ng displayed above
+  │  │     │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │     │  │  └─ dependencies of r-base displayed above
+  │  │     │  └─ r-bit 4.0.5 [required: >=4.0.0]
+  │  │     │     ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │     │     │  └─ dependencies of libgcc-ng displayed above
+  │  │     │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │     │        └─ dependencies of r-base displayed above
   │  │     ├─ r-cli 3.6.2 [required: any]
   │  │     │  └─ dependencies of r-cli displayed above
   │  │     ├─ r-cpp11 0.4.7 [required: >=0.2.0]
@@ -6008,24 +5948,111 @@ r-tidyverse==2.0.0
   │  └─ dependencies of r-tidyr displayed above
   └─ r-xml2 1.3.6 [required: >=1.3.3]
      └─ dependencies of r-xml2 displayed above
-rpy2==3.5.11
-  ├─ cffi 1.16.0 [required: >=1.10.0,!=1.13.0]
-  │  └─ dependencies of cffi displayed above
-  ├─ jinja2 3.1.4 [required: any]
-  │  └─ dependencies of jinja2 displayed above
+r-caret==6.0_94
   ├─ libgcc-ng 14.2.0 [required: >=12]
   │  └─ dependencies of libgcc-ng displayed above
-  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  ├─ pytz 2024.1 [required: any]
-  │  └─ python 3.11.9 [required: >=3.7]
   ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
   │  └─ dependencies of r-base displayed above
-  ├─ simplegeneric 0.8.1 [required: any]
-  │  └─ python 3.11.9 [required: any]
-  └─ tzlocal 5.2 [required: any]
-     ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-     └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ r-e1071 1.7_14 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-class 7.3_22 [required: any]
+  │  │  └─ dependencies of r-class displayed above
+  │  └─ r-proxy 0.4_27 [required: any]
+  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+  │     │  └─ dependencies of libgcc-ng displayed above
+  │     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │        └─ dependencies of r-base displayed above
+  ├─ r-foreach 1.5.2 [required: any]
+  │  └─ dependencies of r-foreach displayed above
+  ├─ r-ggplot2 3.5.1 [required: any]
+  │  └─ dependencies of r-ggplot2 displayed above
+  ├─ r-lattice 0.22_6 [required: >=0.20]
+  │  └─ dependencies of r-lattice displayed above
+  ├─ r-modelmetrics 1.2.2.2 [required: >=1.2.2.2]
+  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
+  │  │  └─ dependencies of _openmp_mutex displayed above
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-data.table 1.15.2 [required: any]
+  │  │  └─ dependencies of r-data.table displayed above
+  │  └─ r-rcpp 1.0.12 [required: any]
+  │     └─ dependencies of r-rcpp displayed above
+  ├─ r-nlme 3.1_164 [required: any]
+  │  └─ dependencies of r-nlme displayed above
+  ├─ r-plyr 1.8.9 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  └─ r-rcpp 1.0.12 [required: >=0.11.0]
+  │     └─ dependencies of r-rcpp displayed above
+  ├─ r-proc 1.18.5 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-plyr 1.8.9 [required: any]
+  │  │  └─ dependencies of r-plyr displayed above
+  │  └─ r-rcpp 1.0.12 [required: >=0.11.1]
+  │     └─ dependencies of r-rcpp displayed above
+  ├─ r-recipes 1.0.10 [required: >=0.1.10]
+  │  └─ dependencies of r-recipes displayed above
+  ├─ r-reshape2 1.4.4 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-plyr 1.8.9 [required: >=1.8.1]
+  │  │  └─ dependencies of r-plyr displayed above
+  │  ├─ r-rcpp 1.0.12 [required: any]
+  │  │  └─ dependencies of r-rcpp displayed above
+  │  └─ r-stringr 1.5.1 [required: any]
+  │     └─ dependencies of r-stringr displayed above
+  └─ r-withr 3.0.0 [required: >=2.0.0]
+     └─ dependencies of r-withr displayed above
+r-rcurl==1.98_1.14
+  ├─ libcurl 8.7.1 [required: >=8.5.0,<9.0a0]
+  │  └─ dependencies of libcurl displayed above
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  └─ dependencies of r-base displayed above
+  └─ r-bitops 1.0_7 [required: any]
+     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  └─ dependencies of libgcc-ng displayed above
+     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+        └─ dependencies of r-base displayed above
+r-rsqlite==2.3.4
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+  │  └─ dependencies of r-base displayed above
+  ├─ r-bit64 4.0.5 [required: any]
+  │  └─ dependencies of r-bit64 displayed above
+  ├─ r-blob 1.2.4 [required: >=1.2.0]
+  │  └─ dependencies of r-blob displayed above
+  ├─ r-cpp11 0.4.7 [required: any]
+  │  └─ dependencies of r-cpp11 displayed above
+  ├─ r-dbi 1.2.2 [required: >=1.1.0]
+  │  └─ dependencies of r-dbi displayed above
+  ├─ r-memoise 2.0.1 [required: any]
+  │  └─ dependencies of r-memoise displayed above
+  ├─ r-pkgconfig 2.0.3 [required: any]
+  │  └─ dependencies of r-pkgconfig displayed above
+  └─ r-plogr 0.2.0 [required: >=0.2.0]
+     └─ r-base 4.3.3 [required: >=4.3,<4.4.0a0]
+        └─ dependencies of r-base displayed above
 jupyter-pluto-proxy==0.1.2
   ├─ jupyter-server-proxy 4.1.2 [required: >=1.5.0]
   │  ├─ aiohttp 3.9.5 [required: any]
@@ -6070,6 +6097,230 @@ jupyter-pluto-proxy==0.1.2
   │  └─ traitlets 5.14.3 [required: >=4.2.1]
   │     └─ dependencies of traitlets displayed above
   └─ python 3.11.9 [required: >=3.7]
+seaborn==0.13.2
+  ├─ seaborn-base 0.13.2 [required: 0.13.2, pyhd8ed1ab_2]
+  │  ├─ matplotlib-base 3.8.4 [required: >=3.4,!=3.6.1]
+  │  │  ├─ certifi 2025.1.31 [required: >=2020.06.20]
+  │  │  │  └─ python 3.11.9 [required: >=3.9]
+  │  │  ├─ contourpy 1.2.1 [required: >=1.0.1]
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  ├─ numpy 1.26.4 [required: >=1.20]
+  │  │  │  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  │  │  └─ dependencies of libblas displayed above
+  │  │  │  │  ├─ libcblas 3.9.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  │  │  └─ libblas 3.9.0 [required: 3.9.0, 22_linux64_openblas]
+  │  │  │  │  │     └─ dependencies of libblas displayed above
+  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  ├─ liblapack 3.9.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  │  │  └─ dependencies of liblapack displayed above
+  │  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  │  │  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  │  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │  ├─ cycler 0.12.1 [required: >=0.10]
+  │  │  │  └─ python 3.11.9 [required: >=3.8]
+  │  │  ├─ fonttools 4.51.0 [required: >=4.22.0]
+  │  │  │  ├─ brotli 1.1.0 [required: any]
+  │  │  │  │  ├─ brotli-bin 1.1.0 [required: 1.1.0, hd590300_1]
+  │  │  │  │  │  ├─ libbrotlidec 1.1.0 [required: 1.1.0, hd590300_1]
+  │  │  │  │  │  │  ├─ libbrotlicommon 1.1.0 [required: 1.1.0, hd590300_1]
+  │  │  │  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  │  │     └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  │     └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  │  ├─ libbrotlienc 1.1.0 [required: 1.1.0, hd590300_1]
+  │  │  │  │  │  │  ├─ libbrotlicommon 1.1.0 [required: 1.1.0, hd590300_1]
+  │  │  │  │  │  │  │  └─ dependencies of libbrotlicommon displayed above
+  │  │  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  │     └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │     └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  ├─ libbrotlidec 1.1.0 [required: 1.1.0, hd590300_1]
+  │  │  │  │  │  └─ dependencies of libbrotlidec displayed above
+  │  │  │  │  ├─ libbrotlienc 1.1.0 [required: 1.1.0, hd590300_1]
+  │  │  │  │  │  └─ dependencies of libbrotlienc displayed above
+  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │     └─ dependencies of libgcc-ng displayed above
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  ├─ munkres 1.1.4 [required: any]
+  │  │  │  │  └─ python 3.11.9 [required: any]
+  │  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  │  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
+  │  │  │  └─ dependencies of freetype displayed above
+  │  │  ├─ kiwisolver 1.4.5 [required: >=1.3.1]
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  │  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  ├─ numpy 1.26.4 [required: >=1.21]
+  │  │  │  └─ dependencies of numpy displayed above
+  │  │  ├─ packaging 24.0 [required: >=20.0]
+  │  │  │  └─ dependencies of packaging displayed above
+  │  │  ├─ pillow 10.3.0 [required: >=8]
+  │  │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
+  │  │  │  │  └─ dependencies of freetype displayed above
+  │  │  │  ├─ lcms2 2.16 [required: >=2.16,<3.0a0]
+  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
+  │  │  │  │  │  └─ dependencies of libjpeg-turbo displayed above
+  │  │  │  │  └─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
+  │  │  │  │     └─ dependencies of libtiff displayed above
+  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
+  │  │  │  │  └─ dependencies of libjpeg-turbo displayed above
+  │  │  │  ├─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
+  │  │  │  │  └─ dependencies of libtiff displayed above
+  │  │  │  ├─ libwebp-base 1.4.0 [required: >=1.3.2,<2.0a0]
+  │  │  │  │  └─ dependencies of libwebp-base displayed above
+  │  │  │  ├─ libxcb 1.15 [required: >=1.15,<1.16.0a0]
+  │  │  │  │  └─ dependencies of libxcb displayed above
+  │  │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+  │  │  │  │  └─ dependencies of libzlib displayed above
+  │  │  │  ├─ openjpeg 2.5.2 [required: >=2.5.2,<3.0a0]
+  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  ├─ libpng 1.6.43 [required: >=1.6.43,<1.7.0a0]
+  │  │  │  │  │  └─ dependencies of libpng displayed above
+  │  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  │  ├─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
+  │  │  │  │  │  └─ dependencies of libtiff displayed above
+  │  │  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+  │  │  │  │     └─ dependencies of libzlib displayed above
+  │  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  │  │  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │  │  └─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
+  │  │  │     └─ dependencies of tk displayed above
+  │  │  ├─ pyparsing 3.1.2 [required: >=2.3.1]
+  │  │  │  └─ python 3.11.9 [required: >=3.6]
+  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  │  ├─ python-dateutil 2.9.0 [required: >=2.7]
+  │  │  │  └─ dependencies of python-dateutil displayed above
+  │  │  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │  └─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
+  │  │     └─ dependencies of tk displayed above
+  │  ├─ numpy 1.26.4 [required: >=1.20,!=1.24.0]
+  │  │  └─ dependencies of numpy displayed above
+  │  ├─ pandas 2.2.2 [required: >=1.2]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  ├─ numpy 1.26.4 [required: >=1.19,<3]
+  │  │  │  └─ dependencies of numpy displayed above
+  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  │  ├─ python-dateutil 2.9.0 [required: >=2.8.1]
+  │  │  │  └─ dependencies of python-dateutil displayed above
+  │  │  ├─ python-tzdata 2024.1 [required: >=2022a]
+  │  │  │  └─ python 3.11.9 [required: >=3.6]
+  │  │  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │  └─ pytz 2024.1 [required: >=2020.1]
+  │  │     └─ dependencies of pytz displayed above
+  │  ├─ python 3.11.9 [required: >=3.8]
+  │  └─ scipy 1.13.0 [required: >=1.7]
+  │     ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
+  │     │  └─ dependencies of libblas displayed above
+  │     ├─ libcblas 3.9.0 [required: >=3.9.0,<4.0a0]
+  │     │  └─ dependencies of libcblas displayed above
+  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+  │     │  └─ dependencies of libgcc-ng displayed above
+  │     ├─ libgfortran-ng 13.2.0 [required: any]
+  │     │  └─ dependencies of libgfortran-ng displayed above
+  │     ├─ libgfortran5 13.2.0 [required: >=12.3.0]
+  │     │  └─ dependencies of libgfortran5 displayed above
+  │     ├─ liblapack 3.9.0 [required: >=3.9.0,<4.0a0]
+  │     │  └─ dependencies of liblapack displayed above
+  │     ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │     ├─ numpy 1.26.4 [required: >=1.19,<3]
+  │     │  └─ dependencies of numpy displayed above
+  │     ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │     └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  └─ statsmodels 0.14.2 [required: >=0.12]
+     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  └─ dependencies of libgcc-ng displayed above
+     ├─ numpy 1.26.4 [required: >=1.19,<3]
+     │  └─ dependencies of numpy displayed above
+     ├─ packaging 24.0 [required: >=21.3]
+     │  └─ dependencies of packaging displayed above
+     ├─ pandas 2.2.2 [required: >=1.4,!=2.1.0]
+     │  └─ dependencies of pandas displayed above
+     ├─ patsy 0.5.6 [required: >=0.5.6]
+     │  ├─ numpy 1.26.4 [required: >=1.4.0]
+     │  │  └─ dependencies of numpy displayed above
+     │  ├─ python 3.11.9 [required: >=3.6]
+     │  └─ six 1.16.0 [required: any]
+     │     └─ dependencies of six displayed above
+     ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+     ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+     └─ scipy 1.13.0 [required: >=1.8,!=1.9.2]
+        └─ dependencies of scipy displayed above
+openpyxl==3.1.2
+  ├─ et_xmlfile 1.1.0 [required: any]
+  │  └─ python 3.11.9 [required: >=3.6]
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+sympy==1.12
+  ├─ __unix [required: any]
+  ├─ gmpy2 2.1.5 [required: >=2.0.8]
+  │  ├─ gmp 6.3.0 [required: >=6.3.0,<7.0a0]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ mpc 1.3.1 [required: >=1.3.1,<2.0a0]
+  │  │  ├─ gmp 6.3.0 [required: >=6.2.1,<7.0a0]
+  │  │  │  └─ dependencies of gmp displayed above
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  └─ mpfr 4.2.1 [required: >=4.1.0,<5.0a0]
+  │  │     ├─ gmp 6.3.0 [required: >=6.3.0,<7.0a0]
+  │  │     │  └─ dependencies of gmp displayed above
+  │  │     └─ libgcc-ng 14.2.0 [required: >=12]
+  │  │        └─ dependencies of libgcc-ng displayed above
+  │  ├─ mpfr 4.2.1 [required: >=4.2.1,<5.0a0]
+  │  │  └─ dependencies of mpfr displayed above
+  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ mpmath 1.3.0 [required: >=0.19]
+  │  └─ python 3.11.9 [required: >=3.6]
+  └─ python 3.11.9 [required: >=3.8]
+numba==0.59.1
+  ├─ _openmp_mutex 4.5 [required: >=4.5]
+  │  └─ dependencies of _openmp_mutex displayed above
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ llvmlite 0.42.0 [required: >=0.42.0,<0.43.0a0]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libllvm14 14.0.6 [required: >=14.0.6,<14.1.0a0]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+  │  │     └─ dependencies of libzlib displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+  │  │  └─ dependencies of libzlib displayed above
+  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
+  │  └─ dependencies of numpy displayed above
+  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
 altair==5.3.0
   ├─ importlib-metadata 7.1.0 [required: any]
   │  └─ dependencies of importlib-metadata displayed above
@@ -6078,34 +6329,11 @@ altair==5.3.0
   ├─ jsonschema 4.22.0 [required: >=3.0]
   │  └─ dependencies of jsonschema displayed above
   ├─ numpy 1.26.4 [required: any]
-  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of libblas displayed above
-  │  ├─ libcblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ libblas 3.9.0 [required: 3.9.0, 22_linux64_openblas]
-  │  │     └─ dependencies of libblas displayed above
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ liblapack 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of liblapack displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  └─ dependencies of numpy displayed above
   ├─ packaging 24.0 [required: any]
   │  └─ dependencies of packaging displayed above
   ├─ pandas 2.2.2 [required: >=0.25]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ numpy 1.26.4 [required: >=1.19,<3]
-  │  │  └─ dependencies of numpy displayed above
-  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  ├─ python-dateutil 2.9.0 [required: >=2.8.1]
-  │  │  └─ dependencies of python-dateutil displayed above
-  │  ├─ python-tzdata 2024.1 [required: >=2022a]
-  │  │  └─ python 3.11.9 [required: >=3.6]
-  │  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  │  └─ pytz 2024.1 [required: >=2020.1]
-  │     └─ dependencies of pytz displayed above
+  │  └─ dependencies of pandas displayed above
   ├─ python 3.11.9 [required: >=3.8]
   ├─ toolz 0.12.1 [required: any]
   │  └─ python 3.11.9 [required: >=3.7]
@@ -6153,6 +6381,383 @@ blas==2.122
   │  └─ dependencies of liblapacke displayed above
   └─ llvm-openmp 18.1.5 [required: >=18.1.2]
      └─ dependencies of llvm-openmp displayed above
+h5py==3.11.0
+  ├─ cached-property 1.5.2 [required: any]
+  │  └─ dependencies of cached-property displayed above
+  ├─ hdf5 1.14.3 [required: >=1.14.3,<1.14.4.0a0]
+  │  ├─ libaec 1.1.3 [required: >=1.1.3,<2.0a0]
+  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  │  └─ dependencies of libgcc-ng displayed above
+  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ libcurl 8.7.1 [required: >=8.7.1,<9.0a0]
+  │  │  └─ dependencies of libcurl displayed above
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libgfortran-ng 13.2.0 [required: any]
+  │  │  └─ dependencies of libgfortran-ng displayed above
+  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
+  │  │  └─ dependencies of libgfortran5 displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+  │  │  └─ dependencies of libzlib displayed above
+  │  └─ openssl 3.4.1 [required: >=3.3.0,<4.0a0]
+  │     └─ dependencies of openssl displayed above
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ numpy 1.26.4 [required: >=1.19,<3]
+  │  └─ dependencies of numpy displayed above
+  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+protobuf==4.25.3
+  ├─ libabseil 20240116.2 [required: >=20240116.1,<20240117.0a0]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ libprotobuf 4.25.3 [required: >=4.25.3,<4.25.4.0a0]
+  │  ├─ libabseil 20240116.2 [required: >=20240116.1,<20240117.0a0]
+  │  │  └─ dependencies of libabseil displayed above
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+  │     └─ dependencies of libzlib displayed above
+  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  └─ setuptools 69.5.1 [required: any]
+     └─ dependencies of setuptools displayed above
+scikit-image==0.22.0
+  ├─ imageio 2.34.1 [required: >=2.27]
+  │  ├─ numpy 1.26.4 [required: any]
+  │  │  └─ dependencies of numpy displayed above
+  │  ├─ pillow 10.3.0 [required: >=8.3.2]
+  │  │  └─ dependencies of pillow displayed above
+  │  └─ python 3.11.9 [required: >=3]
+  ├─ lazy_loader 0.4 [required: >=0.2]
+  │  ├─ importlib-metadata 7.1.0 [required: any]
+  │  │  └─ dependencies of importlib-metadata displayed above
+  │  ├─ packaging 24.0 [required: any]
+  │  │  └─ dependencies of packaging displayed above
+  │  └─ python 3.11.9 [required: >=3.7]
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ networkx 3.3 [required: >=2.8]
+  │  └─ python 3.11.9 [required: >=3.10]
+  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
+  │  └─ dependencies of numpy displayed above
+  ├─ packaging 24.0 [required: >=21]
+  │  └─ dependencies of packaging displayed above
+  ├─ pillow 10.3.0 [required: >=9.0.1]
+  │  └─ dependencies of pillow displayed above
+  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ pywavelets 1.4.1 [required: >=1.1.1]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
+  │  │  └─ dependencies of numpy displayed above
+  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ scipy 1.13.0 [required: >=1.8]
+  │  └─ dependencies of scipy displayed above
+  └─ tifffile 2024.5.10 [required: >=2022.8.12]
+     ├─ imagecodecs 2024.1.1 [required: >=2023.8.12]
+     │  ├─ blosc 1.21.5 [required: >=1.21.5,<2.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │  │  └─ dependencies of libzlib displayed above
+     │  │  ├─ lz4-c 1.9.4 [required: >=1.9.3,<1.10.0a0]
+     │  │  │  └─ dependencies of lz4-c displayed above
+     │  │  ├─ snappy 1.2.0 [required: >=1.2.0,<1.3.0a0]
+     │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
+     │  │     └─ dependencies of zstd displayed above
+     │  ├─ brunsli 0.1 [required: >=0.1,<1.0a0]
+     │  │  ├─ brotli 1.1.0 [required: >=1.0.9,<2.0a0]
+     │  │  │  └─ dependencies of brotli displayed above
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=9.3.0]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  └─ libstdcxx-ng 13.2.0 [required: >=9.3.0]
+     │  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
+     │  │  └─ dependencies of bzip2 displayed above
+     │  ├─ c-blosc2 2.14.4 [required: >=2.14.4,<2.15.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  │  ├─ lz4-c 1.9.4 [required: >=1.9.3,<1.10.0a0]
+     │  │  │  └─ dependencies of lz4-c displayed above
+     │  │  ├─ zlib-ng 2.0.7 [required: >=2.0.7,<2.1.0a0]
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
+     │  │     └─ dependencies of zstd displayed above
+     │  ├─ charls 2.4.2 [required: >=2.4.2,<2.5.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ giflib 5.2.2 [required: >=5.2.2,<5.3.0a0]
+     │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │     └─ dependencies of libgcc-ng displayed above
+     │  ├─ jxrlib 1.1 [required: >=1.1,<1.2.0a0]
+     │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │     └─ dependencies of libgcc-ng displayed above
+     │  ├─ lcms2 2.16 [required: >=2.16,<3.0a0]
+     │  │  └─ dependencies of lcms2 displayed above
+     │  ├─ lerc 4.0.0 [required: >=4.0.0,<5.0a0]
+     │  │  └─ dependencies of lerc displayed above
+     │  ├─ libaec 1.1.3 [required: >=1.1.3,<2.0a0]
+     │  │  └─ dependencies of libaec displayed above
+     │  ├─ libavif16 1.0.4 [required: >=1.0.1,<2.0a0]
+     │  │  ├─ aom 3.9.0 [required: >=3.9.0,<3.10.0a0]
+     │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  │  ├─ dav1d 1.2.1 [required: >=1.2.1,<1.2.2.0a0]
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ rav1e 0.6.6 [required: >=0.6.6,<1.0a0]
+     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │     └─ dependencies of libgcc-ng displayed above
+     │  │  └─ svt-av1 2.1.0 [required: >=2.1.0,<2.1.1.0a0]
+     │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │     │  └─ dependencies of libgcc-ng displayed above
+     │  │     └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ libbrotlicommon 1.1.0 [required: >=1.1.0,<1.2.0a0]
+     │  │  └─ dependencies of libbrotlicommon displayed above
+     │  ├─ libbrotlidec 1.1.0 [required: >=1.1.0,<1.2.0a0]
+     │  │  └─ dependencies of libbrotlidec displayed above
+     │  ├─ libbrotlienc 1.1.0 [required: >=1.1.0,<1.2.0a0]
+     │  │  └─ dependencies of libbrotlienc displayed above
+     │  ├─ libdeflate 1.20 [required: >=1.20,<1.21.0a0]
+     │  │  └─ dependencies of libdeflate displayed above
+     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  └─ dependencies of libgcc-ng displayed above
+     │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
+     │  │  └─ dependencies of libjpeg-turbo displayed above
+     │  ├─ libjxl 0.10.2 [required: >=0.10,<0.11.0a0]
+     │  │  ├─ libbrotlidec 1.1.0 [required: >=1.1.0,<1.2.0a0]
+     │  │  │  └─ dependencies of libbrotlidec displayed above
+     │  │  ├─ libbrotlienc 1.1.0 [required: >=1.1.0,<1.2.0a0]
+     │  │  │  └─ dependencies of libbrotlienc displayed above
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  ├─ libhwy 1.1.0 [required: >=1.1.0,<1.2.0a0]
+     │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ libpng 1.6.43 [required: >=1.6.43,<1.7.0a0]
+     │  │  └─ dependencies of libpng displayed above
+     │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  ├─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
+     │  │  └─ dependencies of libtiff displayed above
+     │  ├─ libwebp-base 1.4.0 [required: >=1.3.2,<2.0a0]
+     │  │  └─ dependencies of libwebp-base displayed above
+     │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+     │  │  └─ dependencies of libzlib displayed above
+     │  ├─ libzopfli 1.0.3 [required: >=1.0.3,<1.1.0a0]
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=9.3.0]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  └─ libstdcxx-ng 13.2.0 [required: >=9.3.0]
+     │  ├─ lz4-c 1.9.4 [required: >=1.9.3,<1.10.0a0]
+     │  │  └─ dependencies of lz4-c displayed above
+     │  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
+     │  │  └─ dependencies of numpy displayed above
+     │  ├─ openjpeg 2.5.2 [required: >=2.5.2,<3.0a0]
+     │  │  └─ dependencies of openjpeg displayed above
+     │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+     │  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+     │  ├─ snappy 1.2.0 [required: >=1.2.0,<1.3.0a0]
+     │  │  └─ dependencies of snappy displayed above
+     │  ├─ xz 5.2.6 [required: >=5.2.6,<6.0a0]
+     │  │  └─ dependencies of xz displayed above
+     │  ├─ zfp 1.0.1 [required: >=1.0.1,<2.0a0]
+     │  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
+     │  │  │  └─ dependencies of _openmp_mutex displayed above
+     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+     │  │  │  └─ dependencies of libgcc-ng displayed above
+     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+     │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
+     │     └─ dependencies of zstd displayed above
+     ├─ numpy 1.26.4 [required: >=1.19.2]
+     │  └─ dependencies of numpy displayed above
+     └─ python 3.11.9 [required: >=3.9]
+ipympl==0.9.4
+  ├─ ipython 8.24.0 [required: <9]
+  │  ├─ __unix [required: any]
+  │  ├─ decorator 5.1.1 [required: any]
+  │  │  └─ python 3.11.9 [required: >=3.5]
+  │  ├─ exceptiongroup 1.2.0 [required: any]
+  │  │  └─ dependencies of exceptiongroup displayed above
+  │  ├─ jedi 0.19.1 [required: >=0.16]
+  │  │  ├─ parso 0.8.4 [required: >=0.8.3,<0.9.0]
+  │  │  │  └─ python 3.11.9 [required: >=3.6]
+  │  │  └─ python 3.11.9 [required: >=3.6]
+  │  ├─ matplotlib-inline 0.1.7 [required: any]
+  │  │  ├─ python 3.11.9 [required: >=3.6]
+  │  │  └─ traitlets 5.14.3 [required: any]
+  │  │     └─ dependencies of traitlets displayed above
+  │  ├─ pexpect 4.9.0 [required: >4.3]
+  │  │  ├─ ptyprocess 0.7.0 [required: >=0.5]
+  │  │  │  └─ dependencies of ptyprocess displayed above
+  │  │  └─ python 3.11.9 [required: >=3.7]
+  │  ├─ pickleshare 0.7.5 [required: any]
+  │  │  └─ python 3.11.9 [required: >=3]
+  │  ├─ prompt-toolkit 3.0.42 [required: >=3.0.41,<3.1.0]
+  │  │  ├─ python 3.11.9 [required: >=3.7]
+  │  │  └─ wcwidth 0.2.13 [required: any]
+  │  │     └─ python 3.11.9 [required: >=3.8]
+  │  ├─ pygments 2.18.0 [required: >=2.4.0]
+  │  │  └─ dependencies of pygments displayed above
+  │  ├─ python 3.11.9 [required: >=3.10]
+  │  ├─ stack_data 0.6.2 [required: any]
+  │  │  ├─ asttokens 2.4.1 [required: any]
+  │  │  │  ├─ python 3.11.9 [required: >=3.5]
+  │  │  │  └─ six 1.16.0 [required: >=1.12.0]
+  │  │  │     └─ dependencies of six displayed above
+  │  │  ├─ executing 2.0.1 [required: any]
+  │  │  │  └─ python 3.11.9 [required: >=2.7]
+  │  │  ├─ pure_eval 0.2.2 [required: any]
+  │  │  │  └─ python 3.11.9 [required: >=3.5]
+  │  │  └─ python 3.11.9 [required: >=3.5]
+  │  ├─ traitlets 5.14.3 [required: >=5.13.0]
+  │  │  └─ dependencies of traitlets displayed above
+  │  └─ typing_extensions 4.11.0 [required: >=4.6]
+  │     └─ dependencies of typing_extensions displayed above
+  ├─ ipython_genutils 0.2.0 [required: any]
+  │  └─ python 3.11.9 [required: any]
+  ├─ ipywidgets 8.1.2 [required: >=7.6.0,<9]
+  │  ├─ comm 0.2.2 [required: >=0.1.3]
+  │  │  ├─ python 3.11.9 [required: >=3.6]
+  │  │  └─ traitlets 5.14.3 [required: >=5.3]
+  │  │     └─ dependencies of traitlets displayed above
+  │  ├─ ipython 8.24.0 [required: >=6.1.0]
+  │  │  └─ dependencies of ipython displayed above
+  │  ├─ jupyterlab_widgets 3.0.10 [required: >=3.0.10,<3.1.0]
+  │  │  └─ python 3.11.9 [required: >=3.7]
+  │  ├─ python 3.11.9 [required: >=3.7]
+  │  ├─ traitlets 5.14.3 [required: >=4.3.1]
+  │  │  └─ dependencies of traitlets displayed above
+  │  └─ widgetsnbextension 4.0.10 [required: >=4.0.10,<4.1.0]
+  │     └─ python 3.11.9 [required: >=3.7]
+  ├─ matplotlib-base 3.8.4 [required: >=2.2.0,<4]
+  │  └─ dependencies of matplotlib-base displayed above
+  ├─ numpy 1.26.4 [required: any]
+  │  └─ dependencies of numpy displayed above
+  ├─ pillow 10.3.0 [required: any]
+  │  └─ dependencies of pillow displayed above
+  ├─ python 3.11.9 [required: >=3.6]
+  └─ traitlets 5.14.3 [required: <6]
+     └─ dependencies of traitlets displayed above
+dill==0.3.8
+  └─ python 3.11.9 [required: >=3.7]
+cython==3.0.10
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+pytables==3.9.2
+  ├─ blosc 1.21.5 [required: >=1.21.5,<2.0a0]
+  │  └─ dependencies of blosc displayed above
+  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
+  │  └─ dependencies of bzip2 displayed above
+  ├─ c-blosc2 2.14.4 [required: >=2.14.4,<2.15.0a0]
+  │  └─ dependencies of c-blosc2 displayed above
+  ├─ hdf5 1.14.3 [required: >=1.14.3,<1.14.4.0a0]
+  │  └─ dependencies of hdf5 displayed above
+  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  └─ dependencies of libgcc-ng displayed above
+  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
+  │  └─ dependencies of libzlib displayed above
+  ├─ lzo 2.10 [required: >=2.10,<3.0a0]
+  │  └─ dependencies of lzo displayed above
+  ├─ numexpr 2.9.0 [required: any]
+  │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  ├─ nomkl 1.0 [required: any]
+  │  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
+  │  │  └─ dependencies of numpy displayed above
+  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
+  │  └─ dependencies of numpy displayed above
+  ├─ packaging 24.0 [required: any]
+  │  └─ dependencies of packaging displayed above
+  ├─ py-cpuinfo 9.0.0 [required: any]
+  │  └─ python 3.11.9 [required: >=3.7]
+  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+jupyterlab-git==0.50.0
+  ├─ jupyter_server 2.14.0 [required: >=2.0,<3.0]
+  │  └─ dependencies of jupyter_server displayed above
+  ├─ nbdime 4.0.1 [required: >=4.0,<5.0]
+  │  ├─ colorama 0.4.6 [required: any]
+  │  │  └─ python 3.11.9 [required: >=3.7]
+  │  ├─ gitpython 3.1.43 [required: !=2.1.4,!=2.1.5,!=2.1.6]
+  │  │  ├─ gitdb 4.0.11 [required: >=4.0.1,<5]
+  │  │  │  ├─ python 3.11.9 [required: >=3.7]
+  │  │  │  └─ smmap 5.0.0 [required: >=3.0.1,<6]
+  │  │  │     └─ python 3.11.9 [required: >=3.5]
+  │  │  ├─ python 3.11.9 [required: >=3.7]
+  │  │  └─ typing_extensions 4.11.0 [required: >=3.7.4.3]
+  │  │     └─ dependencies of typing_extensions displayed above
+  │  ├─ jinja2 3.1.4 [required: >=2.9]
+  │  │  └─ dependencies of jinja2 displayed above
+  │  ├─ jupyter-server-mathjax 0.2.6 [required: >=0.2.2]
+  │  │  ├─ jupyter_server 2.14.0 [required: >=1.1,<3]
+  │  │  │  └─ dependencies of jupyter_server displayed above
+  │  │  └─ python 3.11.9 [required: >=3.7]
+  │  ├─ jupyter_server 2.14.0 [required: any]
+  │  │  └─ dependencies of jupyter_server displayed above
+  │  ├─ nbformat 5.10.4 [required: any]
+  │  │  └─ dependencies of nbformat displayed above
+  │  ├─ pygments 2.18.0 [required: any]
+  │  │  └─ dependencies of pygments displayed above
+  │  ├─ python 3.11.9 [required: >=3.6]
+  │  ├─ requests 2.31.0 [required: any]
+  │  │  ├─ certifi 2025.1.31 [required: >=2017.4.17]
+  │  │  │  └─ dependencies of certifi displayed above
+  │  │  ├─ charset-normalizer 3.3.2 [required: >=2,<4]
+  │  │  │  └─ python 3.11.9 [required: >=3.7]
+  │  │  ├─ idna 3.7 [required: >=2.5,<4]
+  │  │  │  └─ dependencies of idna displayed above
+  │  │  ├─ python 3.11.9 [required: >=3.7]
+  │  │  └─ urllib3 2.2.1 [required: >=1.21.1,<3]
+  │  │     ├─ brotli-python 1.1.0 [required: >=1.0.9]
+  │  │     │  ├─ libgcc-ng 14.2.0 [required: >=12]
+  │  │     │  │  └─ dependencies of libgcc-ng displayed above
+  │  │     │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │     │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
+  │  │     │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │     ├─ pysocks 1.7.1 [required: >=1.5.6,<2.0,!=1.5.7]
+  │  │     │  ├─ __unix [required: any]
+  │  │     │  └─ python 3.11.9 [required: >=3.8]
+  │  │     └─ python 3.11.9 [required: >=3.7]
+  │  └─ tornado 6.4 [required: any]
+  │     └─ dependencies of tornado displayed above
+  ├─ nbformat 5.10.4 [required: any]
+  │  └─ dependencies of nbformat displayed above
+  ├─ packaging 24.0 [required: any]
+  │  └─ dependencies of packaging displayed above
+  ├─ pexpect 4.9.0 [required: any]
+  │  └─ dependencies of pexpect displayed above
+  ├─ python 3.11.9 [required: >=3.6,<4.0]
+  └─ traitlets 5.14.3 [required: >=5.0,<6.0]
+     └─ dependencies of traitlets displayed above
+xlrd==2.0.1
+  └─ python 3.11.9 [required: >=3.6]
 bottleneck==1.3.8
   ├─ libgcc-ng 14.2.0 [required: >=12]
   │  └─ dependencies of libgcc-ng displayed above
@@ -6160,22 +6765,28 @@ bottleneck==1.3.8
   │  └─ dependencies of numpy displayed above
   ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
   └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-cython==3.0.10
+scikit-learn==1.4.2
+  ├─ _openmp_mutex 4.5 [required: >=4.5]
+  │  └─ dependencies of _openmp_mutex displayed above
+  ├─ joblib 1.4.2 [required: >=1.2.0]
+  │  ├─ python 3.11.9 [required: >=3.8]
+  │  └─ setuptools 69.5.1 [required: any]
+  │     └─ dependencies of setuptools displayed above
   ├─ libgcc-ng 14.2.0 [required: >=12]
   │  └─ dependencies of libgcc-ng displayed above
   ├─ libstdcxx-ng 13.2.0 [required: >=12]
+  ├─ numpy 1.26.4 [required: >=1.19,<3]
+  │  └─ dependencies of numpy displayed above
   ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  ├─ scipy 1.13.0 [required: any]
+  │  └─ dependencies of scipy displayed above
+  └─ threadpoolctl 3.5.0 [required: >=2.0.0]
+     └─ python 3.11.9 [required: >=3.8]
 dask==2024.5.1
   ├─ bokeh 3.4.1 [required: >=2.4.2,!=3.0.*]
   │  ├─ contourpy 1.2.1 [required: >=1.2]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  ├─ numpy 1.26.4 [required: >=1.20]
-  │  │  │  └─ dependencies of numpy displayed above
-  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
+  │  │  └─ dependencies of contourpy displayed above
   │  ├─ jinja2 3.1.4 [required: >=2.9]
   │  │  └─ dependencies of jinja2 displayed above
   │  ├─ numpy 1.26.4 [required: >=1.16]
@@ -6185,41 +6796,7 @@ dask==2024.5.1
   │  ├─ pandas 2.2.2 [required: >=1.2]
   │  │  └─ dependencies of pandas displayed above
   │  ├─ pillow 10.3.0 [required: >=7.1.0]
-  │  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
-  │  │  │  └─ dependencies of freetype displayed above
-  │  │  ├─ lcms2 2.16 [required: >=2.16,<3.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
-  │  │  │  │  └─ dependencies of libjpeg-turbo displayed above
-  │  │  │  └─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
-  │  │  │     └─ dependencies of libtiff displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
-  │  │  │  └─ dependencies of libjpeg-turbo displayed above
-  │  │  ├─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
-  │  │  │  └─ dependencies of libtiff displayed above
-  │  │  ├─ libwebp-base 1.4.0 [required: >=1.3.2,<2.0a0]
-  │  │  │  └─ dependencies of libwebp-base displayed above
-  │  │  ├─ libxcb 1.15 [required: >=1.15,<1.16.0a0]
-  │  │  │  └─ dependencies of libxcb displayed above
-  │  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  └─ dependencies of libzlib displayed above
-  │  │  ├─ openjpeg 2.5.2 [required: >=2.5.2,<3.0a0]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libpng 1.6.43 [required: >=1.6.43,<1.7.0a0]
-  │  │  │  │  └─ dependencies of libpng displayed above
-  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  │  ├─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
-  │  │  │  │  └─ dependencies of libtiff displayed above
-  │  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │     └─ dependencies of libzlib displayed above
-  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  │  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  │  │  └─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
-  │  │     └─ dependencies of tk displayed above
+  │  │  └─ dependencies of pillow displayed above
   │  ├─ python 3.11.9 [required: >=3.9]
   │  ├─ pyyaml 6.0.1 [required: >=3.10]
   │  │  └─ dependencies of pyyaml displayed above
@@ -6393,20 +6970,11 @@ dask==2024.5.1
   │  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
   │  │  │  │  ├─ libabseil 20240116.2 [required: >=20240116.2,<20240117.0a0]
-  │  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  │  │  └─ dependencies of libabseil displayed above
   │  │  │  │  ├─ libbrotlidec 1.1.0 [required: >=1.1.0,<1.2.0a0]
-  │  │  │  │  │  ├─ libbrotlicommon 1.1.0 [required: 1.1.0, hd590300_1]
-  │  │  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │     └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  │  └─ dependencies of libbrotlidec displayed above
   │  │  │  │  ├─ libbrotlienc 1.1.0 [required: >=1.1.0,<1.2.0a0]
-  │  │  │  │  │  ├─ libbrotlicommon 1.1.0 [required: 1.1.0, hd590300_1]
-  │  │  │  │  │  │  └─ dependencies of libbrotlicommon displayed above
-  │  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │     └─ dependencies of libgcc-ng displayed above
+  │  │  │  │  │  └─ dependencies of libbrotlienc displayed above
   │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  │  │  ├─ libgoogle-cloud 2.24.0 [required: >=2.24.0,<2.25.0a0]
@@ -6424,13 +6992,7 @@ dask==2024.5.1
   │  │  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
   │  │  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
   │  │  │  │  │  │  ├─ libprotobuf 4.25.3 [required: >=4.25.3,<4.25.4.0a0]
-  │  │  │  │  │  │  │  ├─ libabseil 20240116.2 [required: >=20240116.1,<20240117.0a0]
-  │  │  │  │  │  │  │  │  └─ dependencies of libabseil displayed above
-  │  │  │  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  │  │  │  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  │  │  │  │  │     └─ dependencies of libzlib displayed above
+  │  │  │  │  │  │  │  └─ dependencies of libprotobuf displayed above
   │  │  │  │  │  │  ├─ libre2-11 2023.09.01 [required: >=2023.9.1,<2024.0a0]
   │  │  │  │  │  │  │  ├─ libabseil 20240116.2 [required: >=20240116.1,<20240117.0a0]
   │  │  │  │  │  │  │  │  └─ dependencies of libabseil displayed above
@@ -6489,9 +7051,7 @@ dask==2024.5.1
   │  │  │  │  │  ├─ lz4-c 1.9.4 [required: >=1.9.3,<1.10.0a0]
   │  │  │  │  │  │  └─ dependencies of lz4-c displayed above
   │  │  │  │  │  ├─ snappy 1.2.0 [required: >=1.2.0,<1.3.0a0]
-  │  │  │  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
+  │  │  │  │  │  │  └─ dependencies of snappy displayed above
   │  │  │  │  │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
   │  │  │  │  │     └─ dependencies of zstd displayed above
   │  │  │  │  ├─ re2 2023.09.01 [required: any]
@@ -6600,16 +7160,7 @@ dask==2024.5.1
   │  ├─ tornado 6.4 [required: >=6.0.4]
   │  │  └─ dependencies of tornado displayed above
   │  ├─ urllib3 2.2.1 [required: >=1.24.3]
-  │  │  ├─ brotli-python 1.1.0 [required: >=1.0.9]
-  │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  │  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  │  │  ├─ pysocks 1.7.1 [required: >=1.5.6,<2.0,!=1.5.7]
-  │  │  │  ├─ __unix [required: any]
-  │  │  │  └─ python 3.11.9 [required: >=3.8]
-  │  │  └─ python 3.11.9 [required: >=3.7]
+  │  │  └─ dependencies of urllib3 displayed above
   │  └─ zict 3.0.0 [required: >=3.0.0]
   │     └─ python 3.11.9 [required: >=3.8]
   ├─ jinja2 3.1.4 [required: >=2.10.3]
@@ -6632,530 +7183,6 @@ dask==2024.5.1
   │  │  └─ dependencies of pyarrow displayed above
   │  └─ python 3.11.9 [required: >=3.5]
   └─ python 3.11.9 [required: >=3.9]
-dill==0.3.8
-  └─ python 3.11.9 [required: >=3.7]
-h5py==3.11.0
-  ├─ cached-property 1.5.2 [required: any]
-  │  └─ dependencies of cached-property displayed above
-  ├─ hdf5 1.14.3 [required: >=1.14.3,<1.14.4.0a0]
-  │  ├─ libaec 1.1.3 [required: >=1.1.3,<2.0a0]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ libcurl 8.7.1 [required: >=8.7.1,<9.0a0]
-  │  │  └─ dependencies of libcurl displayed above
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  │  └─ dependencies of libgfortran-ng displayed above
-  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  │  └─ dependencies of libgfortran5 displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  └─ dependencies of libzlib displayed above
-  │  └─ openssl 3.4.1 [required: >=3.3.0,<4.0a0]
-  │     └─ dependencies of openssl displayed above
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ numpy 1.26.4 [required: >=1.19,<3]
-  │  └─ dependencies of numpy displayed above
-  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-ipympl==0.9.4
-  ├─ ipython 8.24.0 [required: <9]
-  │  ├─ __unix [required: any]
-  │  ├─ decorator 5.1.1 [required: any]
-  │  │  └─ python 3.11.9 [required: >=3.5]
-  │  ├─ exceptiongroup 1.2.0 [required: any]
-  │  │  └─ dependencies of exceptiongroup displayed above
-  │  ├─ jedi 0.19.1 [required: >=0.16]
-  │  │  ├─ parso 0.8.4 [required: >=0.8.3,<0.9.0]
-  │  │  │  └─ python 3.11.9 [required: >=3.6]
-  │  │  └─ python 3.11.9 [required: >=3.6]
-  │  ├─ matplotlib-inline 0.1.7 [required: any]
-  │  │  ├─ python 3.11.9 [required: >=3.6]
-  │  │  └─ traitlets 5.14.3 [required: any]
-  │  │     └─ dependencies of traitlets displayed above
-  │  ├─ pexpect 4.9.0 [required: >4.3]
-  │  │  ├─ ptyprocess 0.7.0 [required: >=0.5]
-  │  │  │  └─ dependencies of ptyprocess displayed above
-  │  │  └─ python 3.11.9 [required: >=3.7]
-  │  ├─ pickleshare 0.7.5 [required: any]
-  │  │  └─ python 3.11.9 [required: >=3]
-  │  ├─ prompt-toolkit 3.0.42 [required: >=3.0.41,<3.1.0]
-  │  │  ├─ python 3.11.9 [required: >=3.7]
-  │  │  └─ wcwidth 0.2.13 [required: any]
-  │  │     └─ python 3.11.9 [required: >=3.8]
-  │  ├─ pygments 2.18.0 [required: >=2.4.0]
-  │  │  └─ dependencies of pygments displayed above
-  │  ├─ python 3.11.9 [required: >=3.10]
-  │  ├─ stack_data 0.6.2 [required: any]
-  │  │  ├─ asttokens 2.4.1 [required: any]
-  │  │  │  ├─ python 3.11.9 [required: >=3.5]
-  │  │  │  └─ six 1.16.0 [required: >=1.12.0]
-  │  │  │     └─ dependencies of six displayed above
-  │  │  ├─ executing 2.0.1 [required: any]
-  │  │  │  └─ python 3.11.9 [required: >=2.7]
-  │  │  ├─ pure_eval 0.2.2 [required: any]
-  │  │  │  └─ python 3.11.9 [required: >=3.5]
-  │  │  └─ python 3.11.9 [required: >=3.5]
-  │  ├─ traitlets 5.14.3 [required: >=5.13.0]
-  │  │  └─ dependencies of traitlets displayed above
-  │  └─ typing_extensions 4.11.0 [required: >=4.6]
-  │     └─ dependencies of typing_extensions displayed above
-  ├─ ipython_genutils 0.2.0 [required: any]
-  │  └─ python 3.11.9 [required: any]
-  ├─ ipywidgets 8.1.2 [required: >=7.6.0,<9]
-  │  ├─ comm 0.2.2 [required: >=0.1.3]
-  │  │  ├─ python 3.11.9 [required: >=3.6]
-  │  │  └─ traitlets 5.14.3 [required: >=5.3]
-  │  │     └─ dependencies of traitlets displayed above
-  │  ├─ ipython 8.24.0 [required: >=6.1.0]
-  │  │  └─ dependencies of ipython displayed above
-  │  ├─ jupyterlab_widgets 3.0.10 [required: >=3.0.10,<3.1.0]
-  │  │  └─ python 3.11.9 [required: >=3.7]
-  │  ├─ python 3.11.9 [required: >=3.7]
-  │  ├─ traitlets 5.14.3 [required: >=4.3.1]
-  │  │  └─ dependencies of traitlets displayed above
-  │  └─ widgetsnbextension 4.0.10 [required: >=4.0.10,<4.1.0]
-  │     └─ python 3.11.9 [required: >=3.7]
-  ├─ matplotlib-base 3.8.4 [required: >=2.2.0,<4]
-  │  ├─ certifi 2024.12.14 [required: >=2020.06.20]
-  │  │  └─ python 3.11.9 [required: >=3.9]
-  │  ├─ contourpy 1.2.1 [required: >=1.0.1]
-  │  │  └─ dependencies of contourpy displayed above
-  │  ├─ cycler 0.12.1 [required: >=0.10]
-  │  │  └─ python 3.11.9 [required: >=3.8]
-  │  ├─ fonttools 4.51.0 [required: >=4.22.0]
-  │  │  ├─ brotli 1.1.0 [required: any]
-  │  │  │  ├─ brotli-bin 1.1.0 [required: 1.1.0, hd590300_1]
-  │  │  │  │  ├─ libbrotlidec 1.1.0 [required: 1.1.0, hd590300_1]
-  │  │  │  │  │  └─ dependencies of libbrotlidec displayed above
-  │  │  │  │  ├─ libbrotlienc 1.1.0 [required: 1.1.0, hd590300_1]
-  │  │  │  │  │  └─ dependencies of libbrotlienc displayed above
-  │  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  │  ├─ libbrotlidec 1.1.0 [required: 1.1.0, hd590300_1]
-  │  │  │  │  └─ dependencies of libbrotlidec displayed above
-  │  │  │  ├─ libbrotlienc 1.1.0 [required: 1.1.0, hd590300_1]
-  │  │  │  │  └─ dependencies of libbrotlienc displayed above
-  │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │     └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ munkres 1.1.4 [required: any]
-  │  │  │  └─ python 3.11.9 [required: any]
-  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  │  ├─ freetype 2.12.1 [required: >=2.12.1,<3.0a0]
-  │  │  └─ dependencies of freetype displayed above
-  │  ├─ kiwisolver 1.4.5 [required: >=1.3.1]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ numpy 1.26.4 [required: >=1.21]
-  │  │  └─ dependencies of numpy displayed above
-  │  ├─ packaging 24.0 [required: >=20.0]
-  │  │  └─ dependencies of packaging displayed above
-  │  ├─ pillow 10.3.0 [required: >=8]
-  │  │  └─ dependencies of pillow displayed above
-  │  ├─ pyparsing 3.1.2 [required: >=2.3.1]
-  │  │  └─ python 3.11.9 [required: >=3.6]
-  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  ├─ python-dateutil 2.9.0 [required: >=2.7]
-  │  │  └─ dependencies of python-dateutil displayed above
-  │  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  │  └─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
-  │     └─ dependencies of tk displayed above
-  ├─ numpy 1.26.4 [required: any]
-  │  └─ dependencies of numpy displayed above
-  ├─ pillow 10.3.0 [required: any]
-  │  └─ dependencies of pillow displayed above
-  ├─ python 3.11.9 [required: >=3.6]
-  └─ traitlets 5.14.3 [required: <6]
-     └─ dependencies of traitlets displayed above
-jupyterlab-git==0.50.0
-  ├─ jupyter_server 2.14.0 [required: >=2.0,<3.0]
-  │  └─ dependencies of jupyter_server displayed above
-  ├─ nbdime 4.0.1 [required: >=4.0,<5.0]
-  │  ├─ colorama 0.4.6 [required: any]
-  │  │  └─ python 3.11.9 [required: >=3.7]
-  │  ├─ gitpython 3.1.43 [required: !=2.1.4,!=2.1.5,!=2.1.6]
-  │  │  ├─ gitdb 4.0.11 [required: >=4.0.1,<5]
-  │  │  │  ├─ python 3.11.9 [required: >=3.7]
-  │  │  │  └─ smmap 5.0.0 [required: >=3.0.1,<6]
-  │  │  │     └─ python 3.11.9 [required: >=3.5]
-  │  │  ├─ python 3.11.9 [required: >=3.7]
-  │  │  └─ typing_extensions 4.11.0 [required: >=3.7.4.3]
-  │  │     └─ dependencies of typing_extensions displayed above
-  │  ├─ jinja2 3.1.4 [required: >=2.9]
-  │  │  └─ dependencies of jinja2 displayed above
-  │  ├─ jupyter-server-mathjax 0.2.6 [required: >=0.2.2]
-  │  │  ├─ jupyter_server 2.14.0 [required: >=1.1,<3]
-  │  │  │  └─ dependencies of jupyter_server displayed above
-  │  │  └─ python 3.11.9 [required: >=3.7]
-  │  ├─ jupyter_server 2.14.0 [required: any]
-  │  │  └─ dependencies of jupyter_server displayed above
-  │  ├─ nbformat 5.10.4 [required: any]
-  │  │  └─ dependencies of nbformat displayed above
-  │  ├─ pygments 2.18.0 [required: any]
-  │  │  └─ dependencies of pygments displayed above
-  │  ├─ python 3.11.9 [required: >=3.6]
-  │  ├─ requests 2.31.0 [required: any]
-  │  │  ├─ certifi 2024.12.14 [required: >=2017.4.17]
-  │  │  │  └─ dependencies of certifi displayed above
-  │  │  ├─ charset-normalizer 3.3.2 [required: >=2,<4]
-  │  │  │  └─ python 3.11.9 [required: >=3.7]
-  │  │  ├─ idna 3.7 [required: >=2.5,<4]
-  │  │  │  └─ dependencies of idna displayed above
-  │  │  ├─ python 3.11.9 [required: >=3.7]
-  │  │  └─ urllib3 2.2.1 [required: >=1.21.1,<3]
-  │  │     └─ dependencies of urllib3 displayed above
-  │  └─ tornado 6.4 [required: any]
-  │     └─ dependencies of tornado displayed above
-  ├─ nbformat 5.10.4 [required: any]
-  │  └─ dependencies of nbformat displayed above
-  ├─ packaging 24.0 [required: any]
-  │  └─ dependencies of packaging displayed above
-  ├─ pexpect 4.9.0 [required: any]
-  │  └─ dependencies of pexpect displayed above
-  ├─ python 3.11.9 [required: >=3.6,<4.0]
-  └─ traitlets 5.14.3 [required: >=5.0,<6.0]
-     └─ dependencies of traitlets displayed above
-numba==0.59.1
-  ├─ _openmp_mutex 4.5 [required: >=4.5]
-  │  └─ dependencies of _openmp_mutex displayed above
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  ├─ llvmlite 0.42.0 [required: >=0.42.0,<0.43.0a0]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libllvm14 14.0.6 [required: >=14.0.6,<14.1.0a0]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  │  └─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │     └─ dependencies of libzlib displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  └─ dependencies of libzlib displayed above
-  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
-  │  └─ dependencies of numpy displayed above
-  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-openpyxl==3.1.2
-  ├─ et_xmlfile 1.1.0 [required: any]
-  │  └─ python 3.11.9 [required: >=3.6]
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-protobuf==4.25.3
-  ├─ libabseil 20240116.2 [required: >=20240116.1,<20240117.0a0]
-  │  └─ dependencies of libabseil displayed above
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libprotobuf 4.25.3 [required: >=4.25.3,<4.25.4.0a0]
-  │  └─ dependencies of libprotobuf displayed above
-  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  └─ setuptools 69.5.1 [required: any]
-     └─ dependencies of setuptools displayed above
-pytables==3.9.2
-  ├─ blosc 1.21.5 [required: >=1.21.5,<2.0a0]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  │  └─ dependencies of libzlib displayed above
-  │  ├─ lz4-c 1.9.4 [required: >=1.9.3,<1.10.0a0]
-  │  │  └─ dependencies of lz4-c displayed above
-  │  ├─ snappy 1.2.0 [required: >=1.2.0,<1.3.0a0]
-  │  │  └─ dependencies of snappy displayed above
-  │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
-  │     └─ dependencies of zstd displayed above
-  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
-  │  └─ dependencies of bzip2 displayed above
-  ├─ c-blosc2 2.14.4 [required: >=2.14.4,<2.15.0a0]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ lz4-c 1.9.4 [required: >=1.9.3,<1.10.0a0]
-  │  │  └─ dependencies of lz4-c displayed above
-  │  ├─ zlib-ng 2.0.7 [required: >=2.0.7,<2.1.0a0]
-  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │     └─ dependencies of libgcc-ng displayed above
-  │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
-  │     └─ dependencies of zstd displayed above
-  ├─ hdf5 1.14.3 [required: >=1.14.3,<1.14.4.0a0]
-  │  └─ dependencies of hdf5 displayed above
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-  │  └─ dependencies of libzlib displayed above
-  ├─ lzo 2.10 [required: >=2.10,<3.0a0]
-  │  └─ dependencies of lzo displayed above
-  ├─ numexpr 2.9.0 [required: any]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ nomkl 1.0 [required: any]
-  │  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
-  │  │  └─ dependencies of numpy displayed above
-  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
-  │  └─ dependencies of numpy displayed above
-  ├─ packaging 24.0 [required: any]
-  │  └─ dependencies of packaging displayed above
-  ├─ py-cpuinfo 9.0.0 [required: any]
-  │  └─ python 3.11.9 [required: >=3.7]
-  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-scikit-image==0.22.0
-  ├─ imageio 2.34.1 [required: >=2.27]
-  │  ├─ numpy 1.26.4 [required: any]
-  │  │  └─ dependencies of numpy displayed above
-  │  ├─ pillow 10.3.0 [required: >=8.3.2]
-  │  │  └─ dependencies of pillow displayed above
-  │  └─ python 3.11.9 [required: >=3]
-  ├─ lazy_loader 0.4 [required: >=0.2]
-  │  ├─ importlib-metadata 7.1.0 [required: any]
-  │  │  └─ dependencies of importlib-metadata displayed above
-  │  ├─ packaging 24.0 [required: any]
-  │  │  └─ dependencies of packaging displayed above
-  │  └─ python 3.11.9 [required: >=3.7]
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  ├─ networkx 3.3 [required: >=2.8]
-  │  └─ python 3.11.9 [required: >=3.10]
-  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
-  │  └─ dependencies of numpy displayed above
-  ├─ packaging 24.0 [required: >=21]
-  │  └─ dependencies of packaging displayed above
-  ├─ pillow 10.3.0 [required: >=9.0.1]
-  │  └─ dependencies of pillow displayed above
-  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  ├─ pywavelets 1.4.1 [required: >=1.1.1]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
-  │  │  └─ dependencies of numpy displayed above
-  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  ├─ scipy 1.13.0 [required: >=1.8]
-  │  ├─ libblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of libblas displayed above
-  │  ├─ libcblas 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of libcblas displayed above
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ libgfortran-ng 13.2.0 [required: any]
-  │  │  └─ dependencies of libgfortran-ng displayed above
-  │  ├─ libgfortran5 13.2.0 [required: >=12.3.0]
-  │  │  └─ dependencies of libgfortran5 displayed above
-  │  ├─ liblapack 3.9.0 [required: >=3.9.0,<4.0a0]
-  │  │  └─ dependencies of liblapack displayed above
-  │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ numpy 1.26.4 [required: >=1.19,<3]
-  │  │  └─ dependencies of numpy displayed above
-  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  └─ tifffile 2024.5.10 [required: >=2022.8.12]
-     ├─ imagecodecs 2024.1.1 [required: >=2023.8.12]
-     │  ├─ blosc 1.21.5 [required: >=1.21.5,<2.0a0]
-     │  │  └─ dependencies of blosc displayed above
-     │  ├─ brunsli 0.1 [required: >=0.1,<1.0a0]
-     │  │  ├─ brotli 1.1.0 [required: >=1.0.9,<2.0a0]
-     │  │  │  └─ dependencies of brotli displayed above
-     │  │  ├─ libgcc-ng 14.2.0 [required: >=9.3.0]
-     │  │  │  └─ dependencies of libgcc-ng displayed above
-     │  │  └─ libstdcxx-ng 13.2.0 [required: >=9.3.0]
-     │  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
-     │  │  └─ dependencies of bzip2 displayed above
-     │  ├─ c-blosc2 2.14.4 [required: >=2.14.4,<2.15.0a0]
-     │  │  └─ dependencies of c-blosc2 displayed above
-     │  ├─ charls 2.4.2 [required: >=2.4.2,<2.5.0a0]
-     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  │  └─ dependencies of libgcc-ng displayed above
-     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-     │  ├─ giflib 5.2.2 [required: >=5.2.2,<5.3.0a0]
-     │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-     │  │     └─ dependencies of libgcc-ng displayed above
-     │  ├─ jxrlib 1.1 [required: >=1.1,<1.2.0a0]
-     │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-     │  │     └─ dependencies of libgcc-ng displayed above
-     │  ├─ lcms2 2.16 [required: >=2.16,<3.0a0]
-     │  │  └─ dependencies of lcms2 displayed above
-     │  ├─ lerc 4.0.0 [required: >=4.0.0,<5.0a0]
-     │  │  └─ dependencies of lerc displayed above
-     │  ├─ libaec 1.1.3 [required: >=1.1.3,<2.0a0]
-     │  │  └─ dependencies of libaec displayed above
-     │  ├─ libavif16 1.0.4 [required: >=1.0.1,<2.0a0]
-     │  │  ├─ aom 3.9.0 [required: >=3.9.0,<3.10.0a0]
-     │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  │  │  └─ dependencies of libgcc-ng displayed above
-     │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-     │  │  ├─ dav1d 1.2.1 [required: >=1.2.1,<1.2.2.0a0]
-     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  │     └─ dependencies of libgcc-ng displayed above
-     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  │  └─ dependencies of libgcc-ng displayed above
-     │  │  ├─ rav1e 0.6.6 [required: >=0.6.6,<1.0a0]
-     │  │  │  └─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  │     └─ dependencies of libgcc-ng displayed above
-     │  │  └─ svt-av1 2.1.0 [required: >=2.1.0,<2.1.1.0a0]
-     │  │     ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  │     │  └─ dependencies of libgcc-ng displayed above
-     │  │     └─ libstdcxx-ng 13.2.0 [required: >=12]
-     │  ├─ libbrotlicommon 1.1.0 [required: >=1.1.0,<1.2.0a0]
-     │  │  └─ dependencies of libbrotlicommon displayed above
-     │  ├─ libbrotlidec 1.1.0 [required: >=1.1.0,<1.2.0a0]
-     │  │  └─ dependencies of libbrotlidec displayed above
-     │  ├─ libbrotlienc 1.1.0 [required: >=1.1.0,<1.2.0a0]
-     │  │  └─ dependencies of libbrotlienc displayed above
-     │  ├─ libdeflate 1.20 [required: >=1.20,<1.21.0a0]
-     │  │  └─ dependencies of libdeflate displayed above
-     │  ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  └─ dependencies of libgcc-ng displayed above
-     │  ├─ libjpeg-turbo 3.0.0 [required: >=3.0.0,<4.0a0]
-     │  │  └─ dependencies of libjpeg-turbo displayed above
-     │  ├─ libjxl 0.10.2 [required: >=0.10,<0.11.0a0]
-     │  │  ├─ libbrotlidec 1.1.0 [required: >=1.1.0,<1.2.0a0]
-     │  │  │  └─ dependencies of libbrotlidec displayed above
-     │  │  ├─ libbrotlienc 1.1.0 [required: >=1.1.0,<1.2.0a0]
-     │  │  │  └─ dependencies of libbrotlienc displayed above
-     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  │  └─ dependencies of libgcc-ng displayed above
-     │  │  ├─ libhwy 1.1.0 [required: >=1.1.0,<1.2.0a0]
-     │  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  │  │  └─ dependencies of libgcc-ng displayed above
-     │  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-     │  ├─ libpng 1.6.43 [required: >=1.6.43,<1.7.0a0]
-     │  │  └─ dependencies of libpng displayed above
-     │  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-     │  ├─ libtiff 4.6.0 [required: >=4.6.0,<4.7.0a0]
-     │  │  └─ dependencies of libtiff displayed above
-     │  ├─ libwebp-base 1.4.0 [required: >=1.3.2,<2.0a0]
-     │  │  └─ dependencies of libwebp-base displayed above
-     │  ├─ libzlib 1.2.13 [required: >=1.2.13,<1.3.0a0]
-     │  │  └─ dependencies of libzlib displayed above
-     │  ├─ libzopfli 1.0.3 [required: >=1.0.3,<1.1.0a0]
-     │  │  ├─ libgcc-ng 14.2.0 [required: >=9.3.0]
-     │  │  │  └─ dependencies of libgcc-ng displayed above
-     │  │  └─ libstdcxx-ng 13.2.0 [required: >=9.3.0]
-     │  ├─ lz4-c 1.9.4 [required: >=1.9.3,<1.10.0a0]
-     │  │  └─ dependencies of lz4-c displayed above
-     │  ├─ numpy 1.26.4 [required: >=1.23.5,<2.0a0]
-     │  │  └─ dependencies of numpy displayed above
-     │  ├─ openjpeg 2.5.2 [required: >=2.5.2,<3.0a0]
-     │  │  └─ dependencies of openjpeg displayed above
-     │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-     │  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-     │  ├─ snappy 1.2.0 [required: >=1.2.0,<1.3.0a0]
-     │  │  └─ dependencies of snappy displayed above
-     │  ├─ xz 5.2.6 [required: >=5.2.6,<6.0a0]
-     │  │  └─ dependencies of xz displayed above
-     │  ├─ zfp 1.0.1 [required: >=1.0.1,<2.0a0]
-     │  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
-     │  │  │  └─ dependencies of _openmp_mutex displayed above
-     │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  │  │  └─ dependencies of libgcc-ng displayed above
-     │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-     │  └─ zstd 1.5.6 [required: >=1.5.5,<1.6.0a0]
-     │     └─ dependencies of zstd displayed above
-     ├─ numpy 1.26.4 [required: >=1.19.2]
-     │  └─ dependencies of numpy displayed above
-     └─ python 3.11.9 [required: >=3.9]
-scikit-learn==1.4.2
-  ├─ _openmp_mutex 4.5 [required: >=4.5]
-  │  └─ dependencies of _openmp_mutex displayed above
-  ├─ joblib 1.4.2 [required: >=1.2.0]
-  │  ├─ python 3.11.9 [required: >=3.8]
-  │  └─ setuptools 69.5.1 [required: any]
-  │     └─ dependencies of setuptools displayed above
-  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  └─ dependencies of libgcc-ng displayed above
-  ├─ libstdcxx-ng 13.2.0 [required: >=12]
-  ├─ numpy 1.26.4 [required: >=1.19,<3]
-  │  └─ dependencies of numpy displayed above
-  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  ├─ scipy 1.13.0 [required: any]
-  │  └─ dependencies of scipy displayed above
-  └─ threadpoolctl 3.5.0 [required: >=2.0.0]
-     └─ python 3.11.9 [required: >=3.8]
-seaborn==0.13.2
-  ├─ seaborn-base 0.13.2 [required: 0.13.2, pyhd8ed1ab_2]
-  │  ├─ matplotlib-base 3.8.4 [required: >=3.4,!=3.6.1]
-  │  │  └─ dependencies of matplotlib-base displayed above
-  │  ├─ numpy 1.26.4 [required: >=1.20,!=1.24.0]
-  │  │  └─ dependencies of numpy displayed above
-  │  ├─ pandas 2.2.2 [required: >=1.2]
-  │  │  └─ dependencies of pandas displayed above
-  │  ├─ python 3.11.9 [required: >=3.8]
-  │  └─ scipy 1.13.0 [required: >=1.7]
-  │     └─ dependencies of scipy displayed above
-  └─ statsmodels 0.14.2 [required: >=0.12]
-     ├─ libgcc-ng 14.2.0 [required: >=12]
-     │  └─ dependencies of libgcc-ng displayed above
-     ├─ numpy 1.26.4 [required: >=1.19,<3]
-     │  └─ dependencies of numpy displayed above
-     ├─ packaging 24.0 [required: >=21.3]
-     │  └─ dependencies of packaging displayed above
-     ├─ pandas 2.2.2 [required: >=1.4,!=2.1.0]
-     │  └─ dependencies of pandas displayed above
-     ├─ patsy 0.5.6 [required: >=0.5.6]
-     │  ├─ numpy 1.26.4 [required: >=1.4.0]
-     │  │  └─ dependencies of numpy displayed above
-     │  ├─ python 3.11.9 [required: >=3.6]
-     │  └─ six 1.16.0 [required: any]
-     │     └─ dependencies of six displayed above
-     ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-     ├─ python_abi 3.11 [required: 3.11.*, *_cp311]
-     └─ scipy 1.13.0 [required: >=1.8,!=1.9.2]
-        └─ dependencies of scipy displayed above
-sympy==1.12
-  ├─ __unix [required: any]
-  ├─ gmpy2 2.1.5 [required: >=2.0.8]
-  │  ├─ gmp 6.3.0 [required: >=6.3.0,<7.0a0]
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  └─ libstdcxx-ng 13.2.0 [required: >=12]
-  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  └─ dependencies of libgcc-ng displayed above
-  │  ├─ mpc 1.3.1 [required: >=1.3.1,<2.0a0]
-  │  │  ├─ gmp 6.3.0 [required: >=6.2.1,<7.0a0]
-  │  │  │  └─ dependencies of gmp displayed above
-  │  │  ├─ libgcc-ng 14.2.0 [required: >=12]
-  │  │  │  └─ dependencies of libgcc-ng displayed above
-  │  │  └─ mpfr 4.2.1 [required: >=4.1.0,<5.0a0]
-  │  │     ├─ gmp 6.3.0 [required: >=6.3.0,<7.0a0]
-  │  │     │  └─ dependencies of gmp displayed above
-  │  │     └─ libgcc-ng 14.2.0 [required: >=12]
-  │  │        └─ dependencies of libgcc-ng displayed above
-  │  ├─ mpfr 4.2.1 [required: >=4.2.1,<5.0a0]
-  │  │  └─ dependencies of mpfr displayed above
-  │  ├─ python 3.11.9 [required: >=3.11,<3.12.0a0]
-  │  └─ python_abi 3.11 [required: 3.11.*, *_cp311]
-  ├─ mpmath 1.3.0 [required: >=0.19]
-  │  └─ python 3.11.9 [required: >=3.6]
-  └─ python 3.11.9 [required: >=3.8]
-xlrd==2.0.1
-  └─ python 3.11.9 [required: >=3.6]
 jupyterhub==4.1.5
   ├─ __unix [required: any]
   ├─ configurable-http-proxy 4.6.1 [required: >=4]
@@ -7363,12 +7390,12 @@ notebook==7.2.0
   │  ├─ httpx 0.27.0 [required: >=0.25.0]
   │  │  ├─ anyio 4.3.0 [required: any]
   │  │  │  └─ dependencies of anyio displayed above
-  │  │  ├─ certifi 2024.12.14 [required: any]
+  │  │  ├─ certifi 2025.1.31 [required: any]
   │  │  │  └─ dependencies of certifi displayed above
   │  │  ├─ httpcore 1.0.5 [required: 1.*]
   │  │  │  ├─ anyio 4.3.0 [required: >=3.0,<5.0]
   │  │  │  │  └─ dependencies of anyio displayed above
-  │  │  │  ├─ certifi 2024.12.14 [required: any]
+  │  │  │  ├─ certifi 2025.1.31 [required: any]
   │  │  │  │  └─ dependencies of certifi displayed above
   │  │  │  ├─ h11 0.14.0 [required: >=0.13,<0.15]
   │  │  │  │  ├─ python 3.11.9 [required: >=3]

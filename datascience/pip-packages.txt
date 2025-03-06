@@ -7,3 +7,4 @@ nbgitpuller
 numpy<2
 pipdeptree
 requests-html
+torch
