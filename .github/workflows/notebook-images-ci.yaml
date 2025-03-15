@@ -18,14 +18,14 @@ jobs:
         name: Checkout
         uses: actions/checkout@v4
       -
-        name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v44
-        with:
-          files: |
-            **/VERSION
-          json: true
-          write_output_files: true
+        #name: Get changed files
+        #id: changed-files
+        #uses: tj-actions/changed-files@v44
+        #with:
+        #  files: |
+        #    **/VERSION
+        #  json: true
+        #  write_output_files: true
       -
         name: Map to JSON
         # Get the parent folder and add to an array
