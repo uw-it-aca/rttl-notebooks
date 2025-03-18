@@ -18,14 +18,14 @@ jobs:
         name: Checkout
         uses: actions/checkout@v4
       -
-        #name: Get changed files
-        #id: changed-files
-        #uses: tj-actions/changed-files@v44
-        #with:
-        #  files: |
-        #    **/VERSION
-        #  json: true
-        #  write_output_files: true
+        name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@2f7c5bfce28377bc069a65ba478de0a74aa0ca32
+        with:
+          files: |
+            **/VERSION
+          json: true
+          write_output_files: true
       -
         name: Map to JSON
         # Get the parent folder and add to an array
@@ -74,7 +74,7 @@ jobs:
         id: gcp-login
         shell: bash
         run: |
-          echo "${{ secrets.GCP_JSON_KEY }}" |
+          echo "${{ secrets.GCP_RTTL_AR_WRITER_KEY }}" |
             base64 -d |
             docker login --username=_json_key --password-stdin https://${{ env.GAR_LOCATION }}-docker.pkg.dev
       -
