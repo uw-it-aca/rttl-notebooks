@@ -1,0 +1,14 @@
+astroalign
+biogeme<3.2.14
+blis==1.2.0
+fuzzywuzzy
+nbgitpuller
+numpy<2
+opencv-python
+pipdeptree
+pqdm
+pyldavis
+qgrid
+requests-html
+tellurium
+thinc==8.3.4
