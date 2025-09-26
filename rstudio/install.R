@@ -4,4 +4,5 @@ install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.githu
 install.packages(c('htmltools', 'shiny', 'DT', 'coefplot', 'doBy', 'ggfixest', 'ipumsr', 'vtable', 'stargazer', 'modelsummary', 'ivreg'), repos='https://cran.rstudio.com')
 devtools::install_github(c('rstudio-education/dsbox'))
 devtools::install_github('IRkernel/repr', ref = 'master')
+install.packages('HMDHFDplus', repos='http://cran.us.r-project.org')
 IRkernel::installspec()
