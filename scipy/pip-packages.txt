@@ -2,6 +2,7 @@ astroalign
 biogeme<3.2.14
 blis==1.2.0
 fuzzywuzzy
+jupyterlab-a11y-checker
 nbgitpuller
 numpy<2
 opencv-python
