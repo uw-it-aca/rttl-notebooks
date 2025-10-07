@@ -1,3 +1,4 @@
 conda-tree
+gdal
 requests
 jupyter-resource-usage

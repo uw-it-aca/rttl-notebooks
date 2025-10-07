@@ -6,4 +6,5 @@ nbclassic
 nbgitpuller
 numpy<2
 pipdeptree
+psycopg2-binary
 requests-html
