@@ -1,6 +1,6 @@
-ARG BASE_CONTAINER=quay.io/jupyter/r-notebook:hub-4.1.5
+ARG BASE_CONTAINER=quay.io/jupyter/r-notebook:hub-5.4.0
 # Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/r-notebook/Dockerfile
-# Ubuntu 22.04.4 LTS
+# Ubuntu 24.04 (noble)
 
 FROM $BASE_CONTAINER
 
@@ -8,8 +8,11 @@ LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
 
 USER root
 
+# Needed for libncurses5 package
+RUN echo "deb http://security.ubuntu.com/ubuntu focal-security main universe" > /etc/apt/sources.list.d/ubuntu-focal-sources.list
+
 # Copy package install lists
-COPY --chown=$NB_UID: apt.txt *-packages.txt install.R /home/jovyan/
+COPY --chown=$NB_UID: apt.txt /home/jovyan/
 
 RUN echo "Checking for 'apt.txt'..." \
         ; if test -f "apt.txt" ; then \
@@ -19,8 +22,13 @@ RUN echo "Checking for 'apt.txt'..." \
         && rm -rf /var/lib/apt/lists/* \
         ; fi
 
+# Add wrapper for gitpuller
+COPY --chmod=755 safe_gitpuller.sh /usr/local/bin/safe_gitpuller
+
 USER $NB_USER
 
+# Install Conda packages
+COPY --chown=$NB_UID:$NB_GID conda-packages.txt /home/jovyan/
 RUN set -ex \
   && mamba install --quiet --yes --file conda-packages.txt
 
@@ -31,12 +39,15 @@ RUN mamba clean --all -f -y && jupyter lab build -y \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
-# Install Python packages
+# Install Pip packages
+COPY --chown=$NB_UID:$NB_GID pip-*.txt /home/jovyan/
 RUN pip install -r pip-packages.txt && \
-  jupyter server extension enable nbgitpuller --sys-prefix
+  jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix
 
 # Install Python packages from Torch indexes
 RUN pip install -r pip-torch-packages.txt
 
+# Install R packages
+COPY --chown=$NB_UID:$NB_GID install.R /home/jovyan/
 ## Run an install.R script, if it exists.
 RUN if [ -f install.R ]; then R --quiet -f install.R; fi
