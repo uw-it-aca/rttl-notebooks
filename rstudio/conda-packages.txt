@@ -8,3 +8,4 @@ r-spatialreg
 r-nloptr
 r-terra
 conda-tree
+nodejs>=20

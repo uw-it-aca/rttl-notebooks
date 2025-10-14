@@ -1,5 +1,6 @@
 tensorflow
-numpy<2
+numpy
 nbclassic
 nbgitpuller
 pipdeptree
+jupyterlab-a11y-checker
