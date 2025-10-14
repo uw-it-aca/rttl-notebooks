@@ -1,6 +1,6 @@
 # UW-IT JupyterHub for Teaching RStudio notebook with AI support
 Docker image for standard RStudio notebook with RStudio Copilot [integration](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html) enabled and [Jupyter-AI](https://jupyter-ai.readthedocs.io/en/latest/) packages installed. Rstudio version is 2025.09.1 Build 401 "Cucumberleaf Sunflower" Release with R version R version 4.5.1 (2025-06-13) "Great Square Root". This image also has JupyterLab Version 4.4.9 installed.
-- Uses Ubuntu linux 24.04 (noble)
+- Uses Ubuntu linux 24.04 (noble) and Python 3.13.8
 - Detailed information about base R notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-r-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Dependency trees for both Pip and Conda packages shown below.

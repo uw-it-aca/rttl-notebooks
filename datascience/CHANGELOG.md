@@ -11,7 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added wrapper for nbgitpuller to prevent pod spawn failures. If errors are encountered a document will be added in the user's home directory.
 
 ### Changed
-- Updated base image to use tag "Hub 5.4.0" which includes updating base OS to Ubuntu 24.04 and Python 3.13. See: [Changelog](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/changelog.html) for Docker Stacks.
+- Updated base image to use tag `hub-5.4.0` which includes:
+  - Base OS to Ubuntu 24.04
+  - Python 3.13.8
+  - For more details, see: [Changelog](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/changelog.html) for Docker Stacks.
 - NumPy is updated to 2.3.3 as versions lower than v2 are no longer supported with Python 3.13+. (Note: NumPy 2 contained breaking changes from v1.x, so some packages may encounter compatibility issues)
 
 ## [2.7.1] - 2025-02-18

@@ -1,6 +1,6 @@
 # UW-IT JupyterHub for Teaching datascience Notebook server
 Docker image for UW-IT JupyterHub for Teaching datascience Notebook server. 
-- Uses Ubuntu linux 24.04 (noble) and Python 3.13.
+- Uses Ubuntu linux 24.04 (noble) and Python 3.13.8.
 - Detailed information about base datascience Notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Dependency trees for both Pip and Conda packages shown below.
