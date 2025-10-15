@@ -1,12 +1,15 @@
-ARG BASE_CONTAINER=quay.io/jupyter/scipy-notebook:hub-4.1.5
+ARG BASE_CONTAINER=quay.io/jupyter/scipy-notebook:hub-5.4.0
 # Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/scipy-notebook/Dockerfile
-# Ubuntu 22.04.4 LTS
+# Ubuntu 24.04 (noble)
 
 FROM $BASE_CONTAINER
 
 LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
 
 USER root
+
+# Needed for libncurses5 package
+RUN echo "deb http://security.ubuntu.com/ubuntu focal-security main universe" > /etc/apt/sources.list.d/ubuntu-focal-sources.list
 
 # Install apt packages
 COPY --chown=$NB_UID:$NB_GID apt.txt /home/jovyan/
@@ -20,8 +23,7 @@ RUN echo "Checking for 'apt.txt'..." \
         ; fi
 
 # Add wrapper for gitpuller
-COPY safe_gitpuller.sh /usr/local/bin/safe_gitpuller
-RUN chmod +x /usr/local/bin/safe_gitpuller
+COPY --chmod=755 safe_gitpuller.sh /usr/local/bin/safe_gitpuller
 
 USER $NB_UID
 
