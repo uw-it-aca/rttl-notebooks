@@ -40,11 +40,12 @@ RUN mamba clean --all -f -y && jupyter lab build -y \
   && fix-permissions "/home/${NB_USER}"
 
 # Install Pip packages
-COPY --chown=$NB_UID:$NB_GID pip-*.txt /home/jovyan/
+COPY --chown=$NB_UID:$NB_GID pip-packages.txt /home/jovyan/
 RUN pip install -r pip-packages.txt && \
   jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix
 
 # Install Python packages from Torch indexes
+COPY --chown=$NB_UID:$NB_GID pip-torch-packages.txt /home/jovyan/
 RUN pip install -r pip-torch-packages.txt
 
 # Install R packages
