@@ -71,6 +71,15 @@ jobs:
             echo "IMAGE=jupyter-$CTX-notebook" >> $GITHUB_ENV
           fi
       -
+        name: Free Disk Space on runner
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /opt/hostedtoolcache/CodeQL
+          sudo docker image prune --all --force
+          df -h
+      -
         name: Build image (for scanning)
         uses: docker/build-push-action@v5
         with:
