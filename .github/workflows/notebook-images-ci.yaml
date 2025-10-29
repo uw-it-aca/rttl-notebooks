@@ -75,41 +75,6 @@ jobs:
         run: |
           df -h
           docker system df
-      - 
-        name: Build image
-        uses: docker/build-push-action@v5
-        with:
-          context: "{{defaultContext}}:${{ matrix.versions }}"
-          push: false
-          load: true
-          tags: ${{ env.IMAGE }}:scan
-      -
-        name: Free up disk space before running Trivy
-        run: |
-          docker system prune -af --volumes
-          sudo rm -rf /usr/share/dotnet
-          sudo rm -rf /opt/ghc
-          sudo rm -rf "/usr/local/share/boost"
-          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
-          df -h
-      -
-        name: Run Trivy vulnerability scanner
-        # Pinned to v0.33.1 via SHA hash
-        uses: aquasecurity/trivy-action@b6643a29fecd7f34b3597bc6acb0a98b03d33ff8
-        with:
-          image-ref: ${{ env.IMAGE }}:scan
-          format: 'sarif'
-          output: 'trivy-results.sarif'
-          timeout: '15m0s'
-          scanners: 'vuln'
-
-      -
-        name: Upload Trivy results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v4
-        if: success() || failure()
-        with:
-          sarif_file: 'trivy-results.sarif'
-
       -
         name: Docker login with GCP credentials
         id: gcp-login
@@ -118,11 +83,22 @@ jobs:
           echo "${{ secrets.GCP_RTTL_AR_WRITER_KEY }}" |
             base64 -d |
             docker login --username=_json_key --password-stdin https://${{ env.GAR_LOCATION }}-docker.pkg.dev
-
       -
-        name: Tag and push
-        run: |
-          docker tag ${{ env.IMAGE }}:scan ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
-          docker tag ${{ env.IMAGE }}:scan ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:latest
-          docker push ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
-          docker push ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:latest
+        name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: "{{defaultContext}}:${{ matrix.versions }}"
+          push: true
+          tags: |
+            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
+            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:latest
+      -
+        name: Run Trivy vulnerability scanner
+        # Pinned to v0.33.1 via SHA hash
+        uses: aquasecurity/trivy-action@b6643a29fecd7f34b3597bc6acb0a98b03d33ff8
+        id: trivy-scan
+        with:
+          image-ref: ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          timeout: '15m0s'
