@@ -80,14 +80,15 @@ jobs:
           tags: ${{ env.IMAGE }}:scan
       -
         name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@master
+        # Pinned to v0.33.1 via SHA hash
+        uses: aquasecurity/trivy-action@b6643a29fecd7f34b3597bc6acb0a98b03d33ff8
         with:
           image-ref: ${{ env.IMAGE }}:scan
           format: 'sarif'
           output: 'trivy-results.sarif'
       -
         name: Upload Trivy results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
         if: always()
         with:
           sarif_file: 'trivy-results.sarif'
