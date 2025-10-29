@@ -8,3 +8,4 @@ nbgitpuller
 numpy
 pipdeptree
 requests-html
+urllib3 >= 2.5.0

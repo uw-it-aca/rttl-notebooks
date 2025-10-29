@@ -4,7 +4,7 @@ All notable changes to the datascience Jupyter Notebook image will be documented
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.8.0] - 2025-10-13
+## [2.8.0] - 2025-10-30
 
 ### Added
 - Added Jupyter accessibility checker extension, jupyterlab-a11y-checker
@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Python 3.13.8
   - For more details, see: [Changelog](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/changelog.html) for Docker Stacks.
 - NumPy is updated to 2.3.3 as versions lower than v2 are no longer supported with Python 3.13+. (Note: NumPy 2 contained breaking changes from v1.x, so some packages may encounter compatibility issues)
+
+### Removed
+- ffmpeg
 
 ## [2.7.1] - 2025-02-18
 

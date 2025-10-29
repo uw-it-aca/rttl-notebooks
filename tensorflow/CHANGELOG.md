@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [gensim](https://anaconda.org/conda-forge/gensim) is not compatible with Python 3.13+ until v4.4+
   - [pyLDAvis](https://pyldavis.readthedocs.io/en/latest/readme.html) which depends on gensim
 - [requests-html](https://github.com/kennethreitz/requests-html) has not been updated for years and requires a very old version of `urllib3`
+- ffmpeg
 
 ## [2.7.1] - 2025-02-18
 

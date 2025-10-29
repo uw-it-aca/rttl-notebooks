@@ -14,13 +14,13 @@ RUN echo "deb http://security.ubuntu.com/ubuntu focal-security main universe" > 
 # Copy package install lists
 COPY --chown=$NB_UID: apt.txt /home/jovyan/
 
-RUN echo "Checking for 'apt.txt'..." \
-        ; if test -f "apt.txt" ; then \
-        apt-get update --fix-missing > /dev/null\
-        && xargs -a apt.txt apt-get install --yes \
+RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg \
+        && apt-get upgrade --yes \
+        && if test -f "apt.txt" ; then \
+            xargs -a apt.txt apt-get install --yes; \
+        fi \
         && apt-get clean > /dev/null \
-        && rm -rf /var/lib/apt/lists/* \
-        ; fi
+        && rm -rf /var/lib/apt/lists/*
 
 # Add wrapper for gitpuller
 COPY --chmod=755 safe_gitpuller.sh /usr/local/bin/safe_gitpuller
@@ -43,7 +43,7 @@ COPY --chown=$NB_UID:$NB_GID pip-packages.txt /home/jovyan/
 RUN pip install -r pip-packages.txt && \
   jupyter server extension enable nbgitpuller --sys-prefix
 
-# Install Python packages
+# Install additional Python packages
 COPY --chown=$NB_UID:$NB_GID pip-torch-packages.txt /home/jovyan/
 # Install Python packages from Torch indexes
 RUN pip install -r pip-torch-packages.txt

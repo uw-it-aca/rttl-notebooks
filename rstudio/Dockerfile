@@ -11,13 +11,15 @@ USER root
 COPY --chown=$NB_UID: apt.txt /home/jovyan/
 
 # Per: https://posit.co/download/rstudio-server/
-RUN apt-get update && \
+RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg && \
+    apt-get upgrade --yes && \
     xargs -a apt.txt apt-get install --yes && \    
     curl --silent -L --fail wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2025.09.1-401-amd64.deb > /tmp/rstudio.deb && \
     echo '9a6b1ccf05a62e13bb7cab26b9ef5ba01445b58abb4a9f2c9868855e33613f1b  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     gdebi -n /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
-    apt-get clean
+    apt-get clean > /dev/null && \
+    rm -rf /var/lib/apt/lists/*
 
 # Fix for error: "System has not been booted with systemd as init system (PID 1)" related to timedatectl running in containers.
 RUN echo 'TZ="America/Los_Angeles"' >> /opt/conda/lib/R/etc/Renviron

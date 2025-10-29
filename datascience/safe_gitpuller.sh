@@ -10,7 +10,7 @@ if [ $# -ne 3 ]; then
 fi
 
 # Define the error file
-ERROR_FILE="/home/jovyan/GITPULLER_ERROR.txt"
+ERROR_FILE="/home/jovyan/GITPULLER_ERROR_$3.txt"
 
 # Clean up the error file if it exists
 rm -f "$ERROR_FILE"
