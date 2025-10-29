@@ -71,10 +71,12 @@ jobs:
             echo "IMAGE=jupyter-$CTX-notebook" >> $GITHUB_ENV
           fi
       -
-        name: Check disk space before build
+        name: Debug secret (REMOVE AFTER FIXING)
         run: |
-          df -h
-          docker system df
+          echo "Secret length: ${#SECRET}"
+          echo "First 20 chars: ${SECRET:0:20}"
+        env:
+          SECRET: ${{ secrets.GCP_RTTL_AR_WRITER_KEY }}
       -
         name: Docker login with GCP credentials
         id: gcp-login
