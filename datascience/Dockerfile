@@ -31,16 +31,19 @@ USER $NB_UID
 COPY --chown=$NB_UID:$NB_GID conda-packages.txt /home/jovyan/
 RUN set -ex \
   && mamba install --quiet --yes --file conda-packages.txt \
-  && mamba clean --all -f -y 
+  && mamba clean --all -f -y \
+  && conda clean --all --yes && rm -rf /opt/conda/pkgs/*
 
 RUN jupyter lab build -y \
   && jupyter lab clean -y \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
   && rm -rf "/home/${NB_USER}/.node-gyp" \
+  && npm cache clean --force 2>/dev/null || true \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
 # Install Pip packages
 COPY --chown=$NB_UID:$NB_GID pip-packages.txt /home/jovyan/
 RUN pip install -r pip-packages.txt && \
-  jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix
+  jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix \
+  && pip cache purge
