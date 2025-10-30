@@ -112,15 +112,14 @@ jobs:
         id: trivy-scan
         with:
           image-ref: ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
-          format: 'table'
-          vuln-type: 'os,library'
+          format: 'sarif'
+          vuln-type: 'library'
           timeout: '15m0s'
-          output: 'trivy-report-${{ matrix.versions }}.txt'
+          output: 'trivy-results.sarif'
       -
-        name: Upload Trivy report as artifact
-        uses: actions/upload-artifact@v4
+        name: Upload Trivy results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
         if: success() || failure()
         with:
-          name: trivy-report-${{ matrix.versions }}
-          path: trivy-report-${{ matrix.versions }}.txt
-          retention-days: 300
+          sarif_file: 'trivy-results.sarif'
+          category: trivy-${{ matrix.versions }}
