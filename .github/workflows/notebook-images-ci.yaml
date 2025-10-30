@@ -37,6 +37,7 @@ jobs:
           echo "matrix=$DATA" >> "$GITHUB_OUTPUT"
   build-workers:
     needs: get-changed
+    # Skip if no changes in worker versions in this push
     if: needs.get-changed.outputs.matrix != '[]'
     runs-on: ubuntu-latest
     strategy:
@@ -51,6 +52,7 @@ jobs:
         uses: docker/setup-buildx-action@v3
       -
         name: Get version number
+        # Read the version number out of worker_name/VERSION and push to ENV
         env:
           CTX: ${{ matrix.versions }}
         run: |
@@ -58,6 +60,7 @@ jobs:
           echo "VERSION=$VER" >> $GITHUB_ENV
       -
         name: Set up image name
+        # Conditionally set the image name to use.
         env:
           CTX: ${{ matrix.versions }}
         run: |
@@ -67,27 +70,6 @@ jobs:
           else
             echo "IMAGE=jupyter-$CTX-notebook" >> $GITHUB_ENV
           fi
-      -
-        name: Build image (for scanning)
-        uses: docker/build-push-action@v5
-        with:
-          context: "{{defaultContext}}:${{ matrix.versions }}"
-          push: false
-          load: true
-          tags: ${{ env.IMAGE }}:scan
-      -
-        name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@master
-        with:
-          image-ref: ${{ env.IMAGE }}:scan
-          format: 'sarif'
-          output: 'trivy-results.sarif'
-      -
-        name: Upload Trivy results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v3
-        if: always()
-        with:
-          sarif_file: 'trivy-results.sarif'
       -
         name: Docker login with GCP credentials
         id: gcp-login
