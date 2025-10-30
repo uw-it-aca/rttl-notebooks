@@ -71,13 +71,6 @@ jobs:
             echo "IMAGE=jupyter-$CTX-notebook" >> $GITHUB_ENV
           fi
       -
-        name: Debug secret (REMOVE AFTER FIXING)
-        run: |
-          echo "Secret length: ${#SECRET}"
-          echo "First 20 chars: ${SECRET:0:20}"
-        env:
-          SECRET: ${{ secrets.GCP_RTTL_AR_WRITER_KEY }}
-      -
         name: Docker login with GCP credentials
         id: gcp-login
         shell: bash
@@ -104,3 +97,10 @@ jobs:
           format: 'sarif'
           output: 'trivy-results.sarif'
           timeout: '15m0s'
+      -
+        name: Upload Trivy results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        if: success() || failure()
+        with:
+          sarif_file: 'trivy-results.sarif'
+          category: trivy-${{ matrix.versions }}
