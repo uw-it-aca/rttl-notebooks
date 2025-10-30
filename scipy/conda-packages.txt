@@ -9,14 +9,13 @@ cssselect
 dash
 emcee
 gatspy
-gensim
 hickle
 joblib
 jupyter-resource-usage
 lmfit
 lxml
 nltk
-octave_kernel
+nodejs>=20
 photutils
 plotly
 plotnine

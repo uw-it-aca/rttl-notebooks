@@ -9,13 +9,13 @@ conda-tree
 cssselect
 emcee
 gatspy
-gensim
 hickle
 jupyter-resource-usage
 lmfit
 lxml
 nltk
-numpy<2
+nodejs>=20
+numpy
 openpyxl
 pandas
 photutils

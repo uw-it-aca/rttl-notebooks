@@ -2,8 +2,10 @@ folium
 geopandas
 fiona
 ipyleaflet
+jupyterlab-a11y-checker
 nbclassic
 nbgitpuller
-numpy<2
+numpy
 pipdeptree
 requests-html
+urllib3 >= 2.5.0

@@ -4,6 +4,28 @@ All notable changes to the R Jupyter Notebook image will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.8.0] - 2025-10-13
+
+### Added
+- Added Jupyter accessibility checker extension, jupyterlab-a11y-checker
+- Added wrapper for nbgitpuller to prevent pod spawn failures. If errors are encountered a document will be added in the user's home directory.
+
+### Changed
+- Updated base image to use tag `hub-5.4.0` which includes:
+  - Base OS to Ubuntu 24.04
+  - Python 3.13.8
+  - R 4.5.1
+  - For more details, see: [Changelog](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/changelog.html) for Docker Stacks.
+- NumPy is updated to 2.3.3 as versions lower than v2 are no longer supported with Python 3.13+. (Note: NumPy 2 contained breaking changes from v1.x, so some packages may encounter compatibility issues)
+- [blis](https://github.com/explosion/cython-blis) unpinned from 1.2.0
+- [thinc](https://github.com/explosion/thinc) unpinned from 8.3.4
+- [biogeme](https://biogeme.epfl.ch) unpinned from <3.2.14
+
+### Removed
+- [gensim](https://anaconda.org/conda-forge/gensim) is not compatible with Python 3.13+ until v4.4+
+  - [pyLDAvis](https://pyldavis.readthedocs.io/en/latest/readme.html) which depends on gensim
+- [requests-html](https://github.com/kennethreitz/requests-html) has not been updated for years and requires a very old version of `urllib3` that conflicts with other packages.
+
 ## [2.7.1] - 2025-02-18
 
 ### Changed

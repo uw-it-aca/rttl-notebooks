@@ -38,8 +38,9 @@ RUN echo "PROJ_LIB=/opt/conda/share/proj" >> /opt/conda/lib/R/etc/Renviron.site
 # Install Conda packages
 COPY --chown=$NB_UID:$NB_GID conda-packages.txt /home/jovyan/
 RUN set -ex \
-  && mamba install --quiet --yes --file conda-packages.txt && mamba clean --all -f -y && \
-  conda clean --all --yes && rm -rf /opt/conda/pkgs/*
+  && mamba install --quiet --yes --file conda-packages.txt \
+  && mamba clean --all -f -y \
+  && conda clean --all --yes && rm -rf /opt/conda/pkgs/*
 
 RUN jupyter lab build -y \
   && jupyter lab clean -y \
@@ -55,9 +56,9 @@ RUN pip install git+https://github.com/jupyterhub/jupyter-rsession-proxy.git@mai
 
 # Install Pip packages
 COPY --chown=$NB_UID:$NB_GID pip-packages.txt /home/jovyan/
-RUN pip install -r pip-packages.txt && \
-  jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix && \
-  pip cache purge
+RUN pip install -r pip-packages.txt \
+  && jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix \
+  && pip cache purge
 
 # Install R packages
 COPY --chown=$NB_UID:$NB_GID install.R /home/jovyan/
