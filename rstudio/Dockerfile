@@ -38,22 +38,26 @@ RUN echo "PROJ_LIB=/opt/conda/share/proj" >> /opt/conda/lib/R/etc/Renviron.site
 # Install Conda packages
 COPY --chown=$NB_UID:$NB_GID conda-packages.txt /home/jovyan/
 RUN set -ex \
-  && mamba install --quiet --yes --file conda-packages.txt && mamba clean --all -f -y
+  && mamba install --quiet --yes --file conda-packages.txt && mamba clean --all -f -y && \
+  conda clean --all --yes && rm -rf /opt/conda/pkgs/*
 
 RUN jupyter lab build -y \
   && jupyter lab clean -y \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
   && rm -rf "/home/${NB_USER}/.node-gyp" \
+  && npm cache clean --force 2>/dev/null || true \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
 # See: https://github.com/jupyterhub/jupyter-rsession-proxy/issues/156
-RUN pip install git+https://github.com/jupyterhub/jupyter-rsession-proxy.git@main  # main, as fix for issue 156 didn't make 2.3.0 release
+# Using main for now as fix for issue 156 didn't make 2.3.0 release
+RUN pip install git+https://github.com/jupyterhub/jupyter-rsession-proxy.git@main && pip cache purge
 
 # Install Pip packages
 COPY --chown=$NB_UID:$NB_GID pip-packages.txt /home/jovyan/
 RUN pip install -r pip-packages.txt && \
-  jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix
+  jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix && \
+  pip cache purge
 
 # Install R packages
 COPY --chown=$NB_UID:$NB_GID install.R /home/jovyan/
