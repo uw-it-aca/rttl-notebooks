@@ -16,7 +16,6 @@ Docker image for UW-IT JupyterHub for Teaching SciPy Notebook server.
 
 ## Installed system packages
 
-- octave 8.4.0
 - gfortran 13.3.0
 
 ## Installed Python packages
