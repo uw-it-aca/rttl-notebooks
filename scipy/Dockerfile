@@ -51,3 +51,6 @@ RUN pip install -r pip-packages.txt \
 # Install Python packages from Torch indexes
 COPY --chown=$NB_UID:$NB_GID pip-torch-packages.txt /home/jovyan/
 RUN pip install -r pip-torch-packages.txt && pip cache purge
+
+# Update Conda environment variables
+RUN conda env config vars set LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"$(python3-config --prefix)/lib"
