@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=quay.io/jupyter/scipy-notebook:hub-5.4.0
+ARG BASE_CONTAINER=quay.io/jupyter/scipy-notebook:hub-5.2.1
 # Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/scipy-notebook/Dockerfile
 # Ubuntu 24.04 (noble)
 
@@ -33,6 +33,8 @@ RUN set -ex \
   && mamba install --quiet --yes --file conda-packages.txt \
   && mamba clean --all -f -y \
   && conda clean --all --yes && rm -rf /opt/conda/pkgs/*
+
+RUN mamba install libsqlite --force-reinstall
 
 RUN jupyter lab build -y \
   && jupyter lab clean -y \

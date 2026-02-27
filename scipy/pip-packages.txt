@@ -11,3 +11,4 @@ pqdm
 qgrid
 tellurium
 thinc
+pybamm[jax,plot]
