@@ -36,6 +36,11 @@ jobs:
           DATA=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | jq -c '. | map(split("/")[0]) | unique')
           echo "matrix=$DATA" >> "$GITHUB_OUTPUT"
   build-workers:
+    # Allow the job to fetch a GitHub ID token
+    permissions:
+      id-token: write
+      contents: read
+      security-events: write
     needs: get-changed
     # Skip if no changes in worker versions in this push
     if: needs.get-changed.outputs.matrix != '[]'
@@ -71,13 +76,14 @@ jobs:
             echo "IMAGE=jupyter-$CTX-notebook" >> $GITHUB_ENV
           fi
       -
-        name: Docker login with GCP credentials
-        id: gcp-login
-        shell: bash
-        run: |
-          echo "${{ secrets.GCP_RTTL_AR_WRITER_KEY }}" |
-            base64 -d |
-            docker login --username=_json_key --password-stdin https://${{ env.GAR_LOCATION }}-docker.pkg.dev
+        id: google-auth
+        name: Authenticate to Google Cloud via Workload Identity Federation
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: 'projects/332443295524/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions'
+      -
+        name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker ${{ env.GAR_LOCATION }}-docker.pkg.dev --quiet
       -
         name: Build and push
         uses: docker/build-push-action@v5
