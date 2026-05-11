@@ -38,9 +38,8 @@ RUN echo "PROJ_LIB=/opt/conda/share/proj" >> /opt/conda/lib/R/etc/Renviron.site
 # Install Conda packages
 COPY --chown=$NB_UID:$NB_GID conda-packages.txt /home/jovyan/
 RUN set -ex \
-  && mamba install --quiet --yes --file conda-packages.txt \
-  && mamba clean --all -f -y \
-  && conda clean --all --yes && rm -rf /opt/conda/pkgs/*
+  && mamba install --quiet --yes r-base=4.5.1 --freeze-installed --file conda-packages.txt \
+  && mamba clean --all -f -y
 
 RUN jupyter lab build -y \
   && jupyter lab clean -y \
@@ -51,8 +50,8 @@ RUN jupyter lab build -y \
   && fix-permissions "/home/${NB_USER}"
 
 # See: https://github.com/jupyterhub/jupyter-rsession-proxy/issues/156
-# Using main for now as fix for issue 156 didn't make 2.3.0 release
-RUN pip install git+https://github.com/jupyterhub/jupyter-rsession-proxy.git@main && pip cache purge
+# Using pinned commit for now as fix for issue 156 didn't make 2.3.0 release & work in main breaks launch of RStudio.
+RUN pip install git+https://github.com/jupyterhub/jupyter-rsession-proxy.git@aa2ba606e764072542a9c53cc635285407cf8d78 && pip cache purge
 
 # Install Pip packages
 COPY --chown=$NB_UID:$NB_GID pip-packages.txt /home/jovyan/
