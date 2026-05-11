@@ -1,6 +1,6 @@
 # UW-IT JupyterHub for Teaching RStudio notebook
-Docker image for RStudio notebooks using jupyter-rsession-proxy to handle auth flow with JupyterHub and redirect users to the `/rstudio` endpoint. This image uses [RStudio Server Open Source Edition](https://posit.co/products/open-source/rstudio-server), version 2025.09.1 Build 401 "Cucumberleaf Sunflower" Release with R version 4.5.1 (2025-06-13) "Great Square Root". This image also has JupyterLab Version 4.4.9 installed.
-- Uses Ubuntu linux 24.04 (noble) and Python 3.13.8 and accessible at the `/lab` endpoint of the server.
+Docker image for RStudio notebooks using jupyter-rsession-proxy to handle auth flow with JupyterHub and redirect users to the `/rstudio` endpoint. This image uses [RStudio Server Open Source Edition](https://posit.co/products/open-source/rstudio-server), version 2025.09.1 Build 401 "Cucumberleaf Sunflower" Release with R version 4.5.1 (2025-06-13) "Great Square Root". This image also has JupyterLab Version 4.4.9 installed and accessible at the `/lab` endpoint of the server.
+- Uses Ubuntu linux 24.04 (noble) and Python 3.13.8.
 - Detailed information about base R notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-r-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 - Installed packages and versions can be viewed in this image's [Dockerfile](Dockerfile) using `pip list` or `conda list`. Dependency trees for both Pip and Conda packages shown below.
