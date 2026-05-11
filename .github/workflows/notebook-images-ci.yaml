@@ -20,8 +20,8 @@ jobs:
       -
         name: Get changed files
         id: changed-files
-        # Pinned to v47.0.0 via SHA hash
-        uses: tj-actions/changed-files@24d32ffd492484c1d75e0c0b894501ddb9d30d62
+        # Pinned to v47.0.5 immutable release
+        uses: tj-actions/changed-files@v47.0.5
         with:
           files: |
             **/VERSION
@@ -51,10 +51,11 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6.0.2
       -
         name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        # Pinned to v4.0.0 via sha hash
+        uses: docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd
       -
         name: Get version number
         # Read the version number out of worker_name/VERSION and push to ENV
@@ -80,13 +81,14 @@ jobs:
         name: Authenticate to Google Cloud via Workload Identity Federation
         uses: google-github-actions/auth@v3
         with:
-          workload_identity_provider: 'projects/332443295524/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions'
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }} 
       -
         name: Configure Docker for Artifact Registry
         run: gcloud auth configure-docker ${{ env.GAR_LOCATION }}-docker.pkg.dev --quiet
       -
         name: Build and push
-        uses: docker/build-push-action@v5
+        # Pinned to v7.0.0 via sha hash
+        uses: docker/build-push-action@d08e5c354a6adb9ed34480a06d141179aa583294
         with:
           context: "{{defaultContext}}:${{ matrix.versions }}"
           push: true
@@ -106,7 +108,7 @@ jobs:
           output: 'trivy-results.sarif'
       -
         name: Upload Trivy results to GitHub Security tab
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
         if: success() || failure()
         with:
           sarif_file: 'trivy-results.sarif'
