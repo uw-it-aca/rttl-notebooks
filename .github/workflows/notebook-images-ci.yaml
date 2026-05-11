@@ -81,7 +81,7 @@ jobs:
         name: Authenticate to Google Cloud via Workload Identity Federation
         uses: google-github-actions/auth@v3
         with:
-          workload_identity_provider: 'projects/332443295524/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions'
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }} 
       -
         name: Configure Docker for Artifact Registry
         run: gcloud auth configure-docker ${{ env.GAR_LOCATION }}-docker.pkg.dev --quiet
