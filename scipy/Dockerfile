@@ -1,14 +1,14 @@
-ARG BASE_CONTAINER=quay.io/jupyter/scipy-notebook:hub-5.4.0
+ARG BASE_CONTAINER=quay.io/jupyter/scipy-notebook:hub-5.4.6
 # Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/scipy-notebook/Dockerfile
 # Ubuntu 24.04 (noble)
 
 FROM $BASE_CONTAINER
 
-LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
+LABEL maintainer="UWIT Teaching & Learning Systems <aca-it@uw.edu>"
 
 USER root
 
-# Needed for libncurses5 package
+# Needed for libncurses5 package - TODO review if this is still needed vs Ubuntu 24 native libncurses6
 RUN echo "deb http://security.ubuntu.com/ubuntu focal-security main universe" > /etc/apt/sources.list.d/ubuntu-focal-sources.list
 
 # Install apt packages
@@ -16,23 +16,39 @@ COPY --chown=$NB_UID:$NB_GID apt.txt /home/jovyan/
 
 RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg \
         && apt-get upgrade --yes \
-        && if test -f "apt.txt" ; then \
-            xargs -a apt.txt apt-get install --yes; \
+        && if test -f "/home/jovyan/apt.txt" ; then \
+            xargs -a /home/jovyan/apt.txt apt-get install --yes; \
         fi \
         && apt-get clean > /dev/null \
         && rm -rf /var/lib/apt/lists/*
+
+# Install micromamba
+RUN curl -fsSL https://micro.mamba.pm/api/micromamba/linux-64/latest \
+    | bzip2 -d | tar x --to-stdout bin/micromamba > /usr/local/bin/micromamba \
+    && chmod +x /usr/local/bin/micromamba
+
+ENV MAMBA_ROOT_PREFIX=/opt/conda
+
+# Install Node
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Add wrapper for gitpuller
 COPY --chmod=755 safe_gitpuller.sh /usr/local/bin/safe_gitpuller
 
 USER $NB_UID
 
-# Install Conda packages
-COPY --chown=$NB_UID:$NB_GID conda-packages.txt /home/jovyan/
+# Install Conda packages in batches to relieve memory pressure
+COPY --chown=$NB_UID:$NB_GID conda-packages.txt conda-packages-light.txt /home/jovyan/
+# Heavy packages first - isolated solves
 RUN set -ex \
-  && mamba install --quiet --yes --file conda-packages.txt \
-  && mamba clean --all -f -y \
-  && conda clean --all --yes && rm -rf /opt/conda/pkgs/*
+    && micromamba install --quiet --yes --file /home/jovyan/conda-packages.txt \
+    && micromamba clean --all -f -y
+
+RUN set -ex \
+    && micromamba install --quiet --yes --file /home/jovyan/conda-packages-light.txt \
+    && micromamba clean --all -f -y
 
 RUN jupyter lab build -y \
   && jupyter lab clean -y \
