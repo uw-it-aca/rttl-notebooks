@@ -1,0 +1,15 @@
+astroML
+choicemodels
+conda-tree
+cssselect
+hickle
+joblib
+jupyter-resource-usage
+lxml
+nltk
+pylogit
+requests
+selenium
+textblob
+tqdm
+unidecode

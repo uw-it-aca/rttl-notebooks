@@ -1,4 +1,3 @@
 conda-tree
-nodejs>=20
 requests
 jupyter-resource-usage

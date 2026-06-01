@@ -1,0 +1,13 @@
+choicemodels
+conda-tree
+cssselect
+hickle
+jupyter-dash
+jupyter-resource-usage
+lxml
+nltk
+openpyxl
+pylogit
+requests
+selenium
+textblob

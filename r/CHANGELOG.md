@@ -4,6 +4,11 @@ All notable changes to the R Jupyter Notebook image will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9.0] - 2026-06-01
+
+### Changed
+- Updated base image to use tag `hub-5.4.6` to match Hub version.
+
 ## [2.8.0] - 2025-10-13
 
 ### Added
