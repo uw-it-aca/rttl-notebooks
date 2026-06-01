@@ -1,6 +1,6 @@
 ARG BASE_CONTAINER=quay.io/jupyter/scipy-notebook:hub-5.4.6
 # Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/scipy-notebook/Dockerfile
-# Ubuntu 24.04 (noble)
+# Ubuntu 24.04 LTS (noble)
 
 FROM $BASE_CONTAINER
 
@@ -11,7 +11,7 @@ USER root
 # Needed for libncurses5 package - TODO review if this is still needed vs Ubuntu 24 native libncurses6
 RUN echo "deb http://security.ubuntu.com/ubuntu focal-security main universe" > /etc/apt/sources.list.d/ubuntu-focal-sources.list
 
-# Install apt packages
+# Copy apt packages list
 COPY --chown=$NB_UID:$NB_GID apt.txt /home/jovyan/
 
 RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg \
