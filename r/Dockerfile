@@ -68,7 +68,7 @@ RUN pip install -r pip-packages.txt \
 COPY --chown=$NB_UID:$NB_GID pip-torch-packages.txt /home/jovyan/
 RUN pip install -r pip-torch-packages.txt && pip cache purge
 
-# Install R packages
-COPY --chown=$NB_UID:$NB_GID install.R /home/jovyan/
+# Install R packages - currently skipping
+# COPY --chown=$NB_UID:$NB_GID install.R /home/jovyan/
 ## Run an install.R script, if it exists.
-RUN if [ -f /home/jovyan/install.R ]; then R --quiet -f /home/jovyan/install.R; fi
+# RUN if [ -f /home/jovyan/install.R ]; then R --quiet -f /home/jovyan/install.R; fi
