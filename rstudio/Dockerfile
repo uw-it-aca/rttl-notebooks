@@ -25,8 +25,10 @@ RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg && \
 # Fix for error: "System has not been booted with systemd as init system (PID 1)" related to timedatectl running in containers.
 RUN echo 'TZ="America/Los_Angeles"' >> /opt/conda/lib/R/etc/Renviron
 
-# Fix for PROJ path errors
-RUN echo "rsession-ld-library-path=/opt/conda/lib" >> /etc/rstudio/rserver.conf
+# Fix for PROJ path errors; grant jovyan ownership of rstudio config
+RUN echo "rsession-ld-library-path=/opt/conda/lib" >> /etc/rstudio/rserver.conf \
+    && echo "server-user=jovyan" >> /etc/rstudio/rserver.conf \
+    && chown -R $NB_UID:$NB_GID /etc/rstudio /var/lib/rstudio-server /var/run/rstudio-server /var/log/rstudio
 ENV PATH=$PATH:/usr/lib/rstudio-server/bin
 
 # Install micromamba
