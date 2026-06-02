@@ -1,6 +1,6 @@
-FROM us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.8.1 AS stage1
+FROM us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-rstudio-notebook:2.9.0 AS stage1
 
-LABEL maintainer="UW-IT Teaching & Learning Systems <aca-it@uw.edu>"
+LABEL maintainer="UWIT Teaching & Learning Systems <aca-it@uw.edu>"
 
 USER root
 

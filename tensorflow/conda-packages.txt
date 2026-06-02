@@ -1,11 +1,4 @@
-astroML
-astroplan
-astropy
-astroquery
-emcee
-gatspy
 lmfit
-photutils
 plotly
 plotnine
 spacy

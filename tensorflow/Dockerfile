@@ -37,8 +37,12 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
 USER $NB_UID
 
 # Install Conda packages in batches to relieve memory pressure
-COPY --chown=$NB_UID:$NB_GID conda-packages.txt conda-packages-light.txt /home/jovyan/
+COPY --chown=$NB_UID:$NB_GID conda-packages-astro.txt conda-packages.txt conda-packages-light.txt /home/jovyan/
 # Heavy packages first - isolated solves
+RUN set -ex \
+    && micromamba install --quiet --yes --file /home/jovyan/conda-packages-astro.txt \
+    && micromamba clean --all -f -y
+
 RUN set -ex \
     && micromamba install --quiet --yes --file /home/jovyan/conda-packages.txt \
     && micromamba clean --all -f -y
