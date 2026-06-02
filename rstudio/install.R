@@ -1,6 +1,6 @@
 install.packages(c('IRkernel', 'epiR', 'fastR2', 'fivethirtyeight', 'janitor', 'lubridate', 'mosaic', 'openintro', 'patchwork', 'scales', 'skimr', 'tidyverse'),repos='http://cran.us.r-project.org')
 install.packages(c('plotly', 'sf', 'here', 'tabula', 'here', 'ggbeeswarm', 'cowplot', 'ggtext', 'raster', 'terra', 'spatstat', 'maptools', 'RColorBrewer', 'viridis', 'wesanderson', 'rcarbon', 'ggridges', 'ggrepel', 'visdat', 'igraph', 'statnet', 'gapminder'), repos='https://cran.rstudio.com')
 install.packages('fivethirtyeightdata', repos='https://fivethirtyeightdata.github.io/drat/', type='source')
-remotes::install_github('rstudio-education/dsbox')
-remotes::install_github("rstudio/gradethis")
+pak::pak('rstudio-education/dsbox')
+pak::pak('rstudio/gradethis')
 IRkernel::installspec()

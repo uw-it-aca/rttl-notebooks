@@ -16,7 +16,7 @@ RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg && \
     apt-get upgrade --yes && \
     xargs -a apt.txt apt-get install --yes && \    
     curl --silent -L --fail https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2026.05.0-218-amd64.deb > /tmp/rstudio.deb && \
-    echo 'cef10ff44ba19c68e8f143e22c262ba6e092dc18bcafb051f56ce50e4879de41 /tmp/rstudio.deb' | shasum -a 256 -c - && \
+    echo 'cef10ff44ba19c68e8f143e22c262ba6e092dc18bcafb051f56ce50e4879de41  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     gdebi -n /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
     apt-get clean > /dev/null && \
@@ -25,8 +25,10 @@ RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg && \
 # Fix for error: "System has not been booted with systemd as init system (PID 1)" related to timedatectl running in containers.
 RUN echo 'TZ="America/Los_Angeles"' >> /opt/conda/lib/R/etc/Renviron
 
-# Fix for PROJ path errors
-RUN echo "rsession-ld-library-path=/opt/conda/lib" >> /etc/rstudio/rserver.conf
+# Fix for PROJ path errors; grant jovyan ownership of rstudio config
+RUN echo "rsession-ld-library-path=/opt/conda/lib" >> /etc/rstudio/rserver.conf \
+    && echo "server-user=jovyan" >> /etc/rstudio/rserver.conf \
+    && chown -R $NB_UID:$NB_GID /etc/rstudio /var/lib/rstudio-server /var/run/rstudio-server /var/log/rstudio
 ENV PATH=$PATH:/usr/lib/rstudio-server/bin
 
 # Install micromamba
