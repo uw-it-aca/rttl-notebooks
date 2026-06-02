@@ -16,7 +16,7 @@ RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg && \
     apt-get upgrade --yes && \
     xargs -a apt.txt apt-get install --yes && \    
     curl --silent -L --fail https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2026.05.0-218-amd64.deb > /tmp/rstudio.deb && \
-    echo 'cef10ff44ba19c68e8f143e22c262ba6e092dc18bcafb051f56ce50e4879de41 /tmp/rstudio.deb' | shasum -a 256 -c - && \
+    echo 'cef10ff44ba19c68e8f143e22c262ba6e092dc18bcafb051f56ce50e4879de41  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     gdebi -n /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
     apt-get clean > /dev/null && \
