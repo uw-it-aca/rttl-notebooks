@@ -24,16 +24,19 @@ jobs:
         uses: tj-actions/changed-files@v47.0.5
         with:
           files: |
-            **/VERSION
+            **/RUNBUILD
           json: true
           write_output_files: true
       -
         name: Map to JSON
-        # Get the parent folder and add to an array
+        # Get the parent folder and add to an array (handle deletions correctly)
         id: mapped-files
         run: |
           set -eux
-          DATA=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | jq -c '. | map(split("/")[0]) | unique')
+          ADDED=$(echo '${{ steps.changed-files.outputs.added_files }}' | jq -c '. // []')
+          MODIFIED=$(echo '${{ steps.changed-files.outputs.modified_files }}' | jq -c '. // []')
+          DATA=$(jq -cn --argjson a "$ADDED" --argjson m "$MODIFIED" \
+            '$a + $m | map(split("/")[0]) | unique')
           echo "matrix=$DATA" >> "$GITHUB_OUTPUT"
   build-workers:
     # Allow the job to fetch a GitHub ID token
@@ -43,7 +46,7 @@ jobs:
       security-events: write
     needs: get-changed
     # Skip if no changes in worker versions in this push
-    if: needs.get-changed.outputs.matrix != '[]'
+    if: ${{ needs.get-changed.outputs.matrix != '[]' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
