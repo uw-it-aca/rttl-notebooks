@@ -49,7 +49,7 @@ RUN echo "PROJ_LIB=/opt/conda/share/proj" >> /opt/conda/lib/R/etc/Renviron.site
 COPY --chown=$NB_UID:$NB_GID conda-packages.txt /home/jovyan/
 
 RUN set -ex \
-    && micromamba install --quiet --yes --file /home/jovyan/conda-packages.txt \
+    && micromamba install --quiet --yes --freeze-installed --file /home/jovyan/conda-packages.txt \
     && micromamba clean --all -f -y
 
 RUN jupyter lab build -y \

@@ -1,5 +1,5 @@
 # UWIT JupyterHub for Teaching RStudio notebook
-Docker image for RStudio notebooks using jupyter-rsession-proxy to handle auth flow with JupyterHub and redirect users to the `/rstudio` endpoint. This image uses [RStudio Server Open Source Edition](https://posit.co/products/open-source/rstudio-server), version v2026.05.0+218 Release with R version 4.5.1 (2025-06-13) "Great Square Root". This image also has JupyterLab Version 4.5.7 installed and accessible at the `/lab` endpoint of the server.
+Docker image for RStudio notebooks using jupyter-rsession-proxy to handle auth flow with JupyterHub and redirect users to the `/rstudio` endpoint. This image uses [RStudio Server Open Source Edition](https://posit.co/products/open-source/rstudio-server), version v2026.05.0+218 Release with R version 4.5.3 (2026-03-11). This image also has JupyterLab Version 4.5.7 installed and accessible at the `/lab` endpoint of the server.
 - Uses Ubuntu linux 24.04 LTS (noble) and Python 3.13.13.
 - Detailed information about base R notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-r-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html

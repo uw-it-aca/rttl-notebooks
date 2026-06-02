@@ -38,17 +38,17 @@ USER $NB_UID
 
 # Install Conda packages in batches to relieve memory pressure
 COPY --chown=$NB_UID:$NB_GID conda-packages-astro.txt conda-packages.txt conda-packages-light.txt /home/jovyan/
-# Heavy packages first - isolated solves
+# Heavy packages first - isolated solves, --freeze-installed prevents re-solving base env
 RUN set -ex \
-    && micromamba install --quiet --yes --file /home/jovyan/conda-packages-astro.txt \
+    && micromamba install --quiet --yes --freeze-installed --file /home/jovyan/conda-packages-astro.txt \
     && micromamba clean --all -f -y
 
 RUN set -ex \
-    && micromamba install --quiet --yes --file /home/jovyan/conda-packages.txt \
+    && micromamba install --quiet --yes --freeze-installed --file /home/jovyan/conda-packages.txt \
     && micromamba clean --all -f -y
 
 RUN set -ex \
-    && micromamba install --quiet --yes --file /home/jovyan/conda-packages-light.txt \
+    && micromamba install --quiet --yes --freeze-installed --file /home/jovyan/conda-packages-light.txt \
     && micromamba clean --all -f -y
 
 RUN jupyter lab build -y \

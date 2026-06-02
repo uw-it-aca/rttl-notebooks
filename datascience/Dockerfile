@@ -43,7 +43,7 @@ USER $NB_UID
 COPY --chown=$NB_UID:$NB_GID conda-packages.txt /home/jovyan/
 
 RUN set -ex \
-    && micromamba install --quiet --yes --file /home/jovyan/conda-packages.txt \
+    && micromamba install --quiet --yes --freeze-installed --file /home/jovyan/conda-packages.txt \
     && micromamba clean --all -f -y
 
 RUN jupyter lab build -y \

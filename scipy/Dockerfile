@@ -43,11 +43,11 @@ USER $NB_UID
 COPY --chown=$NB_UID:$NB_GID conda-packages.txt conda-packages-light.txt /home/jovyan/
 # Heavy packages first - isolated solves
 RUN set -ex \
-    && micromamba install --quiet --yes --file /home/jovyan/conda-packages.txt \
+    && micromamba install --quiet --yes --freeze-installed --file /home/jovyan/conda-packages.txt \
     && micromamba clean --all -f -y
 
 RUN set -ex \
-    && micromamba install --quiet --yes --file /home/jovyan/conda-packages-light.txt \
+    && micromamba install --quiet --yes --freeze-installed --file /home/jovyan/conda-packages-light.txt \
     && micromamba clean --all -f -y
 
 RUN jupyter lab build -y \
