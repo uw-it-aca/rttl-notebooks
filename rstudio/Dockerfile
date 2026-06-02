@@ -62,11 +62,6 @@ RUN jupyter lab build -y \
   && fix-permissions "${CONDA_DIR}" \
   && fix-permissions "/home/${NB_USER}"
 
-# See: https://github.com/jupyterhub/jupyter-rsession-proxy/issues/156
-# Using pinned commit for now as fix for issue 156 didn't make 2.3.0 release & work in main breaks launch of RStudio.
-# Looks like its in v2.5.0 - verify then delete this block
-# RUN pip install git+https://github.com/jupyterhub/jupyter-rsession-proxy.git@aa2ba606e764072542a9c53cc635285407cf8d78 && pip cache purge
-
 # Install Pip packages
 COPY --chown=$NB_UID:$NB_GID pip-packages.txt /home/jovyan/
 RUN pip install -r pip-packages.txt \
