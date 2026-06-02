@@ -1,0 +1,7 @@
+astroML
+astroplan
+astropy
+astroquery
+emcee
+gatspy
+photutils
