@@ -13,3 +13,4 @@ selenium
 textblob
 tqdm
 unidecode
+octave_kernel

@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Micromamba package manager.
+- Re-added Octave and octave_kernel.
 
 ### Changed
 - Updated base image to use tag `hub-5.4.6` to match Hub version.
