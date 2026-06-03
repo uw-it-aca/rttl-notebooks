@@ -50,6 +50,11 @@ RUN set -ex \
     && micromamba install --quiet --yes --freeze-installed --file /home/jovyan/conda-packages-light.txt \
     && micromamba clean --all -f -y
 
+# Install Octave from conda-forge for a newer version than Ubuntu apt provides
+RUN set -ex \
+    && micromamba install --quiet --yes octave \
+    && micromamba clean --all -f -y
+
 RUN jupyter lab build -y \
   && jupyter lab clean -y \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
