@@ -1,5 +1,5 @@
 # UWIT JupyterHub for Teaching RStudio notebook with AI support
-Docker image for standard RStudio notebook with RStudio Copilot [integration](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html) enabled and [Jupyter-AI](https://jupyter-ai.readthedocs.io/en/latest/) packages installed. Rstudio version v2026.05.0+218 with R version R version 4.5.1 (2025-06-13) "Great Square Root". This image also has JupyterLab Version 4.5.7 installed.
+Docker image for standard RStudio notebook with RStudio Copilot [integration](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html) enabled and [Jupyter-AI](https://jupyter-ai.readthedocs.io/en/latest/) packages installed. Rstudio version v2026.05.0+218 with R version 4.5.3 (2026-03-11). This image also has JupyterLab Version 4.5.7 installed.
 - Uses Ubuntu linux 24.04 (noble) and Python 3.13.13
 - Detailed information about base R notebook is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-r-notebook
 - General information about working with base images is here: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html

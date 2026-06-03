@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.9.0] - 2026-06-01
 
+### Added
+- Micromamba package manager.
+
 ### Changed
 - Updated base image to use tag `hub-5.4.6` to match Hub version.
 
@@ -14,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Added Jupyter accessibility checker extension, jupyterlab-a11y-checker
 - Added wrapper for nbgitpuller to prevent pod spawn failures. If errors are encountered a document will be added in the user's home directory.
+- Trivy vulnerability scanning and sarif upload in build pipelines.
 
 ### Changed
 - Updated base image to use tag `hub-5.4.0` which includes:
