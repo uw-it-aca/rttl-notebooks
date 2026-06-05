@@ -89,6 +89,9 @@ jobs:
         name: Configure Docker for Artifact Registry
         run: gcloud auth configure-docker ${{ env.GAR_LOCATION }}-docker.pkg.dev --quiet
       -
+        name: Set minor version tag
+        run: echo "MINOR_VERSION=$(echo ${{ env.VERSION }} | cut -d. -f1,2)" >> $GITHUB_ENV
+      -
         name: Build and push
         # Pinned to v7.0.0 via sha hash
         uses: docker/build-push-action@d08e5c354a6adb9ed34480a06d141179aa583294
@@ -97,6 +100,7 @@ jobs:
           push: true
           tags: |
             ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.VERSION }}
+            ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:${{ env.MINOR_VERSION }}
             ${{ env.GAR_LOCATION }}-docker.pkg.dev/uwit-mci-axdd/rttl-images/${{ env.IMAGE }}:latest
       -
         name: Run Trivy vulnerability scanner
