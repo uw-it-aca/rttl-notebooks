@@ -57,6 +57,7 @@ RUN set -ex \
 
 RUN jupyter lab build -y \
   && jupyter lab clean -y \
+  && jupyter labextension disable "@jupyterlab/apputils-extension:announcements" \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
   && rm -rf "/home/${NB_USER}/.node-gyp" \
   && npm cache clean --force 2>/dev/null || true \
