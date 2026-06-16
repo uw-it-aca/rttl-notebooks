@@ -34,6 +34,9 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Add wrapper for gitpuller
+COPY --chmod=755 safe_gitpuller.sh /usr/local/bin/safe_gitpuller
+
 USER $NB_UID
 
 # Install Conda packages in batches to relieve memory pressure
