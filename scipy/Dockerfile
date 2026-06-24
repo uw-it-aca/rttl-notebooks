@@ -67,9 +67,12 @@ RUN jupyter lab build -y \
 # Install Python packages
 COPY --chown=$NB_UID:$NB_GID pip-packages.txt /home/jovyan/
 RUN pip install -r pip-packages.txt \
-  && jupyter server extension enable nbgitpuller jupyterlab-a11y-checker --sys-prefix \
+  && jupyter server extension enable nbgitpuller --sys-prefix \
   && pip cache purge
 
 # Install Python packages from Torch indexes
 COPY --chown=$NB_UID:$NB_GID pip-torch-packages.txt /home/jovyan/
 RUN pip install -r pip-torch-packages.txt && pip cache purge
+
+# Disable JupyterLab A11y checker, but leave installed
+RUN jupyter labextension disable jupyterlab-a11y-checker

@@ -1,6 +1,7 @@
 astroalign
 biogeme
 blis
+flake8
 fuzzywuzzy
 jupyterlab-a11y-checker
 nbgitpuller

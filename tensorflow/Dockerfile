@@ -73,3 +73,6 @@ RUN pip install -r pip-packages.txt \
 COPY --chown=$NB_UID:$NB_GID pip-torch-packages.txt /home/jovyan/
 # Install Python packages from Torch indexes
 RUN pip install -r pip-torch-packages.txt && pip cache purge
+
+# Disable JupyterLab A11y checker, but leave installed
+RUN jupyter labextension disable jupyterlab-a11y-checker

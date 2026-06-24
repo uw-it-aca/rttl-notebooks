@@ -1,5 +1,6 @@
 biogeme
 blis
+flake8
 fuzzywuzzy
 joblib
 jupyterlab-a11y-checker
