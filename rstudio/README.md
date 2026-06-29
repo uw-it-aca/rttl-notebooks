@@ -35,7 +35,7 @@ Brotli==1.2.0
 cached-property==1.5.2
 conda-libmamba-solver==26.4.2
 ├── boltons [required: >=23.0.0, installed: 25.0.0]
-├── conda [required: >=26.1, installed: 26.5.0]
+├── conda [required: >=26.1, installed: 26.5.2]
 │   ├── archspec [required: >=0.2.3, installed: 0.2.5]
 │   ├── boltons [required: >=23.0.0, installed: 25.0.0]
 │   ├── charset-normalizer [required: Any, installed: 3.4.7]
@@ -63,7 +63,7 @@ conda-libmamba-solver==26.4.2
 │   ├── ruamel.yaml [required: >=0.11.14,<0.19, installed: 0.18.17]
 │   │   └── ruamel.yaml.clib [required: >=0.2.15, installed: 0.2.15]
 │   ├── setuptools [required: >=60.0.0, installed: 82.0.1]
-│   ├── tqdm [required: >=4, installed: 4.67.3]
+│   ├── tqdm [required: >=4, installed: 4.68.1]
 │   ├── truststore [required: >=0.8.0, installed: 0.10.4]
 │   └── zstandard [required: >=0.15, installed: 0.25.0]
 ├── msgpack [required: >=1.1.1, installed: 1.1.2]
@@ -96,7 +96,7 @@ conda-pypi==0.9.0
 │   │   │   ├── idna [required: >=2.5,<4, installed: 3.17]
 │   │   │   └── urllib3 [required: >=1.26,<3, installed: 2.7.0]
 │   │   └── zstandard [required: >=0.15, installed: 0.25.0]
-│   ├── filelock [required: Any, installed: 3.29.0]
+│   ├── filelock [required: Any, installed: 3.29.1]
 │   ├── Jinja2 [required: Any, installed: 3.1.6]
 │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   ├── msgpack [required: Any, installed: 1.1.2]
@@ -125,7 +125,7 @@ conda-pypi==0.9.0
     │   └── idna [required: Any, installed: 3.17]
     └── packaging [required: >=20, installed: 26.2]
 conda-rattler-solver==0.1.0
-├── conda [required: >=25.5.0, installed: 26.5.0]
+├── conda [required: >=25.5.0, installed: 26.5.2]
 │   ├── archspec [required: >=0.2.3, installed: 0.2.5]
 │   ├── boltons [required: >=23.0.0, installed: 25.0.0]
 │   ├── charset-normalizer [required: Any, installed: 3.4.7]
@@ -153,7 +153,7 @@ conda-rattler-solver==0.1.0
 │   ├── ruamel.yaml [required: >=0.11.14,<0.19, installed: 0.18.17]
 │   │   └── ruamel.yaml.clib [required: >=0.2.15, installed: 0.2.15]
 │   ├── setuptools [required: >=60.0.0, installed: 82.0.1]
-│   ├── tqdm [required: >=4, installed: 4.67.3]
+│   ├── tqdm [required: >=4, installed: 4.68.1]
 │   ├── truststore [required: >=0.8.0, installed: 0.10.4]
 │   └── zstandard [required: >=0.15, installed: 0.25.0]
 └── py-rattler [required: >=0.23.0,<0.24.0a0, installed: 0.23.2]
@@ -162,7 +162,10 @@ conda-tree==1.2.0
 ├── colorama [required: Any, installed: 0.4.6]
 └── networkx [required: Any, installed: 3.6.1]
 exceptiongroup==1.3.1
-fqdn==1.5.1
+flake8==7.3.0
+├── mccabe [required: >=0.7.0,<0.8.0, installed: 0.7.0]
+├── pycodestyle [required: >=2.14.0,<2.15.0, installed: 2.14.0]
+└── pyflakes [required: >=3.4.0,<3.5.0, installed: 3.4.0]
 GDAL==3.12.3
 h2==4.3.0
 ├── hpack [required: >=4.1,<5, installed: 4.1.0]
@@ -170,16 +173,11 @@ h2==4.3.0
 importlib_metadata==9.0.0
 └── zipp [required: >=3.20, installed: 4.1.0]
 importlib_resources==7.1.0
-isoduration==20.11.0
-└── arrow [required: >=0.15.0, installed: 1.4.0]
-    ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
-    │   └── six [required: >=1.5, installed: 1.17.0]
-    └── tzdata [required: Any, installed: 2026.2]
 jsonpatch==1.33
 └── jsonpointer [required: >=1.9, installed: 3.1.1]
 jupyter-rsession-proxy==2.5.1
 └── jupyter_server_proxy [required: >4.1.0, installed: 4.5.0]
-    ├── aiohttp [required: Any, installed: 3.14.0]
+    ├── aiohttp [required: Any, installed: 3.14.1]
     │   ├── aiohappyeyeballs [required: >=2.5.0, installed: 2.6.2]
     │   ├── aiosignal [required: >=1.4.0, installed: 1.4.0]
     │   │   └── frozenlist [required: >=1.1.0, installed: 1.8.0]
@@ -200,21 +198,30 @@ jupyter-rsession-proxy==2.5.1
     │   │           └── pycparser [required: Any, installed: 3.0]
     │   ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
     │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-    │   ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+    │   ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
     │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
     │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-    │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+    │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
     │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
     │   │   │   └── six [required: >=1.5, installed: 1.17.0]
     │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
     │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-    │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+    │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+    │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
     │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
     │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-    │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+    │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
     │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
     │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
     │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+    │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+    │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+    │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+    │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+    │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+    │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+    │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+    │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
     │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
     │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
     │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -222,7 +229,14 @@ jupyter-rsession-proxy==2.5.1
     │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
     │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-    │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+    │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+    │   │   │   │   └── six [required: Any, installed: 1.17.0]
+    │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+    │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+    │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+    │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+    │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+    │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
     │   │   ├── packaging [required: Any, installed: 26.2]
     │   │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
     │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -232,43 +246,54 @@ jupyter-rsession-proxy==2.5.1
     │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
     │   │   │   └── six [required: Any, installed: 1.17.0]
     │   │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-    │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+    │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
     │   ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
     │   │   └── terminado [required: >=0.8.3, installed: 0.18.1]
     │   │       ├── ptyprocess [required: Any, installed: 0.7.0]
     │   │       └── tornado [required: >=6.1.0, installed: 6.5.6]
     │   ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-    │   │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+    │   │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
     │   │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
     │   │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-    │   │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+    │   │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+    │   │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+    │   │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
     │   │   │   └── webencodings [required: Any, installed: 0.5.1]
     │   │   ├── defusedxml [required: Any, installed: 0.7.1]
     │   │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
     │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
     │   │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
     │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-    │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+    │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
     │   │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
     │   │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
     │   │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-    │   │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-    │   │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+    │   │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+    │   │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
     │   │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
     │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-    │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+    │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
     │   │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
     │   │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
     │   │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
     │   │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-    │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-    │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+    │   │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+    │   │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+    │   │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
     │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-    │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-    │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+    │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+    │   │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
     │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
     │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
     │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+    │   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+    │   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+    │   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+    │   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+    │   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+    │   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+    │   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+    │   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
     │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
     │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
     │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -276,16 +301,31 @@ jupyter-rsession-proxy==2.5.1
     │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
     │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-    │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+    │   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+    │   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+    │   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+    │   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+    │   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+    │   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+    │   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+    │   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
     │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
     │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-    │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-    │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-    │   │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+    │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+    │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+    │   │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
     │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
     │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
     │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
     │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+    │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+    │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+    │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+    │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+    │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+    │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+    │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+    │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
     │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
     │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
     │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -293,19 +333,34 @@ jupyter-rsession-proxy==2.5.1
     │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
     │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-    │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+    │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+    │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+    │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+    │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+    │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+    │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+    │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+    │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
     │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
     │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-    │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-    │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+    │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+    │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
     │   │   ├── packaging [required: Any, installed: 26.2]
     │   │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
     │   │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-    │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+    │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
     │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
     │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
     │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
     │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+    │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+    │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+    │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+    │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+    │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+    │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+    │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+    │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
     │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
     │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
     │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -313,11 +368,18 @@ jupyter-rsession-proxy==2.5.1
     │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
     │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
     │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-    │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+    │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+    │   │   │   │   └── six [required: Any, installed: 1.17.0]
+    │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+    │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+    │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+    │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+    │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+    │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
     │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
     │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-    │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-    │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+    │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+    │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
     │   ├── packaging [required: >=22.0, installed: 26.2]
     │   ├── prometheus_client [required: >=0.9, installed: 0.25.0]
     │   ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -326,11 +388,11 @@ jupyter-rsession-proxy==2.5.1
     │   │   ├── ptyprocess [required: Any, installed: 0.7.0]
     │   │   └── tornado [required: >=6.1.0, installed: 6.5.6]
     │   ├── tornado [required: >=6.2.0, installed: 6.5.6]
-    │   ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+    │   ├── traitlets [required: >=5.6.0, installed: 5.15.1]
     │   └── websocket-client [required: >=1.7, installed: 1.9.0]
     ├── simpervisor [required: >=1.0.0, installed: 1.0.0]
     ├── tornado [required: >=6.1.0, installed: 6.5.6]
-    └── traitlets [required: >=5.1.0, installed: 5.15.0]
+    └── traitlets [required: >=5.1.0, installed: 5.15.1]
 jupyterhub==5.4.6
 ├── alembic [required: >=1.4, installed: 1.18.4]
 │   ├── Mako [required: Any, installed: 1.3.12]
@@ -349,6 +411,14 @@ jupyterhub==5.4.6
 ├── jupyter-events [required: Any, installed: 0.12.1]
 │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -356,7 +426,14 @@ jupyterhub==5.4.6
 │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   ├── packaging [required: Any, installed: 26.2]
 │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -366,7 +443,7 @@ jupyterhub==5.4.6
 │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   └── six [required: Any, installed: 1.17.0]
 │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   └── traitlets [required: >=5.3, installed: 5.15.1]
 ├── oauthlib [required: >=3.0, installed: 3.3.1]
 ├── packaging [required: Any, installed: 26.2]
 ├── pamela [required: >=1.1.0, installed: 1.2.0]
@@ -389,52 +466,53 @@ jupyterhub==5.4.6
 │   ├── greenlet [required: >=1, installed: 3.5.1]
 │   └── typing_extensions [required: >=4.6.0, installed: 4.15.0]
 ├── tornado [required: >=5.1, installed: 6.5.6]
-└── traitlets [required: >=4.3.2, installed: 5.15.0]
-jupyterlab_a11y_checker==0.2.7
-libmambapy==2.6.2
+└── traitlets [required: >=4.3.2, installed: 5.15.1]
+jupyterlab_a11y_checker==0.2.8
+libmambapy==2.8.0
 nbclassic==1.3.3
 ├── ipykernel [required: Any, installed: 7.2.0]
 │   ├── comm [required: >=0.1.1, installed: 0.2.3]
-│   ├── debugpy [required: >=1.6.5, installed: 1.8.20]
-│   ├── ipython [required: >=7.23.1, installed: 9.14.0]
+│   ├── debugpy [required: >=1.6.5, installed: 1.8.21]
+│   ├── ipython [required: >=7.23.1, installed: 9.14.1]
 │   │   ├── decorator [required: >=5.1.0, installed: 5.3.1]
 │   │   ├── ipython_pygments_lexers [required: >=1.0.0, installed: 1.1.1]
 │   │   │   └── Pygments [required: Any, installed: 2.20.0]
 │   │   ├── jedi [required: >=0.18.2, installed: 0.19.2]
 │   │   │   └── parso [required: >=0.8.4,<0.9.0, installed: 0.8.7]
 │   │   ├── matplotlib-inline [required: >=0.1.6, installed: 0.2.2]
-│   │   │   └── traitlets [required: Any, installed: 5.15.0]
+│   │   │   └── traitlets [required: Any, installed: 5.15.1]
 │   │   ├── pexpect [required: >4.6, installed: 4.9.0]
 │   │   │   └── ptyprocess [required: >=0.5, installed: 0.7.0]
 │   │   ├── prompt_toolkit [required: >=3.0.41,<3.1.0, installed: 3.0.52]
-│   │   │   └── wcwidth [required: Any, installed: 0.7.0]
+│   │   │   └── wcwidth [required: Any, installed: 0.8.0]
 │   │   ├── psutil [required: >=7, installed: 7.2.2]
 │   │   ├── Pygments [required: >=2.14.0, installed: 2.20.0]
 │   │   ├── stack_data [required: >=0.6.0, installed: 0.6.3]
 │   │   │   ├── asttokens [required: >=2.1.0, installed: 3.0.1]
 │   │   │   ├── executing [required: >=1.2.0, installed: 2.2.1]
 │   │   │   └── pure_eval [required: Any, installed: 0.2.3]
-│   │   └── traitlets [required: >=5.13.0, installed: 5.15.0]
-│   ├── jupyter_client [required: >=8.8.0, installed: 8.8.0]
+│   │   └── traitlets [required: >=5.13.0, installed: 5.15.1]
+│   ├── jupyter_client [required: >=8.8.0, installed: 8.9.0]
 │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   ├── jupyter_core [required: >=5.1,!=6.0.*, installed: 5.9.1]
 │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   ├── matplotlib-inline [required: >=0.1, installed: 0.2.2]
-│   │   └── traitlets [required: Any, installed: 5.15.0]
+│   │   └── traitlets [required: Any, installed: 5.15.1]
 │   ├── nest_asyncio [required: >=1.4, installed: 1.6.0]
 │   ├── packaging [required: >=22, installed: 26.2]
 │   ├── psutil [required: >=5.7, installed: 7.2.2]
 │   ├── pyzmq [required: >=25, installed: 27.1.0]
 │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   └── traitlets [required: >=5.4.0, installed: 5.15.0]
+│   └── traitlets [required: >=5.4.0, installed: 5.15.1]
 ├── ipython_genutils [required: Any, installed: 0.2.0]
 ├── nest_asyncio [required: >=1.5, installed: 1.6.0]
 └── notebook_shim [required: >=0.2.3, installed: 0.2.4]
@@ -447,21 +525,30 @@ nbclassic==1.3.3
         │           └── pycparser [required: Any, installed: 3.0]
         ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
         │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-        ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+        ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
         │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
         │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-        │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+        │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
         │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
         │   │   └── six [required: >=1.5, installed: 1.17.0]
         │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
         │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-        │   └── traitlets [required: >=5.3, installed: 5.15.0]
+        │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+        │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
         ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
         │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-        │   └── traitlets [required: >=5.3, installed: 5.15.0]
+        │   └── traitlets [required: >=5.3, installed: 5.15.1]
         ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
         │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
         │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+        │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+        │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+        │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+        │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+        │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+        │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+        │   │   │       └── tzdata [required: Any, installed: 2026.2]
+        │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
         │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
         │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
         │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -469,7 +556,14 @@ nbclassic==1.3.3
         │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
         │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-        │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+        │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+        │   │   │   └── six [required: Any, installed: 1.17.0]
+        │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+        │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+        │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+        │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+        │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+        │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
         │   ├── packaging [required: Any, installed: 26.2]
         │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
         │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -479,43 +573,54 @@ nbclassic==1.3.3
         │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
         │   │   └── six [required: Any, installed: 1.17.0]
         │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-        │   └── traitlets [required: >=5.3, installed: 5.15.0]
+        │   └── traitlets [required: >=5.3, installed: 5.15.1]
         ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
         │   └── terminado [required: >=0.8.3, installed: 0.18.1]
         │       ├── ptyprocess [required: Any, installed: 0.7.0]
         │       └── tornado [required: >=6.1.0, installed: 6.5.6]
         ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-        │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+        │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
         │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
         │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-        │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+        │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+        │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+        │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
         │   │   └── webencodings [required: Any, installed: 0.5.1]
         │   ├── defusedxml [required: Any, installed: 0.7.1]
         │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
         │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
         │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
         │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-        │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+        │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
         │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
         │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
         │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-        │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-        │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+        │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+        │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
         │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
         │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-        │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+        │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
         │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
         │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
         │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
         │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-        │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-        │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+        │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+        │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+        │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
         │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-        │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-        │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+        │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+        │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
         │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
         │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
         │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+        │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+        │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+        │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+        │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+        │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+        │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+        │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+        │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
         │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
         │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
         │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -523,16 +628,31 @@ nbclassic==1.3.3
         │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
         │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-        │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+        │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+        │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+        │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+        │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+        │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+        │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+        │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+        │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
         │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
         │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-        │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-        │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-        │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+        │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+        │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+        │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
         │   ├── nbformat [required: >=5.7, installed: 5.10.4]
         │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
         │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
         │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+        │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+        │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+        │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+        │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+        │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+        │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+        │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+        │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
         │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
         │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
         │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -540,19 +660,34 @@ nbclassic==1.3.3
         │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
         │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-        │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+        │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+        │   │   │   │   └── six [required: Any, installed: 1.17.0]
+        │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+        │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+        │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+        │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+        │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+        │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
         │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
         │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-        │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-        │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+        │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+        │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
         │   ├── packaging [required: Any, installed: 26.2]
         │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
         │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-        │   └── traitlets [required: >=5.1, installed: 5.15.0]
+        │   └── traitlets [required: >=5.1, installed: 5.15.1]
         ├── nbformat [required: >=5.3.0, installed: 5.10.4]
         │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
         │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
         │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+        │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+        │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+        │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+        │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+        │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+        │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+        │   │   │       └── tzdata [required: Any, installed: 2026.2]
+        │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
         │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
         │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
         │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -560,11 +695,18 @@ nbclassic==1.3.3
         │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
         │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
         │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-        │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+        │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+        │   │   │   └── six [required: Any, installed: 1.17.0]
+        │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+        │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+        │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+        │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+        │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+        │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
         │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
         │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-        │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-        │   └── traitlets [required: >=5.1, installed: 5.15.0]
+        │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+        │   └── traitlets [required: >=5.1, installed: 5.15.1]
         ├── packaging [required: >=22.0, installed: 26.2]
         ├── prometheus_client [required: >=0.9, installed: 0.25.0]
         ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -573,7 +715,7 @@ nbclassic==1.3.3
         │   ├── ptyprocess [required: Any, installed: 0.7.0]
         │   └── tornado [required: >=6.1.0, installed: 6.5.6]
         ├── tornado [required: >=6.2.0, installed: 6.5.6]
-        ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+        ├── traitlets [required: >=5.6.0, installed: 5.15.1]
         └── websocket-client [required: >=1.7, installed: 1.9.0]
 nbgitpuller==1.3.0
 ├── jupyter_server [required: >=1.10.1, installed: 2.19.0]
@@ -585,21 +727,30 @@ nbgitpuller==1.3.0
 │   │           └── pycparser [required: Any, installed: 3.0]
 │   ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-│   ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+│   ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
 │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
 │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -607,7 +758,14 @@ nbgitpuller==1.3.0
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -617,43 +775,54 @@ nbgitpuller==1.3.0
 │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   └── six [required: Any, installed: 1.17.0]
 │   │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
 │   │   └── terminado [required: >=0.8.3, installed: 0.18.1]
 │   │       ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │       └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-│   │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+│   │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
 │   │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
 │   │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-│   │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+│   │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+│   │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+│   │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
 │   │   │   └── webencodings [required: Any, installed: 0.5.1]
 │   │   ├── defusedxml [required: Any, installed: 0.7.1]
 │   │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
 │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
 │   │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-│   │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-│   │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+│   │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+│   │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
 │   │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+│   │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+│   │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -661,16 +830,31 @@ nbgitpuller==1.3.0
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-│   │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+│   │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
 │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -678,19 +862,34 @@ nbgitpuller==1.3.0
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
 │   │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-│   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -698,11 +897,18 @@ nbgitpuller==1.3.0
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   ├── packaging [required: >=22.0, installed: 26.2]
 │   ├── prometheus_client [required: >=0.9, installed: 0.25.0]
 │   ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -711,11 +917,11 @@ nbgitpuller==1.3.0
 │   │   ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │   └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│   ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+│   ├── traitlets [required: >=5.6.0, installed: 5.15.1]
 │   └── websocket-client [required: >=1.7, installed: 1.9.0]
 └── tornado [required: Any, installed: 6.5.6]
-nlopt==2.10.1
-notebook==7.5.6
+nlopt==2.11.0
+notebook==7.5.7
 ├── jupyter_server [required: >=2.4.0,<3, installed: 2.19.0]
 │   ├── anyio [required: >=3.1.0, installed: 4.13.0]
 │   │   └── idna [required: >=2.8, installed: 3.17]
@@ -725,21 +931,30 @@ notebook==7.5.6
 │   │           └── pycparser [required: Any, installed: 3.0]
 │   ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-│   ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+│   ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
 │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
 │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -747,7 +962,14 @@ notebook==7.5.6
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -757,43 +979,54 @@ notebook==7.5.6
 │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   └── six [required: Any, installed: 1.17.0]
 │   │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
 │   │   └── terminado [required: >=0.8.3, installed: 0.18.1]
 │   │       ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │       └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-│   │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+│   │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
 │   │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
 │   │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-│   │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+│   │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+│   │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+│   │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
 │   │   │   └── webencodings [required: Any, installed: 0.5.1]
 │   │   ├── defusedxml [required: Any, installed: 0.7.1]
 │   │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
 │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
 │   │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-│   │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-│   │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+│   │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+│   │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
 │   │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+│   │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+│   │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -801,16 +1034,31 @@ notebook==7.5.6
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-│   │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+│   │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
 │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -818,19 +1066,34 @@ notebook==7.5.6
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
 │   │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-│   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -838,11 +1101,18 @@ notebook==7.5.6
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   ├── packaging [required: >=22.0, installed: 26.2]
 │   ├── prometheus_client [required: >=0.9, installed: 0.25.0]
 │   ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -851,9 +1121,9 @@ notebook==7.5.6
 │   │   ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │   └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│   ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+│   ├── traitlets [required: >=5.6.0, installed: 5.15.1]
 │   └── websocket-client [required: >=1.7, installed: 1.9.0]
-├── jupyterlab [required: >=4.5.7,<4.6, installed: 4.5.7]
+├── jupyterlab [required: >=4.5.8,<4.6, installed: 4.5.8]
 │   ├── async-lru [required: >=1.0.0, installed: 2.3.0]
 │   ├── httpx [required: >=0.25.0,<1, installed: 0.28.1]
 │   │   ├── anyio [required: Any, installed: 4.13.0]
@@ -865,51 +1135,52 @@ notebook==7.5.6
 │   │   └── idna [required: Any, installed: 3.17]
 │   ├── ipykernel [required: >=6.5.0,!=6.30.0, installed: 7.2.0]
 │   │   ├── comm [required: >=0.1.1, installed: 0.2.3]
-│   │   ├── debugpy [required: >=1.6.5, installed: 1.8.20]
-│   │   ├── ipython [required: >=7.23.1, installed: 9.14.0]
+│   │   ├── debugpy [required: >=1.6.5, installed: 1.8.21]
+│   │   ├── ipython [required: >=7.23.1, installed: 9.14.1]
 │   │   │   ├── decorator [required: >=5.1.0, installed: 5.3.1]
 │   │   │   ├── ipython_pygments_lexers [required: >=1.0.0, installed: 1.1.1]
 │   │   │   │   └── Pygments [required: Any, installed: 2.20.0]
 │   │   │   ├── jedi [required: >=0.18.2, installed: 0.19.2]
 │   │   │   │   └── parso [required: >=0.8.4,<0.9.0, installed: 0.8.7]
 │   │   │   ├── matplotlib-inline [required: >=0.1.6, installed: 0.2.2]
-│   │   │   │   └── traitlets [required: Any, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: Any, installed: 5.15.1]
 │   │   │   ├── pexpect [required: >4.6, installed: 4.9.0]
 │   │   │   │   └── ptyprocess [required: >=0.5, installed: 0.7.0]
 │   │   │   ├── prompt_toolkit [required: >=3.0.41,<3.1.0, installed: 3.0.52]
-│   │   │   │   └── wcwidth [required: Any, installed: 0.7.0]
+│   │   │   │   └── wcwidth [required: Any, installed: 0.8.0]
 │   │   │   ├── psutil [required: >=7, installed: 7.2.2]
 │   │   │   ├── Pygments [required: >=2.14.0, installed: 2.20.0]
 │   │   │   ├── stack_data [required: >=0.6.0, installed: 0.6.3]
 │   │   │   │   ├── asttokens [required: >=2.1.0, installed: 3.0.1]
 │   │   │   │   ├── executing [required: >=1.2.0, installed: 2.2.1]
 │   │   │   │   └── pure_eval [required: Any, installed: 0.2.3]
-│   │   │   └── traitlets [required: >=5.13.0, installed: 5.15.0]
-│   │   ├── jupyter_client [required: >=8.8.0, installed: 8.8.0]
+│   │   │   └── traitlets [required: >=5.13.0, installed: 5.15.1]
+│   │   ├── jupyter_client [required: >=8.8.0, installed: 8.9.0]
 │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   │   ├── jupyter_core [required: >=5.1,!=6.0.*, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── matplotlib-inline [required: >=0.1, installed: 0.2.2]
-│   │   │   └── traitlets [required: Any, installed: 5.15.0]
+│   │   │   └── traitlets [required: Any, installed: 5.15.1]
 │   │   ├── nest_asyncio [required: >=1.4, installed: 1.6.0]
 │   │   ├── packaging [required: >=22, installed: 26.2]
 │   │   ├── psutil [required: >=5.7, installed: 7.2.2]
 │   │   ├── pyzmq [required: >=25, installed: 27.1.0]
 │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   └── traitlets [required: >=5.4.0, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.4.0, installed: 5.15.1]
 │   ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   ├── jupyter_core [required: Any, installed: 5.9.1]
 │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   ├── jupyter-lsp [required: >=2.0.0, installed: 2.3.1]
 │   │   └── jupyter_server [required: >=1.1.2, installed: 2.19.0]
 │   │       ├── anyio [required: >=3.1.0, installed: 4.13.0]
@@ -920,21 +1191,30 @@ notebook==7.5.6
 │   │       │           └── pycparser [required: Any, installed: 3.0]
 │   │       ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │   │       │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-│   │       ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+│   │       ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
 │   │       │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │       │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │       │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │       │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   │       ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │       │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
 │   │       │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │       │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │       │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │       │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │       │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │       │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │       │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │       │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │       │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -942,7 +1222,14 @@ notebook==7.5.6
 │   │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │       │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │       │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │       │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │       │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │       │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │       │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │       │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │       │   ├── packaging [required: Any, installed: 26.2]
 │   │       │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │   │       │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -952,43 +1239,54 @@ notebook==7.5.6
 │   │       │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │       │   │   └── six [required: Any, installed: 1.17.0]
 │   │       │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│   │       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
 │   │       │   └── terminado [required: >=0.8.3, installed: 0.18.1]
 │   │       │       ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │       │       └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │       ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-│   │       │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+│   │       │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
 │   │       │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
 │   │       │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-│   │       │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+│   │       │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+│   │       │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+│   │       │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
 │   │       │   │   └── webencodings [required: Any, installed: 0.5.1]
 │   │       │   ├── defusedxml [required: Any, installed: 0.7.1]
 │   │       │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
 │   │       │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │       │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
 │   │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
 │   │       │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │       │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-│   │       │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-│   │       │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+│   │       │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+│   │       │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
 │   │       │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │       │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │       │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │       │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │       │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+│   │       │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+│   │       │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
 │   │       │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
 │   │       │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │       │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │       │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │       │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │       │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │       │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │       │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │       │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │       │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │       │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -996,16 +1294,31 @@ notebook==7.5.6
 │   │       │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │       │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │       │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │       │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │       │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │       │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │       │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │       │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │       │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │       │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-│   │       │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+│   │       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+│   │       │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
 │   │       │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │       │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │       │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │       │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │       │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │       │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │       │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │       │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │       │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │       │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │       │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1013,19 +1326,34 @@ notebook==7.5.6
 │   │       │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │       │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │       │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │       │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │       │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │       │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │       │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │       │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │       │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │       │   ├── packaging [required: Any, installed: 26.2]
 │   │       │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
 │   │       │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-│   │       │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │       │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │       ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │       │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │       │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │       │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │       │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │       │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │       │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │       │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │       │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │       │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1033,11 +1361,18 @@ notebook==7.5.6
 │   │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │       │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │       │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │       │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │       │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │       │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │       │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │       │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │       │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │       ├── packaging [required: >=22.0, installed: 26.2]
 │   │       ├── prometheus_client [required: >=0.9, installed: 0.25.0]
 │   │       ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -1046,7 +1381,7 @@ notebook==7.5.6
 │   │       │   ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │       │   └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │       ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│   │       ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+│   │       ├── traitlets [required: >=5.6.0, installed: 5.15.1]
 │   │       └── websocket-client [required: >=1.7, installed: 1.9.0]
 │   ├── jupyter_server [required: >=2.4.0,<3, installed: 2.19.0]
 │   │   ├── anyio [required: >=3.1.0, installed: 4.13.0]
@@ -1057,21 +1392,30 @@ notebook==7.5.6
 │   │   │           └── pycparser [required: Any, installed: 3.0]
 │   │   ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-│   │   ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+│   │   ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
 │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
 │   │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1079,7 +1423,14 @@ notebook==7.5.6
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │   │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -1089,43 +1440,54 @@ notebook==7.5.6
 │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   │   └── six [required: Any, installed: 1.17.0]
 │   │   │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
 │   │   │   └── terminado [required: >=0.8.3, installed: 0.18.1]
 │   │   │       ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │   │       └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │   ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-│   │   │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+│   │   │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
 │   │   │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
 │   │   │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-│   │   │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+│   │   │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+│   │   │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+│   │   │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
 │   │   │   │   └── webencodings [required: Any, installed: 0.5.1]
 │   │   │   ├── defusedxml [required: Any, installed: 0.7.1]
 │   │   │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
 │   │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
 │   │   │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-│   │   │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-│   │   │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+│   │   │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+│   │   │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
 │   │   │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+│   │   │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+│   │   │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
 │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1133,16 +1495,31 @@ notebook==7.5.6
 │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-│   │   │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+│   │   │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
 │   │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1150,19 +1527,34 @@ notebook==7.5.6
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
 │   │   │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-│   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1170,11 +1562,18 @@ notebook==7.5.6
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   ├── packaging [required: >=22.0, installed: 26.2]
 │   │   ├── prometheus_client [required: >=0.9, installed: 0.25.0]
 │   │   ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -1183,7 +1582,7 @@ notebook==7.5.6
 │   │   │   ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │   │   └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │   ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│   │   ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+│   │   ├── traitlets [required: >=5.6.0, installed: 5.15.1]
 │   │   └── websocket-client [required: >=1.7, installed: 1.9.0]
 │   ├── jupyterlab_server [required: >=2.28.0,<3, installed: 2.28.0]
 │   │   ├── babel [required: >=2.10, installed: 2.18.0]
@@ -1192,6 +1591,14 @@ notebook==7.5.6
 │   │   ├── json5 [required: >=0.9.0, installed: 0.14.0]
 │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1199,7 +1606,14 @@ notebook==7.5.6
 │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   ├── jupyter_server [required: >=1.21,<3, installed: 2.19.0]
 │   │   │   ├── anyio [required: >=3.1.0, installed: 4.13.0]
 │   │   │   │   └── idna [required: >=2.8, installed: 3.17]
@@ -1209,21 +1623,30 @@ notebook==7.5.6
 │   │   │   │           └── pycparser [required: Any, installed: 3.0]
 │   │   │   ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │   │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-│   │   │   ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+│   │   │   ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
 │   │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
 │   │   │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1231,7 +1654,14 @@ notebook==7.5.6
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   │   │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │   │   │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -1241,43 +1671,54 @@ notebook==7.5.6
 │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
 │   │   │   │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
 │   │   │   │   └── terminado [required: >=0.8.3, installed: 0.18.1]
 │   │   │   │       ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │   │   │       └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │   │   ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-│   │   │   │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+│   │   │   │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
 │   │   │   │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
 │   │   │   │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-│   │   │   │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+│   │   │   │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+│   │   │   │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+│   │   │   │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
 │   │   │   │   │   └── webencodings [required: Any, installed: 0.5.1]
 │   │   │   │   ├── defusedxml [required: Any, installed: 0.7.1]
 │   │   │   │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
 │   │   │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   │   │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
 │   │   │   │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   │   │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-│   │   │   │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-│   │   │   │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+│   │   │   │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+│   │   │   │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
 │   │   │   │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+│   │   │   │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+│   │   │   │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
 │   │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
 │   │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1285,16 +1726,31 @@ notebook==7.5.6
 │   │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-│   │   │   │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+│   │   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+│   │   │   │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
 │   │   │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1302,19 +1758,34 @@ notebook==7.5.6
 │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   │   │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
 │   │   │   │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1322,11 +1793,18 @@ notebook==7.5.6
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   │   ├── packaging [required: >=22.0, installed: 26.2]
 │   │   │   ├── prometheus_client [required: >=0.9, installed: 0.25.0]
 │   │   │   ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -1335,7 +1813,7 @@ notebook==7.5.6
 │   │   │   │   ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │   │   │   └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │   │   ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│   │   │   ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+│   │   │   ├── traitlets [required: >=5.6.0, installed: 5.15.1]
 │   │   │   └── websocket-client [required: >=1.7, installed: 1.9.0]
 │   │   ├── packaging [required: >=21.3, installed: 26.2]
 │   │   └── requests [required: >=2.31, installed: 2.34.2]
@@ -1353,21 +1831,30 @@ notebook==7.5.6
 │   │       │           └── pycparser [required: Any, installed: 3.0]
 │   │       ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │   │       │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-│   │       ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+│   │       ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
 │   │       │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │       │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │       │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │       │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   │       ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │       │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
 │   │       │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │       │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │       │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │       │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │       │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │       │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │       │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │       │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │       │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1375,7 +1862,14 @@ notebook==7.5.6
 │   │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │       │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │       │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │       │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │       │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │       │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │       │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │       │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │       │   ├── packaging [required: Any, installed: 26.2]
 │   │       │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │   │       │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -1385,43 +1879,54 @@ notebook==7.5.6
 │   │       │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │       │   │   └── six [required: Any, installed: 1.17.0]
 │   │       │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│   │       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
 │   │       │   └── terminado [required: >=0.8.3, installed: 0.18.1]
 │   │       │       ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │       │       └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │       ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-│   │       │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+│   │       │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
 │   │       │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
 │   │       │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-│   │       │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+│   │       │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+│   │       │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+│   │       │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
 │   │       │   │   └── webencodings [required: Any, installed: 0.5.1]
 │   │       │   ├── defusedxml [required: Any, installed: 0.7.1]
 │   │       │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
 │   │       │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │       │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
 │   │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
 │   │       │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │       │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-│   │       │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-│   │       │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+│   │       │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+│   │       │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
 │   │       │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │       │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │       │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │       │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │       │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │       │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+│   │       │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+│   │       │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
 │   │       │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
 │   │       │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │       │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │       │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │       │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │       │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │       │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │       │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │       │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │       │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │       │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1429,16 +1934,31 @@ notebook==7.5.6
 │   │       │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │       │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │       │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │       │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │       │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │       │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │       │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │       │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │       │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │       │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-│   │       │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+│   │       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+│   │       │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
 │   │       │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │       │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │       │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │       │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │       │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │       │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │       │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │       │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │       │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │       │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │       │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1446,19 +1966,34 @@ notebook==7.5.6
 │   │       │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │       │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │       │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │       │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │       │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │       │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │       │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │       │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │       │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │       │   ├── packaging [required: Any, installed: 26.2]
 │   │       │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
 │   │       │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-│   │       │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │       │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │       ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │       │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │       │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │       │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │       │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │       │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │       │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │       │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │       │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │       │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │       │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1466,11 +2001,18 @@ notebook==7.5.6
 │   │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │       │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │       │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │       │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │       │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │       │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │       │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │       │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │       │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │       │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │       │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │       │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │       ├── packaging [required: >=22.0, installed: 26.2]
 │   │       ├── prometheus_client [required: >=0.9, installed: 0.25.0]
 │   │       ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -1479,12 +2021,12 @@ notebook==7.5.6
 │   │       │   ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │       │   └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │       ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│   │       ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+│   │       ├── traitlets [required: >=5.6.0, installed: 5.15.1]
 │   │       └── websocket-client [required: >=1.7, installed: 1.9.0]
-│   ├── packaging [required: Any, installed: 26.2]
+│   ├── packaging [required: >=23.2, installed: 26.2]
 │   ├── setuptools [required: >=41.1.0, installed: 82.0.1]
 │   ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│   └── traitlets [required: Any, installed: 5.15.0]
+│   └── traitlets [required: Any, installed: 5.15.1]
 ├── jupyterlab_server [required: >=2.28.0,<3, installed: 2.28.0]
 │   ├── babel [required: >=2.10, installed: 2.18.0]
 │   ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
@@ -1492,6 +2034,14 @@ notebook==7.5.6
 │   ├── json5 [required: >=0.9.0, installed: 0.14.0]
 │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1499,7 +2049,14 @@ notebook==7.5.6
 │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   ├── jupyter_server [required: >=1.21,<3, installed: 2.19.0]
 │   │   ├── anyio [required: >=3.1.0, installed: 4.13.0]
 │   │   │   └── idna [required: >=2.8, installed: 3.17]
@@ -1509,21 +2066,30 @@ notebook==7.5.6
 │   │   │           └── pycparser [required: Any, installed: 3.0]
 │   │   ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-│   │   ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+│   │   ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
 │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
 │   │   │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1531,7 +2097,14 @@ notebook==7.5.6
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │   │   │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -1541,43 +2114,54 @@ notebook==7.5.6
 │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │   │   │   │   └── six [required: Any, installed: 1.17.0]
 │   │   │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
 │   │   │   └── terminado [required: >=0.8.3, installed: 0.18.1]
 │   │   │       ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │   │       └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │   ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-│   │   │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+│   │   │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
 │   │   │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
 │   │   │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-│   │   │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+│   │   │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+│   │   │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+│   │   │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
 │   │   │   │   └── webencodings [required: Any, installed: 0.5.1]
 │   │   │   ├── defusedxml [required: Any, installed: 0.7.1]
 │   │   │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
 │   │   │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
 │   │   │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │   │   │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-│   │   │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-│   │   │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+│   │   │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+│   │   │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
 │   │   │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │   │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │   │   │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │   │   │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+│   │   │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+│   │   │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
 │   │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1585,16 +2169,31 @@ notebook==7.5.6
 │   │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-│   │   │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+│   │   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+│   │   │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
 │   │   │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │   │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1602,19 +2201,34 @@ notebook==7.5.6
 │   │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   │   ├── packaging [required: Any, installed: 26.2]
 │   │   │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
 │   │   │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-│   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1622,11 +2236,18 @@ notebook==7.5.6
 │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │   │   ├── packaging [required: >=22.0, installed: 26.2]
 │   │   ├── prometheus_client [required: >=0.9, installed: 0.25.0]
 │   │   ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -1635,7 +2256,7 @@ notebook==7.5.6
 │   │   │   ├── ptyprocess [required: Any, installed: 0.7.0]
 │   │   │   └── tornado [required: >=6.1.0, installed: 6.5.6]
 │   │   ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│   │   ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+│   │   ├── traitlets [required: >=5.6.0, installed: 5.15.1]
 │   │   └── websocket-client [required: >=1.7, installed: 1.9.0]
 │   ├── packaging [required: >=21.3, installed: 26.2]
 │   └── requests [required: >=2.31, installed: 2.34.2]
@@ -1653,21 +2274,30 @@ notebook==7.5.6
 │       │           └── pycparser [required: Any, installed: 3.0]
 │       ├── Jinja2 [required: >=3.0.3, installed: 3.1.6]
 │       │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-│       ├── jupyter_client [required: >=7.4.4, installed: 8.8.0]
+│       ├── jupyter_client [required: >=7.4.4, installed: 8.9.0]
 │       │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │       │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │       │   │   └── six [required: >=1.5, installed: 1.17.0]
 │       │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │       │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│       │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│       │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
 │       ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │       │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│       │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │       ├── jupyter-events [required: >=0.11.0, installed: 0.12.1]
 │       │   ├── jsonschema [required: >=4.18.0, installed: 4.26.0]
 │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│       │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│       │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│       │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│       │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│       │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│       │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│       │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│       │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1675,7 +2305,14 @@ notebook==7.5.6
 │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│       │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│       │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│       │   │   │   └── six [required: Any, installed: 1.17.0]
+│       │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│       │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│       │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│       │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│       │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│       │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │       │   ├── packaging [required: Any, installed: 26.2]
 │       │   ├── python-json-logger [required: >=2.0.4, installed: 3.2.1]
 │       │   ├── PyYAML [required: >=5.3, installed: 6.0.3]
@@ -1685,43 +2322,54 @@ notebook==7.5.6
 │       │   ├── rfc3339_validator [required: Any, installed: 0.1.4]
 │       │   │   └── six [required: Any, installed: 1.17.0]
 │       │   ├── rfc3986-validator [required: >=0.1.1, installed: 0.1.1]
-│       │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│       │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │       ├── jupyter_server_terminals [required: >=0.4.4, installed: 0.5.4]
 │       │   └── terminado [required: >=0.8.3, installed: 0.18.1]
 │       │       ├── ptyprocess [required: Any, installed: 0.7.0]
 │       │       └── tornado [required: >=6.1.0, installed: 6.5.6]
 │       ├── nbconvert [required: >=6.4.4, installed: 7.17.1]
-│       │   ├── beautifulsoup4 [required: Any, installed: 4.14.3]
+│       │   ├── beautifulsoup4 [required: Any, installed: 4.15.0]
 │       │   │   ├── soupsieve [required: >=1.6.1, installed: 2.8.4]
 │       │   │   └── typing_extensions [required: >=4.0.0, installed: 4.15.0]
-│       │   ├── bleach [required: !=5.0.0, installed: 6.3.0]
+│       │   ├── bleach [required: !=5.0.0, installed: 6.4.0]
+│       │   │   ├── tinycss2 [required: >=1.1.0, installed: 1.4.0, extra: css]
+│       │   │   │   └── webencodings [required: >=0.4, installed: 0.5.1]
 │       │   │   └── webencodings [required: Any, installed: 0.5.1]
 │       │   ├── defusedxml [required: Any, installed: 0.7.1]
 │       │   ├── Jinja2 [required: >=3.0, installed: 3.1.6]
 │       │   │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │       │   ├── jupyter_core [required: >=4.7, installed: 5.9.1]
 │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │       │   ├── jupyterlab_pygments [required: Any, installed: 0.3.0]
 │       │   ├── MarkupSafe [required: >=2.0, installed: 3.0.3]
 │       │   ├── mistune [required: >=2.0.3,<4, installed: 3.2.1]
-│       │   ├── nbclient [required: >=0.5.0, installed: 0.10.4]
-│       │   │   ├── jupyter_client [required: >=6.1.12, installed: 8.8.0]
+│       │   ├── nbclient [required: >=0.5.0, installed: 0.11.0]
+│       │   │   ├── jupyter_client [required: >=7.0.0, installed: 8.9.0]
 │       │   │   │   ├── jupyter_core [required: >=5.1, installed: 5.9.1]
 │       │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
+│       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
 │       │   │   │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │       │   │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │       │   │   │   ├── pyzmq [required: >=25.0, installed: 27.1.0]
 │       │   │   │   ├── tornado [required: >=6.4.1, installed: 6.5.6]
-│       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
+│       │   │   │   ├── traitlets [required: >=5.3, installed: 5.15.1]
+│       │   │   │   └── typing_extensions [required: >=4.13.0, installed: 4.15.0]
+│       │   │   ├── jupyter_core [required: >=5.4.0, installed: 5.9.1]
 │       │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│       │   │   ├── nbformat [required: >=5.1.3, installed: 5.10.4]
+│       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│       │   │   ├── nbformat [required: >=5.2.0, installed: 5.10.4]
 │       │   │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │       │   │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│       │   │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│       │   │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│       │   │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│       │   │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│       │   │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│       │   │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│       │   │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│       │   │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │       │   │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │       │   │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │       │   │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1729,16 +2377,31 @@ notebook==7.5.6
 │       │   │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │       │   │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│       │   │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│       │   │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│       │   │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│       │   │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│       │   │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│       │   │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│       │   │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│       │   │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│       │   │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │       │   │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │       │   │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│       │   │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
-│       │   │   └── traitlets [required: >=5.4, installed: 5.15.0]
+│       │   │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│       │   │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
+│       │   │   └── traitlets [required: >=5.13, installed: 5.15.1]
 │       │   ├── nbformat [required: >=5.7, installed: 5.10.4]
 │       │   │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │       │   │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│       │   │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│       │   │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│       │   │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│       │   │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│       │   │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│       │   │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│       │   │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│       │   │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │       │   │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │       │   │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │       │   │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1746,19 +2409,34 @@ notebook==7.5.6
 │       │   │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │       │   │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│       │   │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│       │   │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│       │   │   │   │   └── six [required: Any, installed: 1.17.0]
+│       │   │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│       │   │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│       │   │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│       │   │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│       │   │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│       │   │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │       │   │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │       │   │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│       │   │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│       │   │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│       │   │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │       │   ├── packaging [required: Any, installed: 26.2]
 │       │   ├── pandocfilters [required: >=1.4.1, installed: 1.5.0]
 │       │   ├── Pygments [required: >=2.4.1, installed: 2.20.0]
-│       │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│       │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │       ├── nbformat [required: >=5.3.0, installed: 5.10.4]
 │       │   ├── fastjsonschema [required: >=2.15, installed: 2.21.2]
 │       │   ├── jsonschema [required: >=2.6, installed: 4.26.0]
 │       │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
+│       │   │   ├── fqdn [required: Any, installed: 1.5.1, extra: format-nongpl]
+│       │   │   ├── idna [required: Any, installed: 3.17, extra: format-nongpl]
+│       │   │   ├── isoduration [required: Any, installed: 20.11.0, extra: format-nongpl]
+│       │   │   │   └── arrow [required: >=0.15.0, installed: 1.4.0]
+│       │   │   │       ├── python-dateutil [required: >=2.7.0, installed: 2.9.0.post0]
+│       │   │   │       │   └── six [required: >=1.5, installed: 1.17.0]
+│       │   │   │       └── tzdata [required: Any, installed: 2026.2]
+│       │   │   ├── jsonpointer [required: >1.13, installed: 3.1.1, extra: format-nongpl]
 │       │   │   ├── jsonschema-specifications [required: >=2023.03.6, installed: 2025.9.1]
 │       │   │   │   └── referencing [required: >=0.31.0, installed: 0.37.0]
 │       │   │   │       ├── attrs [required: >=22.2.0, installed: 26.1.0]
@@ -1766,11 +2444,18 @@ notebook==7.5.6
 │       │   │   ├── referencing [required: >=0.28.4, installed: 0.37.0]
 │       │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │       │   │   │   └── rpds-py [required: >=0.7.0, installed: 2026.5.1]
-│       │   │   └── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│       │   │   ├── rfc3339_validator [required: Any, installed: 0.1.4, extra: format-nongpl]
+│       │   │   │   └── six [required: Any, installed: 1.17.0]
+│       │   │   ├── rfc3986-validator [required: >0.1.0, installed: 0.1.1, extra: format-nongpl]
+│       │   │   ├── rfc3987-syntax [required: >=1.1.0, installed: 1.1.0, extra: format-nongpl]
+│       │   │   │   └── lark [required: >=1.2.2, installed: 1.3.1]
+│       │   │   ├── rpds-py [required: >=0.25.0, installed: 2026.5.1]
+│       │   │   ├── uri-template [required: Any, installed: 1.3.0, extra: format-nongpl]
+│       │   │   └── webcolors [required: >=24.6.0, installed: 25.10.0, extra: format-nongpl]
 │       │   ├── jupyter_core [required: >=4.12,!=5.0.*, installed: 5.9.1]
 │       │   │   ├── platformdirs [required: >=2.5, installed: 4.10.0]
-│       │   │   └── traitlets [required: >=5.3, installed: 5.15.0]
-│       │   └── traitlets [required: >=5.1, installed: 5.15.0]
+│       │   │   └── traitlets [required: >=5.3, installed: 5.15.1]
+│       │   └── traitlets [required: >=5.1, installed: 5.15.1]
 │       ├── packaging [required: >=22.0, installed: 26.2]
 │       ├── prometheus_client [required: >=0.9, installed: 0.25.0]
 │       ├── pyzmq [required: >=24, installed: 27.1.0]
@@ -1779,14 +2464,12 @@ notebook==7.5.6
 │       │   ├── ptyprocess [required: Any, installed: 0.7.0]
 │       │   └── tornado [required: >=6.1.0, installed: 6.5.6]
 │       ├── tornado [required: >=6.2.0, installed: 6.5.6]
-│       ├── traitlets [required: >=5.6.0, installed: 5.15.0]
+│       ├── traitlets [required: >=5.6.0, installed: 5.15.1]
 │       └── websocket-client [required: >=1.7, installed: 1.9.0]
 └── tornado [required: >=6.2.0, installed: 6.5.6]
 overrides==7.7.0
 PyJWT==2.13.0
 PySocks==1.7.1
-rfc3987-syntax==1.1.0
-└── lark [required: >=1.2.2, installed: 1.3.1]
 sniffio==1.3.1
 tensorflow==2.21.0
 ├── absl-py [required: >=1.0.0, installed: 2.4.0]
@@ -1798,22 +2481,22 @@ tensorflow==2.21.0
 ├── gast [required: >=0.2.1,!=0.5.2,!=0.5.1,!=0.5.0, installed: 0.7.0]
 ├── google-pasta [required: >=0.1.1, installed: 0.2.0]
 │   └── six [required: Any, installed: 1.17.0]
-├── grpcio [required: >=1.24.3,<2.0, installed: 1.81.0]
+├── grpcio [required: >=1.24.3,<2.0, installed: 1.81.1]
 │   └── typing_extensions [required: ~=4.12, installed: 4.15.0]
 ├── h5py [required: >=3.11.0,<3.15.0, installed: 3.14.0]
-│   └── numpy [required: >=1.19.3, installed: 2.4.6]
+│   └── numpy [required: >=1.19.3, installed: 2.5.0]
 ├── keras [required: >=3.12.0, installed: 3.14.1]
 │   ├── absl-py [required: Any, installed: 2.4.0]
 │   ├── h5py [required: Any, installed: 3.14.0]
-│   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
+│   │   └── numpy [required: >=1.19.3, installed: 2.5.0]
 │   ├── ml_dtypes [required: Any, installed: 0.5.4]
-│   │   ├── numpy [required: >=1.21, installed: 2.4.6]
-│   │   ├── numpy [required: >=1.21.2, installed: 2.4.6]
-│   │   ├── numpy [required: >=1.23.3, installed: 2.4.6]
-│   │   ├── numpy [required: >=1.26.0, installed: 2.4.6]
-│   │   └── numpy [required: >=2.1.0, installed: 2.4.6]
+│   │   ├── numpy [required: >=1.21, installed: 2.5.0]
+│   │   ├── numpy [required: >=1.21.2, installed: 2.5.0]
+│   │   ├── numpy [required: >=1.23.3, installed: 2.5.0]
+│   │   ├── numpy [required: >=1.26.0, installed: 2.5.0]
+│   │   └── numpy [required: >=2.1.0, installed: 2.5.0]
 │   ├── namex [required: Any, installed: 0.1.0]
-│   ├── numpy [required: Any, installed: 2.4.6]
+│   ├── numpy [required: Any, installed: 2.5.0]
 │   ├── optree [required: Any, installed: 0.19.1]
 │   │   ├── typing_extensions [required: >=4.6.0, installed: 4.15.0]
 │   │   └── typing_extensions [required: >=4.12.0, installed: 4.15.0]
@@ -1824,15 +2507,15 @@ tensorflow==2.21.0
 │       └── Pygments [required: >=2.13.0,<3.0.0, installed: 2.20.0]
 ├── libclang [required: >=13.0.0, installed: 18.1.1]
 ├── ml_dtypes [required: >=0.5.1,<1.0.0, installed: 0.5.4]
-│   ├── numpy [required: >=1.21, installed: 2.4.6]
-│   ├── numpy [required: >=1.21.2, installed: 2.4.6]
-│   ├── numpy [required: >=1.23.3, installed: 2.4.6]
-│   ├── numpy [required: >=1.26.0, installed: 2.4.6]
-│   └── numpy [required: >=2.1.0, installed: 2.4.6]
-├── numpy [required: >=1.26.0, installed: 2.4.6]
+│   ├── numpy [required: >=1.21, installed: 2.5.0]
+│   ├── numpy [required: >=1.21.2, installed: 2.5.0]
+│   ├── numpy [required: >=1.23.3, installed: 2.5.0]
+│   ├── numpy [required: >=1.26.0, installed: 2.5.0]
+│   └── numpy [required: >=2.1.0, installed: 2.5.0]
+├── numpy [required: >=1.26.0, installed: 2.5.0]
 ├── opt_einsum [required: >=2.3.2, installed: 3.4.0]
 ├── packaging [required: Any, installed: 26.2]
-├── protobuf [required: >=6.31.1,<8.0.0, installed: 7.35.0]
+├── protobuf [required: >=6.31.1,<8.0.0, installed: 7.35.1]
 ├── requests [required: >=2.21.0,<3, installed: 2.34.2]
 │   ├── certifi [required: >=2023.5.7, installed: 2026.5.20]
 │   ├── charset-normalizer [required: >=2,<4, installed: 3.4.7]
@@ -1842,21 +2525,17 @@ tensorflow==2.21.0
 ├── six [required: >=1.12.0, installed: 1.17.0]
 ├── termcolor [required: >=1.1.0, installed: 3.3.0]
 ├── typing_extensions [required: >=3.6.6, installed: 4.15.0]
-└── wrapt [required: >=1.11.0, installed: 2.2.1]
-tinycss2==1.4.0
-└── webencodings [required: >=0.4, installed: 0.5.1]
+└── wrapt [required: >=1.11.0, installed: 2.2.2]
 tomli==2.4.1
 typing_utils==0.1.0
-uri-template==1.3.0
-webcolors==25.10.0
 ```
 
 ### Conda packages
 via `conda-tree -n base deptree --exclude conda-tree --small`
 
 ```
-mamba==2.6.2
-  ├─ libmamba 2.6.2 [required: >=2.6.2,<2.7.0a0]
+mamba==2.8.0
+  ├─ libmamba 2.8.0 [required: >=2.8.0,<2.9.0a0]
   │  ├─ cpp-expected 1.3.1 [required: >=1.3.1,<1.3.2.0a0]
   │  │  ├─ libstdcxx 15.2.0 [required: >=14]
   │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
@@ -1874,11 +2553,47 @@ mamba==2.6.2
   │  │  └─ dependencies of libstdcxx displayed above
   │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  └─ dependencies of libgcc displayed above
-  │  ├─ nlohmann_json-abi 3.12.0 [required: 3.12.0]
-  │  ├─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
+  │  ├─ simdjson 4.6.4 [required: >=4.6.4,<4.7.0a0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  └─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ libstdcxx 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libstdcxx displayed above
+  │  ├─ libsolv 0.7.39 [required: >=0.7.39,<0.8.0a0]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
   │  │     └─ __glibc [required: >=2.17,<3.0.a0]
+  │  ├─ fmt 12.1.0 [required: >=12.1.0,<12.2.0a0]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ libstdcxx 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libstdcxx displayed above
+  │  ├─ openssl 3.6.2 [required: >=3.5.6,<4.0a0]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ ca-certificates 2026.5.20 [required: any]
+  │  │  │  └─ __unix [required: any]
+  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libgcc displayed above
+  │  ├─ spdlog 1.17.0 [required: >=1.17.0,<1.18.0a0]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ fmt 12.1.0 [required: >=12.1.0,<12.2.0a0]
+  │  │  │  └─ dependencies of fmt displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ libstdcxx 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libstdcxx displayed above
+  │  ├─ libmsgpack-c 6.1.0 [required: >=6.1.0,<7.0a0]
+  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ __glibc [required: >=2.17,<3.0.a0]
+  │  ├─ nlohmann_json-abi 3.12.0 [required: 3.12.0]
   │  ├─ libarchive 3.8.7 [required: >=3.8.7,<3.9.0a0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
@@ -1936,31 +2651,29 @@ mamba==2.6.2
   │  │  │  │  └─ dependencies of libgcc displayed above
   │  │  │  └─ __glibc [required: >=2.17,<3.0.a0]
   │  │  ├─ openssl 3.6.2 [required: >=3.5.6,<4.0a0]
-  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  │  ├─ ca-certificates 2026.5.20 [required: any]
-  │  │  │  │  └─ __unix [required: any]
-  │  │  │  └─ libgcc 15.2.0 [required: >=14]
-  │  │  │     └─ dependencies of libgcc displayed above
+  │  │  │  └─ dependencies of openssl displayed above
   │  │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
-  │  │     └─ dependencies of zstd displayed above
+  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │     └─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
+  │  │        └─ dependencies of libzlib displayed above
   │  ├─ yaml-cpp 0.8.0 [required: >=0.8.0,<0.9.0a0]
   │  │  ├─ libstdcxx 15.2.0 [required: >=13]
   │  │  │  └─ dependencies of libstdcxx displayed above
   │  │  ├─ libgcc 15.2.0 [required: >=13]
   │  │  │  └─ dependencies of libgcc displayed above
   │  │  └─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ libsolv 0.7.39 [required: >=0.7.37,<0.8.0a0]
+  │  ├─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
+  │  │  └─ dependencies of zstd displayed above
+  │  ├─ reproc-cpp 14.2.7.post0 [required: >=14.2,<15.0a0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libstdcxx displayed above
   │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  └─ dependencies of libgcc displayed above
-  │  │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
-  │  │     └─ dependencies of libzlib displayed above
-  │  ├─ reproc 14.2.7.post0 [required: >=14.2,<15.0a0]
-  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  └─ libgcc 15.2.0 [required: >=14]
-  │  │     └─ dependencies of libgcc displayed above
+  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  └─ reproc 14.2.7.post0 [required: 14.2.7.post0, hb03c661_1]
+  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │     └─ libgcc 15.2.0 [required: >=14]
+  │  │        └─ dependencies of libgcc displayed above
   │  ├─ libcurl 8.20.0 [required: >=8.20.0,<9.0a0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  ├─ krb5 1.22.2 [required: >=1.22.2,<1.23.0a0]
@@ -2017,488 +2730,20 @@ mamba==2.6.2
   │  │  │  └─ dependencies of openssl displayed above
   │  │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
   │  │     └─ dependencies of zstd displayed above
-  │  ├─ spdlog 1.17.0 [required: >=1.17.0,<1.18.0a0]
-  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ fmt 12.1.0 [required: >=12.1.0,<12.2.0a0]
-  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  │  └─ libstdcxx 15.2.0 [required: >=14]
-  │  │  │     └─ dependencies of libstdcxx displayed above
-  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  └─ libstdcxx 15.2.0 [required: >=14]
-  │  │     └─ dependencies of libstdcxx displayed above
-  │  ├─ libmsgpack-c 6.1.0 [required: >=6.1.0,<7.0a0]
-  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libstdcxx displayed above
-  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  └─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ fmt 12.1.0 [required: >=12.1.0,<12.2.0a0]
-  │  │  └─ dependencies of fmt displayed above
-  │  ├─ reproc-cpp 14.2.7.post0 [required: >=14.2,<15.0a0]
-  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libstdcxx displayed above
-  │  │  └─ reproc 14.2.7.post0 [required: 14.2.7.post0, hb03c661_1]
-  │  │     └─ dependencies of reproc displayed above
-  │  ├─ openssl 3.6.2 [required: >=3.5.6,<4.0a0]
-  │  │  └─ dependencies of openssl displayed above
-  │  └─ simdjson 4.6.4 [required: >=4.6.4,<4.7.0a0]
-  │     ├─ __glibc [required: >=2.17,<3.0.a0]
-  │     ├─ libgcc 15.2.0 [required: >=14]
-  │     │  └─ dependencies of libgcc displayed above
-  │     └─ libstdcxx 15.2.0 [required: >=14]
-  │        └─ dependencies of libstdcxx displayed above
+  │  └─ reproc 14.2.7.post0 [required: >=14.2,<15.0a0]
+  │     └─ dependencies of reproc displayed above
   ├─ __glibc [required: >=2.17,<3.0.a0]
-  ├─ reproc 14.2.7.post0 [required: >=14.2,<15.0a0]
-  │  └─ dependencies of reproc displayed above
   ├─ reproc-cpp 14.2.7.post0 [required: >=14.2,<15.0a0]
   │  └─ dependencies of reproc-cpp displayed above
-  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
-     └─ dependencies of zstd displayed above
-r-spatial==7.3_18
+  ├─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
+  │  └─ dependencies of zstd displayed above
+  └─ reproc 14.2.7.post0 [required: >=14.2,<15.0a0]
+     └─ dependencies of reproc displayed above
+gdal==3.12.3
   ├─ __glibc [required: >=2.17,<3.0.a0]
   ├─ libgcc 15.2.0 [required: >=14]
   │  └─ dependencies of libgcc displayed above
-  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-     ├─ __glibc [required: >=2.17,<3.0.a0]
-     ├─ _openmp_mutex 4.5 [required: >=4.5]
-     │  └─ dependencies of _openmp_mutex displayed above
-     ├─ _r-mutex 1.0.1 [required: 1.*, anacondar_1]
-     ├─ bwidget 1.10.1 [required: any]
-     │  └─ tk 8.6.13 [required: any]
-     │     ├─ __glibc [required: >=2.17,<3.0.a0]
-     │     ├─ libgcc 15.2.0 [required: >=14]
-     │     │  └─ dependencies of libgcc displayed above
-     │     └─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
-     │        └─ dependencies of libzlib displayed above
-     ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
-     │  └─ dependencies of bzip2 displayed above
-     ├─ cairo 1.18.4 [required: >=1.18.4,<2.0a0]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  ├─ fontconfig 2.18.0 [required: >=2.15.0,<3.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ libexpat 2.8.1 [required: >=2.8.1,<3.0a0]
-     │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │  └─ libgcc 15.2.0 [required: >=14]
-     │  │  │     └─ dependencies of libgcc displayed above
-     │  │  ├─ libfreetype 2.14.3 [required: >=2.14.3]
-     │  │  │  └─ libfreetype6 2.14.3 [required: >=2.14.3]
-     │  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │     ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │     │  └─ dependencies of libgcc displayed above
-     │  │  │     ├─ libpng 1.6.58 [required: >=1.6.55,<1.7.0a0]
-     │  │  │     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │     │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │     │  │  └─ dependencies of libgcc displayed above
-     │  │  │     │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
-     │  │  │     │     └─ dependencies of libzlib displayed above
-     │  │  │     └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
-     │  │  │        └─ dependencies of libzlib displayed above
-     │  │  ├─ libfreetype6 2.14.3 [required: >=2.14.3]
-     │  │  │  └─ dependencies of libfreetype6 displayed above
-     │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  ├─ libuuid 2.42.1 [required: >=2.42.1,<3.0a0]
-     │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │  └─ libgcc 15.2.0 [required: >=14]
-     │  │  │     └─ dependencies of libgcc displayed above
-     │  │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
-     │  │     └─ dependencies of libzlib displayed above
-     │  ├─ fonts-conda-ecosystem 1 [required: any]
-     │  │  └─ fonts-conda-forge 1 [required: any]
-     │  │     ├─ font-ttf-ubuntu 0.83 [required: any]
-     │  │     ├─ font-ttf-inconsolata 3.000 [required: any]
-     │  │     ├─ font-ttf-dejavu-sans-mono 2.37 [required: any]
-     │  │     └─ font-ttf-source-code-pro 2.038 [required: any]
-     │  ├─ icu 78.3 [required: >=78.1,<79.0a0]
-     │  │  └─ dependencies of icu displayed above
-     │  ├─ libexpat 2.8.1 [required: >=2.7.3,<3.0a0]
-     │  │  └─ dependencies of libexpat displayed above
-     │  ├─ libfreetype 2.14.3 [required: >=2.14.1]
-     │  │  └─ dependencies of libfreetype displayed above
-     │  ├─ libfreetype6 2.14.3 [required: >=2.14.1]
-     │  │  └─ dependencies of libfreetype6 displayed above
-     │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libgcc displayed above
-     │  ├─ libglib 2.88.1 [required: >=2.86.3,<3.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  ├─ libffi 3.5.2 [required: >=3.5.2,<3.6.0a0]
-     │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │  └─ libgcc 15.2.0 [required: >=14]
-     │  │  │     └─ dependencies of libgcc displayed above
-     │  │  ├─ pcre2 10.47 [required: >=10.47,<10.48.0a0]
-     │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
-     │  │  │  │  └─ dependencies of bzip2 displayed above
-     │  │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  │  └─ dependencies of libgcc displayed above
-     │  │  │  └─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
-     │  │  │     └─ dependencies of libzlib displayed above
-     │  │  ├─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
-     │  │  │  └─ dependencies of libzlib displayed above
-     │  │  └─ libiconv 1.18 [required: >=1.18,<2.0a0]
-     │  │     └─ dependencies of libiconv displayed above
-     │  ├─ libpng 1.6.58 [required: >=1.6.53,<1.7.0a0]
-     │  │  └─ dependencies of libpng displayed above
-     │  ├─ libstdcxx 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libstdcxx displayed above
-     │  ├─ libxcb 1.17.0 [required: >=1.17.0,<2.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ libgcc 15.2.0 [required: >=13]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  ├─ pthread-stubs 0.4 [required: any]
-     │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │  └─ libgcc 15.2.0 [required: >=13]
-     │  │  │     └─ dependencies of libgcc displayed above
-     │  │  ├─ xorg-libxau 1.0.12 [required: >=1.0.11,<2.0a0]
-     │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │  └─ libgcc 15.2.0 [required: >=14]
-     │  │  │     └─ dependencies of libgcc displayed above
-     │  │  └─ xorg-libxdmcp 1.1.5 [required: any]
-     │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │     └─ libgcc 15.2.0 [required: >=14]
-     │  │        └─ dependencies of libgcc displayed above
-     │  ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
-     │  │  └─ dependencies of libzlib displayed above
-     │  ├─ pixman 0.46.4 [required: >=0.46.4,<1.0a0]
-     │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  ├─ libstdcxx 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libstdcxx displayed above
-     │  │  └─ __glibc [required: >=2.17,<3.0.a0]
-     │  ├─ xorg-libice 1.1.2 [required: >=1.1.2,<2.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  └─ libgcc 15.2.0 [required: >=13]
-     │  │     └─ dependencies of libgcc displayed above
-     │  ├─ xorg-libsm 1.2.6 [required: >=1.2.6,<2.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ libgcc 15.2.0 [required: >=13]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  ├─ libuuid 2.42.1 [required: >=2.38.1,<3.0a0]
-     │  │  │  └─ dependencies of libuuid displayed above
-     │  │  └─ xorg-libice 1.1.2 [required: >=1.1.2,<2.0a0]
-     │  │     └─ dependencies of xorg-libice displayed above
-     │  ├─ xorg-libx11 1.8.13 [required: >=1.8.12,<2.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  └─ libxcb 1.17.0 [required: >=1.17.0,<2.0a0]
-     │  │     └─ dependencies of libxcb displayed above
-     │  ├─ xorg-libxext 1.3.7 [required: >=1.3.6,<2.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  └─ xorg-libx11 1.8.13 [required: >=1.8.12,<2.0a0]
-     │  │     └─ dependencies of xorg-libx11 displayed above
-     │  └─ xorg-libxrender 0.9.12 [required: >=0.9.12,<0.10.0a0]
-     │     ├─ __glibc [required: >=2.17,<3.0.a0]
-     │     ├─ libgcc 15.2.0 [required: >=13]
-     │     │  └─ dependencies of libgcc displayed above
-     │     └─ xorg-libx11 1.8.13 [required: >=1.8.10,<2.0a0]
-     │        └─ dependencies of xorg-libx11 displayed above
-     ├─ curl 8.20.0 [required: any]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  ├─ krb5 1.22.2 [required: >=1.22.2,<1.23.0a0]
-     │  │  └─ dependencies of krb5 displayed above
-     │  ├─ libcurl 8.20.0 [required: 8.20.0, hcf29cc6_0]
-     │  │  └─ dependencies of libcurl displayed above
-     │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libgcc displayed above
-     │  ├─ libssh2 1.11.1 [required: >=1.11.1,<2.0a0]
-     │  │  └─ dependencies of libssh2 displayed above
-     │  ├─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
-     │  │  └─ dependencies of libzlib displayed above
-     │  ├─ openssl 3.6.2 [required: >=3.5.6,<4.0a0]
-     │  │  └─ dependencies of openssl displayed above
-     │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
-     │     └─ dependencies of zstd displayed above
-     ├─ gcc_impl_linux-64 15.2.0 [required: >=10]
-     │  ├─ binutils_impl_linux-64 2.45.1 [required: >=2.45]
-     │  │  ├─ ld_impl_linux-64 2.45.1 [required: 2.45.1, default_hbd61a6d_102]
-     │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
-     │  │  │     └─ dependencies of zstd displayed above
-     │  │  ├─ sysroot_linux-64 2.39 [required: any]
-     │  │  │  ├─ __glibc [required: >=2.39]
-     │  │  │  ├─ kernel-headers_linux-64 6.12.0 [required: 6.12.0, he073ed8_6]
-     │  │  │  └─ tzdata 2025c [required: any]
-     │  │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
-     │  │     └─ dependencies of zstd displayed above
-     │  ├─ libgcc 15.2.0 [required: >=15.2.0]
-     │  │  └─ dependencies of libgcc displayed above
-     │  ├─ libgcc-devel_linux-64 15.2.0 [required: 15.2.0, hcc6f6b0_119]
-     │  │  └─ __unix [required: any]
-     │  ├─ libgomp 15.2.0 [required: >=15.2.0]
-     │  │  └─ dependencies of libgomp displayed above
-     │  ├─ libsanitizer 15.2.0 [required: 15.2.0, h90f66d4_19]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ libgcc 15.2.0 [required: >=15.2.0]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  └─ libstdcxx 15.2.0 [required: >=15.2.0]
-     │  │     └─ dependencies of libstdcxx displayed above
-     │  ├─ libstdcxx 15.2.0 [required: >=15.2.0]
-     │  │  └─ dependencies of libstdcxx displayed above
-     │  ├─ libstdcxx-devel_linux-64 15.2.0 [required: 15.2.0, hd446a21_119]
-     │  │  └─ __unix [required: any]
-     │  └─ sysroot_linux-64 2.39 [required: any]
-     │     └─ dependencies of sysroot_linux-64 displayed above
-     ├─ gfortran_impl_linux-64 15.2.0 [required: any]
-     │  ├─ gcc_impl_linux-64 15.2.0 [required: >=15.2.0]
-     │  │  └─ dependencies of gcc_impl_linux-64 displayed above
-     │  ├─ libgcc 15.2.0 [required: >=15.2.0]
-     │  │  └─ dependencies of libgcc displayed above
-     │  ├─ libgfortran5 15.2.0 [required: >=15.2.0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  └─ libgcc 15.2.0 [required: >=15.2.0]
-     │  │     └─ dependencies of libgcc displayed above
-     │  ├─ libstdcxx 15.2.0 [required: >=15.2.0]
-     │  │  └─ dependencies of libstdcxx displayed above
-     │  └─ sysroot_linux-64 2.39 [required: any]
-     │     └─ dependencies of sysroot_linux-64 displayed above
-     ├─ gsl 2.7 [required: >=2.7,<2.8.0a0]
-     │  ├─ libblas 3.11.0 [required: >=3.8.0,<4.0a0]
-     │  │  └─ libopenblas 0.3.33 [required: >=0.3.33,<1.0a0]
-     │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │     ├─ libgcc 15.2.0 [required: >=14]
-     │  │     │  └─ dependencies of libgcc displayed above
-     │  │     ├─ libgfortran 15.2.0 [required: any]
-     │  │     │  └─ libgfortran5 15.2.0 [required: 15.2.0, h68bc16d_19]
-     │  │     │     └─ dependencies of libgfortran5 displayed above
-     │  │     └─ libgfortran5 15.2.0 [required: >=14.3.0]
-     │  │        └─ dependencies of libgfortran5 displayed above
-     │  ├─ libcblas 3.11.0 [required: >=3.8.0,<4.0a0]
-     │  │  └─ libblas 3.11.0 [required: 3.11.0, 8_h4a7cf45_openblas]
-     │  │     └─ dependencies of libblas displayed above
-     │  └─ libgcc-ng 15.2.0 [required: >=9.3.0]
-     │     └─ dependencies of libgcc-ng displayed above
-     ├─ gxx_impl_linux-64 15.2.0 [required: >=10]
-     │  ├─ gcc_impl_linux-64 15.2.0 [required: 15.2.0, he0086c7_19]
-     │  │  └─ dependencies of gcc_impl_linux-64 displayed above
-     │  ├─ libstdcxx-devel_linux-64 15.2.0 [required: 15.2.0, hd446a21_119]
-     │  │  └─ dependencies of libstdcxx-devel_linux-64 displayed above
-     │  ├─ sysroot_linux-64 2.39 [required: any]
-     │  │  └─ dependencies of sysroot_linux-64 displayed above
-     │  └─ tzdata 2025c [required: any]
-     ├─ icu 78.3 [required: >=78.2,<79.0a0]
-     │  └─ dependencies of icu displayed above
-     ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
-     │  └─ dependencies of libblas displayed above
-     ├─ libcurl 8.20.0 [required: >=8.19.0,<9.0a0]
-     │  └─ dependencies of libcurl displayed above
-     ├─ libdeflate 1.25 [required: >=1.25,<1.26.0a0]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  └─ libgcc 15.2.0 [required: >=14]
-     │     └─ dependencies of libgcc displayed above
-     ├─ libexpat 2.8.1 [required: >=2.7.4,<3.0a0]
-     │  └─ dependencies of libexpat displayed above
-     ├─ libgcc 15.2.0 [required: any]
-     │  └─ dependencies of libgcc displayed above
-     ├─ libgcc-ng 15.2.0 [required: >=12]
-     │  └─ dependencies of libgcc-ng displayed above
-     ├─ libgfortran 15.2.0 [required: any]
-     │  └─ dependencies of libgfortran displayed above
-     ├─ libgfortran-ng 15.2.0 [required: any]
-     │  └─ libgfortran 15.2.0 [required: 15.2.0, h69a702a_19]
-     │     └─ dependencies of libgfortran displayed above
-     ├─ libgfortran5 15.2.0 [required: >=10.4.0]
-     │  └─ dependencies of libgfortran5 displayed above
-     ├─ libglib 2.88.1 [required: >=2.86.4,<3.0a0]
-     │  └─ dependencies of libglib displayed above
-     ├─ libiconv 1.18 [required: >=1.18,<2.0a0]
-     │  └─ dependencies of libiconv displayed above
-     ├─ libjpeg-turbo 3.1.4.1 [required: >=3.1.2,<4.0a0]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  └─ libgcc 15.2.0 [required: >=14]
-     │     └─ dependencies of libgcc displayed above
-     ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
-     │  └─ libblas 3.11.0 [required: 3.11.0, 8_h4a7cf45_openblas]
-     │     └─ dependencies of libblas displayed above
-     ├─ liblzma 5.8.3 [required: >=5.8.2,<6.0a0]
-     │  └─ dependencies of liblzma displayed above
-     ├─ libpng 1.6.58 [required: >=1.6.55,<1.7.0a0]
-     │  └─ dependencies of libpng displayed above
-     ├─ libstdcxx 15.2.0 [required: any]
-     │  └─ dependencies of libstdcxx displayed above
-     ├─ libstdcxx-ng 15.2.0 [required: >=12]
-     │  └─ libstdcxx 15.2.0 [required: 15.2.0, h934c35e_19]
-     │     └─ dependencies of libstdcxx displayed above
-     ├─ libtiff 4.7.1 [required: >=4.7.1,<4.8.0a0]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  ├─ lerc 4.1.0 [required: >=4.0.0,<5.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  └─ libstdcxx 15.2.0 [required: >=14]
-     │  │     └─ dependencies of libstdcxx displayed above
-     │  ├─ libdeflate 1.25 [required: >=1.25,<1.26.0a0]
-     │  │  └─ dependencies of libdeflate displayed above
-     │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libgcc displayed above
-     │  ├─ libjpeg-turbo 3.1.4.1 [required: >=3.1.0,<4.0a0]
-     │  │  └─ dependencies of libjpeg-turbo displayed above
-     │  ├─ liblzma 5.8.3 [required: >=5.8.1,<6.0a0]
-     │  │  └─ dependencies of liblzma displayed above
-     │  ├─ libstdcxx 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libstdcxx displayed above
-     │  ├─ libwebp-base 1.6.0 [required: >=1.6.0,<2.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  └─ libgcc 15.2.0 [required: >=14]
-     │  │     └─ dependencies of libgcc displayed above
-     │  ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
-     │  │  └─ dependencies of libzlib displayed above
-     │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
-     │     └─ dependencies of zstd displayed above
-     ├─ libuuid 2.42.1 [required: >=2.41.3,<3.0a0]
-     │  └─ dependencies of libuuid displayed above
-     ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
-     │  └─ dependencies of libzlib displayed above
-     ├─ make 4.4.1 [required: any]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  └─ libgcc 15.2.0 [required: >=13]
-     │     └─ dependencies of libgcc displayed above
-     ├─ pango 1.56.4 [required: >=1.56.4,<2.0a0]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  ├─ cairo 1.18.4 [required: >=1.18.4,<2.0a0]
-     │  │  └─ dependencies of cairo displayed above
-     │  ├─ fontconfig 2.18.0 [required: >=2.17.1,<3.0a0]
-     │  │  └─ dependencies of fontconfig displayed above
-     │  ├─ fonts-conda-ecosystem 1 [required: any]
-     │  │  └─ dependencies of fonts-conda-ecosystem displayed above
-     │  ├─ fribidi 1.0.16 [required: >=1.0.16,<2.0a0]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  └─ libgcc 15.2.0 [required: >=14]
-     │  │     └─ dependencies of libgcc displayed above
-     │  ├─ harfbuzz 14.2.0 [required: >=13.2.1]
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  ├─ cairo 1.18.4 [required: >=1.18.4,<2.0a0]
-     │  │  │  └─ dependencies of cairo displayed above
-     │  │  ├─ graphite2 1.3.14 [required: >=1.3.14,<2.0a0]
-     │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  │  └─ dependencies of libgcc displayed above
-     │  │  │  └─ libstdcxx 15.2.0 [required: >=14]
-     │  │  │     └─ dependencies of libstdcxx displayed above
-     │  │  ├─ icu 78.3 [required: >=78.3,<79.0a0]
-     │  │  │  └─ dependencies of icu displayed above
-     │  │  ├─ libexpat 2.8.1 [required: >=2.7.5,<3.0a0]
-     │  │  │  └─ dependencies of libexpat displayed above
-     │  │  ├─ libfreetype 2.14.3 [required: >=2.14.3]
-     │  │  │  └─ dependencies of libfreetype displayed above
-     │  │  ├─ libfreetype6 2.14.3 [required: >=2.14.3]
-     │  │  │  └─ dependencies of libfreetype6 displayed above
-     │  │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libgcc displayed above
-     │  │  ├─ libglib 2.88.1 [required: >=2.86.4,<3.0a0]
-     │  │  │  └─ dependencies of libglib displayed above
-     │  │  ├─ libstdcxx 15.2.0 [required: >=14]
-     │  │  │  └─ dependencies of libstdcxx displayed above
-     │  │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
-     │  │     └─ dependencies of libzlib displayed above
-     │  ├─ libexpat 2.8.1 [required: >=2.7.4,<3.0a0]
-     │  │  └─ dependencies of libexpat displayed above
-     │  ├─ libfreetype 2.14.3 [required: >=2.14.2]
-     │  │  └─ dependencies of libfreetype displayed above
-     │  ├─ libfreetype6 2.14.3 [required: >=2.14.2]
-     │  │  └─ dependencies of libfreetype6 displayed above
-     │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libgcc displayed above
-     │  ├─ libglib 2.88.1 [required: >=2.86.4,<3.0a0]
-     │  │  └─ dependencies of libglib displayed above
-     │  ├─ libpng 1.6.58 [required: >=1.6.55,<1.7.0a0]
-     │  │  └─ dependencies of libpng displayed above
-     │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
-     │     └─ dependencies of libzlib displayed above
-     ├─ pcre2 10.47 [required: >=10.47,<10.48.0a0]
-     │  └─ dependencies of pcre2 displayed above
-     ├─ readline 8.3 [required: >=8.3,<9.0a0]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libgcc displayed above
-     │  └─ ncurses 6.6 [required: >=6.5,<7.0a0]
-     │     └─ dependencies of ncurses displayed above
-     ├─ sed 4.10 [required: any]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  └─ libgcc 15.2.0 [required: >=14]
-     │     └─ dependencies of libgcc displayed above
-     ├─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
-     │  └─ dependencies of tk displayed above
-     ├─ tktable 2.10 [required: any]
-     │  ├─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
-     │  │  └─ dependencies of tk displayed above
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libgcc displayed above
-     │  └─ xorg-libx11 1.8.13 [required: >=1.8.13,<2.0a0]
-     │     └─ dependencies of xorg-libx11 displayed above
-     ├─ tzdata 2025c [required: >=2024a]
-     ├─ xorg-libice 1.1.2 [required: >=1.1.2,<2.0a0]
-     │  └─ dependencies of xorg-libice displayed above
-     ├─ xorg-libsm 1.2.6 [required: >=1.2.6,<2.0a0]
-     │  └─ dependencies of xorg-libsm displayed above
-     ├─ xorg-libx11 1.8.13 [required: >=1.8.13,<2.0a0]
-     │  └─ dependencies of xorg-libx11 displayed above
-     └─ xorg-libxt 1.3.1 [required: >=1.3.1,<2.0a0]
-        ├─ __glibc [required: >=2.17,<3.0.a0]
-        ├─ libgcc 15.2.0 [required: >=13]
-        │  └─ dependencies of libgcc displayed above
-        ├─ xorg-libice 1.1.2 [required: >=1.1.1,<2.0a0]
-        │  └─ dependencies of xorg-libice displayed above
-        ├─ xorg-libsm 1.2.6 [required: >=1.2.4,<2.0a0]
-        │  └─ dependencies of xorg-libsm displayed above
-        └─ xorg-libx11 1.8.13 [required: >=1.8.10,<2.0a0]
-           └─ dependencies of xorg-libx11 displayed above
-r-nloptr==2.2.1
-  ├─ __glibc [required: >=2.17,<3.0.a0]
-  ├─ libgcc 15.2.0 [required: >=14]
-  │  └─ dependencies of libgcc displayed above
-  ├─ libgfortran 15.2.0 [required: any]
-  │  └─ dependencies of libgfortran displayed above
-  ├─ libgfortran5 15.2.0 [required: >=14.3.0]
-  │  └─ dependencies of libgfortran5 displayed above
-  ├─ libstdcxx 15.2.0 [required: >=14]
-  │  └─ dependencies of libstdcxx displayed above
-  ├─ nlopt 2.10.1 [required: >=2.10.0,<2.11.0a0]
-  │  ├─ python 3.13.13 [required: any]
-  │  ├─ libstdcxx 15.2.0 [required: >=14]
-  │  │  └─ dependencies of libstdcxx displayed above
-  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  └─ dependencies of libgcc displayed above
-  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ python_abi 3.13 [required: 3.13.*, *_cp313]
-  │  └─ numpy 2.4.6 [required: >=1.23,<3]
-  │     ├─ python 3.13.13 [required: any]
-  │     ├─ libstdcxx 15.2.0 [required: >=14]
-  │     │  └─ dependencies of libstdcxx displayed above
-  │     ├─ libgcc 15.2.0 [required: >=14]
-  │     │  └─ dependencies of libgcc displayed above
-  │     ├─ __glibc [required: >=2.17,<3.0.a0]
-  │     ├─ libcblas 3.11.0 [required: >=3.9.0,<4.0a0]
-  │     │  └─ dependencies of libcblas displayed above
-  │     ├─ python_abi 3.13 [required: 3.13.*, *_cp313]
-  │     ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
-  │     │  └─ dependencies of liblapack displayed above
-  │     └─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
-  │        └─ dependencies of libblas displayed above
-  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-     └─ dependencies of r-base displayed above
-r-terra==1.9_25
-  ├─ __glibc [required: >=2.17,<3.0.a0]
-  ├─ geos 3.14.1 [required: >=3.14.1,<3.14.2.0a0]
-  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  └─ dependencies of libgcc displayed above
-  │  └─ libstdcxx 15.2.0 [required: >=14]
-  │     └─ dependencies of libstdcxx displayed above
-  ├─ libgcc 15.2.0 [required: >=14]
-  │  └─ dependencies of libgcc displayed above
-  ├─ libgdal-core 3.12.3 [required: >=3.12.3,<4.0a0]
+  ├─ libgdal-core 3.12.3 [required: 3.12.3.*]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  ├─ blosc 1.21.6 [required: >=1.21.6,<2.0a0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
@@ -2519,7 +2764,11 @@ r-terra==1.9_25
   │  │  └─ zstd 1.5.7 [required: >=1.5.6,<1.6.0a0]
   │  │     └─ dependencies of zstd displayed above
   │  ├─ geos 3.14.1 [required: >=3.14.1,<3.14.2.0a0]
-  │  │  └─ dependencies of geos displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ libstdcxx 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libstdcxx displayed above
   │  ├─ giflib 5.2.2 [required: >=5.2.2,<5.3.0a0]
   │  │  └─ libgcc-ng 15.2.0 [required: >=12]
   │  │     └─ dependencies of libgcc-ng displayed above
@@ -2528,21 +2777,31 @@ r-terra==1.9_25
   │  │  └─ libgcc 15.2.0 [required: >=13]
   │  │     └─ dependencies of libgcc displayed above
   │  ├─ lerc 4.1.0 [required: >=4.1.0,<5.0a0]
-  │  │  └─ dependencies of lerc displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ libstdcxx 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libstdcxx displayed above
   │  ├─ libarchive 3.8.7 [required: >=3.8.6,<3.9.0a0]
   │  │  └─ dependencies of libarchive displayed above
   │  ├─ libcurl 8.20.0 [required: >=8.19.0,<9.0a0]
   │  │  └─ dependencies of libcurl displayed above
   │  ├─ libdeflate 1.25 [required: >=1.25,<1.26.0a0]
-  │  │  └─ dependencies of libdeflate displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libgcc displayed above
   │  ├─ libexpat 2.8.1 [required: >=2.7.5,<3.0a0]
-  │  │  └─ dependencies of libexpat displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libgcc displayed above
   │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  └─ dependencies of libgcc displayed above
   │  ├─ libiconv 1.18 [required: >=1.18,<2.0a0]
   │  │  └─ dependencies of libiconv displayed above
   │  ├─ libjpeg-turbo 3.1.4.1 [required: >=3.1.2,<4.0a0]
-  │  │  └─ dependencies of libjpeg-turbo displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libgcc displayed above
   │  ├─ libjxl 0.11.2 [required: >=0.11,<1.0a0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  ├─ libgcc 15.2.0 [required: >=14]
@@ -2583,11 +2842,16 @@ r-terra==1.9_25
   │  │     ├─ libgcc-ng 15.2.0 [required: >=12]
   │  │     │  └─ dependencies of libgcc-ng displayed above
   │  │     └─ libstdcxx-ng 15.2.0 [required: >=12]
-  │  │        └─ dependencies of libstdcxx-ng displayed above
+  │  │        └─ libstdcxx 15.2.0 [required: 15.2.0, h934c35e_19]
+  │  │           └─ dependencies of libstdcxx displayed above
   │  ├─ liblzma 5.8.3 [required: >=5.8.2,<6.0a0]
   │  │  └─ dependencies of liblzma displayed above
   │  ├─ libpng 1.6.58 [required: >=1.6.57,<1.7.0a0]
-  │  │  └─ dependencies of libpng displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
+  │  │     └─ dependencies of libzlib displayed above
   │  ├─ libspatialite 5.1.0 [required: >=5.1.0,<5.2.0a0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  ├─ freexl 2.0.0 [required: >=2.0.0,<3.0a0]
@@ -2628,7 +2892,7 @@ r-terra==1.9_25
   │  │  │  │  └─ dependencies of libgcc displayed above
   │  │  │  └─ libstdcxx 15.2.0 [required: >=14]
   │  │  │     └─ dependencies of libstdcxx displayed above
-  │  │  ├─ libsqlite 3.53.1 [required: >=3.50.4,<4.0a0]
+  │  │  ├─ libsqlite 3.53.2 [required: >=3.50.4,<4.0a0]
   │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  │  └─ dependencies of libgcc displayed above
@@ -2659,20 +2923,44 @@ r-terra==1.9_25
   │  │  ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
   │  │  │  └─ dependencies of libzlib displayed above
   │  │  ├─ proj 9.7.1 [required: >=9.7.0,<9.8.0a0]
-  │  │  │  ├─ sqlite 3.53.1 [required: any]
+  │  │  │  ├─ sqlite 3.53.2 [required: any]
   │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  │  │  ├─ libsqlite 3.53.1 [required: 3.53.1, h0c1763c_0]
+  │  │  │  │  ├─ libsqlite 3.53.2 [required: 3.53.2, h0c1763c_0]
   │  │  │  │  │  └─ dependencies of libsqlite displayed above
   │  │  │  │  ├─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
   │  │  │  │  │  └─ dependencies of libzlib displayed above
   │  │  │  │  ├─ ncurses 6.6 [required: >=6.6,<7.0a0]
   │  │  │  │  │  └─ dependencies of ncurses displayed above
   │  │  │  │  └─ readline 8.3 [required: >=8.3,<9.0a0]
-  │  │  │  │     └─ dependencies of readline displayed above
+  │  │  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │     ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │     │  └─ dependencies of libgcc displayed above
+  │  │  │  │     └─ ncurses 6.6 [required: >=6.5,<7.0a0]
+  │  │  │  │        └─ dependencies of ncurses displayed above
   │  │  │  ├─ libtiff 4.7.1 [required: >=4.7.1,<4.8.0a0]
-  │  │  │  │  └─ dependencies of libtiff displayed above
+  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │  ├─ lerc 4.1.0 [required: >=4.0.0,<5.0a0]
+  │  │  │  │  │  └─ dependencies of lerc displayed above
+  │  │  │  │  ├─ libdeflate 1.25 [required: >=1.25,<1.26.0a0]
+  │  │  │  │  │  └─ dependencies of libdeflate displayed above
+  │  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  │  ├─ libjpeg-turbo 3.1.4.1 [required: >=3.1.0,<4.0a0]
+  │  │  │  │  │  └─ dependencies of libjpeg-turbo displayed above
+  │  │  │  │  ├─ liblzma 5.8.3 [required: >=5.8.1,<6.0a0]
+  │  │  │  │  │  └─ dependencies of liblzma displayed above
+  │  │  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  │  │  ├─ libwebp-base 1.6.0 [required: >=1.6.0,<2.0a0]
+  │  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  │     └─ dependencies of libgcc displayed above
+  │  │  │  │  ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
+  │  │  │  │  │  └─ dependencies of libzlib displayed above
+  │  │  │  │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
+  │  │  │  │     └─ dependencies of zstd displayed above
   │  │  │  ├─ libcurl 8.20.0 [required: >=8.18.0,<9.0a0]
   │  │  │  │  └─ dependencies of libcurl displayed above
   │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
@@ -2680,15 +2968,15 @@ r-terra==1.9_25
   │  │  │  │  └─ dependencies of libgcc displayed above
   │  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
   │  │  │  │  └─ dependencies of libstdcxx displayed above
-  │  │  │  └─ libsqlite 3.53.1 [required: >=3.51.2,<4.0a0]
+  │  │  │  └─ libsqlite 3.53.2 [required: >=3.51.2,<4.0a0]
   │  │  │     └─ dependencies of libsqlite displayed above
-  │  │  ├─ sqlite 3.53.1 [required: any]
+  │  │  ├─ sqlite 3.53.2 [required: any]
   │  │  │  └─ dependencies of sqlite displayed above
   │  │  └─ zlib 1.3.2 [required: any]
   │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │     └─ libzlib 1.3.2 [required: 1.3.2, h25fd6f3_2]
   │  │        └─ dependencies of libzlib displayed above
-  │  ├─ libsqlite 3.53.1 [required: >=3.52.0,<4.0a0]
+  │  ├─ libsqlite 3.53.2 [required: >=3.52.0,<4.0a0]
   │  │  └─ dependencies of libsqlite displayed above
   │  ├─ libstdcxx 15.2.0 [required: >=14]
   │  │  └─ dependencies of libstdcxx displayed above
@@ -2711,7 +2999,13 @@ r-terra==1.9_25
   │  ├─ openssl 3.6.2 [required: >=3.5.6,<4.0a0]
   │  │  └─ dependencies of openssl displayed above
   │  ├─ pcre2 10.47 [required: >=10.47,<10.48.0a0]
-  │  │  └─ dependencies of pcre2 displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
+  │  │  │  └─ dependencies of bzip2 displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
+  │  │     └─ dependencies of libzlib displayed above
   │  ├─ proj 9.7.1 [required: >=9.7.1,<9.8.0a0]
   │  │  └─ dependencies of proj displayed above
   │  ├─ xerces-c 3.3.0 [required: >=3.3.0,<3.4.0a0]
@@ -2730,28 +3024,32 @@ r-terra==1.9_25
   │     └─ dependencies of zstd displayed above
   ├─ libstdcxx 15.2.0 [required: >=14]
   │  └─ dependencies of libstdcxx displayed above
-  ├─ proj 9.7.1 [required: >=9.7.1,<9.8.0a0]
-  │  └─ dependencies of proj displayed above
-  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  └─ dependencies of r-base displayed above
-  └─ r-rcpp 1.1.1_1.1 [required: >=1.0_10]
-     ├─ __glibc [required: >=2.17,<3.0.a0]
-     ├─ libgcc 15.2.0 [required: >=14]
-     │  └─ dependencies of libgcc displayed above
-     ├─ libstdcxx 15.2.0 [required: >=14]
-     │  └─ dependencies of libstdcxx displayed above
-     └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-        └─ dependencies of r-base displayed above
-gdal==3.12.3
-  ├─ __glibc [required: >=2.17,<3.0.a0]
-  ├─ libgcc 15.2.0 [required: >=14]
-  │  └─ dependencies of libgcc displayed above
-  ├─ libgdal-core 3.12.3 [required: 3.12.3.*]
-  │  └─ dependencies of libgdal-core displayed above
-  ├─ libstdcxx 15.2.0 [required: >=14]
-  │  └─ dependencies of libstdcxx displayed above
-  ├─ numpy 2.4.6 [required: >=1.23,<3]
-  │  └─ dependencies of numpy displayed above
+  ├─ numpy 2.5.0 [required: >=1.23,<3]
+  │  ├─ python 3.13.13 [required: any]
+  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  └─ dependencies of libgcc displayed above
+  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  └─ dependencies of libstdcxx displayed above
+  │  ├─ python_abi 3.13 [required: 3.13.*, *_cp313]
+  │  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  └─ libopenblas 0.3.33 [required: >=0.3.33,<1.0a0]
+  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │     ├─ libgcc 15.2.0 [required: >=14]
+  │  │     │  └─ dependencies of libgcc displayed above
+  │  │     ├─ libgfortran 15.2.0 [required: any]
+  │  │     │  └─ libgfortran5 15.2.0 [required: 15.2.0, h68bc16d_19]
+  │  │     │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │     │     └─ libgcc 15.2.0 [required: >=15.2.0]
+  │  │     │        └─ dependencies of libgcc displayed above
+  │  │     └─ libgfortran5 15.2.0 [required: >=14.3.0]
+  │  │        └─ dependencies of libgfortran5 displayed above
+  │  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  └─ libblas 3.11.0 [required: 3.11.0, 8_h4a7cf45_openblas]
+  │  │     └─ dependencies of libblas displayed above
+  │  └─ libcblas 3.11.0 [required: >=3.9.0,<4.0a0]
+  │     └─ libblas 3.11.0 [required: 3.11.0, 8_h4a7cf45_openblas]
+  │        └─ dependencies of libblas displayed above
   ├─ python 3.13.13 [required: >=3.13,<3.14.0a0]
   └─ python_abi 3.13 [required: 3.13.*, *_cp313]
 r-gstat==2.1_6
@@ -2759,7 +3057,338 @@ r-gstat==2.1_6
   ├─ libgcc 15.2.0 [required: >=14]
   │  └─ dependencies of libgcc displayed above
   ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  └─ dependencies of r-base displayed above
+  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
+  │  │  └─ dependencies of _openmp_mutex displayed above
+  │  ├─ _r-mutex 1.0.1 [required: 1.*, anacondar_1]
+  │  ├─ bwidget 1.10.1 [required: any]
+  │  │  └─ tk 8.6.13 [required: any]
+  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │     ├─ libgcc 15.2.0 [required: >=14]
+  │  │     │  └─ dependencies of libgcc displayed above
+  │  │     └─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
+  │  │        └─ dependencies of libzlib displayed above
+  │  ├─ bzip2 1.0.8 [required: >=1.0.8,<2.0a0]
+  │  │  └─ dependencies of bzip2 displayed above
+  │  ├─ cairo 1.18.4 [required: >=1.18.4,<2.0a0]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ fontconfig 2.18.1 [required: >=2.15.0,<3.0a0]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ libexpat 2.8.1 [required: >=2.8.1,<3.0a0]
+  │  │  │  │  └─ dependencies of libexpat displayed above
+  │  │  │  ├─ libfreetype 2.14.3 [required: >=2.14.3]
+  │  │  │  │  └─ libfreetype6 2.14.3 [required: >=2.14.3]
+  │  │  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │     ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │     │  └─ dependencies of libgcc displayed above
+  │  │  │  │     ├─ libpng 1.6.58 [required: >=1.6.55,<1.7.0a0]
+  │  │  │  │     │  └─ dependencies of libpng displayed above
+  │  │  │  │     └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
+  │  │  │  │        └─ dependencies of libzlib displayed above
+  │  │  │  ├─ libfreetype6 2.14.3 [required: >=2.14.3]
+  │  │  │  │  └─ dependencies of libfreetype6 displayed above
+  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  ├─ libuuid 2.42.1 [required: >=2.42.1,<3.0a0]
+  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │     └─ dependencies of libgcc displayed above
+  │  │  │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
+  │  │  │     └─ dependencies of libzlib displayed above
+  │  │  ├─ fonts-conda-ecosystem 1 [required: any]
+  │  │  │  └─ fonts-conda-forge 1 [required: any]
+  │  │  │     ├─ font-ttf-ubuntu 0.83 [required: any]
+  │  │  │     ├─ font-ttf-inconsolata 3.000 [required: any]
+  │  │  │     ├─ font-ttf-dejavu-sans-mono 2.37 [required: any]
+  │  │  │     └─ font-ttf-source-code-pro 2.038 [required: any]
+  │  │  ├─ icu 78.3 [required: >=78.1,<79.0a0]
+  │  │  │  └─ dependencies of icu displayed above
+  │  │  ├─ libexpat 2.8.1 [required: >=2.7.3,<3.0a0]
+  │  │  │  └─ dependencies of libexpat displayed above
+  │  │  ├─ libfreetype 2.14.3 [required: >=2.14.1]
+  │  │  │  └─ dependencies of libfreetype displayed above
+  │  │  ├─ libfreetype6 2.14.3 [required: >=2.14.1]
+  │  │  │  └─ dependencies of libfreetype6 displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ libglib 2.88.1 [required: >=2.86.3,<3.0a0]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  ├─ libffi 3.5.2 [required: >=3.5.2,<3.6.0a0]
+  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │     └─ dependencies of libgcc displayed above
+  │  │  │  ├─ pcre2 10.47 [required: >=10.47,<10.48.0a0]
+  │  │  │  │  └─ dependencies of pcre2 displayed above
+  │  │  │  ├─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
+  │  │  │  │  └─ dependencies of libzlib displayed above
+  │  │  │  └─ libiconv 1.18 [required: >=1.18,<2.0a0]
+  │  │  │     └─ dependencies of libiconv displayed above
+  │  │  ├─ libpng 1.6.58 [required: >=1.6.53,<1.7.0a0]
+  │  │  │  └─ dependencies of libpng displayed above
+  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  ├─ libxcb 1.17.0 [required: >=1.17.0,<2.0a0]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=13]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  ├─ pthread-stubs 0.4 [required: any]
+  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │  └─ libgcc 15.2.0 [required: >=13]
+  │  │  │  │     └─ dependencies of libgcc displayed above
+  │  │  │  ├─ xorg-libxau 1.0.12 [required: >=1.0.11,<2.0a0]
+  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │     └─ dependencies of libgcc displayed above
+  │  │  │  └─ xorg-libxdmcp 1.1.5 [required: any]
+  │  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │     └─ libgcc 15.2.0 [required: >=14]
+  │  │  │        └─ dependencies of libgcc displayed above
+  │  │  ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
+  │  │  │  └─ dependencies of libzlib displayed above
+  │  │  ├─ pixman 0.46.4 [required: >=0.46.4,<1.0a0]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  │  └─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ xorg-libice 1.1.2 [required: >=1.1.2,<2.0a0]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  └─ libgcc 15.2.0 [required: >=13]
+  │  │  │     └─ dependencies of libgcc displayed above
+  │  │  ├─ xorg-libsm 1.2.6 [required: >=1.2.6,<2.0a0]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=13]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  ├─ libuuid 2.42.1 [required: >=2.38.1,<3.0a0]
+  │  │  │  │  └─ dependencies of libuuid displayed above
+  │  │  │  └─ xorg-libice 1.1.2 [required: >=1.1.2,<2.0a0]
+  │  │  │     └─ dependencies of xorg-libice displayed above
+  │  │  ├─ xorg-libx11 1.8.13 [required: >=1.8.12,<2.0a0]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  └─ libxcb 1.17.0 [required: >=1.17.0,<2.0a0]
+  │  │  │     └─ dependencies of libxcb displayed above
+  │  │  ├─ xorg-libxext 1.3.7 [required: >=1.3.6,<2.0a0]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  └─ xorg-libx11 1.8.13 [required: >=1.8.12,<2.0a0]
+  │  │  │     └─ dependencies of xorg-libx11 displayed above
+  │  │  └─ xorg-libxrender 0.9.12 [required: >=0.9.12,<0.10.0a0]
+  │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │     ├─ libgcc 15.2.0 [required: >=13]
+  │  │     │  └─ dependencies of libgcc displayed above
+  │  │     └─ xorg-libx11 1.8.13 [required: >=1.8.10,<2.0a0]
+  │  │        └─ dependencies of xorg-libx11 displayed above
+  │  ├─ curl 8.20.0 [required: any]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ krb5 1.22.2 [required: >=1.22.2,<1.23.0a0]
+  │  │  │  └─ dependencies of krb5 displayed above
+  │  │  ├─ libcurl 8.20.0 [required: 8.20.0, hcf29cc6_0]
+  │  │  │  └─ dependencies of libcurl displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ libssh2 1.11.1 [required: >=1.11.1,<2.0a0]
+  │  │  │  └─ dependencies of libssh2 displayed above
+  │  │  ├─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
+  │  │  │  └─ dependencies of libzlib displayed above
+  │  │  ├─ openssl 3.6.2 [required: >=3.5.6,<4.0a0]
+  │  │  │  └─ dependencies of openssl displayed above
+  │  │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
+  │  │     └─ dependencies of zstd displayed above
+  │  ├─ gcc_impl_linux-64 15.2.0 [required: >=10]
+  │  │  ├─ binutils_impl_linux-64 2.45.1 [required: >=2.45]
+  │  │  │  ├─ ld_impl_linux-64 2.45.1 [required: 2.45.1, default_hbd61a6d_102]
+  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
+  │  │  │  │     └─ dependencies of zstd displayed above
+  │  │  │  ├─ sysroot_linux-64 2.39 [required: any]
+  │  │  │  │  ├─ __glibc [required: >=2.39]
+  │  │  │  │  ├─ kernel-headers_linux-64 6.12.0 [required: 6.12.0, he073ed8_6]
+  │  │  │  │  └─ tzdata 2025c [required: any]
+  │  │  │  └─ zstd 1.5.7 [required: >=1.5.7,<1.6.0a0]
+  │  │  │     └─ dependencies of zstd displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=15.2.0]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ libgcc-devel_linux-64 15.2.0 [required: 15.2.0, hcc6f6b0_119]
+  │  │  │  └─ __unix [required: any]
+  │  │  ├─ libgomp 15.2.0 [required: >=15.2.0]
+  │  │  │  └─ dependencies of libgomp displayed above
+  │  │  ├─ libsanitizer 15.2.0 [required: 15.2.0, h90f66d4_19]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=15.2.0]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  └─ libstdcxx 15.2.0 [required: >=15.2.0]
+  │  │  │     └─ dependencies of libstdcxx displayed above
+  │  │  ├─ libstdcxx 15.2.0 [required: >=15.2.0]
+  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  ├─ libstdcxx-devel_linux-64 15.2.0 [required: 15.2.0, hd446a21_119]
+  │  │  │  └─ __unix [required: any]
+  │  │  └─ sysroot_linux-64 2.39 [required: any]
+  │  │     └─ dependencies of sysroot_linux-64 displayed above
+  │  ├─ gfortran_impl_linux-64 15.2.0 [required: any]
+  │  │  ├─ gcc_impl_linux-64 15.2.0 [required: >=15.2.0]
+  │  │  │  └─ dependencies of gcc_impl_linux-64 displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=15.2.0]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ libgfortran5 15.2.0 [required: >=15.2.0]
+  │  │  │  └─ dependencies of libgfortran5 displayed above
+  │  │  ├─ libstdcxx 15.2.0 [required: >=15.2.0]
+  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  └─ sysroot_linux-64 2.39 [required: any]
+  │  │     └─ dependencies of sysroot_linux-64 displayed above
+  │  ├─ gsl 2.7 [required: >=2.7,<2.8.0a0]
+  │  │  ├─ libblas 3.11.0 [required: >=3.8.0,<4.0a0]
+  │  │  │  └─ dependencies of libblas displayed above
+  │  │  ├─ libcblas 3.11.0 [required: >=3.8.0,<4.0a0]
+  │  │  │  └─ dependencies of libcblas displayed above
+  │  │  └─ libgcc-ng 15.2.0 [required: >=9.3.0]
+  │  │     └─ dependencies of libgcc-ng displayed above
+  │  ├─ gxx_impl_linux-64 15.2.0 [required: >=10]
+  │  │  ├─ gcc_impl_linux-64 15.2.0 [required: 15.2.0, he0086c7_19]
+  │  │  │  └─ dependencies of gcc_impl_linux-64 displayed above
+  │  │  ├─ libstdcxx-devel_linux-64 15.2.0 [required: 15.2.0, hd446a21_119]
+  │  │  │  └─ dependencies of libstdcxx-devel_linux-64 displayed above
+  │  │  ├─ sysroot_linux-64 2.39 [required: any]
+  │  │  │  └─ dependencies of sysroot_linux-64 displayed above
+  │  │  └─ tzdata 2025c [required: any]
+  │  ├─ icu 78.3 [required: >=78.2,<79.0a0]
+  │  │  └─ dependencies of icu displayed above
+  │  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  └─ dependencies of libblas displayed above
+  │  ├─ libcurl 8.20.0 [required: >=8.19.0,<9.0a0]
+  │  │  └─ dependencies of libcurl displayed above
+  │  ├─ libdeflate 1.25 [required: >=1.25,<1.26.0a0]
+  │  │  └─ dependencies of libdeflate displayed above
+  │  ├─ libexpat 2.8.1 [required: >=2.7.4,<3.0a0]
+  │  │  └─ dependencies of libexpat displayed above
+  │  ├─ libgcc 15.2.0 [required: any]
+  │  │  └─ dependencies of libgcc displayed above
+  │  ├─ libgcc-ng 15.2.0 [required: >=12]
+  │  │  └─ dependencies of libgcc-ng displayed above
+  │  ├─ libgfortran 15.2.0 [required: any]
+  │  │  └─ dependencies of libgfortran displayed above
+  │  ├─ libgfortran-ng 15.2.0 [required: any]
+  │  │  └─ libgfortran 15.2.0 [required: 15.2.0, h69a702a_19]
+  │  │     └─ dependencies of libgfortran displayed above
+  │  ├─ libgfortran5 15.2.0 [required: >=10.4.0]
+  │  │  └─ dependencies of libgfortran5 displayed above
+  │  ├─ libglib 2.88.1 [required: >=2.86.4,<3.0a0]
+  │  │  └─ dependencies of libglib displayed above
+  │  ├─ libiconv 1.18 [required: >=1.18,<2.0a0]
+  │  │  └─ dependencies of libiconv displayed above
+  │  ├─ libjpeg-turbo 3.1.4.1 [required: >=3.1.2,<4.0a0]
+  │  │  └─ dependencies of libjpeg-turbo displayed above
+  │  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  └─ dependencies of liblapack displayed above
+  │  ├─ liblzma 5.8.3 [required: >=5.8.2,<6.0a0]
+  │  │  └─ dependencies of liblzma displayed above
+  │  ├─ libpng 1.6.58 [required: >=1.6.55,<1.7.0a0]
+  │  │  └─ dependencies of libpng displayed above
+  │  ├─ libstdcxx 15.2.0 [required: any]
+  │  │  └─ dependencies of libstdcxx displayed above
+  │  ├─ libstdcxx-ng 15.2.0 [required: >=12]
+  │  │  └─ dependencies of libstdcxx-ng displayed above
+  │  ├─ libtiff 4.7.1 [required: >=4.7.1,<4.8.0a0]
+  │  │  └─ dependencies of libtiff displayed above
+  │  ├─ libuuid 2.42.1 [required: >=2.41.3,<3.0a0]
+  │  │  └─ dependencies of libuuid displayed above
+  │  ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
+  │  │  └─ dependencies of libzlib displayed above
+  │  ├─ make 4.4.1 [required: any]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  └─ libgcc 15.2.0 [required: >=13]
+  │  │     └─ dependencies of libgcc displayed above
+  │  ├─ pango 1.56.4 [required: >=1.56.4,<2.0a0]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ cairo 1.18.4 [required: >=1.18.4,<2.0a0]
+  │  │  │  └─ dependencies of cairo displayed above
+  │  │  ├─ fontconfig 2.18.1 [required: >=2.17.1,<3.0a0]
+  │  │  │  └─ dependencies of fontconfig displayed above
+  │  │  ├─ fonts-conda-ecosystem 1 [required: any]
+  │  │  │  └─ dependencies of fonts-conda-ecosystem displayed above
+  │  │  ├─ fribidi 1.0.16 [required: >=1.0.16,<2.0a0]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │  │     └─ dependencies of libgcc displayed above
+  │  │  ├─ harfbuzz 14.2.1 [required: >=13.2.1]
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ cairo 1.18.4 [required: >=1.18.4,<2.0a0]
+  │  │  │  │  └─ dependencies of cairo displayed above
+  │  │  │  ├─ graphite2 1.3.15 [required: >=1.3.14,<2.0a0]
+  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  │  └─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  │     └─ dependencies of libstdcxx displayed above
+  │  │  │  ├─ icu 78.3 [required: >=78.3,<79.0a0]
+  │  │  │  │  └─ dependencies of icu displayed above
+  │  │  │  ├─ libexpat 2.8.1 [required: >=2.8.1,<3.0a0]
+  │  │  │  │  └─ dependencies of libexpat displayed above
+  │  │  │  ├─ libfreetype 2.14.3 [required: >=2.14.3]
+  │  │  │  │  └─ dependencies of libfreetype displayed above
+  │  │  │  ├─ libfreetype6 2.14.3 [required: >=2.14.3]
+  │  │  │  │  └─ dependencies of libfreetype6 displayed above
+  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  ├─ libglib 2.88.1 [required: >=2.88.1,<3.0a0]
+  │  │  │  │  └─ dependencies of libglib displayed above
+  │  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
+  │  │  │     └─ dependencies of libzlib displayed above
+  │  │  ├─ libexpat 2.8.1 [required: >=2.7.4,<3.0a0]
+  │  │  │  └─ dependencies of libexpat displayed above
+  │  │  ├─ libfreetype 2.14.3 [required: >=2.14.2]
+  │  │  │  └─ dependencies of libfreetype displayed above
+  │  │  ├─ libfreetype6 2.14.3 [required: >=2.14.2]
+  │  │  │  └─ dependencies of libfreetype6 displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ libglib 2.88.1 [required: >=2.86.4,<3.0a0]
+  │  │  │  └─ dependencies of libglib displayed above
+  │  │  ├─ libpng 1.6.58 [required: >=1.6.55,<1.7.0a0]
+  │  │  │  └─ dependencies of libpng displayed above
+  │  │  └─ libzlib 1.3.2 [required: >=1.3.2,<2.0a0]
+  │  │     └─ dependencies of libzlib displayed above
+  │  ├─ pcre2 10.47 [required: >=10.47,<10.48.0a0]
+  │  │  └─ dependencies of pcre2 displayed above
+  │  ├─ readline 8.3 [required: >=8.3,<9.0a0]
+  │  │  └─ dependencies of readline displayed above
+  │  ├─ sed 4.10 [required: any]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  └─ libgcc 15.2.0 [required: >=14]
+  │  │     └─ dependencies of libgcc displayed above
+  │  ├─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
+  │  │  └─ dependencies of tk displayed above
+  │  ├─ tktable 2.10 [required: any]
+  │  │  ├─ tk 8.6.13 [required: >=8.6.13,<8.7.0a0]
+  │  │  │  └─ dependencies of tk displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  └─ xorg-libx11 1.8.13 [required: >=1.8.13,<2.0a0]
+  │  │     └─ dependencies of xorg-libx11 displayed above
+  │  ├─ tzdata 2025c [required: >=2024a]
+  │  ├─ xorg-libice 1.1.2 [required: >=1.1.2,<2.0a0]
+  │  │  └─ dependencies of xorg-libice displayed above
+  │  ├─ xorg-libsm 1.2.6 [required: >=1.2.6,<2.0a0]
+  │  │  └─ dependencies of xorg-libsm displayed above
+  │  ├─ xorg-libx11 1.8.13 [required: >=1.8.13,<2.0a0]
+  │  │  └─ dependencies of xorg-libx11 displayed above
+  │  └─ xorg-libxt 1.3.1 [required: >=1.3.1,<2.0a0]
+  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │     ├─ libgcc 15.2.0 [required: >=13]
+  │     │  └─ dependencies of libgcc displayed above
+  │     ├─ xorg-libice 1.1.2 [required: >=1.1.1,<2.0a0]
+  │     │  └─ dependencies of xorg-libice displayed above
+  │     ├─ xorg-libsm 1.2.6 [required: >=1.2.4,<2.0a0]
+  │     │  └─ dependencies of xorg-libsm displayed above
+  │     └─ xorg-libx11 1.8.13 [required: >=1.8.10,<2.0a0]
+  │        └─ dependencies of xorg-libx11 displayed above
   ├─ r-fnn 1.1.4.1 [required: any]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  ├─ libgcc 15.2.0 [required: >=14]
@@ -2848,20 +3477,26 @@ r-gstat==2.1_6
   │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  │     └─ dependencies of r-base displayed above
   │  ├─ r-rcpp 1.1.1_1.1 [required: >=0.12.18]
-  │  │  └─ dependencies of r-rcpp displayed above
-  │  ├─ r-s2 1.1.9 [required: >=1.1.0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ libabseil 20250512.1 [required: >=20250512.1,<20250513.0a0]
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-s2 1.1.11 [required: >=1.1.0]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libabseil 20260526.0 [required: >=20260526.0,<20260527.0a0]
   │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  │  ├─ libgcc 15.2.0 [required: >=13]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  │  └─ libstdcxx 15.2.0 [required: >=13]
+  │  │  │  └─ libstdcxx 15.2.0 [required: >=14]
   │  │  │     └─ dependencies of libstdcxx displayed above
   │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  └─ dependencies of libgcc displayed above
   │  │  ├─ libstdcxx 15.2.0 [required: >=14]
   │  │  │  └─ dependencies of libstdcxx displayed above
-  │  │  ├─ openssl 3.6.2 [required: >=3.5.3,<4.0a0]
+  │  │  ├─ openssl 3.6.2 [required: >=3.5.7,<4.0a0]
   │  │  │  └─ dependencies of openssl displayed above
   │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  │  │  └─ dependencies of r-base displayed above
@@ -2959,197 +3594,6 @@ r-gstat==2.1_6
   │     └─ dependencies of r-units displayed above
   └─ r-zoo 1.8_15 [required: any]
      └─ dependencies of r-zoo displayed above
-r-spatialreg==1.4_3
-  ├─ __glibc [required: >=2.17,<3.0.a0]
-  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
-  │  └─ dependencies of libblas displayed above
-  ├─ libgcc 15.2.0 [required: >=14]
-  │  └─ dependencies of libgcc displayed above
-  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
-  │  └─ dependencies of liblapack displayed above
-  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  └─ dependencies of r-base displayed above
-  ├─ r-boot 1.3_32 [required: any]
-  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │     └─ dependencies of r-base displayed above
-  ├─ r-coda 0.19_4.1 [required: any]
-  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  └─ r-lattice 0.22_9 [required: any]
-  │     └─ dependencies of r-lattice displayed above
-  ├─ r-learnbayes 2.15.2 [required: any]
-  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-coda 0.19_4.1 [required: any]
-  │  │  └─ dependencies of r-coda displayed above
-  │  ├─ r-lattice 0.22_9 [required: any]
-  │  │  └─ dependencies of r-lattice displayed above
-  │  └─ r-survival 3.8_6 [required: any]
-  │     ├─ __glibc [required: >=2.17,<3.0.a0]
-  │     ├─ libgcc 15.2.0 [required: >=14]
-  │     │  └─ dependencies of libgcc displayed above
-  │     ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │     │  └─ dependencies of r-base displayed above
-  │     └─ r-matrix 1.7_5 [required: any]
-  │        ├─ __glibc [required: >=2.17,<3.0.a0]
-  │        ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
-  │        │  └─ dependencies of libblas displayed above
-  │        ├─ libgcc 15.2.0 [required: >=14]
-  │        │  └─ dependencies of libgcc displayed above
-  │        ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
-  │        │  └─ dependencies of liblapack displayed above
-  │        ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │        │  └─ dependencies of r-base displayed above
-  │        └─ r-lattice 0.22_9 [required: any]
-  │           └─ dependencies of r-lattice displayed above
-  ├─ r-marginaleffects 0.32.0 [required: any]
-  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  └─ dependencies of libgcc displayed above
-  │  ├─ libstdcxx 15.2.0 [required: >=14]
-  │  │  └─ dependencies of libstdcxx displayed above
-  │  ├─ r-backports 1.5.1 [required: any]
-  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-checkmate 2.3.3 [required: any]
-  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  ├─ r-backports 1.5.1 [required: >=1.1.0]
-  │  │  │  └─ dependencies of r-backports displayed above
-  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-data.table 1.17.8 [required: >=1.16.4]
-  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
-  │  │  │  └─ dependencies of _openmp_mutex displayed above
-  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
-  │  │  │  └─ dependencies of libzlib displayed above
-  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-formula 1.2_5 [required: any]
-  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-generics 0.1.4 [required: any]
-  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-insight 1.5.1 [required: >=1.3.0]
-  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-rcpp 1.1.1_1.1 [required: >=1.0.0]
-  │  │  └─ dependencies of r-rcpp displayed above
-  │  ├─ r-rcppeigen 0.3.4.0.2 [required: any]
-  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
-  │  │  │  └─ dependencies of libblas displayed above
-  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
-  │  │  │  └─ dependencies of liblapack displayed above
-  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libstdcxx displayed above
-  │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  ├─ r-matrix 1.7_5 [required: >=1.1_0]
-  │  │  │  └─ dependencies of r-matrix displayed above
-  │  │  └─ r-rcpp 1.1.1_1.1 [required: >=0.11.0]
-  │  │     └─ dependencies of r-rcpp displayed above
-  │  └─ r-rlang 1.2.0 [required: any]
-  │     └─ dependencies of r-rlang displayed above
-  ├─ r-matrix 1.7_5 [required: any]
-  │  └─ dependencies of r-matrix displayed above
-  ├─ r-multcomp 1.4_30 [required: any]
-  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  ├─ r-codetools 0.2_20 [required: any]
-  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-mvtnorm 1.3_7 [required: >=1.0_10]
-  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
-  │  │  │  └─ dependencies of libblas displayed above
-  │  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  ├─ libgfortran 15.2.0 [required: any]
-  │  │  │  └─ dependencies of libgfortran displayed above
-  │  │  ├─ libgfortran5 15.2.0 [required: >=14.3.0]
-  │  │  │  └─ dependencies of libgfortran5 displayed above
-  │  │  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
-  │  │  │  └─ dependencies of liblapack displayed above
-  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │     └─ dependencies of r-base displayed above
-  │  ├─ r-sandwich 3.1_1 [required: >=2.3_0]
-  │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │  │  └─ dependencies of r-base displayed above
-  │  │  └─ r-zoo 1.8_15 [required: any]
-  │  │     └─ dependencies of r-zoo displayed above
-  │  ├─ r-survival 3.8_6 [required: >=2.39_4]
-  │  │  └─ dependencies of r-survival displayed above
-  │  └─ r-th.data 1.1_5 [required: >=1.0_2]
-  │     ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │     │  └─ dependencies of r-base displayed above
-  │     ├─ r-mass 7.3_65 [required: any]
-  │     │  └─ dependencies of r-mass displayed above
-  │     └─ r-survival 3.8_6 [required: any]
-  │        └─ dependencies of r-survival displayed above
-  ├─ r-mvtnorm 1.3_7 [required: any]
-  │  └─ dependencies of r-mvtnorm displayed above
-  ├─ r-nlme 3.1_169 [required: any]
-  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  └─ dependencies of libgcc displayed above
-  │  ├─ libgfortran 15.2.0 [required: any]
-  │  │  └─ dependencies of libgfortran displayed above
-  │  ├─ libgfortran5 15.2.0 [required: >=14.3.0]
-  │  │  └─ dependencies of libgfortran5 displayed above
-  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  └─ r-lattice 0.22_9 [required: any]
-  │     └─ dependencies of r-lattice displayed above
-  ├─ r-sf 1.1_0 [required: any]
-  │  └─ dependencies of r-sf displayed above
-  ├─ r-spdata 2.3.5 [required: >=2.3.1]
-  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-  │  │  └─ dependencies of r-base displayed above
-  │  └─ r-sp 2.2_1 [required: any]
-  │     └─ dependencies of r-sp displayed above
-  └─ r-spdep 1.4_2 [required: >=1.4.1]
-     ├─ __glibc [required: >=2.17,<3.0.a0]
-     ├─ libgcc 15.2.0 [required: >=14]
-     │  └─ dependencies of libgcc displayed above
-     ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-     │  └─ dependencies of r-base displayed above
-     ├─ r-boot 1.3_32 [required: >=1.3_1]
-     │  └─ dependencies of r-boot displayed above
-     ├─ r-deldir 2.0_4 [required: any]
-     │  ├─ __glibc [required: >=2.17,<3.0.a0]
-     │  ├─ libgcc 15.2.0 [required: >=14]
-     │  │  └─ dependencies of libgcc displayed above
-     │  ├─ libgfortran 15.2.0 [required: any]
-     │  │  └─ dependencies of libgfortran displayed above
-     │  ├─ libgfortran5 15.2.0 [required: >=14.3.0]
-     │  │  └─ dependencies of libgfortran5 displayed above
-     │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
-     │     └─ dependencies of r-base displayed above
-     ├─ r-e1071 1.7_17 [required: any]
-     │  └─ dependencies of r-e1071 displayed above
-     ├─ r-s2 1.1.9 [required: any]
-     │  └─ dependencies of r-s2 displayed above
-     ├─ r-sf 1.1_0 [required: any]
-     │  └─ dependencies of r-sf displayed above
-     ├─ r-sp 2.2_1 [required: >=1.0]
-     │  └─ dependencies of r-sp displayed above
-     ├─ r-spdata 2.3.5 [required: >=2.3.1]
-     │  └─ dependencies of r-spdata displayed above
-     └─ r-units 1.0_1 [required: any]
-        └─ dependencies of r-units displayed above
 r-keras==2.16.1
   ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  └─ dependencies of r-base displayed above
@@ -3162,7 +3606,8 @@ r-keras==2.16.1
   │  └─ r-rlang 1.2.0 [required: >=0.3.0]
   │     └─ dependencies of r-rlang displayed above
   ├─ r-generics 0.1.4 [required: >=0.0.1]
-  │  └─ dependencies of r-generics displayed above
+  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │     └─ dependencies of r-base displayed above
   ├─ r-glue 1.8.1 [required: any]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  ├─ libgcc 15.2.0 [required: >=14]
@@ -3195,7 +3640,17 @@ r-keras==2.16.1
   │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  │     └─ dependencies of r-base displayed above
   │  ├─ r-matrix 1.7_5 [required: any]
-  │  │  └─ dependencies of r-matrix displayed above
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  └─ dependencies of libblas displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  └─ dependencies of liblapack displayed above
+  │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  └─ r-lattice 0.22_9 [required: any]
+  │  │     └─ dependencies of r-lattice displayed above
   │  ├─ r-png 0.1_9 [required: any]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  ├─ libgcc 15.2.0 [required: >=14]
@@ -3264,7 +3719,11 @@ r-keras==2.16.1
   │  │     └─ dependencies of r-base displayed above
   │  ├─ r-tfautograph 0.3.2 [required: >=0.3.1]
   │  │  ├─ r-backports 1.5.1 [required: any]
-  │  │  │  └─ dependencies of r-backports displayed above
+  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  │     └─ dependencies of r-base displayed above
   │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  │  │  └─ dependencies of r-base displayed above
   │  │  └─ r-reticulate 1.46.0 [required: any]
@@ -3344,6 +3803,226 @@ r-keras==2.16.1
   └─ r-zeallot 0.2.0 [required: any]
      └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
         └─ dependencies of r-base displayed above
+r-nloptr==2.2.1
+  ├─ __glibc [required: >=2.17,<3.0.a0]
+  ├─ libgcc 15.2.0 [required: >=14]
+  │  └─ dependencies of libgcc displayed above
+  ├─ libgfortran 15.2.0 [required: any]
+  │  └─ dependencies of libgfortran displayed above
+  ├─ libgfortran5 15.2.0 [required: >=14.3.0]
+  │  └─ dependencies of libgfortran5 displayed above
+  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  └─ dependencies of libstdcxx displayed above
+  ├─ nlopt 2.11.0 [required: >=2.11.0,<2.12.0a0]
+  │  ├─ python 3.13.13 [required: any]
+  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  └─ dependencies of libstdcxx displayed above
+  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  └─ dependencies of libgcc displayed above
+  │  ├─ numpy 2.5.0 [required: >=1.23,<3]
+  │  │  └─ dependencies of numpy displayed above
+  │  └─ python_abi 3.13 [required: 3.13.*, *_cp313]
+  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+     └─ dependencies of r-base displayed above
+r-spatial==7.3_18
+  ├─ __glibc [required: >=2.17,<3.0.a0]
+  ├─ libgcc 15.2.0 [required: >=14]
+  │  └─ dependencies of libgcc displayed above
+  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+     └─ dependencies of r-base displayed above
+r-spatialreg==1.4_3
+  ├─ __glibc [required: >=2.17,<3.0.a0]
+  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  └─ dependencies of libblas displayed above
+  ├─ libgcc 15.2.0 [required: >=14]
+  │  └─ dependencies of libgcc displayed above
+  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  └─ dependencies of liblapack displayed above
+  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  └─ dependencies of r-base displayed above
+  ├─ r-boot 1.3_32 [required: any]
+  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │     └─ dependencies of r-base displayed above
+  ├─ r-coda 0.19_4.1 [required: any]
+  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  └─ r-lattice 0.22_9 [required: any]
+  │     └─ dependencies of r-lattice displayed above
+  ├─ r-learnbayes 2.15.2 [required: any]
+  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-coda 0.19_4.1 [required: any]
+  │  │  └─ dependencies of r-coda displayed above
+  │  ├─ r-lattice 0.22_9 [required: any]
+  │  │  └─ dependencies of r-lattice displayed above
+  │  └─ r-survival 3.8_6 [required: any]
+  │     ├─ __glibc [required: >=2.17,<3.0.a0]
+  │     ├─ libgcc 15.2.0 [required: >=14]
+  │     │  └─ dependencies of libgcc displayed above
+  │     ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │     │  └─ dependencies of r-base displayed above
+  │     └─ r-matrix 1.7_5 [required: any]
+  │        └─ dependencies of r-matrix displayed above
+  ├─ r-marginaleffects 0.32.0 [required: any]
+  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  └─ dependencies of libgcc displayed above
+  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  └─ dependencies of libstdcxx displayed above
+  │  ├─ r-backports 1.5.1 [required: any]
+  │  │  └─ dependencies of r-backports displayed above
+  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-checkmate 2.3.3 [required: any]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ r-backports 1.5.1 [required: >=1.1.0]
+  │  │  │  └─ dependencies of r-backports displayed above
+  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-data.table 1.17.8 [required: >=1.16.4]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ _openmp_mutex 4.5 [required: >=4.5]
+  │  │  │  └─ dependencies of _openmp_mutex displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ libzlib 1.3.2 [required: >=1.3.1,<2.0a0]
+  │  │  │  └─ dependencies of libzlib displayed above
+  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-formula 1.2_5 [required: any]
+  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-generics 0.1.4 [required: any]
+  │  │  └─ dependencies of r-generics displayed above
+  │  ├─ r-insight 1.5.1 [required: >=1.3.0]
+  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-rcpp 1.1.1_1.1 [required: >=1.0.0]
+  │  │  └─ dependencies of r-rcpp displayed above
+  │  ├─ r-rcppeigen 0.3.4.0.2 [required: any]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  └─ dependencies of libblas displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  └─ dependencies of liblapack displayed above
+  │  │  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libstdcxx displayed above
+  │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  ├─ r-matrix 1.7_5 [required: >=1.1_0]
+  │  │  │  └─ dependencies of r-matrix displayed above
+  │  │  └─ r-rcpp 1.1.1_1.1 [required: >=0.11.0]
+  │  │     └─ dependencies of r-rcpp displayed above
+  │  └─ r-rlang 1.2.0 [required: any]
+  │     └─ dependencies of r-rlang displayed above
+  ├─ r-matrix 1.7_5 [required: any]
+  │  └─ dependencies of r-matrix displayed above
+  ├─ r-multcomp 1.4_30 [required: any]
+  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  ├─ r-codetools 0.2_20 [required: any]
+  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-mvtnorm 1.4_1 [required: >=1.0_10]
+  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  ├─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  └─ dependencies of libblas displayed above
+  │  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  ├─ libgfortran 15.2.0 [required: any]
+  │  │  │  └─ dependencies of libgfortran displayed above
+  │  │  ├─ libgfortran5 15.2.0 [required: >=14.3.0]
+  │  │  │  └─ dependencies of libgfortran5 displayed above
+  │  │  ├─ liblapack 3.11.0 [required: >=3.9.0,<4.0a0]
+  │  │  │  └─ dependencies of liblapack displayed above
+  │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │     └─ dependencies of r-base displayed above
+  │  ├─ r-sandwich 3.1_1 [required: >=2.3_0]
+  │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  │  └─ dependencies of r-base displayed above
+  │  │  └─ r-zoo 1.8_15 [required: any]
+  │  │     └─ dependencies of r-zoo displayed above
+  │  ├─ r-survival 3.8_6 [required: >=2.39_4]
+  │  │  └─ dependencies of r-survival displayed above
+  │  └─ r-th.data 1.1_5 [required: >=1.0_2]
+  │     ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │     │  └─ dependencies of r-base displayed above
+  │     ├─ r-mass 7.3_65 [required: any]
+  │     │  └─ dependencies of r-mass displayed above
+  │     └─ r-survival 3.8_6 [required: any]
+  │        └─ dependencies of r-survival displayed above
+  ├─ r-mvtnorm 1.4_1 [required: any]
+  │  └─ dependencies of r-mvtnorm displayed above
+  ├─ r-nlme 3.1_169 [required: any]
+  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  ├─ libgcc 15.2.0 [required: >=14]
+  │  │  └─ dependencies of libgcc displayed above
+  │  ├─ libgfortran 15.2.0 [required: any]
+  │  │  └─ dependencies of libgfortran displayed above
+  │  ├─ libgfortran5 15.2.0 [required: >=14.3.0]
+  │  │  └─ dependencies of libgfortran5 displayed above
+  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  └─ r-lattice 0.22_9 [required: any]
+  │     └─ dependencies of r-lattice displayed above
+  ├─ r-sf 1.1_0 [required: any]
+  │  └─ dependencies of r-sf displayed above
+  ├─ r-spdata 2.3.5 [required: >=2.3.1]
+  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  │  └─ dependencies of r-base displayed above
+  │  └─ r-sp 2.2_1 [required: any]
+  │     └─ dependencies of r-sp displayed above
+  └─ r-spdep 1.4_2 [required: >=1.4.1]
+     ├─ __glibc [required: >=2.17,<3.0.a0]
+     ├─ libgcc 15.2.0 [required: >=14]
+     │  └─ dependencies of libgcc displayed above
+     ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+     │  └─ dependencies of r-base displayed above
+     ├─ r-boot 1.3_32 [required: >=1.3_1]
+     │  └─ dependencies of r-boot displayed above
+     ├─ r-deldir 2.0_4 [required: any]
+     │  ├─ __glibc [required: >=2.17,<3.0.a0]
+     │  ├─ libgcc 15.2.0 [required: >=14]
+     │  │  └─ dependencies of libgcc displayed above
+     │  ├─ libgfortran 15.2.0 [required: any]
+     │  │  └─ dependencies of libgfortran displayed above
+     │  ├─ libgfortran5 15.2.0 [required: >=14.3.0]
+     │  │  └─ dependencies of libgfortran5 displayed above
+     │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+     │     └─ dependencies of r-base displayed above
+     ├─ r-e1071 1.7_17 [required: any]
+     │  └─ dependencies of r-e1071 displayed above
+     ├─ r-s2 1.1.11 [required: any]
+     │  └─ dependencies of r-s2 displayed above
+     ├─ r-sf 1.1_0 [required: any]
+     │  └─ dependencies of r-sf displayed above
+     ├─ r-sp 2.2_1 [required: >=1.0]
+     │  └─ dependencies of r-sp displayed above
+     ├─ r-spdata 2.3.5 [required: >=2.3.1]
+     │  └─ dependencies of r-spdata displayed above
+     └─ r-units 1.0_1 [required: any]
+        └─ dependencies of r-units displayed above
+r-terra==1.9_34
+  ├─ __glibc [required: >=2.17,<3.0.a0]
+  ├─ geos 3.14.1 [required: >=3.14.1,<3.14.2.0a0]
+  │  └─ dependencies of geos displayed above
+  ├─ libgcc 15.2.0 [required: >=14]
+  │  └─ dependencies of libgcc displayed above
+  ├─ libgdal-core 3.12.3 [required: >=3.12.3,<4.0a0]
+  │  └─ dependencies of libgdal-core displayed above
+  ├─ libstdcxx 15.2.0 [required: >=14]
+  │  └─ dependencies of libstdcxx displayed above
+  ├─ proj 9.7.1 [required: >=9.7.1,<9.8.0a0]
+  │  └─ dependencies of proj displayed above
+  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
+  │  └─ dependencies of r-base displayed above
+  └─ r-rcpp 1.1.1_1.1 [required: >=1.0_10]
+     └─ dependencies of r-rcpp displayed above
 r-caret==7.0_1
   ├─ __glibc [required: >=2.17,<3.0.a0]
   ├─ libgcc 15.2.0 [required: >=14]
@@ -4065,7 +4744,7 @@ r-devtools==2.5.2
   │     └─ r-xtable 1.8_8 [required: any]
   │        └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │           └─ dependencies of r-base displayed above
-  ├─ r-pak 0.9.5 [required: >=0.9.3]
+  ├─ r-pak 0.10.0 [required: >=0.9.3]
   │  ├─ r-assertthat 0.2.1 [required: any]
   │  │  └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  │     └─ dependencies of r-base displayed above
@@ -4381,7 +5060,7 @@ r-devtools==2.5.2
   │  │     ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │     ├─ fribidi 1.0.16 [required: >=1.0.16,<2.0a0]
   │  │     │  └─ dependencies of fribidi displayed above
-  │  │     ├─ harfbuzz 14.2.0 [required: >=12.3.2]
+  │  │     ├─ harfbuzz 14.2.1 [required: >=12.3.2]
   │  │     │  └─ dependencies of harfbuzz displayed above
   │  │     ├─ libfreetype 2.14.3 [required: >=2.14.2]
   │  │     │  └─ dependencies of libfreetype displayed above
@@ -4404,7 +5083,7 @@ r-devtools==2.5.2
   │  ├─ r-rlang 1.2.0 [required: >=1.1.4]
   │  │  └─ dependencies of r-rlang displayed above
   │  ├─ r-rmarkdown 2.31 [required: >=2.27]
-  │  │  ├─ pandoc 3.9.0.2 [required: >=1.14]
+  │  │  ├─ pandoc 3.10 [required: >=1.14]
   │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  │  │  └─ dependencies of r-base displayed above
   │  │  ├─ r-bslib 0.11.0 [required: >=0.2.5.1]
@@ -4529,7 +5208,7 @@ r-devtools==2.5.2
   │  │  └─ dependencies of r-r6 displayed above
   │  ├─ r-rprojroot 2.1.1 [required: any]
   │  │  └─ dependencies of r-rprojroot displayed above
-  │  ├─ r-sessioninfo 1.2.3 [required: >=1.1.1]
+  │  ├─ r-sessioninfo 1.2.4 [required: >=1.1.1]
   │  │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  │  │  └─ dependencies of r-base displayed above
   │  │  ├─ r-cli 3.6.6 [required: any]
@@ -4587,7 +5266,7 @@ r-devtools==2.5.2
   │  │  └─ dependencies of r-curl displayed above
   │  └─ r-xml2 1.5.2 [required: >=1.0.0]
   │     └─ dependencies of r-xml2 displayed above
-  ├─ r-sessioninfo 1.2.3 [required: >=1.2.3]
+  ├─ r-sessioninfo 1.2.4 [required: >=1.2.3]
   │  └─ dependencies of r-sessioninfo displayed above
   ├─ r-testthat 3.3.2 [required: >=3.3.2]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
@@ -4971,13 +5650,13 @@ r-randomforest==4.7_1.2
   │  └─ dependencies of libgfortran5 displayed above
   └─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
      └─ dependencies of r-base displayed above
-r-rcurl==1.98_1.18
+r-rcurl==1.98_1.19
   ├─ __glibc [required: >=2.17,<3.0.a0]
-  ├─ libcurl 8.20.0 [required: >=8.19.0,<9.0a0]
+  ├─ libcurl 8.20.0 [required: >=8.20.0,<9.0a0]
   │  └─ dependencies of libcurl displayed above
   ├─ libgcc 15.2.0 [required: >=14]
   │  └─ dependencies of libgcc displayed above
-  ├─ liblzma 5.8.3 [required: >=5.8.2,<6.0a0]
+  ├─ liblzma 5.8.3 [required: >=5.8.3,<6.0a0]
   │  └─ dependencies of liblzma displayed above
   ├─ libxml2 2.15.3 [required: any]
   │  └─ dependencies of libxml2 displayed above
@@ -5811,7 +6490,7 @@ r-tidyverse==2.0.0
   │  └─ r-tibble 3.3.1 [required: >=2.0.1]
   │     └─ dependencies of r-tibble displayed above
   ├─ r-reprex 2.1.1 [required: >=2.0.2]
-  │  ├─ pandoc 3.9.0.2 [required: >=2.0]
+  │  ├─ pandoc 3.10 [required: >=2.0]
   │  ├─ r-base 4.5.3 [required: >=4.5,<4.6.0a0]
   │  │  └─ dependencies of r-base displayed above
   │  ├─ r-callr 3.7.6 [required: >=3.6.0]
@@ -6016,7 +6695,7 @@ jupyterhub-singleuser==5.4.6
   │  │  │  └─ dependencies of rfc3339-validator displayed above
   │  │  ├─ rfc3986-validator 0.1.1 [required: >=0.1.1]
   │  │  │  └─ dependencies of rfc3986-validator displayed above
-  │  │  └─ traitlets 5.15.0 [required: >=5.3]
+  │  │  └─ traitlets 5.15.1 [required: >=5.3]
   │  │     └─ python 3.13.13 [required: any]
   │  ├─ oauthlib 3.3.1 [required: >=3.0]
   │  │  ├─ blinker 1.9.0 [required: any]
@@ -6098,11 +6777,11 @@ jupyterhub-singleuser==5.4.6
   │  │  │  └─ dependencies of libgcc displayed above
   │  │  ├─ python 3.13.13 [required: >=3.13,<3.14.0a0]
   │  │  └─ python_abi 3.13 [required: 3.13.*, *_cp313]
-  │  ├─ traitlets 5.15.0 [required: >=4.3.2]
+  │  ├─ traitlets 5.15.1 [required: >=4.3.2]
   │  │  └─ dependencies of traitlets displayed above
   │  └─ pamela 1.2.0 [required: any]
   │     └─ python 3.13.13 [required: >=3.9]
-  └─ jupyterlab 4.5.7 [required: >=3.1]
+  └─ jupyterlab 4.5.8 [required: >=3.1]
      ├─ async-lru 2.3.0 [required: >=1.0.0]
      │  ├─ python 3.13.13 [required: any]
      │  └─ typing_extensions 4.15.0 [required: >=4.0.0]
@@ -6141,15 +6820,15 @@ jupyterhub-singleuser==5.4.6
      │  ├─ __linux [required: any]
      │  ├─ comm 0.2.3 [required: >=0.1.1]
      │  │  └─ python 3.13.13 [required: any]
-     │  ├─ debugpy 1.8.20 [required: >=1.6.5]
+     │  ├─ debugpy 1.8.21 [required: >=1.6.5]
      │  │  ├─ python 3.13.13 [required: any]
+     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
      │  │  ├─ libstdcxx 15.2.0 [required: >=14]
      │  │  │  └─ dependencies of libstdcxx displayed above
      │  │  ├─ libgcc 15.2.0 [required: >=14]
      │  │  │  └─ dependencies of libgcc displayed above
-     │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
      │  │  └─ python_abi 3.13 [required: 3.13.*, *_cp313]
-     │  ├─ ipython 9.14.0 [required: >=7.23.1]
+     │  ├─ ipython 9.14.1 [required: >=7.23.1]
      │  │  ├─ __unix [required: any]
      │  │  ├─ decorator 5.3.1 [required: >=5.1.0]
      │  │  │  └─ python 3.13.13 [required: >=3.10]
@@ -6163,11 +6842,11 @@ jupyterhub-singleuser==5.4.6
      │  │  │  └─ python 3.13.13 [required: >=3.9]
      │  │  ├─ matplotlib-inline 0.2.2 [required: >=0.1.6]
      │  │  │  ├─ python 3.13.13 [required: >=3.10]
-     │  │  │  └─ traitlets 5.15.0 [required: any]
+     │  │  │  └─ traitlets 5.15.1 [required: any]
      │  │  │     └─ dependencies of traitlets displayed above
      │  │  ├─ prompt-toolkit 3.0.52 [required: >=3.0.41,<3.1.0]
      │  │  │  ├─ python 3.13.13 [required: >=3.10]
-     │  │  │  └─ wcwidth 0.7.0 [required: any]
+     │  │  │  └─ wcwidth 0.8.0 [required: any]
      │  │  │     └─ python 3.13.13 [required: >=3.10]
      │  │  ├─ psutil 7.2.2 [required: >=7]
      │  │  │  ├─ python 3.13.13 [required: any]
@@ -6186,7 +6865,7 @@ jupyterhub-singleuser==5.4.6
      │  │  │  ├─ pure_eval 0.2.3 [required: any]
      │  │  │  │  └─ python 3.13.13 [required: >=3.9]
      │  │  │  └─ python 3.13.13 [required: >=3.9]
-     │  │  ├─ traitlets 5.15.0 [required: >=5.13.0]
+     │  │  ├─ traitlets 5.15.1 [required: >=5.13.0]
      │  │  │  └─ dependencies of traitlets displayed above
      │  │  ├─ typing_extensions 4.15.0 [required: >=4.6]
      │  │  │  └─ dependencies of typing_extensions displayed above
@@ -6194,13 +6873,13 @@ jupyterhub-singleuser==5.4.6
      │  │     ├─ ptyprocess 0.7.0 [required: >=0.5]
      │  │     │  └─ python 3.13.13 [required: >=3.9]
      │  │     └─ python 3.13.13 [required: >=3.9]
-     │  ├─ jupyter_client 8.8.0 [required: >=8.8.0]
+     │  ├─ jupyter_client 8.9.0 [required: >=8.8.0]
      │  │  ├─ jupyter_core 5.9.1 [required: >=5.1]
      │  │  │  ├─ __unix [required: any]
      │  │  │  ├─ python 3.13.13 [required: >=3.10]
      │  │  │  ├─ platformdirs 4.10.0 [required: >=2.5]
      │  │  │  │  └─ python 3.13.13 [required: any]
-     │  │  │  └─ traitlets 5.15.0 [required: >=5.3]
+     │  │  │  └─ traitlets 5.15.1 [required: >=5.3]
      │  │  │     └─ dependencies of traitlets displayed above
      │  │  ├─ python 3.13.13 [required: any]
      │  │  ├─ python-dateutil 2.9.0.post0 [required: >=2.8.2]
@@ -6226,8 +6905,10 @@ jupyterhub-singleuser==5.4.6
      │  │  │     └─ dependencies of zeromq displayed above
      │  │  ├─ tornado 6.5.6 [required: >=6.4.1]
      │  │  │  └─ dependencies of tornado displayed above
-     │  │  └─ traitlets 5.15.0 [required: >=5.3]
-     │  │     └─ dependencies of traitlets displayed above
+     │  │  ├─ traitlets 5.15.1 [required: >=5.3]
+     │  │  │  └─ dependencies of traitlets displayed above
+     │  │  └─ typing_extensions 4.15.0 [required: >=4.13.0]
+     │  │     └─ dependencies of typing_extensions displayed above
      │  ├─ jupyter_core 5.9.1 [required: >=5.1,!=6.0.*]
      │  │  └─ dependencies of jupyter_core displayed above
      │  ├─ matplotlib-inline 0.2.2 [required: >=0.1]
@@ -6243,7 +6924,7 @@ jupyterhub-singleuser==5.4.6
      │  │  └─ dependencies of pyzmq displayed above
      │  ├─ tornado 6.5.6 [required: >=6.4.1]
      │  │  └─ dependencies of tornado displayed above
-     │  └─ traitlets 5.15.0 [required: >=5.4.0]
+     │  └─ traitlets 5.15.1 [required: >=5.4.0]
      │     └─ dependencies of traitlets displayed above
      ├─ jinja2 3.1.6 [required: >=3.0.3]
      │  └─ dependencies of jinja2 displayed above
@@ -6267,7 +6948,7 @@ jupyterhub-singleuser==5.4.6
      │  │  │     └─ dependencies of typing-extensions displayed above
      │  │  ├─ jinja2 3.1.6 [required: >=3.0.3]
      │  │  │  └─ dependencies of jinja2 displayed above
-     │  │  ├─ jupyter_client 8.8.0 [required: >=7.4.4]
+     │  │  ├─ jupyter_client 8.9.0 [required: >=7.4.4]
      │  │  │  └─ dependencies of jupyter_client displayed above
      │  │  ├─ jupyter_core 5.9.1 [required: >=4.12,!=5.0.*]
      │  │  │  └─ dependencies of jupyter_core displayed above
@@ -6283,14 +6964,14 @@ jupyterhub-singleuser==5.4.6
      │  │  │     └─ tornado 6.5.6 [required: >=6.1.0]
      │  │  │        └─ dependencies of tornado displayed above
      │  │  ├─ nbconvert-core 7.17.1 [required: >=6.4.4]
-     │  │  │  ├─ beautifulsoup4 4.14.3 [required: any]
+     │  │  │  ├─ beautifulsoup4 4.15.0 [required: any]
      │  │  │  │  ├─ python 3.13.13 [required: >=3.10]
      │  │  │  │  ├─ soupsieve 2.8.4 [required: >=1.2]
      │  │  │  │  │  └─ python 3.13.13 [required: >=3.10]
      │  │  │  │  └─ typing-extensions 4.15.0 [required: any]
      │  │  │  │     └─ dependencies of typing-extensions displayed above
-     │  │  │  ├─ bleach-with-css 6.3.0 [required: !=5.0.0]
-     │  │  │  │  ├─ bleach 6.3.0 [required: ==6.3.0, pyhcf101f3_1]
+     │  │  │  ├─ bleach-with-css 6.4.0 [required: !=5.0.0]
+     │  │  │  │  ├─ bleach 6.4.0 [required: ==6.4.0, pyhcf101f3_0]
      │  │  │  │  │  ├─ python 3.13.13 [required: any]
      │  │  │  │  │  └─ webencodings 0.5.1 [required: any]
      │  │  │  │  │     └─ python 3.13.13 [required: >=3.9]
@@ -6316,12 +6997,12 @@ jupyterhub-singleuser==5.4.6
      │  │  │  │  ├─ python 3.13.13 [required: any]
      │  │  │  │  └─ typing_extensions 4.15.0 [required: any]
      │  │  │  │     └─ dependencies of typing_extensions displayed above
-     │  │  │  ├─ nbclient 0.10.4 [required: >=0.5.0]
-     │  │  │  │  ├─ jupyter_client 8.8.0 [required: >=6.1.12]
+     │  │  │  ├─ nbclient 0.11.0 [required: >=0.5.0]
+     │  │  │  │  ├─ jupyter_client 8.9.0 [required: >=7.0.0]
      │  │  │  │  │  └─ dependencies of jupyter_client displayed above
-     │  │  │  │  ├─ jupyter_core 5.9.1 [required: >=4.12,!=5.0.*]
+     │  │  │  │  ├─ jupyter_core 5.9.1 [required: >=5.4]
      │  │  │  │  │  └─ dependencies of jupyter_core displayed above
-     │  │  │  │  ├─ nbformat 5.10.4 [required: >=5.1]
+     │  │  │  │  ├─ nbformat 5.10.4 [required: >=5.2.0]
      │  │  │  │  │  ├─ jsonschema 4.26.0 [required: >=2.6]
      │  │  │  │  │  │  └─ dependencies of jsonschema displayed above
      │  │  │  │  │  ├─ jupyter_core 5.9.1 [required: >=4.12,!=5.0.*]
@@ -6329,10 +7010,10 @@ jupyterhub-singleuser==5.4.6
      │  │  │  │  │  ├─ python 3.13.13 [required: >=3.9]
      │  │  │  │  │  ├─ python-fastjsonschema 2.21.2 [required: >=2.15]
      │  │  │  │  │  │  └─ python 3.13.13 [required: any]
-     │  │  │  │  │  └─ traitlets 5.15.0 [required: >=5.1]
+     │  │  │  │  │  └─ traitlets 5.15.1 [required: >=5.1]
      │  │  │  │  │     └─ dependencies of traitlets displayed above
-     │  │  │  │  ├─ python 3.13.13 [required: >=3.8]
-     │  │  │  │  └─ traitlets 5.15.0 [required: >=5.4]
+     │  │  │  │  ├─ python 3.13.13 [required: >=3.10]
+     │  │  │  │  └─ traitlets 5.15.1 [required: >=5.13]
      │  │  │  │     └─ dependencies of traitlets displayed above
      │  │  │  ├─ nbformat 5.10.4 [required: >=5.7]
      │  │  │  │  └─ dependencies of nbformat displayed above
@@ -6343,7 +7024,7 @@ jupyterhub-singleuser==5.4.6
      │  │  │  ├─ pygments 2.20.0 [required: >=2.4.1]
      │  │  │  │  └─ dependencies of pygments displayed above
      │  │  │  ├─ python 3.13.13 [required: any]
-     │  │  │  └─ traitlets 5.15.0 [required: >=5.1]
+     │  │  │  └─ traitlets 5.15.1 [required: >=5.1]
      │  │  │     └─ dependencies of traitlets displayed above
      │  │  ├─ nbformat 5.10.4 [required: >=5.3.0]
      │  │  │  └─ dependencies of nbformat displayed above
@@ -6365,7 +7046,7 @@ jupyterhub-singleuser==5.4.6
      │  │  │  └─ dependencies of terminado displayed above
      │  │  ├─ tornado 6.5.6 [required: >=6.2.0]
      │  │  │  └─ dependencies of tornado displayed above
-     │  │  ├─ traitlets 5.15.0 [required: >=5.6.0]
+     │  │  ├─ traitlets 5.15.1 [required: >=5.6.0]
      │  │  │  └─ dependencies of traitlets displayed above
      │  │  └─ websocket-client 1.9.0 [required: >=1.7]
      │  │     └─ python 3.13.13 [required: >=3.10]
@@ -6394,7 +7075,7 @@ jupyterhub-singleuser==5.4.6
      │  ├─ jupyter_server 2.19.0 [required: >=1.8,<3]
      │  │  └─ dependencies of jupyter_server displayed above
      │  └─ python 3.13.13 [required: >=3.9]
-     ├─ packaging 26.2 [required: any]
+     ├─ packaging 26.2 [required: >=23.2]
      │  └─ dependencies of packaging displayed above
      ├─ python 3.13.13 [required: >=3.10]
      ├─ setuptools 82.0.1 [required: >=41.1.0]
@@ -6403,7 +7084,7 @@ jupyterhub-singleuser==5.4.6
      │  └─ dependencies of tomli displayed above
      ├─ tornado 6.5.6 [required: >=6.2.0]
      │  └─ dependencies of tornado displayed above
-     └─ traitlets 5.15.0 [required: any]
+     └─ traitlets 5.15.1 [required: any]
         └─ dependencies of traitlets displayed above
 nbclassic==1.3.3
   ├─ ipykernel 7.2.0 [required: any]
@@ -6415,14 +7096,14 @@ nbclassic==1.3.3
   ├─ notebook-shim 0.2.4 [required: >=0.2.3]
   │  └─ dependencies of notebook-shim displayed above
   └─ python 3.13.13 [required: any]
-notebook==7.5.6
+notebook==7.5.7
   ├─ importlib_resources 7.1.0 [required: >=5.0]
   │  ├─ python 3.13.13 [required: >=3.10]
   │  └─ zipp 4.1.0 [required: >=3.1.0]
   │     └─ dependencies of zipp displayed above
   ├─ jupyter_server 2.19.0 [required: >=2.4.0,<3]
   │  └─ dependencies of jupyter_server displayed above
-  ├─ jupyterlab 4.5.7 [required: >=4.5.7,<4.6]
+  ├─ jupyterlab 4.5.8 [required: >=4.5.8,<4.6]
   │  └─ dependencies of jupyterlab displayed above
   ├─ jupyterlab_server 2.28.0 [required: >=2.28.0,<3]
   │  └─ dependencies of jupyterlab_server displayed above
@@ -6469,6 +7150,316 @@ Via `R -e 'as.data.frame(installed.packages())[,c("Package", "Version")]'`
 |cli|3.6.6|
 |cliapp|0.1.2|
 |clipr|0.8.1|
+|clock|0.7.4|
+|coda|0.19-4.1|
+|codetools|0.2-20|
+|colorspace|2.1-2|
+|commonmark|2.0.0|
+|compiler|4.5.3|
+|config|0.3.2|
+|conflicted|1.2.0|
+|cowplot|1.2.0|
+|cpp11|0.5.5|
+|crayon|1.5.3|
+|credentials|2.0.3|
+|crosstalk|1.2.2|
+|curl|7.1.0|
+|data.table|1.17.8|
+|datasets|4.5.3|
+|DBI|1.3.0|
+|dbplyr|2.5.2|
+|deldir|2.0-4|
+|DEoptimR|1.2-0|
+|desc|1.4.3|
+|devtools|2.5.2|
+|diagram|1.6.5|
+|dials|1.4.3|
+|DiceDesign|1.10|
+|diffobj|0.3.6|
+|digest|0.6.39|
+|doSNOW|1.0.20|
+|downlit|0.4.5|
+|dplyr|1.2.1|
+|dsbox|0.1.1|
+|dtplyr|1.3.3|
+|e1071|1.7-17|
+|ellipsis|0.3.3|
+|ergm|4.12.0|
+|ergm.count|4.1.3|
+|ergm.multi|0.3.0|
+|evaluate|1.0.5|
+|fansi|1.0.7|
+|farver|2.1.2|
+|fastmap|1.2.0|
+|filelock|1.0.3|
+|fivethirtyeight|0.6.2|
+|fivethirtyeightdata|0.1.0|
+|FNN|1.1.4.1|
+|fontawesome|0.5.3|
+|fontBitstreamVera|0.1.1|
+|fontLiberation|0.1.0|
+|fontquiver|0.2.1|
+|forcats|1.0.1|
+|foreach|1.5.2|
+|forecast|9.0.2|
+|Formula|1.2-5|
+|fracdiff|1.5-4|
+|fs|2.1.0|
+|furrr|0.4.0|
+|future|1.70.0|
+|future.apply|1.20.2|
+|gapminder|1.0.1|
+|gargle|1.6.1|
+|generics|0.1.4|
+|gert|2.3.1|
+|ggbeeswarm|0.7.3|
+|ggplot2|4.0.3|
+|ggrepel|0.9.8|
+|ggridges|0.5.7|
+|ggtext|0.1.2|
+|gh|1.6.0|
+|gitcreds|0.1.2|
+|globals|0.19.1|
+|glue|1.8.1|
+|goftest|1.2-3|
+|googledrive|2.1.2|
+|googlesheets4|1.1.2|
+|gower|1.0.2|
+|GPfit|1.0-9|
+|gradethis|0.2.14|
+|graphics|4.5.3|
+|grDevices|4.5.3|
+|grid|4.5.3|
+|gridExtra|2.3|
+|gridtext|0.1.6|
+|gstat|2.1-6|
+|gtable|0.3.6|
+|hardhat|1.4.3|
+|haven|2.5.5|
+|here|1.0.2|
+|hexbin|1.28.5|
+|highr|0.12|
+|hms|1.1.4|
+|htmltools|0.5.9|
+|htmlwidgets|1.6.4|
+|httpuv|1.6.17|
+|httr|1.4.8|
+|httr2|1.2.2|
+|ids|1.0.1|
+|igraph|2.3.2|
+|infer|1.1.0|
+|ini|0.3.1|
+|insight|1.5.1|
+|intervals|0.15.5|
+|ipred|0.9-15|
+|IRdisplay|1.1|
+|IRkernel|1.3.2|
+|isoband|0.3.0|
+|iterators|1.0.14|
+|janitor|2.2.1|
+|jpeg|0.1-11|
+|jquerylib|0.1.4|
+|jsonlite|2.0.0|
+|keras|2.16.1|
+|KernSmooth|2.23-26|
+|khroma|1.17.0|
+|knitr|1.51|
+|labeling|0.4.3|
+|labelled|2.16.0|
+|later|1.4.8|
+|lattice|0.22-9|
+|lava|1.9.1|
+|lazyeval|0.2.3|
+|LearnBayes|2.15.2|
+|learnr|0.11.6.9000|
+|lhs|1.3.0|
+|lifecycle|1.0.5|
+|listenv|0.10.1|
+|litedown|0.9|
+|lmtest|0.9-40|
+|lpSolve|5.6.23|
+|lpSolveAPI|5.5.2.0-17.15|
+|lubridate|1.9.5|
+|magrittr|2.0.5|
+|marginaleffects|0.32.0|
+|markdown|2.0|
+|MASS|7.3-65|
+|Matrix|1.7-5|
+|maxLik|1.5-2.2|
+|memoise|2.0.1|
+|methods|4.5.3|
+|mgcv|1.9-4|
+|mime|0.13|
+|miniUI|0.1.2|
+|miscTools|0.6-30|
+|modeldata|1.5.1|
+|modelenv|0.2.0|
+|ModelMetrics|1.2.2.2|
+|modelr|0.1.11|
+|mosaicCore|0.9.5|
+|mosaicData|0.20.4|
+|multcomp|1.4-30|
+|munsell|0.5.1|
+|mvtnorm|1.4-1|
+|network|1.20.0|
+|networkDynamic|0.12.0|
+|networkLite|1.1.0|
+|nlme|3.1-169|
+|nloptr|2.2.1|
+|nnet|7.3-20|
+|numDeriv|2016.8-1.1|
+|nycflights13|1.0.2|
+|officer|0.7.5|
+|openintro|2.5.1|
+|openssl|2.4.1|
+|otel|0.2.0|
+|pak|0.10.0|
+|pander|0.6.6|
+|parallel|4.5.3|
+|parallelly|1.47.0|
+|parsnip|1.6.0|
+|patchwork|1.3.2|
+|pbdZMQ|0.3-14|
+|pillar|1.11.1|
+|pkgbuild|1.4.8|
+|pkgcache|2.2.4|
+|pkgconfig|2.0.3|
+|pkgdown|2.2.0|
+|pkgload|1.5.2|
+|plogr|0.2.0|
+|plotly|4.12.0|
+|plyr|1.8.9|
+|png|0.1-9|
+|polyclip|1.10-7|
+|praise|1.0.0|
+|prettycode|1.1.0|
+|prettyunits|1.2.0|
+|pROC|1.19.0.1|
+|processx|3.9.0|
+|prodlim|2026.03.11|
+|profvis|0.4.0|
+|progress|1.2.3|
+|progressr|0.19.0|
+|promises|1.5.0|
+|proxy|0.4-29|
+|ps|1.9.3|
+|purrr|1.2.2|
+|quadprog|1.5-8|
+|quantmod|0.4.28|
+|R6|2.6.1|
+|ragg|1.5.2|
+|randomForest|4.7-1.2|
+|rappdirs|0.3.4|
+|raster|3.6-32|
+|rbibutils|2.4.1|
+|rcarbon|1.5.2|
+|rcmdcheck|1.4.0|
+|RColorBrewer|1.1-3|
+|Rcpp|1.1.1-1.1|
+|RcppArmadillo|15.2.7-1|
+|RcppEigen|0.3.4.0.2|
+|RcppTOML|0.2.3|
+|RCurl|1.98-1.19|
+|Rdpack|2.6.6|
+|readr|2.2.0|
+|readxl|1.5.0|
+|recipes|1.3.3|
+|rematch|2.0.0|
+|rematch2|2.1.2|
+|renv|1.2.3|
+|repr|1.1.7|
+|reprex|2.1.1|
+|reshape2|1.4.5|
+|reticulate|1.46.0|
+|rlang|1.2.0|
+|rle|0.10.0|
+|rmarkdown|2.31|
+|robustbase|0.99-7|
+|RODBC|1.3-26.1|
+|roxygen2|7.3.3|
+|rpart|4.1.27|
+|rprojroot|2.1.1|
+|rsample|1.3.2|
+|RSQLite|3.53.1|
+|rstudioapi|0.18.0|
+|rversions|3.0.0|
+|rvest|1.0.5|
+|s2|1.1.11|
+|S7|0.2.2|
+|sandwich|3.1-1|
+|sass|0.4.10|
+|scales|1.4.0|
+|selectr|0.5-1|
+|sessioninfo|1.2.4|
+|sf|1.1-0|
+|sfd|0.1.0|
+|sftime|0.3.2|
+|shape|1.4.6.1|
+|shiny|1.13.0|
+|skimr|2.2.2|
+|slider|0.3.3|
+|sna|2.8|
+|snakecase|0.11.1|
+|snow|0.4-4|
+|sourcetools|0.1.7-2|
+|sp|2.2-1|
+|spacetime|1.3-3|
+|sparsevctrs|0.3.6|
+|spatial|7.3-18|
+|spatialreg|1.4-3|
+|spatstat|3.6-1|
+|spatstat.data|3.1-9|
+|spatstat.explore|3.8-1|
+|spatstat.geom|3.8-1|
+|spatstat.linnet|3.5-1|
+|spatstat.model|3.7-1|
+|spatstat.random|3.5-0|
+|spatstat.sparse|3.2-0|
+|spatstat.univar|3.2-0|
+|spatstat.utils|3.2-3|
+|spData|2.3.5|
+|spdep|1.4-2|
+|splines|4.5.3|
+|SQUAREM|2026.1|
+|stars|0.7-2|
+|statnet|2019.6|
+|statnet.common|4.13.0|
+|stats|4.5.3|
+|stats4|4.5.3|
+|stringi|1.8.7|
+|stringr|1.6.0|
+|survival|3.8-6|
+|sys|3.4.3|
+|systemfonts|1.3.2|
+|tabula|3.3.2|
+|tailor|0.1.0|
+|tcltk|4.5.3|
+|tensor|1.5.1|
+|tensorflow|2.20.0|
+|tergm|4.2.2|
+|terra|1.9-34|
+|testthat|3.3.2|
+|textshaping|1.0.5|
+|tfautograph|0.3.2|
+|tfruns|1.5.4|
+|TH.data|1.1-5|
+|tibble|3.3.1|
+|tidymodels|1.4.1|
+|tidyr|1.3.2|
+|tidyselect|1.2.1|
+|tidyverse|2.0.0|
+|timechange|0.4.0|
+|timeDate|4052.112|
+|tinytex|0.59|
+|tools|4.5.3|
+|trust|0.1-9|
+|tseries|0.10-61|
+|tsna|0.3.6|
+|TTR|0.24.4|
+|tune|2.0.1|
+|tzdb|0.5.0|
+|units|1.0-1|
+|urca|1.3-4|
 |urlchecker|1.0.1|
 |usdata|0.3.1|
 |usethis|3.2.1|

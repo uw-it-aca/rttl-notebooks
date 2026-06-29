@@ -76,11 +76,11 @@ astroalign==2.6.2
 └── sep [required: >=1.4.0, installed: 1.4.1]
     └── numpy [required: >=1.26.4, installed: 2.4.6]
 astroML==1.0.2.post1
-├── astropy [required: >=3.0, installed: 7.2.0]
-│   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── astropy [required: >=3.0, installed: 8.0.0]
+│   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   ├── packaging [required: >=25.0, installed: 26.2]
+│   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 ├── matplotlib [required: >=3.0, installed: 3.10.9]
@@ -106,22 +106,22 @@ astroML==1.0.2.post1
 └── scipy [required: >=0.18, installed: 1.17.1]
     └── numpy [required: >=1.26.4,<2.7, installed: 2.4.6]
 astroplan==0.10.1
-├── astropy [required: >=4, installed: 7.2.0]
-│   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── astropy [required: >=4, installed: 8.0.0]
+│   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   ├── packaging [required: >=25.0, installed: 26.2]
+│   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 ├── numpy [required: >=1.17, installed: 2.4.6]
 ├── pytz [required: Any, installed: 2026.2]
 └── six [required: Any, installed: 1.17.0]
 astroquery==0.4.11
-├── astropy [required: >=5.0, installed: 7.2.0]
-│   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── astropy [required: >=5.0, installed: 8.0.0]
+│   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   ├── packaging [required: >=25.0, installed: 26.2]
+│   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 ├── beautifulsoup4 [required: >=4.8, installed: 4.15.0]
@@ -143,12 +143,12 @@ astroquery==0.4.11
 │       │       └── pycparser [required: Any, installed: 3.0]
 │       └── jeepney [required: >=0.6, installed: 0.9.0]
 ├── numpy [required: >=1.20, installed: 2.4.6]
-├── pyvo [required: >=1.5, installed: 1.9.0]
-│   ├── astropy [required: >=5.0, installed: 7.2.0]
-│   │   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   │   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   │   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   │   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── pyvo [required: >=1.5, installed: 1.9.1]
+│   ├── astropy [required: >=5.0, installed: 8.0.0]
+│   │   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   │   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   │   ├── packaging [required: >=25.0, installed: 26.2]
+│   │   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 │   └── requests [required: Any, installed: 2.34.2]
@@ -165,7 +165,7 @@ astroquery==0.4.11
         └── PySocks [required: >=1.5.6,<2.0,!=1.5.7, installed: 1.7.1, extra: socks]
 backports.tarfile==1.2.0
 backports.zstd==1.5.0
-biogeme==3.3.2
+biogeme==3.3.3
 ├── biogeme-optimization [required: >=0.0.11,<0.1, installed: 0.0.11]
 │   ├── matplotlib [required: >=3.10.3,<4, installed: 3.10.9]
 │   │   ├── contourpy [required: >=1.0.1, installed: 1.3.3]
@@ -184,12 +184,12 @@ biogeme==3.3.2
 │   │   └── numpy [required: >=1.26.4,<2.7, installed: 2.4.6]
 │   └── tomlkit [required: >=0.13.2,<1, installed: 0.15.0]
 ├── fuzzywuzzy [required: >=0.18.0, installed: 0.18.0]
-├── h5netcdf [required: >=1.7.3, installed: 1.8.1]
+├── h5netcdf [required: >=1.8.1, installed: 1.8.1]
 │   ├── numpy [required: Any, installed: 2.4.6]
 │   └── packaging [required: Any, installed: 26.2]
-├── h5py [required: >=3.15.1, installed: 3.16.0]
+├── h5py [required: >=3.16.0, installed: 3.16.0]
 │   └── numpy [required: >=1.21.2, installed: 2.4.6]
-├── ipython [required: >=8.37.0, installed: 9.14.1]
+├── ipython [required: >=9.14.1, installed: 9.14.1]
 │   ├── decorator [required: >=5.1.0, installed: 5.3.1]
 │   ├── ipython_pygments_lexers [required: >=1.0.0, installed: 1.1.1]
 │   │   └── Pygments [required: Any, installed: 2.20.0]
@@ -208,8 +208,8 @@ biogeme==3.3.2
 │   │   ├── executing [required: >=1.2.0, installed: 2.2.1]
 │   │   └── pure_eval [required: Any, installed: 0.2.3]
 │   └── traitlets [required: >=5.13.0, installed: 5.15.1]
-├── jax [required: >=0.6.2, installed: 0.10.1]
-│   ├── jaxlib [required: >=0.10.1,<=0.10.1, installed: 0.10.1]
+├── jax [required: >=0.10.1, installed: 0.10.2]
+│   ├── jaxlib [required: >=0.10.1,<=0.10.2, installed: 0.10.2]
 │   │   ├── ml_dtypes [required: >=0.5.0, installed: 0.5.4]
 │   │   │   ├── numpy [required: >=1.21, installed: 2.4.6]
 │   │   │   ├── numpy [required: >=1.21.2, installed: 2.4.6]
@@ -229,10 +229,10 @@ biogeme==3.3.2
 │   ├── opt_einsum [required: Any, installed: 3.4.0]
 │   └── scipy [required: >=1.14, installed: 1.17.1]
 │       └── numpy [required: >=1.26.4,<2.7, installed: 2.4.6]
-├── Jinja2 [required: >=3.1.4, installed: 3.1.6]
+├── Jinja2 [required: >=3.1.6, installed: 3.1.6]
 │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
-├── joblib [required: >=1.5.1, installed: 1.5.3]
-├── matplotlib [required: >=3.10.3,<4, installed: 3.10.9]
+├── joblib [required: >=1.5.3, installed: 1.5.3]
+├── matplotlib [required: >=3.10.9,<4, installed: 3.10.9]
 │   ├── contourpy [required: >=1.0.1, installed: 1.3.3]
 │   │   └── numpy [required: >=1.25, installed: 2.4.6]
 │   ├── cycler [required: >=0.10, installed: 0.12.1]
@@ -244,10 +244,10 @@ biogeme==3.3.2
 │   ├── pyparsing [required: >=3, installed: 3.3.2]
 │   └── python-dateutil [required: >=2.7, installed: 2.9.0.post0]
 │       └── six [required: >=1.5, installed: 1.17.0]
-├── numpy [required: >=2.2.6,<3, installed: 2.4.6]
-├── numpyro [required: >=0.19.0, installed: 0.21.0]
-│   ├── jax [required: >=0.7.0, installed: 0.10.1]
-│   │   ├── jaxlib [required: >=0.10.1,<=0.10.1, installed: 0.10.1]
+├── numpy [required: >=2.4.6,<3, installed: 2.4.6]
+├── numpyro [required: >=0.21.0, installed: 0.21.0]
+│   ├── jax [required: >=0.7.0, installed: 0.10.2]
+│   │   ├── jaxlib [required: >=0.10.1,<=0.10.2, installed: 0.10.2]
 │   │   │   ├── ml_dtypes [required: >=0.5.0, installed: 0.5.4]
 │   │   │   │   ├── numpy [required: >=1.21, installed: 2.4.6]
 │   │   │   │   ├── numpy [required: >=1.21.2, installed: 2.4.6]
@@ -267,7 +267,7 @@ biogeme==3.3.2
 │   │   ├── opt_einsum [required: Any, installed: 3.4.0]
 │   │   └── scipy [required: >=1.14, installed: 1.17.1]
 │   │       └── numpy [required: >=1.26.4,<2.7, installed: 2.4.6]
-│   ├── jaxlib [required: >=0.7.0, installed: 0.10.1]
+│   ├── jaxlib [required: >=0.7.0, installed: 0.10.2]
 │   │   ├── ml_dtypes [required: >=0.5.0, installed: 0.5.4]
 │   │   │   ├── numpy [required: >=1.21, installed: 2.4.6]
 │   │   │   ├── numpy [required: >=1.21.2, installed: 2.4.6]
@@ -280,15 +280,15 @@ biogeme==3.3.2
 │   ├── multipledispatch [required: Any, installed: 1.0.0]
 │   ├── numpy [required: Any, installed: 2.4.6]
 │   └── tqdm [required: Any, installed: 4.68.1]
-├── pandas [required: >=2.3.0,<3, installed: 2.3.3]
+├── pandas [required: >=2.3.3,<3, installed: 2.3.3]
 │   ├── numpy [required: >=1.26.0, installed: 2.4.6]
 │   ├── python-dateutil [required: >=2.8.2, installed: 2.9.0.post0]
 │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   ├── pytz [required: >=2020.1, installed: 2026.2]
 │   └── tzdata [required: >=2022.7, installed: 2026.2]
-├── pymc [required: >=5.25.1, installed: 6.0.1]
-│   ├── arviz [required: >=1.1.0,<2.0, installed: 1.1.0]
-│   │   ├── arviz-base [required: >=1.1.0,<1.2.0, installed: 1.1.0]
+├── pymc [required: >=6.0.1, installed: 6.0.1]
+│   ├── arviz [required: >=1.1.0,<2.0, installed: 1.2.0]
+│   │   ├── arviz-base [required: >=1.2.0,<1.3.0, installed: 1.2.0]
 │   │   │   ├── lazy-loader [required: >=0.4, installed: 0.5]
 │   │   │   │   └── packaging [required: Any, installed: 26.2]
 │   │   │   ├── numpy [required: >=2, installed: 2.4.6]
@@ -302,8 +302,8 @@ biogeme==3.3.2
 │   │   │           │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │           ├── pytz [required: >=2020.1, installed: 2026.2]
 │   │   │           └── tzdata [required: >=2022.7, installed: 2026.2]
-│   │   ├── arviz-plots [required: >=1.1.0,<1.2.0, installed: 1.1.0]
-│   │   │   ├── arviz-base [required: >=1.1,<1.2, installed: 1.1.0]
+│   │   ├── arviz-plots [required: >=1.2.0,<1.3.0, installed: 1.2.0]
+│   │   │   ├── arviz-base [required: >=1.2,<1.3, installed: 1.2.0]
 │   │   │   │   ├── lazy-loader [required: >=0.4, installed: 0.5]
 │   │   │   │   │   └── packaging [required: Any, installed: 26.2]
 │   │   │   │   ├── numpy [required: >=2, installed: 2.4.6]
@@ -317,8 +317,8 @@ biogeme==3.3.2
 │   │   │   │           │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │   │           ├── pytz [required: >=2020.1, installed: 2026.2]
 │   │   │   │           └── tzdata [required: >=2022.7, installed: 2026.2]
-│   │   │   └── arviz-stats [required: >=1.1,<1.2, installed: 1.1.0]
-│   │   │       ├── arviz-base [required: >=1.1,<1.2, installed: 1.1.0, extra: xarray]
+│   │   │   └── arviz-stats [required: >=1.2,<1.3, installed: 1.2.0]
+│   │   │       ├── arviz-base [required: >=1.2,<1.3, installed: 1.2.0, extra: xarray]
 │   │   │       │   ├── lazy-loader [required: >=0.4, installed: 0.5]
 │   │   │       │   │   └── packaging [required: Any, installed: 26.2]
 │   │   │       │   ├── numpy [required: >=2, installed: 2.4.6]
@@ -357,8 +357,8 @@ biogeme==3.3.2
 │   │   │                   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   │                   ├── pytz [required: >=2020.1, installed: 2026.2]
 │   │   │                   └── tzdata [required: >=2022.7, installed: 2026.2]
-│   │   └── arviz-stats [required: >=1.1.0,<1.2.0, installed: 1.1.0]
-│   │       ├── arviz-base [required: >=1.1,<1.2, installed: 1.1.0, extra: xarray]
+│   │   └── arviz-stats [required: >=1.2.0,<1.3.0, installed: 1.2.0]
+│   │       ├── arviz-base [required: >=1.2,<1.3, installed: 1.2.0, extra: xarray]
 │   │       │   ├── lazy-loader [required: >=0.4, installed: 0.5]
 │   │       │   │   └── packaging [required: Any, installed: 26.2]
 │   │       │   ├── numpy [required: >=2, installed: 2.4.6]
@@ -406,7 +406,7 @@ biogeme==3.3.2
 │   │   │   └── six [required: >=1.5, installed: 1.17.0]
 │   │   ├── pytz [required: >=2020.1, installed: 2026.2]
 │   │   └── tzdata [required: >=2022.7, installed: 2026.2]
-│   ├── pytensor [required: >=3.0.2,<3.1, installed: 3.0.4]
+│   ├── pytensor [required: >=3.0.2,<3.1, installed: 3.0.7]
 │   │   ├── cons [required: Any, installed: 0.4.7]
 │   │   │   └── logical-unification [required: >=0.4.0, installed: 0.4.7]
 │   │   │       ├── multipledispatch [required: Any, installed: 1.0.0]
@@ -454,16 +454,16 @@ biogeme==3.3.2
 │   │   └── numpy [required: >=1.26.4,<2.7, installed: 2.4.6]
 │   ├── threadpoolctl [required: >=3.1.0,<4.0.0, installed: 3.6.0]
 │   └── typing_extensions [required: >=3.7.4, installed: 4.15.0]
-├── python-Levenshtein [required: >=0.25.1, installed: 0.27.3]
+├── python-Levenshtein [required: >=0.27.3, installed: 0.27.3]
 │   └── Levenshtein [required: ==0.27.3, installed: 0.27.3]
 │       └── RapidFuzz [required: >=3.9.0,<4.0.0, installed: 3.14.5]
-├── PyYAML [required: >=6.0.2, installed: 6.0.3]
-├── scipy [required: >=1.15.3,<2, installed: 1.17.1]
+├── PyYAML [required: >=6.0.3, installed: 6.0.3]
+├── scipy [required: >=1.17.1,<2, installed: 1.17.1]
 │   └── numpy [required: >=1.26.4,<2.7, installed: 2.4.6]
-├── tabulate [required: >=0.9.0, installed: 0.10.0]
-├── tomlkit [required: >=0.13.3, installed: 0.15.0]
-├── tqdm [required: >=4.67.1, installed: 4.68.1]
-└── tqdm_joblib [required: >=0.0.4, installed: 0.0.5]
+├── tabulate [required: >=0.10.0, installed: 0.10.0]
+├── tomlkit [required: >=0.15.0, installed: 0.15.0]
+├── tqdm [required: >=4.68.1, installed: 4.68.1]
+└── tqdm_joblib [required: >=0.0.5, installed: 0.0.5]
     └── tqdm [required: Any, installed: 4.68.1]
 bokeh==3.9.0
 ├── contourpy [required: >=1.2, installed: 1.3.3]
@@ -482,37 +482,37 @@ Bottleneck==1.6.0
 Brotli==1.2.0
 cached-property==1.5.2
 ccdproc==2.5.1
-├── astropy [required: >=5.0.1, installed: 7.2.0]
-│   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── astropy [required: >=5.0.1, installed: 8.0.0]
+│   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   ├── packaging [required: >=25.0, installed: 26.2]
+│   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 ├── astroscrappy [required: >=1.1.0, installed: 1.2.0]
-│   ├── astropy [required: Any, installed: 7.2.0]
-│   │   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   │   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   │   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   │   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+│   ├── astropy [required: Any, installed: 8.0.0]
+│   │   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   │   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   │   ├── packaging [required: >=25.0, installed: 26.2]
+│   │   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 │   └── numpy [required: Any, installed: 2.4.6]
 ├── numpy [required: >=1.24, installed: 2.4.6]
-├── reproject [required: >=0.7, installed: 0.19.0]
-│   ├── astropy [required: >=5.0, installed: 7.2.0]
-│   │   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   │   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   │   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   │   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── reproject [required: >=0.7, installed: 0.20.0]
+│   ├── astropy [required: >=5.0, installed: 8.0.0]
+│   │   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   │   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   │   ├── packaging [required: >=25.0, installed: 26.2]
+│   │   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 │   ├── astropy_healpix [required: >=1.0, installed: 1.1.3]
-│   │   ├── astropy [required: >=5, installed: 7.2.0]
-│   │   │   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   │   │   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   │   │   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   │   │   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+│   │   ├── astropy [required: >=5, installed: 8.0.0]
+│   │   │   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   │   │   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   │   │   ├── packaging [required: >=25.0, installed: 26.2]
+│   │   │   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   │   │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 │   │   └── numpy [required: >=1.25, installed: 2.4.6]
@@ -805,7 +805,7 @@ dash==4.2.0
 └── Werkzeug [required: Any, installed: 3.1.8]
     └── MarkupSafe [required: >=2.1.1, installed: 3.0.3]
 Deprecated==1.3.1
-└── wrapt [required: >=1.10,<3, installed: 2.2.1]
+└── wrapt [required: >=1.10,<3, installed: 2.2.2]
 distributed==2026.3.0
 ├── click [required: >=8.0, installed: 8.4.1]
 ├── cloudpickle [required: >=3.0.0, installed: 3.1.2]
@@ -837,10 +837,14 @@ distributed==2026.3.0
 emcee==3.1.6
 └── numpy [required: Any, installed: 2.4.6]
 exceptiongroup==1.3.1
+flake8==7.3.0
+├── mccabe [required: >=0.7.0,<0.8.0, installed: 0.7.0]
+├── pycodestyle [required: >=2.14.0,<2.15.0, installed: 2.14.0]
+└── pyflakes [required: >=3.4.0,<3.5.0, installed: 3.4.0]
 gatspy==0.3
 gmpy2==2.3.0
 gwcs==1.0.3
-├── asdf [required: >=3.3.0, installed: 5.3.0]
+├── asdf [required: >=3.3.0, installed: 5.3.1]
 │   ├── asdf_standard [required: >=1.1.0, installed: 1.5.0]
 │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   ├── jmespath [required: >=0.6.2, installed: 1.1.0]
@@ -849,7 +853,7 @@ gwcs==1.0.3
 │   ├── PyYAML [required: >=6.0, installed: 6.0.3]
 │   └── semantic-version [required: >=2.8, installed: 2.10.0]
 ├── asdf-astropy [required: >=0.8.0, installed: 0.11.0]
-│   ├── asdf [required: >=3.3.0, installed: 5.3.0]
+│   ├── asdf [required: >=3.3.0, installed: 5.3.1]
 │   │   ├── asdf_standard [required: >=1.1.0, installed: 1.5.0]
 │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   ├── jmespath [required: >=0.6.2, installed: 1.1.0]
@@ -858,7 +862,7 @@ gwcs==1.0.3
 │   │   ├── PyYAML [required: >=6.0, installed: 6.0.3]
 │   │   └── semantic-version [required: >=2.8, installed: 2.10.0]
 │   ├── asdf_coordinates_schemas [required: >=0.4, installed: 0.5.1]
-│   │   ├── asdf [required: >=2.12.1, installed: 5.3.0]
+│   │   ├── asdf [required: >=2.12.1, installed: 5.3.1]
 │   │   │   ├── asdf_standard [required: >=1.1.0, installed: 1.5.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jmespath [required: >=0.6.2, installed: 1.1.0]
@@ -870,18 +874,18 @@ gwcs==1.0.3
 │   ├── asdf_standard [required: >=1.1.0, installed: 1.5.0]
 │   ├── asdf_transform_schemas [required: >=0.6, installed: 0.6.0]
 │   │   └── asdf_standard [required: >=1.1.0, installed: 1.5.0]
-│   ├── astropy [required: >=6.0, installed: 7.2.0]
-│   │   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   │   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   │   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   │   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+│   ├── astropy [required: >=6.0, installed: 8.0.0]
+│   │   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   │   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   │   ├── packaging [required: >=25.0, installed: 26.2]
+│   │   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 │   ├── numpy [required: >=1.26.4, installed: 2.4.6]
 │   └── packaging [required: >=19, installed: 26.2]
 ├── asdf_wcs_schemas [required: >=0.5.0, installed: 0.5.0]
 │   ├── asdf_coordinates_schemas [required: >=0.4.0, installed: 0.5.1]
-│   │   ├── asdf [required: >=2.12.1, installed: 5.3.0]
+│   │   ├── asdf [required: >=2.12.1, installed: 5.3.1]
 │   │   │   ├── asdf_standard [required: >=1.1.0, installed: 1.5.0]
 │   │   │   ├── attrs [required: >=22.2.0, installed: 26.1.0]
 │   │   │   ├── jmespath [required: >=0.6.2, installed: 1.1.0]
@@ -893,11 +897,11 @@ gwcs==1.0.3
 │   ├── asdf_standard [required: >=1.1.0, installed: 1.5.0]
 │   └── asdf_transform_schemas [required: >=0.6.0, installed: 0.6.0]
 │       └── asdf_standard [required: >=1.1.0, installed: 1.5.0]
-├── astropy [required: >=6.0, installed: 7.2.0]
-│   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── astropy [required: >=6.0, installed: 8.0.0]
+│   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   ├── packaging [required: >=25.0, installed: 26.2]
+│   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 ├── numpy [required: >=1.25, installed: 2.4.6]
@@ -1925,7 +1929,7 @@ jupyterlab_git==0.53.0
 └── traitlets [required: ~=5.0, installed: 5.15.1]
 libmambapy==2.5.0
 lmfit==1.3.4
-├── asteval [required: >=1.0, installed: 1.0.8]
+├── asteval [required: >=1.0, installed: 1.0.9]
 ├── dill [required: >=0.3.4, installed: 0.4.1]
 ├── numpy [required: >=1.24, installed: 2.4.6]
 ├── scipy [required: >=1.10.0, installed: 1.17.1]
@@ -2497,17 +2501,17 @@ openpyxl==3.1.5
 └── et_xmlfile [required: Any, installed: 2.0.0]
 overrides==7.7.0
 photutils==3.0.0
-├── astropy [required: >=6.1.4, installed: 7.2.0]
-│   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── astropy [required: >=6.1.4, installed: 8.0.0]
+│   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   ├── packaging [required: >=25.0, installed: 26.2]
+│   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 ├── numpy [required: >=2.0, installed: 2.4.6]
 └── scipy [required: >=1.13, installed: 1.17.1]
     └── numpy [required: >=1.26.4,<2.7, installed: 2.4.6]
-plotnine==0.15.5
+plotnine==0.15.7
 ├── matplotlib [required: >=3.8.0, installed: 3.10.9]
 │   ├── contourpy [required: >=1.0.1, installed: 1.3.3]
 │   │   └── numpy [required: >=1.25, installed: 2.4.6]
@@ -2568,7 +2572,7 @@ pyLDAvis==3.4.1
 │   ├── scipy [required: >=1.7.0, installed: 1.17.1]
 │   │   └── numpy [required: >=1.26.4,<2.7, installed: 2.4.6]
 │   └── smart_open [required: >=1.8.1, installed: 7.6.1]
-│       └── wrapt [required: Any, installed: 2.2.1]
+│       └── wrapt [required: Any, installed: 2.2.2]
 ├── Jinja2 [required: Any, installed: 3.1.6]
 │   └── MarkupSafe [required: >=2.0, installed: 3.0.3]
 ├── joblib [required: >=1.2.0, installed: 1.5.3]
@@ -4184,11 +4188,11 @@ rasterio==1.5.0
 ├── numpy [required: >=2, installed: 2.4.6]
 └── pyparsing [required: Any, installed: 3.3.2]
 regions==0.11
-├── astropy [required: >=6.0, installed: 7.2.0]
-│   ├── astropy-iers-data [required: >=0.2025.10.27.0.39.10, installed: 0.2026.6.8.17.49.5]
-│   ├── numpy [required: >=1.24, installed: 2.4.6]
-│   ├── packaging [required: >=22.0.0, installed: 26.2]
-│   ├── pyerfa [required: >=2.0.1.1, installed: 2.0.1.5]
+├── astropy [required: >=6.0, installed: 8.0.0]
+│   ├── astropy-iers-data [required: >=0.2026.6.1.17.39.59, installed: 0.2026.6.22.1.23.34]
+│   ├── numpy [required: >=2.0, installed: 2.4.6]
+│   ├── packaging [required: >=25.0, installed: 26.2]
+│   ├── pyerfa [required: >=2.0.1.3, installed: 2.0.1.5]
 │   │   └── numpy [required: >=1.19.3, installed: 2.4.6]
 │   └── PyYAML [required: >=6.0.0, installed: 6.0.3]
 └── numpy [required: >=1.25, installed: 2.4.6]
@@ -4217,7 +4221,7 @@ s3fs==2026.4.0
 │   ├── multidict [required: >=6.0.0,<7.0.0, installed: 6.7.1]
 │   ├── python-dateutil [required: >=2.1,<3.0.0, installed: 2.9.0.post0]
 │   │   └── six [required: >=1.5, installed: 1.17.0]
-│   └── wrapt [required: >=1.10.10,<3.0.0, installed: 2.2.1]
+│   └── wrapt [required: >=1.10.10,<3.0.0, installed: 2.2.2]
 ├── aiohttp [required: >=3.9.0,!=4.0.0a1,!=4.0.0a0, installed: 3.14.1]
 │   ├── aiohappyeyeballs [required: >=2.5.0, installed: 2.6.2]
 │   ├── aiosignal [required: >=1.4.0, installed: 1.4.0]
@@ -4251,7 +4255,7 @@ seaborn==0.13.2
     │   └── six [required: >=1.5, installed: 1.17.0]
     ├── pytz [required: >=2020.1, installed: 2026.2]
     └── tzdata [required: >=2022.7, installed: 2026.2]
-selenium==4.44.0
+selenium==4.45.0
 ├── certifi [required: >=2026.2.25, installed: 2026.5.20]
 ├── trio [required: >=0.31.0,<1.0, installed: 0.33.0]
 │   ├── attrs [required: >=23.2.0, installed: 26.1.0]
@@ -4276,10 +4280,10 @@ selenium==4.44.0
 ├── urllib3 [required: >=2.6.3,<3.0, installed: 2.7.0]
 │   └── PySocks [required: >=1.5.6,<2.0,!=1.5.7, installed: 1.7.1, extra: socks]
 └── websocket-client [required: >=1.8.0,<2.0, installed: 1.9.0]
-setuptools-scm==10.0.5
+setuptools-scm==10.1.2
 ├── packaging [required: >=20, installed: 26.2]
 ├── setuptools [required: Any, installed: 70.2.0]
-└── vcs-versioning [required: >=1.0.0.dev0, installed: 1.1.1]
+└── vcs-versioning [required: >=2.0.0.dev0,<3, installed: 2.1.2]
     └── packaging [required: >=20, installed: 26.2]
 shapely==2.1.2
 └── numpy [required: >=1.21, installed: 2.4.6]
@@ -4320,7 +4324,7 @@ spacy==3.8.14
 ├── srsly [required: >=2.5.3,<3.0.0, installed: 2.5.3]
 │   ├── catalogue [required: >=2.0.3,<2.1.0, installed: 2.0.10]
 │   ├── cloudpickle [required: >=2.2.0, installed: 3.1.2]
-│   └── ujson [required: >=1.35, installed: 5.12.1]
+│   └── ujson [required: >=1.35, installed: 5.13.0]
 ├── thinc [required: >=8.3.12,<8.4.0, installed: 8.3.13]
 │   ├── blis [required: >=1.3.0,<1.4.0, installed: 1.3.3]
 │   │   └── numpy [required: >=1.19.0,<3.0.0, installed: 2.4.6]
@@ -4344,7 +4348,7 @@ spacy==3.8.14
 │   ├── srsly [required: >=2.4.0,<3.1.0, installed: 2.5.3]
 │   │   ├── catalogue [required: >=2.0.3,<2.1.0, installed: 2.0.10]
 │   │   ├── cloudpickle [required: >=2.2.0, installed: 3.1.2]
-│   │   └── ujson [required: >=1.35, installed: 5.12.1]
+│   │   └── ujson [required: >=1.35, installed: 5.13.0]
 │   └── wasabi [required: >=0.8.1,<1.2.0, installed: 1.1.3]
 ├── tqdm [required: >=4.38.0,<5.0.0, installed: 4.68.1]
 ├── typer [required: >=0.3.0,<1.0.0, installed: 0.26.7]
@@ -4375,11 +4379,11 @@ spacy==3.8.14
     │   └── typing-inspection [required: >=0.4.2, installed: 0.4.2]
     │       └── typing_extensions [required: >=4.12.0, installed: 4.15.0]
     ├── smart_open [required: >=5.2.1, installed: 7.6.1]
-    │   └── wrapt [required: Any, installed: 2.2.1]
+    │   └── wrapt [required: Any, installed: 2.2.2]
     ├── srsly [required: >=2.4.3, installed: 2.5.3]
     │   ├── catalogue [required: >=2.0.3,<2.1.0, installed: 2.0.10]
     │   ├── cloudpickle [required: >=2.2.0, installed: 3.1.2]
-    │   └── ujson [required: >=1.35, installed: 5.12.1]
+    │   └── ujson [required: >=1.35, installed: 5.13.0]
     ├── typer [required: >=0.3.0, installed: 0.26.7]
     │   ├── annotated-doc [required: >=0.0.2, installed: 0.0.4]
     │   ├── rich [required: >=13.8.0, installed: 15.0.0]
@@ -4499,7 +4503,7 @@ tellurium==2.2.13
 ├── plotly [required: >=2.0.12, installed: 6.8.0]
 │   ├── narwhals [required: >=1.15.1, installed: 2.22.1]
 │   └── packaging [required: Any, installed: 26.2]
-├── pytest [required: Any, installed: 9.0.3]
+├── pytest [required: Any, installed: 9.1.1]
 │   ├── iniconfig [required: >=1.0.1, installed: 2.3.0]
 │   ├── packaging [required: >=22, installed: 26.2]
 │   ├── pluggy [required: >=1.5,<2, installed: 1.6.0]
@@ -4525,10 +4529,10 @@ textblob==0.15.3
 toml==0.10.2
 tomli==2.4.1
 torchaudio==2.11.0+cpu
-torchvision==0.27.0+cpu
+torchvision==0.27.1+cpu
 ├── numpy [required: Any, installed: 2.4.6]
 ├── pillow [required: >=5.3.0,!=8.3.*, installed: 12.2.0]
-└── torch [required: ==2.12.0, installed: 2.12.0+cpu]
+└── torch [required: ==2.12.1, installed: 2.12.1+cpu]
     ├── filelock [required: Any, installed: 3.29.1]
     ├── fsspec [required: >=0.8.5, installed: 2026.4.0]
     ├── Jinja2 [required: Any, installed: 3.1.6]
@@ -4569,13 +4573,13 @@ libmsgpack-c==6.1.0
   │  └─ dependencies of libgcc displayed above
   └─ __glibc [required: >=2.17,<3.0.a0]
 astroml==1.0.2.post1
-  ├─ astropy-base 7.2.0 [required: >3]
+  ├─ astropy-base 8.0.0 [required: >3]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ astropy-iers-data 0.2026.6.8.17.49.5 [required: >=0.2025.10.27.0.39.10]
+  │  ├─ astropy-iers-data 0.2026.6.22.1.23.34 [required: >=0.2026.6.1.17.39.59]
   │  │  └─ python 3.13.13 [required: >=3.10]
   │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  └─ dependencies of libgcc displayed above
-  │  ├─ numpy 2.4.6 [required: >=1.24]
+  │  ├─ numpy 2.4.6 [required: >=2.0]
   │  │  ├─ python 3.13.13 [required: any]
   │  │  ├─ libstdcxx 15.2.0 [required: >=14]
   │  │  │  └─ dependencies of libstdcxx displayed above
@@ -4601,9 +4605,9 @@ astroml==1.0.2.post1
   │  │  │     └─ dependencies of libblas displayed above
   │  │  └─ libblas 3.11.0 [required: >=3.9.0,<4.0a0]
   │  │     └─ dependencies of libblas displayed above
-  │  ├─ packaging 26.2 [required: >=22.0.0]
+  │  ├─ packaging 26.2 [required: >=25.0]
   │  │  └─ python 3.13.13 [required: any]
-  │  ├─ pyerfa 2.0.1.5 [required: >=2.0.1.1]
+  │  ├─ pyerfa 2.0.1.5 [required: >=2.0.1.3]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  └─ dependencies of libgcc displayed above
@@ -4866,7 +4870,7 @@ astroml==1.0.2.post1
   └─ scipy 1.17.1 [required: >=0.18]
      └─ dependencies of scipy displayed above
 astroplan==0.10.1
-  ├─ astropy-base 7.2.0 [required: >=4]
+  ├─ astropy-base 8.0.0 [required: >=4]
   │  └─ dependencies of astropy-base displayed above
   ├─ matplotlib-base 3.10.9 [required: any]
   │  └─ dependencies of matplotlib-base displayed above
@@ -4877,7 +4881,7 @@ astroplan==0.10.1
   │  └─ python 3.13.13 [required: any]
   └─ six 1.17.0 [required: any]
      └─ dependencies of six displayed above
-astropy==7.2.0
+astropy==8.0.0
   ├─ aiohttp 3.14.1 [required: any]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  ├─ aiohappyeyeballs 2.6.2 [required: >=2.5.0]
@@ -4928,9 +4932,9 @@ astropy==7.2.0
   │     │  └─ dependencies of propcache displayed above
   │     ├─ python 3.13.13 [required: >=3.13,<3.14.0a0]
   │     └─ python_abi 3.13 [required: 3.13.*, *_cp313]
-  ├─ astropy-base 7.2.0 [required: >=7.2.0,<7.2.1.0a0]
+  ├─ astropy-base 8.0.0 [required: >=8.0.0,<8.0.1.0a0]
   │  └─ dependencies of astropy-base displayed above
-  ├─ beautifulsoup4 4.15.0 [required: >=4.9.3]
+  ├─ beautifulsoup4 4.15.0 [required: >=4.11.2]
   │  ├─ python 3.13.13 [required: >=3.10]
   │  ├─ soupsieve 2.8.4 [required: >=1.2]
   │  │  └─ python 3.13.13 [required: >=3.10]
@@ -4941,7 +4945,7 @@ astropy==7.2.0
   │  ├─ python 3.13.13 [required: any]
   │  └─ webencodings 0.5.1 [required: any]
   │     └─ python 3.13.13 [required: >=3.9]
-  ├─ bottleneck 1.6.0 [required: >=1.3.3]
+  ├─ bottleneck 1.6.0 [required: >=1.4.0]
   │  ├─ numpy 2.4.6 [required: >=1.23,<3]
   │  │  └─ dependencies of numpy displayed above
   │  ├─ python 3.13.13 [required: any]
@@ -4978,7 +4982,7 @@ astropy==7.2.0
   │        └─ python 3.13.13 [required: any]
   ├─ fsspec 2026.4.0 [required: >=2023.4.0]
   │  └─ dependencies of fsspec displayed above
-  ├─ h5py 3.16.0 [required: >=3.9.0]
+  ├─ h5py 3.16.0 [required: >=3.11.0]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  ├─ cached-property 1.5.2 [required: any]
   │  │  └─ cached_property 1.5.2 [required: >=1.5.2,<1.5.3.0a0]
@@ -5254,15 +5258,15 @@ astropy==7.2.0
   │  ├─ numpy 2.4.6 [required: any]
   │  │  └─ dependencies of numpy displayed above
   │  └─ python 3.13.13 [required: >=3.10]
-  ├─ matplotlib-base 3.10.9 [required: >=3.8.0]
+  ├─ matplotlib-base 3.10.9 [required: >=3.8.4]
   │  └─ dependencies of matplotlib-base displayed above
   ├─ mpmath 1.4.1 [required: >=1.2.1]
   │  └─ python 3.13.13 [required: >=3.10]
   ├─ narwhals 2.22.1 [required: >=1.42.0]
   │  └─ dependencies of narwhals displayed above
-  ├─ pandas 3.0.3 [required: >=2.0]
+  ├─ pandas 3.0.3 [required: >=2.2.2]
   │  └─ dependencies of pandas displayed above
-  ├─ pyarrow 23.0.1 [required: >=14.0.2]
+  ├─ pyarrow 23.0.1 [required: >=16.0]
   │  ├─ libarrow-acero 23.0.1 [required: 23.0.1.*]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  ├─ libarrow 23.0.1 [required: 23.0.1, hf605819_4_cpu]
@@ -5782,7 +5786,7 @@ astropy==7.2.0
   │  │  │  └─ dependencies of jmespath displayed above
   │  │  ├─ multidict 6.7.1 [required: >=6.0.0,<7.0.0]
   │  │  │  └─ dependencies of multidict displayed above
-  │  │  ├─ wrapt 2.2.1 [required: >=1.10.10,<3.0.0]
+  │  │  ├─ wrapt 2.2.2 [required: >=1.10.10,<3.0.0]
   │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  │  └─ dependencies of libgcc displayed above
@@ -5795,14 +5799,14 @@ astropy==7.2.0
   │  ├─ fsspec 2026.4.0 [required: 2026.4.0]
   │  │  └─ dependencies of fsspec displayed above
   │  └─ python 3.13.13 [required: >=3.10]
-  ├─ scipy 1.17.1 [required: >=1.9.2]
+  ├─ scipy 1.17.1 [required: >=1.13]
   │  └─ dependencies of scipy displayed above
   ├─ sortedcontainers 2.4.0 [required: >=2.1.0]
   │  └─ python 3.13.13 [required: >=3.9]
   └─ uncompresspy 0.4.1 [required: >=0.4.0]
      └─ python 3.13.13 [required: >=3.10]
 astroquery==0.4.11
-  ├─ astropy-base 7.2.0 [required: >=5.0]
+  ├─ astropy-base 8.0.0 [required: >=5.0]
   │  └─ dependencies of astropy-base displayed above
   ├─ beautifulsoup4 4.15.0 [required: >=4.8]
   │  └─ dependencies of beautifulsoup4 displayed above
@@ -5891,8 +5895,8 @@ astroquery==0.4.11
   ├─ numpy 2.4.6 [required: >=1.20.0]
   │  └─ dependencies of numpy displayed above
   ├─ python 3.13.13 [required: >=3.9]
-  ├─ pyvo 1.9.0 [required: >=1.5]
-  │  ├─ astropy-base 7.2.0 [required: >=5]
+  ├─ pyvo 1.9.1 [required: >=1.5]
+  │  ├─ astropy-base 8.0.0 [required: >=5]
   │  │  └─ dependencies of astropy-base displayed above
   │  ├─ python 3.13.13 [required: >=3.10]
   │  └─ requests 2.34.2 [required: any]
@@ -5908,11 +5912,11 @@ astroquery==0.4.11
   └─ requests 2.34.2 [required: >=2.19]
      └─ dependencies of requests displayed above
 ccdproc==2.5.1
-  ├─ astropy-base 7.2.0 [required: >=5.0.1]
+  ├─ astropy-base 8.0.0 [required: >=5.0.1]
   │  └─ dependencies of astropy-base displayed above
   ├─ astroscrappy 1.2.0 [required: >=1.1.0]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ astropy-base 7.2.0 [required: any]
+  │  ├─ astropy-base 8.0.0 [required: any]
   │  │  └─ dependencies of astropy-base displayed above
   │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  └─ dependencies of libgcc displayed above
@@ -5923,13 +5927,13 @@ ccdproc==2.5.1
   ├─ numpy 2.4.6 [required: >=1.24]
   │  └─ dependencies of numpy displayed above
   ├─ python 3.13.13 [required: >=3.9]
-  ├─ reproject 0.19.0 [required: >=0.7]
+  ├─ reproject 0.20.0 [required: >=0.7]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ astropy-base 7.2.0 [required: >=5.0]
+  │  ├─ astropy-base 8.0.0 [required: >=5.0]
   │  │  └─ dependencies of astropy-base displayed above
   │  ├─ astropy-healpix 1.1.3 [required: >=1.0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ astropy-base 7.2.0 [required: >=3]
+  │  │  ├─ astropy-base 8.0.0 [required: >=3]
   │  │  │  └─ dependencies of astropy-base displayed above
   │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  └─ dependencies of libgcc displayed above
@@ -6259,7 +6263,7 @@ ccdproc==2.5.1
   │     │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │     │  ├─ deprecated 1.3.1 [required: any]
   │     │  │  ├─ python 3.13.13 [required: >=3.10]
-  │     │  │  └─ wrapt 2.2.1 [required: <3,>=1.10]
+  │     │  │  └─ wrapt 2.2.2 [required: <3,>=1.10]
   │     │  │     └─ dependencies of wrapt displayed above
   │     │  ├─ libgcc 15.2.0 [required: >=14]
   │     │  │  └─ dependencies of libgcc displayed above
@@ -6613,7 +6617,7 @@ jupyter-resource-usage==1.2.1
   └─ pyzmq 27.1.0 [required: >=19]
      └─ dependencies of pyzmq displayed above
 lmfit==1.3.4
-  ├─ asteval 1.0.8 [required: >=1.0.0]
+  ├─ asteval 1.0.9 [required: >=1.0.0]
   │  ├─ numpy 2.4.6 [required: >=1.22]
   │  │  └─ dependencies of numpy displayed above
   │  ├─ pip 26.1.2 [required: any]
@@ -6621,12 +6625,12 @@ lmfit==1.3.4
   │  ├─ python 3.13.13 [required: >=3.10]
   │  ├─ setuptools 82.0.1 [required: any]
   │  │  └─ dependencies of setuptools displayed above
-  │  └─ setuptools-scm 10.0.5 [required: any]
+  │  └─ setuptools-scm 10.1.2 [required: any]
   │     ├─ python 3.13.13 [required: any]
-  │     ├─ vcs_versioning 1.1.1 [required: >=1.0.0.dev0]
+  │     ├─ vcs_versioning 2.1.2 [required: >=2.0.0.dev0]
+  │     │  ├─ python 3.13.13 [required: any]
   │     │  ├─ packaging 26.2 [required: >=20]
   │     │  │  └─ dependencies of packaging displayed above
-  │     │  ├─ python 3.13.13 [required: >=3.10]
   │     │  ├─ tomli 2.4.1 [required: >=1]
   │     │  │  └─ python 3.13.13 [required: any]
   │     │  └─ typing_extensions 4.15.0 [required: any]
@@ -7350,7 +7354,7 @@ octave==10.3.0
   │  │     └─ dependencies of libzlib displayed above
   │  ├─ qt-main 5.15.15 [required: >=5.15.15,<5.16.0a0]
   │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  ├─ alsa-lib 1.2.16 [required: >=1.2.14,<1.3.0a0]
+  │  │  ├─ alsa-lib 1.2.16.1 [required: >=1.2.14,<1.3.0a0]
   │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  │  └─ libgcc 15.2.0 [required: >=14]
   │  │  │     └─ dependencies of libgcc displayed above
@@ -7362,7 +7366,7 @@ octave==10.3.0
   │  │  │  └─ dependencies of fonts-conda-ecosystem displayed above
   │  │  ├─ gst-plugins-base 1.24.11 [required: >=1.24.11,<1.25.0a0]
   │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  │  │  ├─ alsa-lib 1.2.16 [required: >=1.2.14,<1.3.0a0]
+  │  │  │  ├─ alsa-lib 1.2.16.1 [required: >=1.2.14,<1.3.0a0]
   │  │  │  │  └─ dependencies of alsa-lib displayed above
   │  │  │  ├─ gstreamer 1.24.11 [required: 1.24.11, hc37bda9_0]
   │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
@@ -7494,11 +7498,11 @@ octave==10.3.0
   │  │  │  │     └─ dependencies of zstd displayed above
   │  │  │  └─ libstdcxx 15.2.0 [required: >=14]
   │  │  │     └─ dependencies of libstdcxx displayed above
-  │  │  ├─ libclang13 22.1.7 [required: >=21.1.3]
+  │  │  ├─ libclang13 22.1.8 [required: >=21.1.3]
   │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  │  └─ dependencies of libgcc displayed above
-  │  │  │  ├─ libllvm22 22.1.7 [required: >=22.1.7,<22.2.0a0]
+  │  │  │  ├─ libllvm22 22.1.8 [required: >=22.1.8,<22.2.0a0]
   │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  │  │  └─ dependencies of libgcc displayed above
@@ -7606,10 +7610,10 @@ octave==10.3.0
   │  │  │  │  └─ dependencies of libxml2 displayed above
   │  │  │  ├─ libxml2-16 2.15.1 [required: >=2.14.6]
   │  │  │  │  └─ dependencies of libxml2-16 displayed above
-  │  │  │  ├─ xkeyboard-config 2.47 [required: any]
-  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  │  │  ├─ xkeyboard-config 2.48 [required: any]
   │  │  │  │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  │  │  │  └─ dependencies of libgcc displayed above
+  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
   │  │  │  │  └─ xorg-libx11 1.8.13 [required: >=1.8.13,<2.0a0]
   │  │  │  │     └─ dependencies of xorg-libx11 displayed above
   │  │  │  └─ xorg-libxau 1.0.12 [required: >=1.0.12,<2.0a0]
@@ -7681,7 +7685,7 @@ octave==10.3.0
   │  │  │  │     │  └─ dependencies of libgcc displayed above
   │  │  │  │     └─ libstdcxx 15.2.0 [required: >=13]
   │  │  │  │        └─ dependencies of libstdcxx displayed above
-  │  │  │  ├─ libsystemd0 260.2 [required: >=257.10]
+  │  │  │  ├─ libsystemd0 261 [required: >=257.10]
   │  │  │  │  ├─ __glibc [required: >=2.34,<3.0.a0]
   │  │  │  │  ├─ libcap 2.78 [required: >=2.78,<2.79.0a0]
   │  │  │  │  │  ├─ __glibc [required: >=2.17,<3.0.a0]
@@ -7753,7 +7757,7 @@ octave==10.3.0
   │  └─ dependencies of bzip2 displayed above
   ├─ portaudio 19.7.0 [required: >=19.7.0,<19.8.0a0]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ alsa-lib 1.2.16 [required: >=1.2.12,<1.3.0a0]
+  │  ├─ alsa-lib 1.2.16.1 [required: >=1.2.12,<1.3.0a0]
   │  │  └─ dependencies of alsa-lib displayed above
   │  ├─ libgcc 15.2.0 [required: >=13]
   │  │  └─ dependencies of libgcc displayed above
@@ -8057,7 +8061,7 @@ octave==10.3.0
   │     └─ dependencies of liblapack displayed above
   ├─ fonts-conda-ecosystem 1 [required: any]
   │  └─ dependencies of fonts-conda-ecosystem displayed above
-  ├─ alsa-lib 1.2.16 [required: >=1.2.15.3,<1.3.0a0]
+  ├─ alsa-lib 1.2.16.1 [required: >=1.2.15.3,<1.3.0a0]
   │  └─ dependencies of alsa-lib displayed above
   ├─ libgl 1.7.0 [required: >=1.7.0,<2.0a0]
   │  └─ dependencies of libgl displayed above
@@ -8114,12 +8118,12 @@ octave_kernel==1.0.4
   └─ python 3.13.13 [required: >=3.11]
 photutils==3.0.0
   ├─ __glibc [required: >=2.17,<3.0.a0]
-  ├─ astropy-base 7.2.0 [required: >=6.1.4]
+  ├─ astropy-base 8.0.0 [required: >=6.1.4]
   │  └─ dependencies of astropy-base displayed above
   ├─ bottleneck 1.6.0 [required: >=1.4]
   │  └─ dependencies of bottleneck displayed above
   ├─ gwcs 1.0.3 [required: >=0.20]
-  │  ├─ asdf 5.3.0 [required: >=3.3.0]
+  │  ├─ asdf 5.3.1 [required: >=3.3.0]
   │  │  ├─ asdf-standard 1.5.0 [required: >=1.1.0]
   │  │  │  └─ python 3.13.13 [required: >=3.10]
   │  │  ├─ attrs 26.1.0 [required: >=22.2.0]
@@ -8138,10 +8142,10 @@ photutils==3.0.0
   │  │  └─ semantic_version 2.10.0 [required: >=2.8]
   │  │     └─ python 3.13.13 [required: >=2.7]
   │  ├─ asdf-astropy 0.11.0 [required: >=0.8.0]
-  │  │  ├─ asdf 5.3.0 [required: >=3.3.0]
+  │  │  ├─ asdf 5.3.1 [required: >=3.3.0]
   │  │  │  └─ dependencies of asdf displayed above
   │  │  ├─ asdf-coordinates-schemas 0.5.1 [required: >=0.4]
-  │  │  │  ├─ asdf 5.3.0 [required: >=2.12.1]
+  │  │  │  ├─ asdf 5.3.1 [required: >=2.12.1]
   │  │  │  │  └─ dependencies of asdf displayed above
   │  │  │  ├─ asdf-standard 1.5.0 [required: >=1.1.0]
   │  │  │  │  └─ dependencies of asdf-standard displayed above
@@ -8152,7 +8156,7 @@ photutils==3.0.0
   │  │  │  ├─ asdf-standard 1.5.0 [required: >=1.1.0]
   │  │  │  │  └─ dependencies of asdf-standard displayed above
   │  │  │  └─ python 3.13.13 [required: >=3.9]
-  │  │  ├─ astropy-base 7.2.0 [required: >=5.3.0]
+  │  │  ├─ astropy-base 8.0.0 [required: >=5.3.0]
   │  │  │  └─ dependencies of astropy-base displayed above
   │  │  ├─ numpy 2.4.6 [required: >=1.26]
   │  │  │  └─ dependencies of numpy displayed above
@@ -8167,7 +8171,7 @@ photutils==3.0.0
   │  │  ├─ asdf-transform-schemas 0.6.0 [required: >=0.6.0]
   │  │  │  └─ dependencies of asdf-transform-schemas displayed above
   │  │  └─ python 3.13.13 [required: >=3.9]
-  │  ├─ astropy-base 7.2.0 [required: >=6.0]
+  │  ├─ astropy-base 8.0.0 [required: >=6.0]
   │  │  └─ dependencies of astropy-base displayed above
   │  ├─ numpy 2.4.6 [required: >=1.25]
   │  │  └─ dependencies of numpy displayed above
@@ -8391,7 +8395,7 @@ photutils==3.0.0
   │     └─ python 3.13.13 [required: >=3.9]
   ├─ regions 0.11 [required: >=0.9]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
-  │  ├─ astropy-base 7.2.0 [required: >=6.0]
+  │  ├─ astropy-base 8.0.0 [required: >=6.0]
   │  │  └─ dependencies of astropy-base displayed above
   │  ├─ libgcc 15.2.0 [required: >=14]
   │  │  └─ dependencies of libgcc displayed above
@@ -8409,7 +8413,7 @@ photutils==3.0.0
   │  └─ dependencies of shapely displayed above
   └─ tqdm 4.68.1 [required: >=4.66]
      └─ dependencies of tqdm displayed above
-plotnine==0.15.5
+plotnine==0.15.7
   ├─ matplotlib-base 3.10.9 [required: >=3.8.0]
   │  └─ dependencies of matplotlib-base displayed above
   ├─ mizani 0.14.4 [required: >=0.14.0,<0.15.0]
@@ -8469,14 +8473,14 @@ pytables==3.11.1
   ├─ python_abi 3.13 [required: 3.13.*, *_cp313]
   └─ typing-extensions 4.15.0 [required: >=4.4.0]
      └─ dependencies of typing-extensions displayed above
-selenium==4.44.0
+selenium==4.45.0
   ├─ certifi 2026.5.20 [required: >=2026.2.25]
   │  └─ dependencies of certifi displayed above
   ├─ python 3.13.13 [required: any]
-  ├─ selenium-manager 4.44.0 [required: 4.44.*]
-  │  ├─ libgcc 15.2.0 [required: >=14]
-  │  │  └─ dependencies of libgcc displayed above
-  │  └─ __glibc [required: >=2.17,<3.0.a0]
+  ├─ selenium-manager 4.45.0 [required: 4.45.*]
+  │  ├─ __glibc [required: >=2.17,<3.0.a0]
+  │  └─ libgcc 15.2.0 [required: >=14]
+  │     └─ dependencies of libgcc displayed above
   ├─ trio 0.33.0 [required: >=0.31.0,<1.0]
   │  ├─ python 3.13.13 [required: any]
   │  ├─ attrs 26.1.0 [required: >=23.2.0]
@@ -8601,13 +8605,13 @@ spacy==3.8.14
   │  │  └─ dependencies of libstdcxx displayed above
   │  ├─ python 3.13.13 [required: >=3.13,<3.14.0a0]
   │  ├─ python_abi 3.13 [required: 3.13.*, *_cp313]
-  │  └─ ujson 5.12.1 [required: >=1.35]
+  │  └─ ujson 5.13.0 [required: >=1.35]
   │     ├─ python 3.13.13 [required: any]
+  │     ├─ __glibc [required: >=2.17,<3.0.a0]
   │     ├─ libgcc 15.2.0 [required: >=14]
   │     │  └─ dependencies of libgcc displayed above
   │     ├─ libstdcxx 15.2.0 [required: >=14]
   │     │  └─ dependencies of libstdcxx displayed above
-  │     ├─ __glibc [required: >=2.17,<3.0.a0]
   │     └─ python_abi 3.13 [required: 3.13.*, *_cp313]
   ├─ thinc 8.3.13 [required: >=8.3.12,<8.4.0]
   │  ├─ __glibc [required: >=2.17,<3.0.a0]
@@ -8704,7 +8708,7 @@ spacy==3.8.14
      ├─ smart-open 7.6.1 [required: >=5.2.1]
      │  └─ smart_open 7.6.1 [required: ==7.6.1, pyhcf101f3_0]
      │     ├─ python 3.13.13 [required: any]
-     │     └─ wrapt 2.2.1 [required: any]
+     │     └─ wrapt 2.2.2 [required: any]
      │        └─ dependencies of wrapt displayed above
      ├─ srsly 2.5.3 [required: >=2.4.3]
      │  └─ dependencies of srsly displayed above
