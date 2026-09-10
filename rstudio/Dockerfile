@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=quay.io/jupyter/r-notebook:hub-5.4.6
+ARG BASE_CONTAINER=quay.io/jupyter/r-notebook:hub-5.5.1
 # Based on docker-stacks images at https://github.com/jupyter/docker-stacks/blob/main/images/r-notebook/Dockerfile
 # Ubuntu 24.04 LTS (noble)
 
@@ -15,8 +15,8 @@ COPY --chown=$NB_UID:$NB_GID apt.txt /home/jovyan/
 RUN apt-get update --fix-missing > /dev/null && apt-get remove --yes ffmpeg && \
     apt-get upgrade --yes && \
     xargs -a apt.txt apt-get install --yes && \    
-    curl --silent -L --fail https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2026.05.0-218-amd64.deb > /tmp/rstudio.deb && \
-    echo 'cef10ff44ba19c68e8f143e22c262ba6e092dc18bcafb051f56ce50e4879de41  /tmp/rstudio.deb' | shasum -a 256 -c - && \
+    curl --silent -L --fail https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2026.08.2-200-amd64.deb > /tmp/rstudio.deb && \
+    echo '4e7cfe766ff220946ad1dda268b1779268f5d69bce750b170e9d699bdf240aec  /tmp/rstudio.deb' | shasum -a 256 -c - && \
     gdebi -n /tmp/rstudio.deb && \
     rm /tmp/rstudio.deb && \
     apt-get clean > /dev/null && \
