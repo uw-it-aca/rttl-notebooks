@@ -6,6 +6,8 @@ USER root
 
 RUN echo 'copilot-enabled=1' >> /etc/rstudio/rsession.conf
 
+RUN npm install -g @github/copilot
+
 USER $NB_UID
 
 RUN pip install jupyter-ai[all]
