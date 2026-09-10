@@ -4,6 +4,12 @@ All notable changes to the RStudio Jupyter Notebook image will be documented her
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9.1] - 2026-09-10
+
+### Changed
+- Updated base image to use tag `hub-5.5.1` to match Hub version.
+- Updated RStudio Server Version to v2026.08.2+200
+
 ## [2.9.0] - 2026-06-01
 
 ### Added
