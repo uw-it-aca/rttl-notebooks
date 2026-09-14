@@ -1,0 +1,6 @@
+SMTB.py
+setup.py
+SMTB.egg-info/PKG-INFO
+SMTB.egg-info/SOURCES.txt
+SMTB.egg-info/dependency_links.txt
+SMTB.egg-info/top_level.txt
