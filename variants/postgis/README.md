@@ -1,4 +1,19 @@
-# This image installs postGIS and its dependencies.
+# jupyter-datascience-notebook: PostGIS variant
+
+A JupyterHub single-user image, built on `jupyter-datascience-notebook:2.9.1`, that runs a
+local PostgreSQL 18 + PostGIS server inside every student's notebook pod.
+
+## Using the database
+
+Connect from notebook code or a terminal over localhost. No password is needed.
+
+| Setting  | Value                                    |
+|----------|------------------------------------------|
+| Host     | `localhost` / `127.0.0.1` |
+| Port     | `5432`                                   |
+| Database | `gisdb` (PostGIS already enabled)        |
+| User     | `postgres` or `jovyan` (both superusers) |
+| Password | none (trust auth, local connections only)|
 
 ## Validation
 
@@ -19,6 +34,58 @@ If all is working, it should print something like:
 ```
 POSTGIS="3.6.4 94d984b" [EXTENSION] PGSQL="180" GEOS="3.14.1-CAPI-1.20.5" (compiled against GEOS 3.12.1) PROJ="9.8.1 NETWORK_ENABLED=OFF URL_ENDPOINT=https://cdn.proj.org USER_WRITABLE_DIRECTORY=/tmp/proj DATABASE_PATH=/usr/share/proj/proj.db" (compiled against PROJ 9.4.0) LIBXML="2.9.14" LIBJSON="0.17" LIBPROTOBUF="1.4.1" WAGYU="0.5.0 (Internal)"
 ```
+
+### SQLAlchemy / GeoPandas:
+
+```python
+from sqlalchemy import create_engine
+engine = create_engine("postgresql://postgres@localhost/gisdb")
+```
+
+From a terminal: `psql gisdb` (connects as `jovyan` over the Unix socket), or
+`psql -U postgres gisdb`.
+
+In Python, pass `host="localhost"` as shown above rather than relying on the socket
+default. Conda-installed client libraries may look for the socket in `/tmp` instead of
+`/var/run/postgresql`.
+
+
+### Things users should know
+
+- **The database is reset whenever the server restarts.** The server keeps its data inside
+  the container image, not in the user's home directory. Stopping the server, an idle cull
+  or a restart by an admin wipes every table, row and database that was created. Keep the
+  scripts and data files needed to reload it (SQL, shapefiles, GeoPackages, CSVs) in
+  your home directory, which persists, and re-run them after a restart.
+- **PostGIS lives in the `postgis` schema of `gisdb`.** The search path for `gisdb` is
+  `public, postgis, contrib`, so functions like `ST_Buffer` work without prefixing and new
+  tables go in `public`. A database you create yourself (`CREATE DATABASE mydb`) does
+  **not** have PostGIS. Run `CREATE EXTENSION postgis;` in it first.
+- **Only code inside your own server can reach the database.** It listens on localhost
+  only. Other students' servers can't reach it, and it isn't reachable from outside the
+  pod. Each student has their own independent server.
+- **`sudo` is not available.** JupyterHub runs pods with `allowPrivilegeEscalation: false`.
+  Start and stop Postgres as `jovyan` without sudo, if it's ever needed:
+  ```bash
+  pg_ctlcluster 18 main status
+  pg_ctlcluster 18 main restart
+  ```
+- **Memory.** Postgres shares the pod's memory limit with the notebook kernels. Very large
+  imports or queries can push the pod toward its limit.
+
+### Troubleshooting
+
+`Connection refused` on port 5432 means the server isn't running:
+
+1. Check it in a terminal: `pg_isready -h 127.0.0.1`
+2. Read the server log: `tail -50 /var/log/postgresql/postgresql-18-main.log`
+3. Start it by hand: `pg_ctlcluster 18 main start`
+4. If that fails, stop and restart your server from the Hub Control Panel
+   (File → Hub Control Panel). This also resets the database.
+
+Admins can see whether Postgres started at spawn time in the pod log:
+`kubectl logs jupyter-<user> -n <namespace>`. Look for `PostgreSQL started` or a
+`WARNING: PostgreSQL failed to start` line.
 
 ## Pip packages
 ```

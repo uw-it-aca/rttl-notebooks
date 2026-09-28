@@ -2,7 +2,7 @@
 default: build
 
 DOCKER_REPO?=us-west1-docker.pkg.dev/uwit-mci-axdd/rttl-images/jupyter-datascience-notebook
-DOCKER_TAG?=2.9.1-postgis
+DOCKER_TAG?=2.9.1-postgis-2
 
 build:
 	docker build -t $(DOCKER_REPO):$(DOCKER_TAG) .

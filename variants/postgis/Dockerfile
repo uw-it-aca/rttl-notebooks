@@ -23,19 +23,10 @@ RUN apt-get update --fix-missing > /dev/null\
   && apt-get clean > /dev/null \
   && rm -rf /var/lib/apt/lists/*
 
-# Copy and set up startup script
-COPY --chown=$NB_UID: start.sh /home/jovyan/start.sh
-RUN chmod +x /home/jovyan/start.sh
-
-# Fix PostgreSQL directory permissions for non-root execution
-RUN mkdir -p /var/run/postgresql && \
-    chown -R postgres:postgres /var/run/postgresql && \
-    chmod 2777 /var/run/postgresql
-
-# Allow jovyan user to start postgres
-RUN echo "jovyan ALL=(ALL) NOPASSWD: /usr/sbin/service postgresql start" >> /etc/sudoers.d/postgres && \
-    echo "jovyan ALL=(postgres) NOPASSWD: /usr/bin/pg_isready" >> /etc/sudoers.d/postgres && \
-    chmod 0440 /etc/sudoers.d/postgres
+# Start Postgres via the docker-stacks before-notebook.d hook. start.sh (the
+# image ENTRYPOINT) runs these even when JupyterHub overrides the CMD, and
+# /usr/local/bin isn't masked by the user's home PVC.
+COPY --chmod=0755 start-postgres.sh /usr/local/bin/before-notebook.d/10-start-postgres.sh
 
 # Configure Postgres authentication
 RUN echo "local   all             postgres                                trust" > /etc/postgresql/18/main/pg_hba.conf && \
@@ -48,11 +39,19 @@ USER postgres
 
 # Start PostgreSQL, create database and extensions, then stop
 RUN service postgresql start && \
+    psql -c "CREATE ROLE ${NB_USER} SUPERUSER LOGIN;" && \
     psql -c "CREATE DATABASE gisdb;" && \
     psql -d gisdb -c "CREATE SCHEMA postgis;" && \
     psql -d gisdb -c "CREATE EXTENSION postgis SCHEMA postgis;" && \
     psql -d gisdb -c "ALTER DATABASE gisdb SET search_path=public,postgis,contrib;" && \
     service postgresql stop
+
+# Hand the cluster to jovyan so it can be started without sudo (JupyterHub
+# sets allowPrivilegeEscalation: false, which disables sudo). SSL is disabled
+# because jovyan can't read the snakeoil key; connections are local-only anyway.
+USER root
+RUN sed -i "s/^ssl = on/ssl = off/" /etc/postgresql/18/main/postgresql.conf && \
+    chown -R $NB_UID:$NB_GID /var/lib/postgresql /etc/postgresql /var/log/postgresql /var/run/postgresql
 
 USER $NB_UID
 
@@ -77,6 +76,3 @@ RUN pip install -r pip-extras.txt && \
 
 # Set the working directory for Jupyter
 WORKDIR "${HOME}"
-
-# Override the CMD to use start.sh
-CMD ["/home/jovyan/start.sh"]
