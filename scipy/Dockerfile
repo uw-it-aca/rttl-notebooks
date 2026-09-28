@@ -76,3 +76,6 @@ RUN pip install -r pip-torch-packages.txt && pip cache purge
 
 # Disable JupyterLab A11y checker, but leave installed
 RUN jupyter labextension disable jupyterlab-a11y-checker
+
+# Fix LD_LIBRARY_PATH
+RUN conda env config vars set LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"$(python3-config --prefix)/lib"
