@@ -59,9 +59,10 @@ COPY --chown=$NB_UID: conda-extras.txt /home/jovyan/
 
 # Install Conda packages
 RUN set -ex \
-  && mamba install --quiet --yes --file conda-extras.txt
+  && mamba install --quiet --yes --file conda-extras.txt \
+  && mamba clean --all -f -y
 
-RUN mamba clean --all -f -y && jupyter lab build -y \
+RUN jupyter lab build -y \
   && jupyter lab clean -y \
   && rm -rf "/home/${NB_USER}/.cache/yarn" \
   && rm -rf "/home/${NB_USER}/.node-gyp" \
@@ -72,6 +73,7 @@ COPY --chown=$NB_UID: pip-extras.txt /home/jovyan/
 
 # Install Python packages
 RUN pip install -r pip-extras.txt && \
+  pip cache purge && \
   jupyter server extension enable nbgitpuller --sys-prefix
 
 # Set the working directory for Jupyter
